@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorPrimaryDark">#083163</color>
+    <color name="neutral_button_background_color">#FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="accedi_con_google">Accedi con Google</string>
+    <string name="app_name">PronuntiApp</string>
+    <string name="client_id">928330153737-rq866lt51639dmhg84ssh8m4kqmdlqct.apps.googleusercontent.com</string>
+    <string name="codice_fiscale">Codice fiscale</string>
+    <string name="cognome">Cognome</string>
+    <string name="conferma_password">Conferma Password</string>
+    <string name="db_url">https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/</string>
+    <string name="email">Email</string>
+    <string name="gcm_defaultSenderId" translatable="false">928330153737</string>
+    <string name="google_api_key" translatable="false">AIzaSyBrtytQf2FQAsQ1gEXu5N7VOkkb5GkSz5c</string>
+    <string name="google_app_id" translatable="false">1:928330153737:android:a3083ebf5ab1312d0c1dd8</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBrtytQf2FQAsQ1gEXu5N7VOkkb5GkSz5c</string>
+    <string name="google_storage_bucket" translatable="false">pronuntiapp-register.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Accedi</string>
+    <string name="login_logopedista">Login Logopedista</string>
+    <string name="login_normale">Login Normale</string>
+    <string name="logopedista">Logopedista</string>
+    <string name="logout">Esci</string>
+    <string name="nav_close">Navigation Close\n\n</string>
+    <string name="nav_open">Navigation Open\n</string>
+    <string name="nome">Nome</string>
+    <string name="non_sei_registrato_registrati_adesso">Non sei registrato? Clicca qui</string>
+    <string name="password">Password</string>
+    <string name="project_id" translatable="false">pronuntiapp-register</string>
+    <string name="register">Registrati</string>
+    <string name="registra_bambino">Registra bambino</string>
+    <string name="registra_paziente">Registra Paziente</string>
+    <string name="registrazione_bambini">Registrazione Bambini</string>
+    <string name="registrazione_paziente">Registrazione Paziente</string>
+    <string name="sei_gi_registrato_loggati">Sei già registrato? Clicca qui</string>
+    <string name="sono_un_genitore">Sono un genitore</string>
+    <string name="sono_un_logopedista">Sono un logopedista</string>
+    <style name="Base.Theme.PronuntiApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.PronuntiApp" parent="Base.Theme.PronuntiApp"/>
+    <style name="round_imageview">
+        <item name="cornerSize">70%</item>
+    </style>
+</resources>

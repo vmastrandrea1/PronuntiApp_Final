@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/image_viewer_right"
+            android:layout_width="194dp"
+            android:layout_height="151dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="416dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/select_image_right_button"
+            android:layout_width="346dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/blubutton"
+            android:hint="SCEGLI IMMAGINE (RISPOSTA CORRETTA)"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/crea_esercizio_2"
+            android:layout_width="177dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="216dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/blubutton"
+            android:text="CREA"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/annulla_btn_2"
+            android:layout_width="168dp"
+            android:layout_height="47dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/blubutton"
+            android:text="ANNULLA"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_viewer_wrong"
+            android:layout_width="194dp"
+            android:layout_height="151dp"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="164dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/select_image_wrong_button"
+            android:layout_width="364dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="332dp"
+            android:background="@drawable/blubutton"
+            android:hint="SCEGLI IMMAGINE (RISPOSTA SBAGLIATA)"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.996" />
+
+        <EditText
+            android:id="@+id/id_esercizio3"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/blubutton"
+            android:hint="NOME ESERCIZIO"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/aiuto_immagine"
+            android:layout_width="250dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/blubutton"
+            android:hint="PAROLA DA ASCOLTARE"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

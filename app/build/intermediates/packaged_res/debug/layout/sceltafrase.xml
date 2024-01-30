@@ -1,0 +1,146 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/design_default_color_secondary_variant"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="Scegli una frase"
+            app:titleTextColor="@color/white" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aiuti_radio_group"
+            android:padding="5dp">
+            <RadioButton
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:text="Animale che fa bau-bau"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:text="Ca"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:text="Ne"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:text="Sta nella foresta"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:text="Alb"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:text="Ero"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:text="Si mangia le carote"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:text="Coni"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:layout_weight="1"
+                android:text="Glio"
+                android:textColor="#000"
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:text="Ci torni dopo la scuola"
+                android:textSize="20dp"
+                android:textColor="#000" />
+            <RadioButton
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/cardview_default_radius"
+                android:text="Sa"
+                android:textSize="20dp"
+                android:textColor="#000" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_selection_aiuti"
+            android:background="@drawable/bg_btn"
+            android:text="Conferma"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

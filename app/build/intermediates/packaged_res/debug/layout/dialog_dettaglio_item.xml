@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_dialog_background"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_dialog_background"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewFullScreen"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/rounded_dialog_background"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewNomeFullScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_below="@id/imageViewFullScreen"
+            android:layout_marginTop="16dp"
+            android:text="Nome del Personaggio" />
+
+        <TextView
+            android:id="@+id/textViewPrezzoFullScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_below="@id/textViewNomeFullScreen"
+            android:layout_marginTop="8dp"
+            android:text="Prezzo: 50 Monete" />
+
+        <TextView
+            android:id="@+id/textViewDescrizioneFullScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingBottom="50dp"
+            android:layout_below="@id/textViewPrezzoFullScreen"
+            android:layout_marginTop="16dp"
+            android:text="Descrizione del item..." />
+
+    </RelativeLayout>
+
+</ScrollView>

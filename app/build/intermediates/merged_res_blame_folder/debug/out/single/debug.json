@@ -1,0 +1,686 @@
+[
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_bandierina.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\bandierina.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_assegna_terapia_popup.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\assegna_terapia_popup.xml"
+    },
+    {
+        "merged": "it.uniba.dib.sms2324_4.app-merged_res-5:/layout_fragment_correzione_esercizio1.xml.flat",
+        "source": "it.uniba.dib.sms2324_4.app-main-7:/layout/fragment_correzione_esercizio1.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_password.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_crea_esercizio3.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_crea_esercizio3.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_activity_register_logopedista.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\activity_register_logopedista.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_google_background.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_google_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_arrow.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_activity_login_logopedista.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\activity_login_logopedista.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_map_mars.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\map_mars.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\raw_blackwhitebackground.json.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\raw\\blackwhitebackground.json"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxhdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxhdpi\\ic_app_logo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_item_scenario.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\item_scenario.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_bg_btn.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\bg_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxhdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxhdpi\\ic_google_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_app_logo_background.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_app_logo_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_child.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_child.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_img_1.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\img_1.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_item_sfondo.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\item_sfondo.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_rocky_razzo.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\rocky_razzo.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxxhdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxxhdpi\\ic_google_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-hdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-hdpi\\ic_google.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_gioco.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_gioco.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_skin_gelato.gif.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\skin_gelato.gif"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_confirm_delete.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\confirm_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_blubutton.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\blubutton.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxhdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxhdpi\\ic_google.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_baseline_arrow_drop_down_circle_24.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_baseline_arrow_drop_down_circle_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxxhdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxxhdpi\\ic_google.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_crea_esercizio2.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_crea_esercizio2.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_map_flying_island.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\map_flying_island.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_robo_robot.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\robo_robot.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-mdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-mdpi\\ic_app_logo.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_map_sentiero.PNG.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\map_sentiero.PNG"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_calendario__personalizzato.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_calendario__personalizzato.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_terzo_posto.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\terzo_posto.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_confirm_deassign_exercise.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\confirm_deassign_exercise.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_neutra_button_background.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\neutra_button_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_primo_posto.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\primo_posto.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-hdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-hdpi\\ic_google_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_activity_user_logopedista.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\activity_user_logopedista.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_therapy.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\therapy.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_key.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_key.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_item_personaggio.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\item_personaggio.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxxhdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxxhdpi\\ic_google_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_skin_troll.gif.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\skin_troll.gif"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-hdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-hdpi\\ic_app_logo.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_crea_esercizio1.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_crea_esercizio1.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_podio.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\podio.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\menu_menu_genitore.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\menu\\menu_genitore.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_screenshot_2023_12_26_180227.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\screenshot_2023_12_26_180227.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_yellow_background.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_yellow_background.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xhdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xhdpi\\ic_google_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_rounded_bronze.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\rounded_bronze.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_date.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_date.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_registrazione_bambini.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_registrazione_bambini.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_add_child.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_add_child.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_rounded_gold.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\rounded_gold.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_secondo_posto.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\secondo_posto.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_game.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_game.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_layout_bg.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\layout_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_view_therapy_patient.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\view_therapy_patient.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_shop.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\shop.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-anydpi-v26_ic_app_logo.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-anydpi-v26\\ic_app_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_rounded_gray.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\rounded_gray.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_sfondo_onde_di_colore.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\sfondo_onde_di_colore.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_elenco_pazienti.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_elenco_pazienti.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_exercise2_info_popup.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\exercise2_info_popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_skin_dinosauro.gif.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\skin_dinosauro.gif"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-hdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-hdpi\\ic_app_logo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-mdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-mdpi\\ic_google_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_rounded_scroll.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\rounded_scroll.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxxhdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxxhdpi\\ic_app_logo.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_esercizi.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\esercizi.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_crea_esercizi.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_crea_esercizi.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_flora_fata.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\flora_fata.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxhdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxhdpi\\ic_google_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_item.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\item.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxxhdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxxhdpi\\ic_app_logo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_bimbo.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\bimbo.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_exercise3_info_popup.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\exercise3_info_popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_pazienti.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\pazienti.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_child_info_popup.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\child_info_popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxhdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxhdpi\\ic_app_logo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xhdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xhdpi\\ic_app_logo.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-anydpi-v26_ic_app_logo_round.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-anydpi-v26\\ic_app_logo_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_cerclebackground.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\cerclebackground.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_exercise1_info_popup.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\exercise1_info_popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_skin_stregone.gif.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\skin_stregone.gif"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-hdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-hdpi\\ic_app_logo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_exercise.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_exercise.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_dialog_dettaglio_item.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\dialog_dettaglio_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-anydpi-v26_ic_google_round.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-anydpi-v26\\ic_google_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_sfondo_cielo.jpg.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\sfondo_cielo.jpg"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_child_selection.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\child_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxhdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxhdpi\\ic_app_logo.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_skin_polpo.gif.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\skin_polpo.gif"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xhdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xhdpi\\ic_app_logo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_regalo.jpg.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\regalo.jpg"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_rounded_dialog_background.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\rounded_dialog_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-mdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-mdpi\\ic_app_logo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_shop_black_24dp.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_shop_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ligneo.jpg.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ligneo.jpg"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_sceltafrase.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\sceltafrase.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_game.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\game.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_alieno.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\alieno.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_rounded_dialog_background_faded.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\rounded_dialog_background_faded.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_luna_leprotta.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\luna_leprotta.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\activity_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_sfondo_spazioviola.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\sfondo_spazioviola.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_polly_pinguina.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\polly_pinguina.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_calendario.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_calendario.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_google.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_google.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_paziente.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_paziente.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_child_profile_image.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\child_profile_image.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_correzione_esercizio1.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_correzione_esercizio1.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_map_ring_arancio.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\map_ring_arancio.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-hdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-hdpi\\ic_google_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_menu_header.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\menu_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-anydpi-v26_ic_google.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-anydpi-v26\\ic_google.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_sfondo_natura.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\sfondo_natura.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-mdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-mdpi\\ic_google_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-mdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-mdpi\\ic_google.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_istockphoto_1135615577_170667a.jpg.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\istockphoto_1135615577_170667a.jpg"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_timmy_tigrotto.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\timmy_tigrotto.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_gioco__home__page.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_gioco__home__page.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-mdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-mdpi\\ic_app_logo_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_skin_robot.gif.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\skin_robot.gif"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_img.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\img.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\menu_menu_logopedista.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\menu\\menu_logopedista.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xxxhdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xxxhdpi\\ic_app_logo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\raw_background2.json.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\raw\\background2.json"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_classifica.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_classifica.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_shop.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_shop.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xhdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xhdpi\\ic_app_logo_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_bordo_nero.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\bordo_nero.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_fragment_elenco_esercizi.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\fragment_elenco_esercizi.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_cella_layout.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\cella_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ollie_drago.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ollie_drago.png"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\layout_patient_info_popup.xml.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\layout\\patient_info_popup.xml"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\raw_background.json.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\raw\\background.json"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xhdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xhdpi\\ic_google_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\mipmap-xhdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\mipmap-xhdpi\\ic_google.webp"
+    },
+    {
+        "merged": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-5:\\drawable_classifica_scritta.png.flat",
+        "source": "C:\\Users\\masvi\\AndroidStudioProjects\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-7:\\drawable\\classifica_scritta.png"
+    }
+]

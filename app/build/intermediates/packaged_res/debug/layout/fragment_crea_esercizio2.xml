@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/crea_esercizio_2"
+            android:layout_width="220dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="116dp"
+            android:background="@drawable/blubutton"
+            android:text="CREA"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/annulla_btn_2"
+            android:layout_width="220dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="50dp"
+            android:text="ANNULLA"
+            android:textColor="@color/white"
+            android:background="@drawable/blubutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/frase1"
+            android:layout_width="191dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="492dp"
+            android:background="@drawable/blubutton"
+            android:hint="FRASE 1"
+            android:textColorHint="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/frase2"
+            android:layout_width="191dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="400dp"
+            android:background="@drawable/blubutton"
+            android:hint="FRASE 2"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frase1"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <EditText
+            android:id="@+id/frase3"
+            android:layout_width="191dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="300dp"
+            android:background="@drawable/blubutton"
+            android:hint="FRASE 3"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frase2"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <EditText
+            android:id="@+id/id_esercizio2"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="3dp"
+            android:background="@drawable/blubutton"
+            android:hint="NOME ESERCIZIO"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
