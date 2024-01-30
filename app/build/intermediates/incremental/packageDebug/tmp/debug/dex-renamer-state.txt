@@ -1,14 +1,14 @@
-#Tue Jan 30 14:42:51 CET 2024
-base.0=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.3=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.4=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.5=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.6=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.7=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.8=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.9=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+#Tue Jan 30 22:44:42 CET 2024
+base.0=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.3=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.4=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.5=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.6=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.7=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.8=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.9=C\:\\Users\\Stefano\\AndroidStudioProjects\\PronuntiApp_Final\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=15/classes.dex

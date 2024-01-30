@@ -1,0 +1,17 @@
+<!-- rounded_background_with_image.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Sfondo arrotondato -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+            <corners android:radius="12dp" />
+            <stroke android:width="2dp" android:color="#333333"></stroke>
+        </shape>
+    </item>
+
+    <!-- Immagine -->
+    <item
+        android:drawable="@drawable/ligneo"
+        android:gravity="center"
+        />
+</layer-list>

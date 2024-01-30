@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RegistrazioneBambini"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/registrazione_paziente"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/child_name"
+            android:drawableLeft="@drawable/ic_edit"
+            android:drawablePadding="10dp"
+            android:hint="@string/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/child_surname"
+            android:drawableLeft="@drawable/ic_edit"
+            android:drawablePadding="10dp"
+            android:hint="@string/cognome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/child_cf"
+            android:drawableLeft="@drawable/ic_edit"
+            android:drawablePadding="10dp"
+            android:hint="@string/codice_fiscale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="16">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/child_birthdate"
+        style="?android:spinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-25dp"
+        android:drawableLeft="@drawable/ic_date"
+        android:drawablePadding="17sp"
+        android:text="Data di nascita"
+        android:textColorHint="@color/black"
+        android:textAllCaps="true"
+        android:textSize="18dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/genitore_cf"
+            android:drawableLeft="@drawable/ic_edit"
+            android:drawablePadding="10dp"
+            android:hint="Codice Fiscale Genitore REGISTRATO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="16">
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/child_progressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="180dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/child_btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550sp"
+        android:background="@drawable/bg_btn"
+        android:text="@string/registra_paziente"
+        android:layout_gravity="center_horizontal"/>
+
+</FrameLayout>

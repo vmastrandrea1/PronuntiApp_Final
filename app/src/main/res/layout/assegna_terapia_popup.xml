@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleziona gli esercizi"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <Spinner
+            android:id="@+id/select_exercise1_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn"
+            android:spinnerMode="dropdown" />
+        <Spinner
+            android:id="@+id/select_exercise2_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn"
+            android:spinnerMode="dropdown" />
+        <Spinner
+            android:id="@+id/select_exercise3_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn"
+            android:spinnerMode="dropdown" />
+        <Spinner
+            android:id="@+id/select_exercise4_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn"
+            android:spinnerMode="dropdown" />
+        <Spinner
+            android:id="@+id/select_exercise5_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Seleziona il giorno"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/therapy_day"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/confirm_therapy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="✓"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:background="@drawable/cerclebackground"
+                android:backgroundTint="#12FF00" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/discard_therapy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="X"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:background="@drawable/cerclebackground"
+                android:backgroundTint="#FF0000"
+                android:layout_marginLeft="80dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

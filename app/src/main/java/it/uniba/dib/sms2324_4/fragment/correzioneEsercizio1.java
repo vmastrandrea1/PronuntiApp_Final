@@ -30,6 +30,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -150,6 +151,19 @@ public class correzioneEsercizio1 extends DialogFragment {
                    dismiss();
 
                    // Dialog esercizio eseguito
+                    View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_esercizio_terminato, null);
+
+                    TextView textViewMonete = dialogView.findViewById(R.id.textViewMonete);
+                    TextView textViewEsperienza = dialogView.findViewById(R.id.textViewEsperienza);
+
+                    textViewMonete.setText(esercizio1.getMonete() + " Monete");
+                    textViewEsperienza.setText(esercizio1.getEsperienza() + " Punti Esperienza");
+
+                    MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext())
+                            .setView(dialogView)
+                            .setPositiveButton("OK",null);
+
+                    builder.show();
 
                     /*
                     DateFormat formatoData = new SimpleDateFormat("yyyy-MM-dd");

@@ -5,6 +5,7 @@
     <color name="neutral_button_background_color">#FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
     <string name="accedi_con_google">Accedi con Google</string>
+    <string name="add_button_description">Aggiungi un nuovo paziente</string>
     <string name="app_name">PronuntiApp</string>
     <string name="client_id">928330153737-rq866lt51639dmhg84ssh8m4kqmdlqct.apps.googleusercontent.com</string>
     <string name="codice_fiscale">Codice fiscale</string>
@@ -19,8 +20,8 @@
     <string name="google_storage_bucket" translatable="false">pronuntiapp-register.appspot.com</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login">Accedi</string>
-    <string name="login_logopedista">Login Logopedista</string>
-    <string name="login_normale">Login Normale</string>
+    <string name="login_genitore">Accesso Genitore</string>
+    <string name="login_logopedista">Accesso Logopedista</string>
     <string name="logopedista">Logopedista</string>
     <string name="logout">Esci</string>
     <string name="nav_close">Navigation Close\n\n</string>
