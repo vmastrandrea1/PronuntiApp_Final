@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PronuntiApp</string>
+    <string name="login">Accedi</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Registrati</string>
+    <string name="sei_gi_registrato_loggati">Sei già registrato? Clicca qui</string>
+    <string name="non_sei_registrato_registrati_adesso">Non sei registrato? Clicca qui</string>
+    <string name="logout">Esci</string>
+    <string name="client_id">928330153737-rq866lt51639dmhg84ssh8m4kqmdlqct.apps.googleusercontent.com</string>
+    <string name="accedi_con_google">Accedi con Google</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="codice_fiscale">Codice fiscale</string>
+    <string name="db_url">https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/</string>
+    <string name="logopedista">Logopedista</string>
+    <string name="login_normale">Login Normale</string>
+    <string name="login_logopedista">Login Logopedista</string>
+    <string name="sono_un_genitore">Sono un genitore</string>
+    <string name="sono_un_logopedista">Sono un logopedista</string>
+    <string name="nav_open">Navigation Open\n</string>
+    <string name="nav_close">Navigation Close\n\n</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registra_bambino">Registra bambino</string>
+    <string name="registrazione_bambini">Registrazione Bambini</string>
+    <string name="registrazione_paziente">Registrazione Paziente</string>
+    <string name="registra_paziente">Registra Paziente</string>
+    <string name="conferma_password">Conferma Password</string>
+</resources>

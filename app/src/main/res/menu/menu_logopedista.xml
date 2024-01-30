@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/information_group">
+        <item
+            android:id="@+id/nav_elenco_pazienti"
+            android:icon="@drawable/ic_paziente"
+            android:iconTint="@color/black"
+            android:title="Pazienti" />
+        <item
+            android:id="@+id/nav_elenco_esercizi"
+            android:icon="@drawable/ic_exercise"
+            android:iconTint="@color/black"
+            android:title="Esercizi" />
+        <item
+            android:id="@+id/nav_calendar_logo"
+            android:icon="@drawable/ic_date"
+            android:iconTint="@color/black"
+            android:title="Gestisci Prenotazioni" />
+    </group>
+    <group android:id="@+id/gestion_group">
+        <item
+            android:id="@+id/nav_inserisciBambino"
+            android:icon="@drawable/ic_add_child"
+            android:iconTint="@color/black"
+            android:title="Registra Pazienti" />
+        <item
+            android:id="@+id/nav_crea_esercizi"
+            android:icon="@drawable/ic_exercise"
+            android:iconTint="@color/black"
+            android:title="Crea Esercizi" />
+    </group>
+    <item
+        android:id="@+id/nav_logout_logo"
+        android:icon="@drawable/ic_logout"
+        android:iconTint="@color/black"
+        android:title="@string/logout" />
+</menu>
+

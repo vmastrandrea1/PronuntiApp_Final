@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_dialog_background"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/image_select_viewer"
+        android:layout_width="228dp"
+        android:layout_height="251dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/rounded_dialog_background"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/riproduci_audio_1"
+        android:layout_width="325dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/image_select_viewer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blubutton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Riproduci Audio"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:cornerRadius="16dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stop_riproduci_audio_1"
+        android:layout_width="325dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/image_select_viewer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blubutton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Riproduci Audio"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:cornerRadius="16dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/record_solution_1"
+        android:layout_width="325dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/image_select_viewer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/blubutton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Registra"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:cornerRadius="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stop_record_solution_1"
+        android:layout_width="325dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/image_select_viewer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blubutton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Ferma Registrazione"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:cornerRadius="16dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_choice_btn"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="-2dp"
+        android:background="@drawable/blubutton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Conferma"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aiuto1_btn"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/record_solution_1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/blubutton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Aiuto1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:cornerRadius="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aiuto2_btn"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/aiuto1_btn"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/blubutton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Aiuto2"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:cornerRadius="16dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aiuto3_btn"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/aiuto2_btn"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/aiuto1_btn"
+        android:layout_marginEnd="248dp"
+        android:background="@drawable/blubutton"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Aiuto3"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:cornerRadius="16dp" />
+
+</RelativeLayout>

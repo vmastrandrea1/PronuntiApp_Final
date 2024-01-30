@@ -1,0 +1,23 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Sfondo rettangolo personalizzato -->
+    <item>
+
+<shape>
+    <corners android:radius="16dp" />
+    <solid android:color="#C0C0C0" />
+    <stroke android:width="2dp" android:color="#333333" />
+    </shape>
+</item>
+
+
+
+<item
+android:drawable="@drawable/secondo_posto"
+android:gravity="center"
+android:width="50dp"
+android:height="50dp"
+android:top="50dp"
+    />
+
+</layer-list>

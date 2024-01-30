@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:background="#630857"
+    android:padding="5dp"
+    android:layout_gravity="center"
+    android:scrollbars="vertical">
+
+    <TextView
+        android:id="@+id/exercise3_text_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/cerclebackground"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/exercise_profile_image"
+            android:layout_width="183dp"
+            android:layout_height="123dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_exercise" />
+
+        <TextView
+            android:id="@+id/id_esercizio3_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="Esercizio 3"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ex3_image_text_wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="80dp"
+            android:text="Immagine Sbagliata: "
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/image_viewer_wrong_popup"
+            android:layout_width="131dp"
+            android:layout_height="103dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="80dp" />
+
+        <TextView
+            android:id="@+id/ex3_image_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="-138dp"
+            android:text="Immagine Corretta: "
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/image_viewer_right_popup"
+            android:layout_width="131dp"
+            android:layout_height="103dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/ex3_parola_da_ascoltare"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Parola da Ascoltare: "
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/delete_exercise_3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="180dp"
+        android:text="Elimina Esercizio"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_delete"
+        android:background="@drawable/bg_btn"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/deassign_exercise_3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-40dp"
+        android:text="Rimuovi Assegnazione"
+        android:drawableStart="@drawable/ic_exercise"
+        android:background="@drawable/bg_btn"
+        android:visibility="gone"/>
+</LinearLayout>
