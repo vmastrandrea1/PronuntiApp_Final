@@ -75,6 +75,12 @@ public class Gioco_Home_Page extends Fragment {
 
         FragmentManager fragmentManager_gioco = requireActivity().getSupportFragmentManager();
 
+        GiocoFragment fragmentGioco = GiocoFragment.newInstance(id_bambino,sessionKey,id_logopedista);
+        fragmentManager_gioco.beginTransaction()
+                .replace(R.id.fragmentContainer, fragmentGioco)
+                .addToBackStack(null)
+                .commit();
+
         ImageButton imageButton1 = v.findViewById(R.id.shop);
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override

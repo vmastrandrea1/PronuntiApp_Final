@@ -144,7 +144,7 @@ public class Register_Logopedista extends AppCompatActivity {
                         throw new RuntimeException(e);
                     }
 
-                    Logopedisti logopedista = new Logopedisti(nome, cognome , cf ,  email , passwordCrypted);
+                    Logopedisti logopedista = new Logopedisti(nome, cognome , cf.toUpperCase() ,  email , passwordCrypted);
 
                     Query fetchData = FirebaseDatabase.getInstance(getString(R.string.db_url)).getReference("Utenti").child("Logopedisti")
                             .orderByChild("email")

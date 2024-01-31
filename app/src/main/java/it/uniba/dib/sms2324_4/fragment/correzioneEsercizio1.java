@@ -165,7 +165,6 @@ public class correzioneEsercizio1 extends DialogFragment {
 
                     builder.show();
 
-                    /*
                     DateFormat formatoData = new SimpleDateFormat("yyyy-MM-dd");
                     Calendar cal = Calendar.getInstance();
                     cal.set(Calendar.HOUR_OF_DAY, 0);      // Imposta le ore a 0
@@ -180,9 +179,83 @@ public class correzioneEsercizio1 extends DialogFragment {
                            .child(id_bambino)
                            .child("Terapie")
                            .child(formatoData.format(cal.getTime()))
-                           .child("esercizio_" + pos_esercizio);
+                           .child("esercizio_" + pos_esercizio)
+                           .child(esercizio1.getId_esercizio());
+                   insert_prova.addListenerForSingleValueEvent(new ValueEventListener() {
+                       @Override
+                       public void onDataChange(@NonNull DataSnapshot snapshot) {
+                           snapshot.child("eseguito").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                               @Override
+                               public void onSuccess(Void unused) {
 
-                     */
+                               }
+                           });
+
+                           snapshot.child("corretto").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                               @Override
+                               public void onSuccess(Void unused) {
+
+                               }
+                           });
+                       }
+
+                       @Override
+                       public void onCancelled(@NonNull DatabaseError error) {
+
+                       }
+                   });
+
+                   Query aggiorna_progressi_monete = database.getReference("Utenti")
+                           .child("Genitori")
+                           .child(sessionKey)
+                           .child("Bambini")
+                           .child(id_bambino)
+                           .child("monete");
+                    aggiorna_progressi_monete.addListenerForSingleValueEvent(new ValueEventListener() {
+                       @Override
+                       public void onDataChange(@NonNull DataSnapshot snapshot) {
+                           int monete = snapshot.getValue(Integer.class);
+
+                           snapshot.getRef().setValue(monete+esercizio1.getMonete()).addOnSuccessListener(new OnSuccessListener<Void>() {
+                               @Override
+                               public void onSuccess(Void unused) {
+
+                               }
+                           });
+                       }
+
+                       @Override
+                       public void onCancelled(@NonNull DatabaseError error) {
+
+                       }
+                   });
+
+                    Query aggiorna_progressi_exp = database.getReference("Utenti")
+                            .child("Genitori")
+                            .child(sessionKey)
+                            .child("Bambini")
+                            .child(id_bambino)
+                            .child("esperienza");
+                    aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            int esperienza = snapshot.getValue(Integer.class);
+
+                            snapshot.getRef().setValue(esperienza+esercizio1.getEsperienza()).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+
+                                }
+                            });
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
+
+
                 }else{
                     new MaterialAlertDialogBuilder(v.getContext())
                             .setTitle("Dove vai?")

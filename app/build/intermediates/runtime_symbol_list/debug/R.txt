@@ -3572,7 +3572,6 @@ int id gridViewPersonaggi 0x7f08013b
 int id group_divider 0x7f08013c
 int id grouping 0x7f08013d
 int id groups 0x7f08013e
-int id guideline_bottom 0x7f08013f
 int id hardware 0x7f080140
 int id header_title 0x7f080141
 int id hideable 0x7f080142

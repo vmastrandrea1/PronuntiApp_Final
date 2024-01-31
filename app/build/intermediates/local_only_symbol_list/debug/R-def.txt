@@ -186,7 +186,6 @@ id genitore_cf
 id genitore_to_logopedista
 id gioco
 id gridViewPersonaggi
-id guideline_bottom
 id id_esercizio1
 id id_esercizio1_popup
 id id_esercizio2
