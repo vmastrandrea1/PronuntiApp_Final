@@ -5,10 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/ic_yellow_background"
     tools:context=".User_Logopedista"
     android:id="@+id/logopedistaDrawer"
     tools:openDrawer="start"
+    android:layout_gravity="fill_horizontal"
     android:fitsSystemWindows="true">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -21,19 +21,21 @@
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar_logopedista"
-                app:title="@string/app_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FF5722"
-                android:minHeight="?attr/actionBarSize" />
+                android:background="#FF1a73e8"
+                app:titleTextColor="@color/white"
+                app:tint="@android:color/white"
+                android:minHeight="?attr/actionBarSize"
+                app:title="@string/app_name" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
         <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/menu_logopedista_viewer"
             android:layout_width="match_parent"
-            android:layout_height="680dp"
-            android:layout_marginTop="65dp"
-            android:id="@+id/menu_logopedista_viewer"/>
+            android:layout_height="match_parent"
+            android:layout_marginTop="65dp"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

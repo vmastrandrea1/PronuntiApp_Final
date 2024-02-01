@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimaryDark">#083163</color>
+    <color name="colorPrimaryDark">#FF1a73e8</color>
     <color name="neutral_button_background_color">#FFFFFF</color>
+    <color name="coloreStatusBar">#FF1a73e8</color>
 </resources>

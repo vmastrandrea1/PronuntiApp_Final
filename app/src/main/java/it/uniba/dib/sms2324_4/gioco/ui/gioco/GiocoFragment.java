@@ -245,7 +245,7 @@ public class GiocoFragment extends Fragment {
                         default:
                             Glide.with(view.getContext())
                                     .asBitmap()
-                                    .load(R.drawable.bimbo)
+                                    .load(R.drawable.skin_bimbo)
                                     .diskCacheStrategy(DiskCacheStrategy.NONE) // Disabilita la cache per le GIF per evitare problemi di riproduzione
                                     .into(overlayImage);
                     }
@@ -479,7 +479,7 @@ public class GiocoFragment extends Fragment {
                         default:
                             Glide.with(rootView.getContext())
                                     .asBitmap()
-                                    .load(R.drawable.bimbo)
+                                    .load(R.drawable.skin_bimbo)
                                     .diskCacheStrategy(DiskCacheStrategy.NONE) // Disabilita la cache per le GIF per evitare problemi di riproduzione
                                     .into(overlayImage);
 

@@ -8,59 +8,34 @@
     android:padding="15dp">
 
     <LinearLayout
-        android:layout_marginTop="150dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
         android:gravity="center"
         android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="7dp"
-            android:layout_weight="1" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button190"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Crea Gioco Tipo1"
-            android:textColor="@color/white"
-            app:strokeColor="@color/white"
-            app:strokeWidth="1dp" />
+            android:text="Crea Gioco Tipo1" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button191"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Crea Gioco Tipo 2"
-            android:textColor="@color/white"
-            app:strokeColor="@color/white"
-            app:strokeWidth="1dp" />
+            android:text="Crea Gioco Tipo 2" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button192"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Crea Gioco Tipo 3"
-            android:textColor="@color/white"
-            app:strokeColor="@color/white"
-            app:strokeWidth="1dp" />
+            android:text="Crea Gioco Tipo 3" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"></TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="7dp"
-            android:layout_weight="1"></TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="7dp"
-            android:layout_weight="7"></TextView>
+
     </LinearLayout>
 
 </FrameLayout>

@@ -35,37 +35,37 @@
         android:roundIcon="@mipmap/ic_app_logo_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Material3.Light" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name="it.uniba.dib.sms2324_4.Register_Logopedista"
             android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name="it.uniba.dib.sms2324_4.Login_Logopedista"
             android:exported="true"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+            android:theme="@style/AppTheme.TransparentStatusBar" />
+        <activity
+            android:name="it.uniba.dib.sms2324_4.User"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
         <activity
             android:name="it.uniba.dib.sms2324_4.User_Logopedista"
             android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name="it.uniba.dib.sms2324_4.Register"
             android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name="it.uniba.dib.sms2324_4.Login"
             android:exported="true"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" >
+            android:theme="@style/AppTheme.TransparentStatusBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="it.uniba.dib.sms2324_4.User"
-            android:exported="false"
-            android:theme="@style/Theme.Material3.Light.NoActionBar" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

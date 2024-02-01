@@ -107,7 +107,7 @@ public class ShopFragment extends Fragment {
     private ArrayList<Item> creaListaPersonaggi() {
         ArrayList<Item> item = new ArrayList<>();
 
-        item.add(new Item(0,"Tony", R.drawable.bimbo, 0, descrizione0,Item.ItemType.PERSONAGGIO));
+        item.add(new Item(0,"Tony", R.drawable.skin_bimbo, 0, descrizione0,Item.ItemType.PERSONAGGIO));
         item.get(0).setAcquistato(true);
         item.add(new Item(1,"Torvaldo", R.drawable.skin_troll, 500, descrizione1,Item.ItemType.PERSONAGGIO));
         item.add(new Item(2,"Rex Fulminatus", R.drawable.skin_dinosauro, 600, descrizione2,Item.ItemType.PERSONAGGIO));

@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/ic_yellow_background"
     tools:context=".User"
     android:id="@+id/userDrawer"
     tools:openDrawer="start"
@@ -17,16 +16,9 @@
         android:layout_height="match_parent" >
 
         <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/toolbar"
-                app:title="@string/app_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#FF5722"
-                android:minHeight="?attr/actionBarSize" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -35,6 +27,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="65dp"/>
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF1a73e8"
+            app:titleTextColor="@color/white"
+            app:tint="@android:color/white"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:title="@string/app_name" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

@@ -5,33 +5,17 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/textViewMonete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Monete: 1000"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="30dp" />
 
-        <TextView
-            android:id="@+id/welcome_textview"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="30dp"
-            android:text="Benvenuto nello shop di Pronuntia!"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textViewMonete"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Monete: 1000"
-            android:textAlignment="center"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:padding="30dp" />
-
-    </LinearLayout>
 
     <GridView
         android:id="@+id/gridViewPersonaggi"

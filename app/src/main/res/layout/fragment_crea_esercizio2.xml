@@ -32,16 +32,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+
         <EditText
             android:id="@+id/frase1"
             android:layout_width="191dp"
             android:layout_height="64dp"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="492dp"
+            android:layout_marginBottom="408dp"
             android:background="@drawable/blubutton"
             android:hint="FRASE 1"
-            android:textColorHint="@color/white"
             android:textAlignment="center"
+            android:textColorHint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -58,8 +59,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frase1"
-            app:layout_constraintVertical_bias="1.0" />
-
+            app:layout_constraintVertical_bias="0.053" />
 
         <EditText
             android:id="@+id/frase3"
@@ -74,7 +74,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/frase2"
-            app:layout_constraintVertical_bias="0.666" />
+            app:layout_constraintVertical_bias="0.15" />
 
         <EditText
             android:id="@+id/id_esercizio2"

@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/sfondo_cielo"
     android:id="@+id/wallpaper_game">
 
     <!-- ImageView per il percorso-->
@@ -12,6 +13,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/map_sentiero"
         app:layout_constraintTop_toTopOf="parent">
 
 
@@ -111,6 +113,7 @@
             android:id="@+id/overlayImage"
             android:layout_width="50dp"
             android:layout_height="100dp"
+            android:src="@drawable/skin_bimbo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.299"

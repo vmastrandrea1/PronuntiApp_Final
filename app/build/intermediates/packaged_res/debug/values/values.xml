@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="colorPrimaryDark">#083163</color>
+    <color name="colorPrimaryDark">#FF1a73e8</color>
+    <color name="coloreStatusBar">#FF1a73e8</color>
+    <color name="ic_app_logo_background">#FFFFFF</color>
     <color name="neutral_button_background_color">#FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
     <string name="accedi_con_google">Accedi con Google</string>
@@ -38,9 +40,27 @@
     <string name="sei_gi_registrato_loggati">Sei già registrato? Clicca qui</string>
     <string name="sono_un_genitore">Sono un genitore</string>
     <string name="sono_un_logopedista">Sono un logopedista</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    
+        <item name="colorPrimary">#FF1a73e8</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#FF1a73e8</item>
+        <item name="android:statusBarColor">@color/coloreStatusBar</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+    <style name="AppTheme.TransparentStatusBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="Base.Theme.PronuntiApp" parent="Theme.Material3.DayNight.NoActionBar">
         
         
+    </style>
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
     </style>
     <style name="Theme.PronuntiApp" parent="Base.Theme.PronuntiApp"/>
     <style name="round_imageview">

@@ -1415,6 +1415,7 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorPrimaryDark
+color coloreStatusBar
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -1472,8 +1473,10 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gradient_shape
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_app_logo_background
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -3040,12 +3043,10 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable alieno
 drawable avd_hide_password
 drawable avd_show_password
 drawable bandierina
 drawable bg_btn
-drawable bimbo
 drawable blubutton
 drawable bordo_nero
 drawable btn_checkbox_checked_mtrl
@@ -3087,8 +3088,8 @@ drawable flora_fata
 drawable game
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
-drawable ic_action_name
-drawable ic_add
+drawable gradient_bg_item
+drawable gradient_header
 drawable ic_add_child
 drawable ic_app_logo_background
 drawable ic_arrow
@@ -3098,6 +3099,7 @@ drawable ic_check
 drawable ic_child
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_close
 drawable ic_coin
 drawable ic_dashboard_black_24dp
 drawable ic_date
@@ -3125,15 +3127,15 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_password
 drawable ic_paziente
 drawable ic_person
+drawable ic_personaggio
+drawable ic_scenario
 drawable ic_search_black_24
+drawable ic_sfondo
 drawable ic_shop_black_24dp
-drawable ic_yellow_background
 drawable img
 drawable img_1
 drawable istockphoto_1135615577_170667a
-drawable layout_bg
 drawable ligneo
-drawable luna_leprotta
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3223,13 +3225,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable ollie_drago
 drawable podio
-drawable polly_pinguina
 drawable primo_posto
 drawable regalo
-drawable robo_robot
-drawable rocky_razzo
 drawable rounded_bronze
 drawable rounded_dialog_background
 drawable rounded_dialog_background_faded
@@ -3243,6 +3241,7 @@ drawable sfondo_natura
 drawable sfondo_onde_di_colore
 drawable sfondo_spazioviola
 drawable shop
+drawable skin_bimbo
 drawable skin_dinosauro
 drawable skin_gelato
 drawable skin_polpo
@@ -3251,7 +3250,6 @@ drawable skin_stregone
 drawable skin_troll
 drawable terzo_posto
 drawable test_level_drawable
-drawable timmy_tigrotto
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -3351,6 +3349,7 @@ id annulla_btn
 id annulla_btn_2
 id antiClockwise
 id anticipate
+id appBarLayout
 id arc
 id asConfigured
 id async
@@ -3573,6 +3572,7 @@ id gridViewPersonaggi
 id group_divider
 id grouping
 id groups
+id guideline_bottom
 id hardware
 id header_title
 id hideable
@@ -3977,7 +3977,6 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id wallpaper_game
-id welcome_textview
 id west
 id wide
 id withText
@@ -4475,6 +4474,8 @@ style Animation_Material3_SideSheetDialog
 style Animation_Material3_SideSheetDialog_Left
 style Animation_Material3_SideSheetDialog_Right
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTheme
+style AppTheme_TransparentStatusBar
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -4755,6 +4756,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style DrawerArrowStyle
 style MD_ActionButton
 style MD_Dark
 style MD_Dialog_CheckPrompt

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#e4d5c1">
+    android:orientation="vertical">
 
     <!-- Titolo della schermata -->
     <ImageView
@@ -22,8 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_margin="10dp"
-        android:background="@drawable/rounded_scroll">
+        android:layout_margin="10dp">
 
         <!-- TableLayout con una riga per i riquadri -->
         <TableLayout
