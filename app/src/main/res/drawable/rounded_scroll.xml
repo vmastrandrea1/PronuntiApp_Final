@@ -11,7 +11,7 @@
 
     <!-- Immagine -->
     <item
-        android:drawable="@drawable/ligneo"
+        android:drawable="@drawable/sfondo_ligneo"
         android:gravity="center"
         />
 </layer-list>

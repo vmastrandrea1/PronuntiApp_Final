@@ -91,6 +91,7 @@ public class Register_Logopedista extends AppCompatActivity {
                 nome = String.valueOf(editTextName.getText());
                 cognome = String.valueOf(editTextSurname.getText());
                 cf = String.valueOf(editTextCF.getText());
+                cf = cf.toUpperCase();
                 email = String.valueOf(editTextEmail.getText());
                 password = String.valueOf(editTextPassword.getText());
 
@@ -144,11 +145,14 @@ public class Register_Logopedista extends AppCompatActivity {
                         throw new RuntimeException(e);
                     }
 
-                    Logopedisti logopedista = new Logopedisti(nome, cognome , cf.toUpperCase() ,  email , passwordCrypted);
+
+
+                    Logopedisti logopedista = new Logopedisti(nome, cognome , cf ,  email , passwordCrypted);
 
                     Query fetchData = FirebaseDatabase.getInstance(getString(R.string.db_url)).getReference("Utenti").child("Logopedisti")
                             .orderByChild("email")
                             .equalTo(email);
+                    String finalCf = cf;
                     fetchData.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -158,7 +162,7 @@ public class Register_Logopedista extends AppCompatActivity {
                                 progressBar.setVisibility(View.GONE);
                             }else{
                                 progressBar.setVisibility(View.GONE);
-                                reference.child("Utenti").child("Logopedisti").child(cf).setValue(logopedista);
+                                reference.child("Utenti").child("Logopedisti").child(finalCf).setValue(logopedista);
                                 SessionManagement sessionManagement = new SessionManagement(Register_Logopedista.this);
                                 sessionManagement.saveSession(logopedista,"lgoopedista",nome);
                                 Intent intent = new Intent(getApplicationContext() , User_Logopedista.class);

@@ -80,7 +80,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.item,parent,false);
+        View v = LayoutInflater.from(context).inflate(R.layout.figli,parent,false);
         return  new MyViewHolder(v , list , container , fragmentManager,sessionKey);
     }
 
@@ -139,8 +139,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 if(snapshot.exists()){
                                     String info_logo_string = "Dott. "
-                                            + snapshot.child("cognome").getValue().toString()
-                                            + " " + snapshot.child("nome").getValue().toString();
+                                            + snapshot.child("nome").getValue().toString()
+                                            + " " + snapshot.child("cognome").getValue().toString();
                                     child_therapist.setText(info_logo_string);
                                 }else{
                                     child_therapist.setText("");

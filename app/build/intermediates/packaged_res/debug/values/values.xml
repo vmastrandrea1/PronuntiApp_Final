@@ -62,6 +62,10 @@
         <item name="spinBars">true</item>
         <item name="color">@android:color/white</item>
     </style>
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
     <style name="Theme.PronuntiApp" parent="Base.Theme.PronuntiApp"/>
     <style name="round_imageview">
         <item name="cornerSize">70%</item>

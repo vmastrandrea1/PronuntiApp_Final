@@ -6,7 +6,7 @@
     android:layout_margin="8dp"
     android:padding="8dp"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="20dp"
     app:cardElevation="10dp"
     app:cardUseCompatPadding="true">
 
@@ -26,6 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_child"
+                android:paddingRight="5dp"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold" />

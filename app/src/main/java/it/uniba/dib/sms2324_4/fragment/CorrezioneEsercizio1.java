@@ -1,14 +1,10 @@
 package it.uniba.dib.sms2324_4.fragment;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
-import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.AudioFormat;
-import android.media.AudioRecord;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.net.Uri;
@@ -17,22 +13,18 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import android.os.Environment;
 import android.speech.tts.TextToSpeech;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.afollestad.materialdialogs.MaterialDialog;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.database.DataSnapshot;
@@ -52,14 +44,13 @@ import java.util.Calendar;
 
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
-import it.uniba.dib.sms2324_4.gioco.ui.gioco.GiocoFragment;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link correzioneEsercizio1#newInstance} factory method to
+ * Use the {@link CorrezioneEsercizio1#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class correzioneEsercizio1 extends DialogFragment {
+public class CorrezioneEsercizio1 extends DialogFragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -88,12 +79,12 @@ public class correzioneEsercizio1 extends DialogFragment {
 
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
-    public correzioneEsercizio1() throws IOException {
+    public CorrezioneEsercizio1() throws IOException {
     }
 
-    public static correzioneEsercizio1 newInstance(String id_bambino, String sessionKey, String id_esercizio1,
+    public static CorrezioneEsercizio1 newInstance(String id_bambino, String sessionKey, String id_esercizio1,
                                                    String id_logopedista , int pos_esercizio) throws IOException {
-        correzioneEsercizio1 fragment = new correzioneEsercizio1();
+        CorrezioneEsercizio1 fragment = new CorrezioneEsercizio1();
         Bundle args = new Bundle();
         args.putString(BAMBINO_ID, id_bambino);
         args.putString(SESSION_KEY, sessionKey);

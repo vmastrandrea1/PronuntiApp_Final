@@ -3,7 +3,7 @@ package it.uniba.dib.sms2324_4.creazione.esercizi;
 public class Esercizio2 {
     String frase_1, frase_2, frase_3, audio_soluzione , id_esercizio ;
     int conta_assegnazioni = 0;
-    int esperienza = 100;
+    int esperienza = 25;
     int monete = 10;
     boolean corretto;
     boolean eseguito;

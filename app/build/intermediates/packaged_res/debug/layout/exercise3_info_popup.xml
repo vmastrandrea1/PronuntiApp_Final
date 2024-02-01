@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="350dp"
     android:layout_height="475dp"
-    android:background="#630857"
-    android:padding="5dp"
     android:layout_gravity="center"
-    android:scrollbars="vertical">
-
-    <TextView
-        android:id="@+id/exercise3_text_close"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="end"
-        android:background="@drawable/cerclebackground"
-        android:gravity="center"
-        android:text="X"
-        android:textColor="@color/white"
-        android:textStyle="bold" />
+    android:layout_margin="25dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/colorPrimaryDark"
+    app:cardElevation="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="355dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#C600AC"
+        android:padding="5dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/exercise3_text_close"
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="5dp"
+            android:drawableEnd="@drawable/ic_close"
+            android:drawableTint="@color/white" />
+
+
 
         <ImageView
             android:id="@+id/exercise_profile_image"
@@ -30,14 +34,15 @@
             android:layout_height="123dp"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:src="@drawable/ic_exercise" />
+            android:src="@drawable/ic_exercise"
+            app:tint="@color/white" />
 
         <TextView
             android:id="@+id/id_esercizio3_popup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="20dp"
             android:text="Esercizio 3"
             android:textColor="@color/white"
             android:textStyle="bold" />
@@ -47,67 +52,83 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-80dp"
             android:text="Immagine Sbagliata: "
             android:textColor="@color/white" />
 
-        <ImageView
-            android:id="@+id/image_viewer_wrong_popup"
-            android:layout_width="131dp"
-            android:layout_height="103dp"
+        <androidx.cardview.widget.CardView
+            android:layout_width="109dp"
+            android:layout_height="98dp"
             android:layout_gravity="center"
+            android:layout_marginLeft="-80dp"
             android:layout_marginTop="15dp"
-            android:layout_marginRight="80dp" />
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_viewer_wrong_popup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+
 
         <TextView
             android:id="@+id/ex3_image_text_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="-138dp"
+            android:layout_marginRight="-80dp"
+            android:layout_marginTop="-145dp"
             android:text="Immagine Corretta: "
             android:textColor="@color/white" />
 
-        <ImageView
-            android:id="@+id/image_viewer_right_popup"
-            android:layout_width="131dp"
-            android:layout_height="103dp"
+        <androidx.cardview.widget.CardView
+            android:layout_width="109dp"
+            android:layout_height="98dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="85dp"
-            android:layout_marginTop="15dp" />
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image_viewer_right_popup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/ex3_parola_da_ascoltare"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
             android:text="Parola da Ascoltare: "
             android:textColor="@color/white" />
 
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_exercise_3"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="160dp"
+            android:text="Elimina Esercizio"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_delete"
+            android:background="@drawable/bg_btn"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deassign_exercise_3"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Rimuovi Assegnazione"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="10dp"
+            android:drawableStart="@drawable/ic_exercise"
+            android:background="@drawable/bg_btn"
+            android:visibility="gone"/>
     </LinearLayout>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/delete_exercise_3"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="180dp"
-        android:text="Elimina Esercizio"
-        android:layout_marginTop="20dp"
-        android:drawableStart="@drawable/ic_delete"
-        android:background="@drawable/bg_btn"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/deassign_exercise_3"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="-40dp"
-        android:text="Rimuovi Assegnazione"
-        android:drawableStart="@drawable/ic_exercise"
-        android:background="@drawable/bg_btn"
-        android:visibility="gone"/>
-</LinearLayout>
+</androidx.cardview.widget.CardView>

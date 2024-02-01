@@ -68,7 +68,8 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         Paziente paziente = list.get(position);
-        holder.firstName.setText(paziente.getNome());
+        String nomeCognome = paziente.getNome() + " " + paziente.getCognome();
+        holder.firstName.setText(nomeCognome);
     }
 
     @Override

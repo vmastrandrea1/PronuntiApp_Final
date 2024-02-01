@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/shop"
+        android:title="Shop"
+        android:icon="@drawable/ic_shop" />
+
+    <item
+        android:id="@+id/gioco"
+        android:title="Gioca"
+        android:icon="@drawable/ic_game" />
+
+    <item
+        android:id="@+id/classifica"
+        android:title="Classifica"
+        android:icon="@drawable/ic_classifica" />
+</menu>

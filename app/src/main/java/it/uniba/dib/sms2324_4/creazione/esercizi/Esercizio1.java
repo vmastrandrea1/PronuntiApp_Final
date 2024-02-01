@@ -92,7 +92,7 @@ public class Esercizio1 {
         this.id_esercizio = id_esercizio;
     }
 
-    int esperienza = 100;
+    int esperienza = 25;
     int monete = 10;
     boolean corretto , eseguito , esito;
 

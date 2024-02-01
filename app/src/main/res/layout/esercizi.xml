@@ -4,7 +4,7 @@
     android:layout_height="50dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="8dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="20dp"
     android:layout_margin="16dp">
 
     <LinearLayout
@@ -23,6 +23,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/ic_exercise"
+                android:paddingRight="5dp"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold" />

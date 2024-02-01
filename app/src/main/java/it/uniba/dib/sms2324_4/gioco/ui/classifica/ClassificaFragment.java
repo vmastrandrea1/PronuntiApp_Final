@@ -60,7 +60,7 @@ public class ClassificaFragment extends Fragment {
         // Itera per aggiungere il resto delle celle come hai già fatto
         for (int i = 3; i < 20; i++) {
             // Crea una nuova cella utilizzando la funzione createCellView
-            View cellView = createCellView("- " + (i + 1) + "  andrea leone " + "                               " + "1200");
+            View cellView = createCellView((i + 1) + ")  andrea leone " + "                               " + "1200");
 
             // Aggiungi la cella alla riga
             row = new TableRow(getActivity());

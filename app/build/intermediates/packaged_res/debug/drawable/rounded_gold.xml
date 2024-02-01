@@ -3,9 +3,8 @@
     <!-- Sfondo rettangolo personalizzato -->
     <item>
         <shape>
-            <corners android:radius="16dp" />
+            <corners android:radius="20dp" />
             <solid android:color="#FFD700" />
-            <stroke android:width="2dp" android:color="#333333"/>
         </shape>
     </item>
 
