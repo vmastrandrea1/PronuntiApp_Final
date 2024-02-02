@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -24,6 +25,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
@@ -49,6 +51,8 @@ public class GiocoFragment extends Fragment{
     private int id_sfondo_selezionato = 0 ;
     private int id_personaggio_selezionato = 0;
     private int id_map_selezionato = 0;
+
+    private boolean[] isFlagVisible = new boolean[6]; // Un array di boolean per memorizzare lo stato di visibilità delle bandierine
 
     public static GiocoFragment newInstance(String id_bambino, String sessionKey_genitore,String id_logopedista) {
         GiocoFragment fragment = new GiocoFragment();
@@ -88,6 +92,10 @@ public class GiocoFragment extends Fragment{
         View rootView = inflater.inflate(R.layout.fragment_gioco, container, false);
 
         currentButtonIndex = 0;
+
+        loadFlagVisibility();
+        
+        laodCurrentPosition();
 
         Query id_map = database.getReference("Utenti")
                 .child("Genitori")
@@ -247,6 +255,29 @@ public class GiocoFragment extends Fragment{
         return rootView;
     }
 
+    private void laodCurrentPosition() {
+        Query get_position = database.getReference("Utenti")
+                .child("Genitori")
+                .child(sessionKey_genitore)
+                .child("Bambini")
+                .child(id_bambino);
+        get_position.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.child("X_Position").exists()){
+                    overlayImage.setX(snapshot.child("X_Position").getValue(Float.class));
+                    overlayImage.setY(snapshot.child("Y_Position").getValue(Float.class));
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+    }
+
     private void animateImage(final ImageButton button) {
         float destinationX = button.getX() + button.getWidth() / 2 - overlayImage.getWidth() / 2;
         float destinationY = button.getY() + button.getHeight() / 2 - overlayImage.getHeight() / 2;
@@ -261,6 +292,20 @@ public class GiocoFragment extends Fragment{
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 overlayImage.setX((Float) animation.getAnimatedValue());
+
+                database.getReference("Utenti")
+                        .child("Genitori")
+                        .child(sessionKey_genitore)
+                        .child("Bambini")
+                        .child(id_bambino)
+                        .child("X_Position")
+                        .setValue(overlayImage.getX())
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
             }
         });
 
@@ -268,6 +313,20 @@ public class GiocoFragment extends Fragment{
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 overlayImage.setY((Float) animation.getAnimatedValue());
+
+                database.getReference("Utenti")
+                        .child("Genitori")
+                        .child(sessionKey_genitore)
+                        .child("Bambini")
+                        .child(id_bambino)
+                        .child("Y_Position")
+                        .setValue(overlayImage.getY())
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
             }
         });
 
@@ -277,12 +336,7 @@ public class GiocoFragment extends Fragment{
 
 
     private void setButtonClickListeners() {
-        DateFormat formatoData = new SimpleDateFormat("yyyy-MM-dd");
-        Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.HOUR_OF_DAY, 0);      // Imposta le ore a 0
-        cal.set(Calendar.MINUTE, 0);            // Imposta i minuti a 0
-        cal.set(Calendar.SECOND, 0);            // Imposta i secondi a 0
-        cal.set(Calendar.MILLISECOND, 0);
+        String data_terapia = getData();
 
         Query childExistant = database.getReference("Utenti")
                 .child("Logopedisti")
@@ -290,7 +344,7 @@ public class GiocoFragment extends Fragment{
                 .child("Pazienti")
                 .child(id_bambino)
                 .child("Terapie")
-                .child(formatoData.format(cal.getTime()));
+                .child(data_terapia);
 
         buttons[5].setVisibility(View.GONE);
 
@@ -302,24 +356,28 @@ public class GiocoFragment extends Fragment{
                     for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
                         for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
                             int buttonIndex = i;
-                            buttons[i].setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    if (buttonIndex == currentButtonIndex) {
-                                        animateImage(buttons[buttonIndex]);
-                                        buttons[buttonIndex].setVisibility(View.GONE);
-                                        try {
-                                            apriEsercizio(dataSnapshot1,buttonIndex+1);
-                                        } catch (IOException e) {
-                                            throw new RuntimeException(e);
+                            if(dataSnapshot1.child("eseguito").exists()){
+                                currentButtonIndex++;
+                            }else{
+                                buttons[i].setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        if (currentButtonIndex == buttonIndex) {
+                                            animateImage(buttons[buttonIndex]);
+                                            buttons[buttonIndex].setVisibility(View.GONE);
+                                            try {
+                                                apriEsercizio(dataSnapshot1,buttonIndex+1);
+                                            } catch (IOException e) {
+                                                throw new RuntimeException(e);
+                                            }
+                                            currentButtonIndex++;
                                         }
-                                        currentButtonIndex++;
+                                        if(currentButtonIndex == 5){
+                                            buttons[5].setVisibility(View.VISIBLE);
+                                        }
                                     }
-                                    if(currentButtonIndex == 5){
-                                        buttons[5].setVisibility(View.VISIBLE);
-                                    }
-                                }
-                            });
+                                });
+                            }
                         }
                         i++;
                     }
@@ -341,6 +399,16 @@ public class GiocoFragment extends Fragment{
         });
     }
 
+    private String getData() {
+        DateFormat formatoData = new SimpleDateFormat("yyyy-MM-dd");
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, 0);      // Imposta le ore a 0
+        cal.set(Calendar.MINUTE, 0);            // Imposta i minuti a 0
+        cal.set(Calendar.SECOND, 0);            // Imposta i secondi a 0
+        cal.set(Calendar.MILLISECOND, 0);
+        return formatoData.format(cal.getTime());
+    }
+
     private void apriEsercizio(DataSnapshot dataSnapshot1 , int i) throws IOException {
         if (dataSnapshot1.child("id_esercizio").
                 getValue().toString().startsWith("1_")) {
@@ -354,5 +422,39 @@ public class GiocoFragment extends Fragment{
                             sessionKey_genitore,esercizio1.getId_esercizio(),id_logopedista , i)
                     .show(getParentFragmentManager() , "Dimmi che immagine è rappresentata");
         }
+    }
+
+    // Metodo per caricare lo stato delle bandierine visibili
+    private void loadFlagVisibility() {
+        Query fetch_visibilty = database.getReference("Utenti")
+                .child("Logopedisti")
+                .child(id_logopedista)
+                .child("Pazienti")
+                .child(id_bambino)
+                .child("Terapie")
+                .child(getData());
+        fetch_visibilty.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                int i = 0;
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
+                        if(dataSnapshot1.child("eseguito").exists()){
+                            isFlagVisible[i] = false; // Preimposta lo stato delle bandierine a true se non esiste alcun valore salvato
+                            buttons[i].setVisibility(View.GONE);
+                        }else{
+                            isFlagVisible[i] = true; // Preimposta lo stato delle bandierine a true se non esiste alcun valore salvato
+                            buttons[i].setVisibility(View.VISIBLE);
+                        }
+                    }
+                    i++;
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 }
