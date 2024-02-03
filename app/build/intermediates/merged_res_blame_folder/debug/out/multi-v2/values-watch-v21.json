@@ -4,7 +4,7 @@
             "outputFile": "it.uniba.dib.sms2324_4.app-mergeDebugResources-38:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LaFFurb\\.gradle\\caches\\transforms-3\\551df875131cd60c9e76c62a2070e8b3\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\Stefano\\.gradle\\caches\\transforms-3\\551df875131cd60c9e76c62a2070e8b3\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

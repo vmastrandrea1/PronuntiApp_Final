@@ -552,8 +552,10 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 if(snapshot.exists()){
                                     verify_therapy.setVisibility(View.VISIBLE);
+                                    delete_therapy.setVisibility(View.GONE);
                                 }else{
                                     verify_therapy.setVisibility(View.GONE);
+                                    delete_therapy.setVisibility(View.VISIBLE);
                                 }
                             }
 

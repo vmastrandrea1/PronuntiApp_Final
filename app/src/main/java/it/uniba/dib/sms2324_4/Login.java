@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity {
     TextInputEditText editTextEmail , editTextPassword;
     Button buttonLog;
     Button googleLogin_btn;
-    Button switchToLogo;
+    TextView switchToLogo;
     CheckBox stayLogged;
 
     //Variabili Firebase

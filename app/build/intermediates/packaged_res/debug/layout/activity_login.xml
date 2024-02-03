@@ -1,120 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:paddingHorizontal="10dp"
     tools:context=".Login">
 
-    <com.airbnb.lottie.LottieAnimationView
+    <!-- Sono un logopedista -->
+    <TextView
+        android:id="@+id/genitore_to_logopedista"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:lottie_rawRes="@raw/background"
-        android:scaleType="centerCrop"
-        app:lottie_loop="true"
-        app:lottie_autoPlay="true"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:drawablePadding="5dp"
+        android:hint="@string/sono_un_logopedista"
+        android:padding="20dp"
+        android:textAlignment="textEnd"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck"
+        tools:layout_editor_absoluteX="16dp"
+        app:drawableRightCompat="@drawable/ic_arrow_right"
+        app:drawableTint="@color/white" />
 
-    <LinearLayout
+    <!-- Accedi come genitore -->
+    <TextView
+        android:id="@+id/login_genitore"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="15dp"
-        android:layout_gravity="center"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:paddingStart="17dp"
+        android:paddingTop="130dp"
+        android:paddingBottom="25dp"
+        android:text="@string/login_genitore"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="10dp"
+        tools:ignore="RtlSymmetry" />
 
-        <TextView
-            android:text="@string/login_genitore"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:layout_marginBottom="20dp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView"
+        android:layout_width="0dp"
+        android:layout_height="700dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_genitore">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/email"
-                android:drawableLeft="@drawable/ic_person"
-                android:drawablePadding="10dp"
-                android:hint="@string/email"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            </com.google.android.material.textfield.TextInputEditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password"
-                android:drawableStart="@drawable/ic_key"
-                android:drawablePadding="10dp"
-                android:hint="@string/password"
-                android:textColorHint="@color/black"
-                android:textColor="@color/black"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword" >
-            </com.google.android.material.textfield.TextInputEditText>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:visibility="gone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            tools:ignore="ExtraText">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <android.widget.Button
-                android:text="@string/login"
-                android:id="@+id/btn_login"
-                android:background="@drawable/bg_btn"
-                android:layout_width="wrap_content"
+            <!-- Email -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginLeft="140dp" />
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:background="@color/white"
+                    android:textColorHint="@color/blue"
+                    android:textStyle="bold"
+                    android:theme="@style/TextInputEditTextTheme" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Password -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/blue"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Pulsante Accedi -->
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/blue"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/rounded_corners_button"
+                android:text="@string/login"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <!-- Non hai un account? Registrati -->
+            <TextView
+                android:id="@+id/registerNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="5dp"
+                android:hint="@string/non_hai_un_account_registrati"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/refreshing"
+                android:visibility="gone" />
+
 
         </LinearLayout>
 
+    </androidx.cardview.widget.CardView>
 
-
-        <TextView
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:layout_marginTop="20dp"
-            android:id="@+id/registerNow"
-            android:text="@string/non_sei_registrato_registrati_adesso"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <android.widget.Button
-            android:text="@string/sono_un_logopedista"
-            android:id="@+id/genitore_to_logopedista"
-            android:background="@drawable/bg_btn"
-            android:drawableStart="@drawable/ic_person"
-            android:drawablePadding="5dp"
-            android:layout_width="185dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"/>
-    </LinearLayout>
-
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

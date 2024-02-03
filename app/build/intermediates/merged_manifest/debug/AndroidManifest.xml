@@ -35,31 +35,31 @@
         android:roundIcon="@mipmap/ic_app_logo_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/BlueTheme" >
         <activity
             android:name="it.uniba.dib.sms2324_4.Register_Logopedista"
             android:exported="false"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/PurpleTheme" />
         <activity
             android:name="it.uniba.dib.sms2324_4.Login_Logopedista"
             android:exported="true"
-            android:theme="@style/AppTheme.TransparentStatusBar" />
+            android:theme="@style/PurpleTheme" />
         <activity
             android:name="it.uniba.dib.sms2324_4.User"
             android:exported="false"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/BlueTheme" />
         <activity
             android:name="it.uniba.dib.sms2324_4.User_Logopedista"
             android:exported="false"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/PurpleTheme" />
         <activity
             android:name="it.uniba.dib.sms2324_4.Register"
             android:exported="false"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/BlueTheme" />
         <activity
             android:name="it.uniba.dib.sms2324_4.Login"
             android:exported="true"
-            android:theme="@style/AppTheme.TransparentStatusBar" >
+            android:theme="@style/BlueTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

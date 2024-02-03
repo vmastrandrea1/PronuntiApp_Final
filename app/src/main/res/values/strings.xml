@@ -4,8 +4,8 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="register">Registrati</string>
-    <string name="sei_gi_registrato_loggati">Sei già registrato? Clicca qui</string>
-    <string name="non_sei_registrato_registrati_adesso">Non sei registrato? Clicca qui</string>
+    <string name="hai_gia_un_account_accedi">Hai già un account? Accedi</string>
+    <string name="non_hai_un_account_registrati">Non hai un account? Registrati</string>
     <string name="logout">Esci</string>
     <string name="client_id">928330153737-rq866lt51639dmhg84ssh8m4kqmdlqct.apps.googleusercontent.com</string>
     <string name="accedi_con_google">Accedi con Google</string>
@@ -14,10 +14,14 @@
     <string name="codice_fiscale">Codice fiscale</string>
     <string name="db_url">https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/</string>
     <string name="logopedista">Logopedista</string>
-    <string name="login_genitore">Accesso Genitore</string>
-    <string name="login_logopedista">Accesso Logopedista</string>
+    <string name="login_genitore">Accedi come genitore</string>
+    <string name="login_logopedista">Accedi come logopedista</string>
+    <string name="crea_un_account_genitore">Crea un account genitore</string>
+    <string name="crea_un_account_logopedista">Crea un account logopedista</string>
     <string name="sono_un_genitore">Sono un genitore</string>
     <string name="sono_un_logopedista">Sono un logopedista</string>
+    <string name="data_di_nascita">Data di nascita</string>
+    <string name="refreshing">Caricamento</string>
     <string name="nav_open">Navigation Open\n</string>
     <string name="nav_close">Navigation Close\n\n</string>
     <!-- TODO: Remove or change this placeholder text -->

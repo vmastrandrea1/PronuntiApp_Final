@@ -25,6 +25,7 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.9" />
 
+
     <Button
         android:id="@+id/AddButton"
         android:layout_width="100dp"
@@ -32,10 +33,10 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="100dp"
         android:drawableTop="@drawable/ic_add_child"
-        android:drawableTint="@color/black"
-        android:backgroundTint="@color/white"
-        android:contentDescription="@string/add_button_description"
+        android:drawableTint="@color/white"
+        android:background="@drawable/rounded_button_logopedista"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

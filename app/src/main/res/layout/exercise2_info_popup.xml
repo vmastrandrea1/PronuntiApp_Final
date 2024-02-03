@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:layout_margin="25dp"
     app:cardCornerRadius="20dp"
-    android:backgroundTint="@color/colorPrimaryDark"
+    android:backgroundTint="@color/blue"
     app:cardElevation="10dp">
 
     <LinearLayout
@@ -55,7 +55,7 @@
 
             <TextView
                 android:id="@+id/frase1_tv"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Frase 1: "
                 android:textColor="@color/white"
@@ -63,7 +63,7 @@
                 android:layout_marginTop="5dp"/>
             <TextView
                 android:id="@+id/frase2_tv"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Frase 2: "
                 android:textColor="@color/white"
@@ -71,7 +71,7 @@
                 android:layout_marginTop="5dp"/>
             <TextView
                 android:id="@+id/frase3_tv"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Frase 3: "
                 android:textColor="@color/white"
@@ -84,7 +84,7 @@
             android:id="@+id/delete_exercise_2"
             android:layout_width="150dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="180dp"
+            android:layout_marginLeft="160dp"
             android:background="@drawable/bg_btn"
             android:drawableStart="@drawable/ic_delete"
             android:text="Elimina Esercizio" />

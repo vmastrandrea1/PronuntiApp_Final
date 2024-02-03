@@ -14,32 +14,32 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_app_logo_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
+        android:theme="@style/BlueTheme"
         tools:targetApi="26">
         <activity
             android:name=".Register_Logopedista"
             android:exported="false"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/PurpleTheme" />
         <activity
             android:name=".Login_Logopedista"
             android:exported="true"
-            android:theme="@style/AppTheme.TransparentStatusBar" />
+            android:theme="@style/PurpleTheme" />
         <activity
             android:name=".User"
             android:exported="false"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/BlueTheme" />
         <activity
             android:name=".User_Logopedista"
             android:exported="false"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/PurpleTheme" />
         <activity
             android:name=".Register"
             android:exported="false"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/BlueTheme" />
         <activity
             android:name=".Login"
             android:exported="true"
-            android:theme="@style/AppTheme.TransparentStatusBar">
+            android:theme="@style/BlueTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

@@ -5,7 +5,7 @@
     android:gravity="bottom"
     android:layout_width="match_parent"
     android:layout_height="250dp"
-    android:background="@drawable/gradient_header">
+    android:background="@drawable/gradient_header_blue">
 
     <ImageView
         android:layout_width="70dp"

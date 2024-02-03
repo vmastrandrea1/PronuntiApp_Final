@@ -48,7 +48,7 @@ public class Login_Logopedista extends AppCompatActivity {
     TextInputEditText editTextEmail , editTextPassword;
     Button buttonLog;
     Button googleLogin_btn;
-    Button switchToLogin;
+    TextView switchToLogin;
 
     //Variabili Firebase
     FirebaseAuth mAuth;

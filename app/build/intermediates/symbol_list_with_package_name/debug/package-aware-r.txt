@@ -1415,8 +1415,6 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
-color colorPrimaryDark
-color coloreStatusBar
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -2109,7 +2107,6 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
-color neutral_button_background_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color primary_dark_material_dark
@@ -2120,6 +2117,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color purple
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -3047,6 +3045,7 @@ drawable abc_vector_test
 drawable alieno
 drawable avd_hide_password
 drawable avd_show_password
+drawable background_grey_rounded_corner_20dp
 drawable bandierina
 drawable bg_btn
 drawable bimbo
@@ -3092,13 +3091,15 @@ drawable game
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient_bg_item
-drawable gradient_header
+drawable gradient_header_blue
+drawable gradient_header_purple
 drawable ic_action_name
 drawable ic_add
 drawable ic_add_child
 drawable ic_app_logo_background
 drawable ic_arrow
 drawable ic_arrow_back_black_24
+drawable ic_arrow_right
 drawable ic_baseline_arrow_drop_down_circle_24
 drawable ic_check
 drawable ic_child
@@ -3244,6 +3245,9 @@ drawable regalo
 drawable robo_robot
 drawable rocky_razzo
 drawable rounded_bronze
+drawable rounded_button
+drawable rounded_button_logopedista
+drawable rounded_corners_button
 drawable rounded_dialog_background
 drawable rounded_dialog_background_faded
 drawable rounded_gold
@@ -3481,6 +3485,7 @@ id cos
 id counterclockwise
 id cradle
 id crea_esercizio_2
+id createAccount
 id currentState
 id custom
 id customPanel
@@ -3656,6 +3661,8 @@ id list_item
 id literal
 id loginNow
 id loginNow_logopedista
+id login_genitore
+id login_logopedista
 id logopedistaDrawer
 id logopedista_to_genitore
 id lottie_layer_name
@@ -3740,6 +3747,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id myCardView
 id name
 id nameView
 id name_logopedista
@@ -4217,6 +4225,7 @@ layout md_listitem
 layout md_listitem_multichoice
 layout md_listitem_singlechoice
 layout menu_header
+layout menu_header_logopedista
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -4346,6 +4355,9 @@ string common_signin_button_text
 string common_signin_button_text_long
 string conferma_password
 string copy_toast_msg
+string crea_un_account_genitore
+string crea_un_account_logopedista
+string data_di_nascita
 string db_url
 string email
 string error_a11y_label
@@ -4361,6 +4373,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hai_gia_un_account_accedi
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -4473,7 +4486,7 @@ string mtrl_timepicker_confirm
 string nav_close
 string nav_open
 string nome
-string non_sei_registrato_registrati_adesso
+string non_hai_un_account_registrati
 string password
 string password_toggle_content_description
 string path_password_eye
@@ -4481,6 +4494,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
+string refreshing
 string register
 string registra_bambino
 string registra_paziente
@@ -4490,7 +4504,6 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
-string sei_gi_registrato_loggati
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string sono_un_genitore
@@ -4507,8 +4520,6 @@ style Animation_Material3_SideSheetDialog
 style Animation_Material3_SideSheetDialog_Left
 style Animation_Material3_SideSheetDialog_Right
 style Animation_MaterialComponents_BottomSheetDialog
-style AppTheme
-style AppTheme_TransparentStatusBar
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -4786,6 +4797,7 @@ style Base_Widget_MaterialComponents_Snackbar
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
 style Base_Widget_MaterialComponents_TextView
+style BlueTheme
 style CardView
 style CardView_Dark
 style CardView_Light
@@ -4824,6 +4836,7 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style MyHintTextAppearance
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -4838,6 +4851,8 @@ style Platform_V21_AppCompat_Light
 style Platform_V25_AppCompat
 style Platform_V25_AppCompat_Light
 style Platform_Widget_AppCompat_Spinner
+style PurpleSelected
+style PurpleTheme
 style RoundedImageView
 style RtlOverlay_DialogWindowTitle_AppCompat
 style RtlOverlay_Widget_AppCompat_ActionBar_TitleItem
@@ -5038,6 +5053,7 @@ style TextAppearance_MaterialComponents_Tooltip
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
+style TextInputEditTextTheme
 style Theme_AppCompat
 style Theme_AppCompat_CompactMenu
 style Theme_AppCompat_DayNight

@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:layout_margin="25dp"
     app:cardCornerRadius="20dp"
-    android:backgroundTint="@color/colorPrimaryDark"
+    android:backgroundTint="@color/blue"
     app:cardElevation="10dp">
 
     <LinearLayout

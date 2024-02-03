@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="blue">#002BFF</color>
-    <color name="colorPrimaryDark">#FF1a73e8</color>
-    <color name="coloreStatusBar">#FF1a73e8</color>
+    <color name="blue">#FF1a73e8</color>
     <color name="ic_app_logo_background">#FFFFFF</color>
-    <color name="neutral_button_background_color">#FFFFFF</color>
+    <color name="purple">#FF673AB7</color>
     <color name="white">#FFFFFFFF</color>
     <string name="accedi_con_google">Accedi con Google</string>
     <string name="add_button_description">Aggiungi un nuovo paziente</string>
@@ -14,6 +12,9 @@
     <string name="codice_fiscale">Codice fiscale</string>
     <string name="cognome">Cognome</string>
     <string name="conferma_password">Conferma Password</string>
+    <string name="crea_un_account_genitore">Crea un account genitore</string>
+    <string name="crea_un_account_logopedista">Crea un account logopedista</string>
+    <string name="data_di_nascita">Data di nascita</string>
     <string name="db_url">https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/</string>
     <string name="email">Email</string>
     <string name="gcm_defaultSenderId" translatable="false">928330153737</string>
@@ -21,51 +22,69 @@
     <string name="google_app_id" translatable="false">1:928330153737:android:a3083ebf5ab1312d0c1dd8</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBrtytQf2FQAsQ1gEXu5N7VOkkb5GkSz5c</string>
     <string name="google_storage_bucket" translatable="false">pronuntiapp-register.appspot.com</string>
+    <string name="hai_gia_un_account_accedi">Hai già un account? Accedi</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="login">Accedi</string>
-    <string name="login_genitore">Accesso Genitore</string>
-    <string name="login_logopedista">Accesso Logopedista</string>
+    <string name="login_genitore">Accedi come genitore</string>
+    <string name="login_logopedista">Accedi come logopedista</string>
     <string name="logopedista">Logopedista</string>
     <string name="logout">Esci</string>
     <string name="nav_close">Navigation Close\n\n</string>
     <string name="nav_open">Navigation Open\n</string>
     <string name="nome">Nome</string>
-    <string name="non_sei_registrato_registrati_adesso">Non sei registrato? Clicca qui</string>
+    <string name="non_hai_un_account_registrati">Non hai un account? Registrati</string>
     <string name="password">Password</string>
     <string name="project_id" translatable="false">pronuntiapp-register</string>
+    <string name="refreshing">Caricamento</string>
     <string name="register">Registrati</string>
     <string name="registra_bambino">Registra bambino</string>
     <string name="registra_paziente">Registra Paziente</string>
     <string name="registrazione_bambini">Registrazione Bambini</string>
     <string name="registrazione_paziente">Registrazione Paziente</string>
-    <string name="sei_gi_registrato_loggati">Sei già registrato? Clicca qui</string>
     <string name="sono_un_genitore">Sono un genitore</string>
     <string name="sono_un_logopedista">Sono un logopedista</string>
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-    
-        <item name="colorPrimary">#FF1a73e8</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">#FF1a73e8</item>
-        <item name="android:statusBarColor">@color/coloreStatusBar</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-    </style>
-    <style name="AppTheme.TransparentStatusBar" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="windowNoTitle">true</item>
-    </style>
     <style name="Base.Theme.PronuntiApp" parent="Theme.Material3.DayNight.NoActionBar">
         
         
+    </style>
+    <style name="BlueTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorControlActivated">@color/blue</item>
     </style>
     <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
         <item name="spinBars">true</item>
         <item name="color">@android:color/white</item>
     </style>
+    <style name="MyHintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="PurpleSelected">
+        <item name="colorControlActivated">@color/purple</item>
+    </style>
+    <style name="PurpleTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:statusBarColor">@color/purple</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorControlActivated">@color/purple</item>
+    </style>
     <style name="RoundedImageView">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">20dp</item>
+    </style>
+    <style name="TextInputEditTextTheme">
+        <item name="hintTextAppearance">@style/MyHintTextAppearance</item>
     </style>
     <style name="Theme.PronuntiApp" parent="Base.Theme.PronuntiApp"/>
     <style name="round_imageview">

@@ -33,8 +33,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="100dp"
         android:drawableTop="@drawable/ic_exercise"
-        android:drawableTint="@color/black"
-        android:backgroundTint="@color/white"
+        android:drawableTint="@color/white"
+        android:background="@drawable/rounded_button_logopedista"
         android:contentDescription="@string/add_button_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Base application theme -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-    <!-- Customize your theme here. -->
-        <item name="colorPrimary">#FF1a73e8</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">#FF1a73e8</item>
-        <item name="android:statusBarColor">@color/coloreStatusBar</item>
+    <style name="BlueTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorControlActivated">@color/blue</item>
     </style>
 
-    <style name="AppTheme.TransparentStatusBar" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:windowTranslucentStatus">true</item>
+    <style name="PurpleTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:statusBarColor">@color/purple</item>
+        <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="colorControlActivated">@color/purple</item>
     </style>
 
     <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
@@ -26,6 +33,22 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">20dp</item>
     </style>
+
+    <style name="TextInputEditTextTheme">
+        <item name="hintTextAppearance">@style/MyHintTextAppearance</item>
+    </style>
+
+    <style name="MyHintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="PurpleSelected">
+        <item name="colorControlActivated">@color/purple</item>
+    </style>
+
+
+
+
 
 </resources>
 

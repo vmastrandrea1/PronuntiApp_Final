@@ -33,7 +33,7 @@
             android:id="@+id/toolbar_logopedista"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#FF1a73e8"
+            android:background="@color/purple"
             app:titleTextColor="@color/white"
             app:tint="@android:color/white"
             android:minHeight="?attr/actionBarSize"
@@ -47,7 +47,7 @@
         android:layout_height="match_parent"
         android:id="@+id/menuView_logopedista"
         app:menu="@menu/menu_logopedista"
-        app:headerLayout="@layout/menu_header"
+        app:headerLayout="@layout/menu_header_logopedista"
         android:background="@color/white"
         android:layout_gravity="start" />
 
