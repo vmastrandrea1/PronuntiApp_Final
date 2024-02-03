@@ -128,7 +128,6 @@ id bandierina_2
 id bandierina_3
 id bandierina_4
 id bandierina_5
-id birthdate
 id bottomBar
 id btn_login
 id btn_login_logopedista

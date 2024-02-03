@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "it.uniba.dib.sms2324_4.app-mergeDebugResources-38:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "it.uniba.dib.sms2324_4.app-mergeDebugResources-3:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Stefano\\.gradle\\caches\\transforms-3\\551df875131cd60c9e76c62a2070e8b3\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,124,193,263,337,413,472,543",
-                        "endColumns": "68,68,69,73,75,58,70,67",
-                        "endOffsets": "119,188,258,332,408,467,538,606"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Stefano\\.gradle\\caches\\transforms-3\\45b7b7d15e77632a57e050ac9279abfb\\transformed\\material-1.10.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\masvi\\AndroidStudioProjects\\caches\\transforms-3\\45b7b7d15e77632a57e050ac9279abfb\\transformed\\material-1.10.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
@@ -33,7 +23,17 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Stefano\\.gradle\\caches\\transforms-3\\d0b05d09400d5b1de1f6513829f0d81b\\transformed\\core-3.3.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "source": "C:\\Users\\masvi\\AndroidStudioProjects\\caches\\transforms-3\\551df875131cd60c9e76c62a2070e8b3\\transformed\\appcompat-1.6.1\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\masvi\\AndroidStudioProjects\\caches\\transforms-3\\d0b05d09400d5b1de1f6513829f0d81b\\transformed\\core-3.3.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

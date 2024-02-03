@@ -207,9 +207,8 @@ public class Login extends AppCompatActivity {
                                     String nome = dataSnapshot.child("nome").getValue().toString();
                                     String cognome = dataSnapshot.child("cognome").getValue().toString();
                                     String cf = dataSnapshot.child("cf").getValue().toString();
-                                    String dataDiNascita = dataSnapshot.child("dataDiNascita").getValue().toString();
 
-                                    Genitori user = new Genitori(nome , cognome , cf , dataDiNascita , email , passwordCrypted);
+                                    Genitori user = new Genitori(nome , cognome , cf , email , passwordCrypted);
                                     SessionManagement sessionManagement = new SessionManagement(Login.this);
                                     sessionManagement.saveSession(user,"genitore",nome);
 

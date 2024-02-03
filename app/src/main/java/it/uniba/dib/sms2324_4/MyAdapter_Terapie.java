@@ -124,6 +124,8 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
         TextView tvTherapyName;
 
         int conta_assegnazioni = 0;
+
+        boolean eseguito = false;
         private final FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
         public MyViewHolder(@NonNull View itemView , ArrayList<String> list ,String  sessionKey ,
@@ -544,13 +546,19 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                         .child("Pazienti")
                                         .child(cfPaziente)
                                         .child("Terapie")
-                                        .child(list.get(pos))
-                                        .orderByChild("eseguito")
-                                        .equalTo(true);
+                                        .child(list.get(pos));
                         correzione_terapia.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                if(snapshot.exists()){
+                                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                    for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
+                                        if(dataSnapshot1.child("eseguito").exists()) {
+                                            eseguito = true;
+                                        }
+                                    }
+                                }
+
+                                if(eseguito){
                                     verify_therapy.setVisibility(View.VISIBLE);
                                     delete_therapy.setVisibility(View.GONE);
                                 }else{
@@ -565,6 +573,8 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                             }
                         });
 
+
+
                         verify_therapy.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
@@ -573,7 +583,89 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                 dialog.dismiss();
                                 dialog1.setContentView(R.layout.view_exercises_results);
 
+                                TextView TVesercizio_1 = dialog1.findViewById(R.id.TVesercizio_1);
+                                TextView TVesercizio_2 = dialog1.findViewById(R.id.TVesercizio_2);
+                                TextView TVesercizio_3 = dialog1.findViewById(R.id.TVesercizio_3);
+                                TextView TVesercizio_4 = dialog1.findViewById(R.id.TVesercizio_4);
+                                TextView TVesercizio_5 = dialog1.findViewById(R.id.TVesercizio_5);
 
+                                Query getExercises = database.getReference("Utenti")
+                                        .child("Logopedisti")
+                                        .child(sessionKey)
+                                        .child("Pazienti")
+                                        .child(cfPaziente)
+                                        .child("Terapie")
+                                        .child(list.get(pos));
+
+                                getExercises.addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                            for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
+                                                if(dataSnapshot.getKey().compareTo("esercizio_1") == 0){
+                                                    TVesercizio_1.setText(dataSnapshot1.child("id_esercizio").getValue(String.class));
+                                                }
+                                                if(dataSnapshot.getKey().compareTo("esercizio_2") == 0){
+                                                    TVesercizio_2.setText(dataSnapshot1.child("id_esercizio").getValue(String.class));
+                                                }
+                                                if(dataSnapshot.getKey().compareTo("esercizio_3") == 0){
+                                                    TVesercizio_3.setText(dataSnapshot1.child("id_esercizio").getValue(String.class));
+                                                }
+                                                if(dataSnapshot.getKey().compareTo("esercizio_4") == 0){
+                                                    TVesercizio_4.setText(dataSnapshot1.child("id_esercizio").getValue(String.class));
+                                                }
+                                                if(dataSnapshot.getKey().compareTo("esercizio_5") == 0){
+                                                    TVesercizio_5.setText(dataSnapshot1.child("id_esercizio").getValue(String.class));
+                                                }
+                                            }
+                                        }
+
+                                        //VISUALIZZAZIONE ANDAMENTO ESERCIZI
+                                        TVesercizio_1.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+                                            }
+                                        });
+
+                                        TVesercizio_2.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+                                            }
+                                        });
+
+                                        TVesercizio_3.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+                                            }
+                                        });
+
+                                        TVesercizio_4.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+                                            }
+                                        });
+
+                                        TVesercizio_5.setOnClickListener(new View.OnClickListener() {
+                                            @Override
+                                            public void onClick(View v) {
+
+                                            }
+                                        });
+
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                    }
+                                });
+
+                                dialog1.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                                dialog1.show();
                             }
                         });
 

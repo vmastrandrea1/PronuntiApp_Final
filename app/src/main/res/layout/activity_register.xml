@@ -93,31 +93,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Data di nascita -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="26dp"
-                android:paddingEnd="16dp">
-
-                <EditText
-                    android:id="@+id/birthdate"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="-10dp"
-                    android:textColorHint="@color/blue"
-                    android:maxLength="16"
-                    android:textStyle="bold"
-                    android:hint="@string/data_di_nascita"
-                    android:inputType="none"
-                    android:focusable="false"
-                    android:clickable="true"
-                    android:background="@color/white"
-                    android:autofillHints="" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
             <!-- Email -->
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"

@@ -95,7 +95,6 @@ public class User extends AppCompatActivity {
                        String nome = dataSnapshot.child("nome").getValue().toString();
                        String cognome = dataSnapshot.child("cognome").getValue().toString();
                        String cf = dataSnapshot.child("cf").getValue().toString();
-                       String dataDiNascita = dataSnapshot.child("dataDiNascita").getValue().toString();
                        String email = dataSnapshot.child("email").getValue().toString();
                        String password = dataSnapshot.child("password").getValue().toString();
 

@@ -21,7 +21,7 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="410dp"
         android:background="@drawable/bg_btn"
-        android:drawableStart="@drawable/ic_delete"
+        android:drawableStart="@drawable/ic_exercise"
         android:text="Correggi Esercizio"
         android:visibility="gone"/>
 

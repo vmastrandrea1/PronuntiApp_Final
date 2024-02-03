@@ -6,17 +6,15 @@ public class Genitori {
     String nome;
     String cognome;
     String cf;
-    String dataDiNascita;
     String email;
     String password;
 
     Bambini figlio;
 
-    public Genitori(String nome, String cognome, String cf, String dataDiNascita, String email, String password) {
+    public Genitori(String nome, String cognome, String cf, String email, String password) {
         this.nome = nome;
         this.cognome = cognome;
         this.cf = cf;
-        this.dataDiNascita = dataDiNascita;
         this.email = email;
         this.password = password;
     }
@@ -43,14 +41,6 @@ public class Genitori {
 
     public void setCf(String cf) {
         this.cf = cf;
-    }
-
-    public String getDataDiNascita() {
-        return dataDiNascita;
-    }
-
-    public void setDataDiNascita(String dataDiNascita) {
-        this.dataDiNascita = dataDiNascita;
     }
 
     public String getEmail() {
