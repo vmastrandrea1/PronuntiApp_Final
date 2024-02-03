@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="blue">#002BFF</color>
     <color name="colorPrimaryDark">#FF1a73e8</color>
     <color name="coloreStatusBar">#FF1a73e8</color>
     <color name="ic_app_logo_background">#FFFFFF</color>

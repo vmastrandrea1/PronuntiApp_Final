@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color blue
 color colorPrimaryDark
 color coloreStatusBar
 color gradient_shape
@@ -98,6 +99,11 @@ drawable skin_troll
 drawable terzo_posto
 drawable timmy_tigrotto
 id AddButton
+id TVesercizio_1
+id TVesercizio_2
+id TVesercizio_3
+id TVesercizio_4
+id TVesercizio_5
 id add_therapy_patient
 id aiuti_radio_group
 id aiuto1
@@ -303,6 +309,7 @@ id txtClose
 id txtClose_logo
 id userDrawer
 id userList
+id verify_therapy
 id view_therapy_child
 id view_therapy_patient
 id wallpaper_game
@@ -353,6 +360,7 @@ layout patient_info_popup
 layout pazienti
 layout sceltafrase
 layout therapy
+layout view_exercises_results
 layout view_therapy_patient
 menu menu_bottom_navigation
 menu menu_genitore

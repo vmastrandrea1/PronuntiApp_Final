@@ -536,6 +536,45 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                             }
                         });
 
+                        Button verify_therapy = dialog.findViewById(R.id.verify_therapy);
+
+                        Query correzione_terapia = database.getReference("Utenti")
+                                        .child("Logopedisti")
+                                        .child(sessionKey)
+                                        .child("Pazienti")
+                                        .child(cfPaziente)
+                                        .child("Terapie")
+                                        .child(list.get(pos))
+                                        .orderByChild("eseguito")
+                                        .equalTo(true);
+                        correzione_terapia.addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                if(snapshot.exists()){
+                                    verify_therapy.setVisibility(View.VISIBLE);
+                                }else{
+                                    verify_therapy.setVisibility(View.GONE);
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
+
+                        verify_therapy.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Dialog dialog1 = new Dialog(dialog.getContext());
+
+                                dialog.dismiss();
+                                dialog1.setContentView(R.layout.view_exercises_results);
+
+
+                            }
+                        });
+
                         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                         dialog.show();
                     }

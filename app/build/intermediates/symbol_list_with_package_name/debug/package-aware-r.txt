@@ -1398,6 +1398,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -3283,6 +3284,11 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TVesercizio_1
+id TVesercizio_2
+id TVesercizio_3
+id TVesercizio_4
+id TVesercizio_5
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3984,6 +3990,7 @@ id upper
 id useLogo
 id userDrawer
 id userList
+id verify_therapy
 id vertical_only
 id view_offset_helper
 id view_therapy_child
@@ -4256,6 +4263,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout therapy
+layout view_exercises_results
 layout view_therapy_patient
 menu menu_bottom_navigation
 menu menu_genitore
