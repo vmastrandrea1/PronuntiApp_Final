@@ -664,7 +664,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
 
                                 list_therapy = new ArrayList<>();
                                 myAdapter = new MyAdapter_Terapie(view_therapy_dialog.getContext(),list_therapy,sessionKey,container
-                                        , fragmentManager , view_therapy_dialog , list.get(pos).getCf());
+                                        , fragmentManager , view_therapy_dialog , list.get(pos).getCf(), list.get(pos).getCfGenitore());
                                 therapy_recycler_view.setAdapter(myAdapter);
 
                                 Query therapy_exist = database.getReference("Utenti")

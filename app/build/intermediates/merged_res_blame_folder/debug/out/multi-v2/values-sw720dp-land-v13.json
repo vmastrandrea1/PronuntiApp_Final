@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "it.uniba.dib.sms2324_4.app-mergeDebugResources-3:/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "outputFile": "it.uniba.dib.sms2324_4.app-mergeDebugResources-38:/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\masvi\\AndroidStudioProjects\\caches\\transforms-3\\d0b05d09400d5b1de1f6513829f0d81b\\transformed\\core-3.3.0\\res\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
+                    "source": "C:\\Users\\LaFFurb\\.gradle\\caches\\transforms-3\\d0b05d09400d5b1de1f6513829f0d81b\\transformed\\core-3.3.0\\res\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

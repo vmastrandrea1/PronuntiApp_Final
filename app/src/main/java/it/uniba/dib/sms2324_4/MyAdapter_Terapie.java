@@ -2,8 +2,12 @@ package it.uniba.dib.sms2324_4;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,12 +24,18 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FileDownloadTask;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
@@ -85,10 +95,11 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
     FragmentManager fragmentManager;
     Dialog backDialog;
     String cfPaziente;
+    String cfGenitore;
 
 
     public MyAdapter_Terapie(Context context, ArrayList<String> list, String sessionKey,
-                             ViewGroup container, FragmentManager fragmentManager , Dialog backDialog , String cfPaziente) {
+                             ViewGroup container, FragmentManager fragmentManager , Dialog backDialog , String cfPaziente, String cfGenitore) {
         this.context = context;
         this.list = list;
         this.sessionKey = sessionKey;
@@ -96,13 +107,14 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
         this.fragmentManager = fragmentManager;
         this.backDialog = backDialog;
         this.cfPaziente = cfPaziente;
+        this.cfGenitore = cfGenitore;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.therapy,parent,false);
-        return  new MyViewHolder(v , list , sessionKey , fragmentManager , container , backDialog , cfPaziente);
+        return  new MyViewHolder(v , list , sessionKey , fragmentManager , container , backDialog , cfPaziente, cfGenitore);
     }
 
     @Override
@@ -129,7 +141,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
         private final FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
         public MyViewHolder(@NonNull View itemView , ArrayList<String> list ,String  sessionKey ,
-                            FragmentManager fragmentManager ,ViewGroup container , Dialog backDialog , String cfPaziente) {
+                            FragmentManager fragmentManager ,ViewGroup container , Dialog backDialog , String cfPaziente, String cfGenitore) {
             super(itemView);
 
             tvTherapyName = itemView.findViewById(R.id.tvTherapyName);
@@ -620,11 +632,210 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                             }
                                         }
 
+                                        if(TVesercizio_1.getText().toString().startsWith("1_") ||
+                                                TVesercizio_1.getText().toString().startsWith("2_")){
+                                            TVesercizio_1.setClickable(true);
+                                        }
+                                        if(TVesercizio_2.getText().toString().startsWith("1_") ||
+                                                TVesercizio_2.getText().toString().startsWith("2_")){
+                                            TVesercizio_2.setClickable(true);
+                                        }
+                                        if(TVesercizio_3.getText().toString().startsWith("1_") ||
+                                                TVesercizio_3.getText().toString().startsWith("2_")){
+                                            TVesercizio_3.setClickable(true);
+                                        }
+                                        if(TVesercizio_4.getText().toString().startsWith("1_") ||
+                                                TVesercizio_4.getText().toString().startsWith("2_")){
+                                            TVesercizio_4.setClickable(true);
+                                        }
+                                        if(TVesercizio_5.getText().toString().startsWith("1_") ||
+                                                TVesercizio_5.getText().toString().startsWith("2_")){
+                                            TVesercizio_5.setClickable(true);
+                                        }
+
                                         //VISUALIZZAZIONE ANDAMENTO ESERCIZI
                                         TVesercizio_1.setOnClickListener(new View.OnClickListener() {
                                             @Override
                                             public void onClick(View v) {
+                                                Query getInfoRisoluzione = database.getReference("Utenti")
+                                                        .child("Logopedisti")
+                                                        .child(sessionKey)
+                                                        .child("Pazienti")
+                                                        .child(cfPaziente)
+                                                        .child("Terapie")
+                                                        .child(list.get(pos))
+                                                        .child("esercizio_1");
+                                                getInfoRisoluzione.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                    @Override
+                                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                        for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                                            Dialog info_dialog = new Dialog(dialog1.getContext());
+                                                            dialog1.dismiss();
+                                                            info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
+                                                            TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_popup);
+                                                            Button riproduci_soluzione = info_dialog.findViewById(R.id.riproduci_soluzione);
+                                                            Button ferma_riproduzione = info_dialog.findViewById(R.id.ferma_riproduzione);
+                                                            Button visualizza_esercizio = info_dialog.findViewById(R.id.visualizza_esercizio);
+
+                                                            //BOTTONI CORREZIONE
+                                                            Button esercizio_corretto = info_dialog.findViewById(R.id.esercizio_corretto);
+                                                            Button esercizio_sbagliato = info_dialog.findViewById(R.id.esercizio_sbagliato);
+
+                                                            id_esercizio1_popup.setText(dataSnapshot.child("id_esercizio").getValue(String.class));
+
+                                                            MediaPlayer mediaPlayer = new MediaPlayer();
+                                                            FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
+                                                            StorageReference storageReference = storage.getReference(dataSnapshot.child("audio_soluzione").getValue(String.class).substring(1));
+
+                                                            try {
+                                                                File file = File.createTempFile("tempfile" , ".3gp");
+
+                                                                storageReference.getFile(file)
+                                                                        .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                                                                            @Override
+                                                                            public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                                                                                try {
+                                                                                    mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
+                                                                                    mediaPlayer.prepare();
+
+                                                                                    riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
+                                                                                        @Override
+                                                                                        public void onClick(View view) {
+                                                                                            mediaPlayer.start();
+                                                                                            riproduci_soluzione.setVisibility(View.GONE);
+                                                                                            ferma_riproduzione.setVisibility(View.VISIBLE);
+                                                                                        }
+                                                                                    });
+                                                                                } catch (
+                                                                                        IOException e) {
+                                                                                    throw new RuntimeException(e);
+                                                                                }
+                                                                            }
+                                                                        });
+
+                                                            } catch (IOException e) {
+                                                                throw new RuntimeException(e);
+                                                            }
+
+                                                            ferma_riproduzione.setOnClickListener(new View.OnClickListener() {
+                                                                @Override
+                                                                public void onClick(View view) {
+                                                                    mediaPlayer.stop();
+                                                                    mediaPlayer.release();
+
+                                                                    ferma_riproduzione.setVisibility(View.GONE);
+                                                                    riproduci_soluzione.setVisibility(View.VISIBLE);
+                                                                }
+                                                            });
+
+                                                            esercizio_corretto.setOnClickListener(new View.OnClickListener() {
+                                                                @Override
+                                                                public void onClick(View view) {
+                                                                    esercizio_corretto.setVisibility(View.GONE);
+                                                                    esercizio_sbagliato.setVisibility(View.GONE);
+
+                                                                    dataSnapshot.child("esito").getRef().setValue("true").addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                        @Override
+                                                                        public void onSuccess(Void unused) {
+
+                                                                        }
+                                                                    });
+
+                                                                    Query getMonete = database.getReference("Utenti")
+                                                                            .child("Genitori")
+                                                                            .child(cfGenitore)
+                                                                            .child("Bambini")
+                                                                            .child(cfPaziente)
+                                                                            .child("monete");
+                                                                    getMonete.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                        @Override
+                                                                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                            int monete = snapshot.getValue(Integer.class);
+                                                                            snapshot.getRef().setValue(monete+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                @Override
+                                                                                public void onSuccess(Void unused) {
+
+                                                                                }
+                                                                            });
+                                                                        }
+
+                                                                        @Override
+                                                                        public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                        }
+                                                                    });
+
+                                                                    TextView correzione = info_dialog.findViewById(R.id.correzione);
+                                                                    correzione.setText("Correzione : CORRETTO");
+
+                                                                    new MaterialAlertDialogBuilder(view.getContext())
+                                                                            .setTitle("Esercizio Corretto")
+                                                                            .setMessage("Esito Correzione : CORRETTO")
+                                                                            .setPositiveButton("OK", null)
+                                                                            .show();
+                                                                }
+                                                            });
+
+                                                            esercizio_sbagliato.setOnClickListener(new View.OnClickListener() {
+                                                                @Override
+                                                                public void onClick(View view) {
+                                                                    esercizio_corretto.setVisibility(View.GONE);
+                                                                    esercizio_sbagliato.setVisibility(View.GONE);
+
+                                                                    snapshot.child("esito").getRef().setValue("false").addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                        @Override
+                                                                        public void onSuccess(Void unused) {
+
+                                                                        }
+                                                                    });
+
+                                                                    Query getMonete = database.getReference("Utenti")
+                                                                            .child("Genitori")
+                                                                            .child(cfGenitore)
+                                                                            .child("Bambini")
+                                                                            .child(cfPaziente)
+                                                                            .child("monete");
+                                                                    getMonete.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                        @Override
+                                                                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                            int monete = snapshot.getValue(Integer.class);
+                                                                            snapshot.getRef().setValue(monete+20).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                @Override
+                                                                                public void onSuccess(Void unused) {
+
+                                                                                }
+                                                                            });
+                                                                        }
+
+                                                                        @Override
+                                                                        public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                        }
+                                                                    });
+
+                                                                    TextView correzione = info_dialog.findViewById(R.id.correzione);
+                                                                    correzione.setText("Correzione : SBAGLIATO");
+
+                                                                    new MaterialAlertDialogBuilder(view.getContext())
+                                                                            .setTitle("Esercizio Corretto")
+                                                                            .setMessage("Esito Correzione : SBAGLIATO")
+                                                                            .setPositiveButton("OK", null)
+                                                                            .show();
+                                                                }
+                                                            });
+
+                                                            info_dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                                                            info_dialog.show();
+                                                        }
+
+                                                    }
+
+                                                    @Override
+                                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                                    }
+                                                });
                                             }
                                         });
 

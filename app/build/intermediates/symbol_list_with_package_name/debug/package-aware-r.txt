@@ -3091,6 +3091,7 @@ drawable game
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient_bg_item
+drawable gradient_header
 drawable gradient_header_blue
 drawable gradient_header_purple
 drawable ic_action_name
@@ -3100,6 +3101,7 @@ drawable ic_app_logo_background
 drawable ic_arrow
 drawable ic_arrow_back_black_24
 drawable ic_arrow_right
+drawable ic_audio
 drawable ic_baseline_arrow_drop_down_circle_24
 drawable ic_check
 drawable ic_child
@@ -3379,6 +3381,7 @@ id appBarLayout
 id arc
 id asConfigured
 id async
+id audio_soluzione_tv
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -3480,6 +3483,7 @@ id contentPanel
 id contiguous
 id continuousVelocity
 id coordinator
+id correzione
 id cos
 id counterclockwise
 id cradle
@@ -3547,6 +3551,8 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id esercizio_corretto
+id esercizio_sbagliato
 id ex1_image_text
 id ex1_image_viewer
 id ex3_image_text_right
@@ -3561,6 +3567,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id ferma_riproduzione
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3838,6 +3845,7 @@ id rightToLeft
 id right_icon
 id right_side
 id riproduci_audio_1
+id riproduci_soluzione
 id riquadro1
 id riquadro2
 id riquadro3
@@ -4009,6 +4017,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id visualizza_esercizio
 id wallpaper_game
 id west
 id wide
@@ -4170,6 +4179,7 @@ layout dialog_esercizio3_giusto
 layout dialog_esercizio3_sbagliato
 layout dialog_esercizio_terminato
 layout esercizi
+layout esercizio_svolto_popup
 layout exercise1_info_popup
 layout exercise2_info_popup
 layout exercise3_info_popup

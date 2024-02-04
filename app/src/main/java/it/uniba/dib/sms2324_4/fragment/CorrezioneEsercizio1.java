@@ -189,6 +189,20 @@ public class CorrezioneEsercizio1 extends DialogFragment {
 
                                }
                            });
+
+                           FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
+                           StorageReference storageReference = storage.getReference("Esercizi_" + id_bambino)
+                                   .child(formatoData.format(cal.getTime()))
+                                   .child("esercizio_"+pos_esercizio)
+                                   .child(audio_registrato.getAbsolutePath());
+                           storageReference.putFile(Uri.fromFile(audio_registrato));
+
+                           snapshot.child("audio_soluzione").getRef().setValue(storageReference.getPath()).addOnSuccessListener(new OnSuccessListener<Void>() {
+                               @Override
+                               public void onSuccess(Void unused) {
+
+                               }
+                           });
                        }
 
                        @Override
@@ -246,7 +260,6 @@ public class CorrezioneEsercizio1 extends DialogFragment {
 
                         }
                     });
-
 
                 }else{
                     new MaterialAlertDialogBuilder(v.getContext())

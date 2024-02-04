@@ -84,7 +84,7 @@
                 android:background="@drawable/bg_btn"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/ferma_soluzione"
+                android:id="@+id/ferma_riproduzione"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-50dp"
@@ -95,14 +95,42 @@
                 android:background="@drawable/bg_btn"
                 android:visibility="gone"/>
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/esercizio_corretto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="✓"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/cerclebackground"
+                android:backgroundTint="#12FF00"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="50dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/esercizio_sbagliato"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="X"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/cerclebackground"
+                android:backgroundTint="#FF0000"
+                android:layout_marginTop="-50dp"
+                android:layout_marginRight="-50dp"/>
+
         </LinearLayout>
 
         <TextView
-            android:id="@+id/correzzione"
+            android:id="@+id/correzione"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Correzione"
+            android:text="Correzione:"
             android:textSize="15dp"
             android:textColor="@color/white" />
 

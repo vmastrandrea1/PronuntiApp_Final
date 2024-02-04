@@ -19,6 +19,7 @@ drawable classifica_scritta
 drawable flora_fata
 drawable game
 drawable gradient_bg_item
+drawable gradient_header
 drawable gradient_header_blue
 drawable gradient_header_purple
 drawable ic_action_name
@@ -27,6 +28,7 @@ drawable ic_add_child
 drawable ic_app_logo_background
 drawable ic_arrow
 drawable ic_arrow_right
+drawable ic_audio
 drawable ic_baseline_arrow_drop_down_circle_24
 drawable ic_check
 drawable ic_child
@@ -123,6 +125,7 @@ id aiuto_immagine
 id annulla_btn
 id annulla_btn_2
 id appBarLayout
+id audio_soluzione_tv
 id bandierina_1
 id bandierina_2
 id bandierina_3
@@ -171,6 +174,7 @@ id confirm_delete
 id confirm_selection_aiuti
 id confirm_therapy
 id constraintLayout
+id correzione
 id crea_esercizio_2
 id createAccount
 id deassign_exercise_1
@@ -189,6 +193,8 @@ id elencoPazienti
 id email
 id emailView
 id email_logopedista
+id esercizio_corretto
+id esercizio_sbagliato
 id ex1_image_text
 id ex1_image_viewer
 id ex3_image_text_right
@@ -199,6 +205,7 @@ id exercise2_text_close
 id exercise3_text_close
 id exercise_profile_image
 id exercise_text_close
+id ferma_riproduzione
 id fragmentContainer
 id frase1
 id frase1_btn
@@ -272,6 +279,7 @@ id regalo
 id registerNow
 id registerNow_logopedista
 id riproduci_audio_1
+id riproduci_soluzione
 id riquadro1
 id riquadro2
 id riquadro3
@@ -319,6 +327,7 @@ id userList
 id verify_therapy
 id view_therapy_child
 id view_therapy_patient
+id visualizza_esercizio
 id wallpaper_game
 layout activity_login
 layout activity_login_logopedista
@@ -337,6 +346,7 @@ layout dialog_esercizio3_giusto
 layout dialog_esercizio3_sbagliato
 layout dialog_esercizio_terminato
 layout esercizi
+layout esercizio_svolto_popup
 layout exercise1_info_popup
 layout exercise2_info_popup
 layout exercise3_info_popup
