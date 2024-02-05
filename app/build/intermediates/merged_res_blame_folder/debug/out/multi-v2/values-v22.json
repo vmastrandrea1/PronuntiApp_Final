@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "it.uniba.dib.sms2324_4.app-mergeDebugResources-38:/values-v22/values-v22.xml",
+            "outputFile": "it.uniba.dib.sms2324_4.app-mergeDebugResources-3:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LaFFurb\\.gradle\\caches\\transforms-3\\551df875131cd60c9e76c62a2070e8b3\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\masvi\\AndroidStudioProjects\\caches\\transforms-3\\551df875131cd60c9e76c62a2070e8b3\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",
