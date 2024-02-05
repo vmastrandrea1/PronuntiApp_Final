@@ -6,137 +6,35 @@
     android:background="@drawable/rounded_dialog_background"
     android:layout_gravity="center">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/blubutton"
+        android:text="Soluzione"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
     <ImageView
-        android:id="@+id/image_select_viewer"
-        android:layout_width="228dp"
-        android:layout_height="251dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="13dp"
+        android:id="@+id/image_correct_select_viewer"
+        android:layout_width="187dp"
+        android:layout_height="183dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="11dp"
         android:layout_marginBottom="13dp"
-        android:background="@drawable/rounded_dialog_background"/>
+        android:background="@drawable/rounded_dialog_background" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/riproduci_audio_1"
-        android:layout_width="325dp"
-        android:layout_height="82dp"
+    <ImageView
+        android:id="@+id/image_wrong_select_viewer"
+        android:layout_width="187dp"
+        android:layout_height="183dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="41dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Riproduci Audio"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:visibility="gone"
-        app:cornerRadius="16dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/stop_riproduci_audio_1"
-        android:layout_width="325dp"
-        android:layout_height="82dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="267dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Ferma Riproduzione"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:visibility="gone"
-        app:cornerRadius="16dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/record_solution_1"
-        android:layout_width="325dp"
-        android:layout_height="82dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="354dp"
-        android:layout_marginEnd="40dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Registra"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:cornerRadius="16dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/stop_record_solution_1"
-        android:layout_width="325dp"
-        android:layout_height="82dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="275dp"
-        android:layout_marginEnd="39dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Ferma Registrazione"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:visibility="gone"
-        app:cornerRadius="16dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/confirm_choice_btn"
-        android:layout_width="145dp"
-        android:layout_height="45dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="448dp"
-        android:layout_marginEnd="-2dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Conferma"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:cornerRadius="16dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/frase1_btn"
-        android:layout_width="145dp"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="433dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Frase1"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:cornerRadius="16dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/frase2_btn"
-        android:layout_width="143dp"
-        android:layout_height="40dp"
-        android:layout_alignTop="@+id/frase1_btn"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="43dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Frase2"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:visibility="gone"
-        app:cornerRadius="16dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/frase3_btn"
-        android:layout_width="142dp"
-        android:layout_height="40dp"
-        android:layout_alignTop="@+id/frase2_btn"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="40dp"
-        android:layout_below="@id/frase1_btn"
-        android:layout_marginEnd="248dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Frase3"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:visibility="gone"
-        app:cornerRadius="16dp" />
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="218dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/rounded_dialog_background" />
 
 </RelativeLayout>

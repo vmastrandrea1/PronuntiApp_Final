@@ -61,7 +61,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
 
     private static final String BAMBINO_ID = "BAMBINO_ID";
     private static final String SESSION_KEY = "SESSION_KEY";
-    private static final String ESERCIZIO_1 = "ESERCIZIO_1";
+    private static final String ESERCIZIO_2 = "ESERCIZIO_2";
     private static final String ID_LOGOPEDISTA = "ID_LOGOPEDISTA";
     private static final String POS_ESERCIZIO = "POS_ESERCIZIO";
 
@@ -87,7 +87,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
         Bundle args = new Bundle();
         args.putString(BAMBINO_ID, id_bambino);
         args.putString(SESSION_KEY, sessionKey);
-        args.putString(ESERCIZIO_1, id_esercizio2);
+        args.putString(ESERCIZIO_2, id_esercizio2);
         args.putString(ID_LOGOPEDISTA, id_logopedista);
         args.putInt(POS_ESERCIZIO,pos_esercizio);
         fragment.setArguments(args);
@@ -100,7 +100,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
         if (getArguments() != null) {
             id_bambino = getArguments().getString(BAMBINO_ID);
             sessionKey = getArguments().getString(SESSION_KEY);
-            id_esercizio2 = getArguments().getString(ESERCIZIO_1);
+            id_esercizio2 = getArguments().getString(ESERCIZIO_2);
             id_logopedista = getArguments().getString(ID_LOGOPEDISTA);
             pos_esercizio = getArguments().getInt(POS_ESERCIZIO);
         }
@@ -187,6 +187,20 @@ public class CorrezioneEsercizio2 extends DialogFragment {
 
                                }
                            });
+
+                           FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
+                           StorageReference storageReference = storage.getReference("Esercizi_" + id_bambino)
+                                   .child(formatoData.format(cal.getTime()))
+                                   .child("esercizio_"+pos_esercizio)
+                                   .child(audio_registrato.getAbsolutePath());
+                           storageReference.putFile(Uri.fromFile(audio_registrato));
+
+                           snapshot.child("audio_soluzione").getRef().setValue(storageReference.getPath()).addOnSuccessListener(new OnSuccessListener<Void>() {
+                               @Override
+                               public void onSuccess(Void unused) {
+
+                               }
+                           });
                        }
 
                        @Override
@@ -258,48 +272,20 @@ public class CorrezioneEsercizio2 extends DialogFragment {
 
         // Configura il dialog con il layout personalizzato
         builder.setView(view)
-                .setTitle("Riconosci l'immagine");
+                .setTitle("Ripeti le 3 frasi nell'ordine corretta");
 
         return builder.create();
     }
 
 
     private void esecuzioneEsercizio(Esercizio2 esercizio2, View view) throws IOException {
-        ImageView image_select_viewer = view.findViewById(R.id.image_select_viewer);
+        Button record_solution_2 = view.findViewById(R.id.record_solution_2);
+        Button stop_record_solution_2 = view.findViewById(R.id.stop_record_solution_2);
+        Button frasi_btn = view.findViewById(R.id.frasi_btn);
+        Button riproduci_audio_2 = view.findViewById(R.id.riproduci_audio_2);
+        Button stop_riproduci_audio_2 = view.findViewById(R.id.stop_riproduci_audio_2);
 
-        Button record_solution_1 = view.findViewById(R.id.record_solution_1);
-        Button stop_record_solution_1 = view.findViewById(R.id.stop_record_solution_1);
-        Button frase1_btn = view.findViewById(R.id.frase1_btn);
-        Button frase2_btn = view.findViewById(R.id.frase2_btn);
-        Button frase3_btn = view.findViewById(R.id.frase3_btn);
-        Button riproduci_audio_1 = view.findViewById(R.id.riproduci_audio_1);
-        Button stop_riproduci_audio_1 = view.findViewById(R.id.stop_riproduci_audio_1);
-/*
-        FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
-        StorageReference storageReference = storage.getReference(esercizio2.getUriImage().substring(1));
-        Log.d("Image_Path", "Image Path: " + storageReference.toString());
-
-        ActivityCompat.requestPermissions(getActivity() , new String[]{Manifest.permission.RECORD_AUDIO} , PackageManager.PERMISSION_GRANTED);
-        ActivityCompat.requestPermissions(getActivity() , new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE} , PackageManager.PERMISSION_GRANTED);
-
-        //FETCH IMMAGINE
-        try {
-            File file = File.createTempFile("tempfile", ".jpg");
-
-            storageReference.getFile(file)
-                    .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                            Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
-                            image_select_viewer.setImageBitmap(bitmap);
-                        }
-                    });
-
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-*/
-        frase1_btn.setOnClickListener(new View.OnClickListener() {
+        frasi_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 textToSpeech = new TextToSpeech(v.getContext(), new TextToSpeech.OnInitListener() {
@@ -307,7 +293,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
                     public void onInit(int status) {
                         if (status == TextToSpeech.SUCCESS) {
                             // TextToSpeech è stato inizializzato con successo
-                            textToSpeech.speak(esercizio2.getFrase_1(), TextToSpeech.QUEUE_FLUSH, null, null);
+                            textToSpeech.speak(esercizio2.getFrase_1() +"   " + esercizio2.getFrase_2() +  "   " + esercizio2.getFrase_3(), TextToSpeech.QUEUE_FLUSH, null, null);
                         } else {
                             // Errore durante l'inizializzazione di TextToSpeech
                         }
@@ -316,52 +302,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
             }
         });
 
-        if (esercizio2.getFrase_2().compareTo("") == 0) {
-            frase2_btn.setVisibility(View.GONE);
-        } else {
-            frase2_btn.setVisibility(View.VISIBLE);
-        }
-        if (esercizio2.getFrase_3().compareTo("") == 0) {
-            frase3_btn.setVisibility(View.GONE);
-        } else {
-            frase3_btn.setVisibility(View.VISIBLE);
-        }
-
-        frase2_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textToSpeech = new TextToSpeech(v.getContext(), new TextToSpeech.OnInitListener() {
-                    @Override
-                    public void onInit(int status) {
-                        if (status == TextToSpeech.SUCCESS) {
-                            // TextToSpeech è stato inizializzato con successo
-                            textToSpeech.speak(esercizio2.getFrase_2(), TextToSpeech.QUEUE_FLUSH, null, null);
-                        } else {
-                            // Errore durante l'inizializzazione di TextToSpeech
-                        }
-                    }
-                });
-            }
-        });
-
-        frase3_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textToSpeech = new TextToSpeech(v.getContext(), new TextToSpeech.OnInitListener() {
-                    @Override
-                    public void onInit(int status) {
-                        if (status == TextToSpeech.SUCCESS) {
-                            // TextToSpeech è stato inizializzato con successo
-                            textToSpeech.speak(esercizio2.getFrase_3(), TextToSpeech.QUEUE_FLUSH, null, null);
-                        } else {
-                            // Errore durante l'inizializzazione di TextToSpeech
-                        }
-                    }
-                });
-            }
-        });
-
-        record_solution_1.setOnClickListener(new View.OnClickListener() {
+        record_solution_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(!isRecording){
@@ -385,8 +326,8 @@ public class CorrezioneEsercizio2 extends DialogFragment {
 
                         isRecording = true;
 
-                        record_solution_1.setVisibility(View.GONE);
-                        stop_record_solution_1.setVisibility(View.VISIBLE);
+                        record_solution_2.setVisibility(View.GONE);
+                        stop_record_solution_2.setVisibility(View.VISIBLE);
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
@@ -394,7 +335,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
             }
         });
 
-        stop_record_solution_1.setOnClickListener(new View.OnClickListener() {
+        stop_record_solution_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mediaRecorder.stop();
@@ -404,14 +345,14 @@ public class CorrezioneEsercizio2 extends DialogFragment {
 
                 esercizio2.setEseguito(true);
 
-                record_solution_1.setVisibility(View.VISIBLE);
-                stop_record_solution_1.setVisibility(View.GONE);
+                record_solution_2.setVisibility(View.VISIBLE);
+                stop_record_solution_2.setVisibility(View.GONE);
 
-                riproduci_audio_1.setVisibility(View.VISIBLE);
+                riproduci_audio_2.setVisibility(View.VISIBLE);
             }
         });
 
-        riproduci_audio_1.setOnClickListener(new View.OnClickListener() {
+        riproduci_audio_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
@@ -422,8 +363,8 @@ public class CorrezioneEsercizio2 extends DialogFragment {
                     mediaPlayer.prepare();
                     mediaPlayer.start();
 
-                    riproduci_audio_1.setVisibility(View.GONE);
-                    stop_riproduci_audio_1.setVisibility(View.VISIBLE);
+                    riproduci_audio_2.setVisibility(View.GONE);
+                    stop_riproduci_audio_2.setVisibility(View.VISIBLE);
 
                 } catch (IOException e) {
                     throw new RuntimeException(e);
@@ -431,14 +372,14 @@ public class CorrezioneEsercizio2 extends DialogFragment {
             }
         });
 
-        stop_riproduci_audio_1.setOnClickListener(new View.OnClickListener() {
+        stop_riproduci_audio_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mediaPlayer.stop();
                 mediaPlayer.release();
 
-                riproduci_audio_1.setVisibility(View.VISIBLE);
-                stop_riproduci_audio_1.setVisibility(View.GONE);
+                riproduci_audio_2.setVisibility(View.VISIBLE);
+                stop_riproduci_audio_2.setVisibility(View.GONE);
             }
         });
 

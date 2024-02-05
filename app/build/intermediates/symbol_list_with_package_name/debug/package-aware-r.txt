@@ -3553,6 +3553,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id esercizio_corretto
 id esercizio_sbagliato
+id esercizio_svolto_text_close
 id ex1_image_text
 id ex1_image_viewer
 id ex3_image_text_right
@@ -3584,14 +3585,12 @@ id forever
 id fragmentContainer
 id fragment_container_view_tag
 id frase1
-id frase1_btn
 id frase1_tv
 id frase2
-id frase2_btn
 id frase2_tv
 id frase3
-id frase3_btn
 id frase3_tv
+id frasi_btn
 id frost
 id fullscreen_header
 id game_child
@@ -3636,12 +3635,14 @@ id imageView7
 id imageView8
 id imageView9
 id imageViewFullScreen
+id image_correct_select_viewer
 id image_select_viewer
 id image_viewer
 id image_viewer_right
 id image_viewer_right_popup
 id image_viewer_wrong
 id image_viewer_wrong_popup
+id image_wrong_select_viewer
 id immediateStop
 id included
 id indeterminate
@@ -3832,6 +3833,7 @@ id progress_horizontal
 id radio
 id ratio
 id record_solution_1
+id record_solution_2
 id rectangles
 id regalo
 id registerNow
@@ -3845,6 +3847,7 @@ id rightToLeft
 id right_icon
 id right_side
 id riproduci_audio_1
+id riproduci_audio_2
 id riproduci_soluzione
 id riquadro1
 id riquadro2
@@ -3920,7 +3923,9 @@ id staticLayout
 id staticPostLayout
 id stop
 id stop_record_solution_1
+id stop_record_solution_2
 id stop_riproduci_audio_1
+id stop_riproduci_audio_2
 id stretch
 id submenuarrow
 id submit_area

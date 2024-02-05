@@ -3552,6 +3552,7 @@ int id enterAlways 0x7f080112
 int id enterAlwaysCollapsed 0x7f080113
 int id esercizio_corretto 0x7f080114
 int id esercizio_sbagliato 0x7f080115
+int id esercizio_svolto_text_close 0x7f0802f2
 int id ex1_image_text 0x7f080116
 int id ex1_image_viewer 0x7f080117
 int id ex3_image_text_right 0x7f080118
@@ -3583,14 +3584,12 @@ int id forever 0x7f080131
 int id fragmentContainer 0x7f080132
 int id fragment_container_view_tag 0x7f080133
 int id frase1 0x7f080134
-int id frase1_btn 0x7f080135
 int id frase1_tv 0x7f080136
 int id frase2 0x7f080137
-int id frase2_btn 0x7f080138
 int id frase2_tv 0x7f080139
 int id frase3 0x7f08013a
-int id frase3_btn 0x7f08013b
 int id frase3_tv 0x7f08013c
+int id frasi_btn 0x7f0802f3
 int id frost 0x7f08013d
 int id fullscreen_header 0x7f08013e
 int id game_child 0x7f08013f
@@ -3635,12 +3634,14 @@ int id imageView7 0x7f080165
 int id imageView8 0x7f080166
 int id imageView9 0x7f080167
 int id imageViewFullScreen 0x7f080168
+int id image_correct_select_viewer 0x7f0802f4
 int id image_select_viewer 0x7f080169
 int id image_viewer 0x7f08016a
 int id image_viewer_right 0x7f08016b
 int id image_viewer_right_popup 0x7f08016c
 int id image_viewer_wrong 0x7f08016d
 int id image_viewer_wrong_popup 0x7f08016e
+int id image_wrong_select_viewer 0x7f0802f5
 int id immediateStop 0x7f08016f
 int id included 0x7f080170
 int id indeterminate 0x7f080171
@@ -3831,6 +3832,7 @@ int id progress_horizontal 0x7f080229
 int id radio 0x7f08022a
 int id ratio 0x7f08022b
 int id record_solution_1 0x7f08022c
+int id record_solution_2 0x7f0802f6
 int id rectangles 0x7f08022d
 int id regalo 0x7f08022e
 int id registerNow 0x7f08022f
@@ -3844,6 +3846,7 @@ int id rightToLeft 0x7f080236
 int id right_icon 0x7f080237
 int id right_side 0x7f080238
 int id riproduci_audio_1 0x7f080239
+int id riproduci_audio_2 0x7f0802f7
 int id riproduci_soluzione 0x7f08023a
 int id riquadro1 0x7f08023b
 int id riquadro2 0x7f08023c
@@ -3919,7 +3922,9 @@ int id staticLayout 0x7f080281
 int id staticPostLayout 0x7f080282
 int id stop 0x7f080283
 int id stop_record_solution_1 0x7f080284
+int id stop_record_solution_2 0x7f0802f8
 int id stop_riproduci_audio_1 0x7f080285
+int id stop_riproduci_audio_2 0x7f0802f9
 int id stretch 0x7f080286
 int id submenuarrow 0x7f080287
 int id submit_area 0x7f080288

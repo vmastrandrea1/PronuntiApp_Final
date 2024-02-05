@@ -100,6 +100,13 @@ public class User extends AppCompatActivity {
 
                        nameView.setText(nome + " " + cognome);
                        emailView.setText(email);
+
+                       // Crea un Intent per avviare il servizio e passare dati aggiuntivi
+                       Intent intent = new Intent(User.this, MyBackgroundService.class);
+                       intent.putExtra("session_key", cf); // Inserisci i dati che desideri passare
+
+                       // Avvia il servizio
+                       startService(intent);
                    }
                }
            }

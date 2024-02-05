@@ -29,7 +29,11 @@ import java.util.Date;
 
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
+import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio2;
+import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio3;
 import it.uniba.dib.sms2324_4.fragment.CorrezioneEsercizio1;
+import it.uniba.dib.sms2324_4.fragment.CorrezioneEsercizio2;
+import it.uniba.dib.sms2324_4.fragment.CorrezioneEsercizio3;
 
 
 public class GiocoFragment extends Fragment{
@@ -421,6 +425,28 @@ public class GiocoFragment extends Fragment{
             correzioneEsercizio1.newInstance(id_bambino,
                             sessionKey_genitore,esercizio1.getId_esercizio(),id_logopedista , i)
                     .show(getParentFragmentManager() , "Dimmi che immagine è rappresentata");
+        }else if (dataSnapshot1.child("id_esercizio").
+                getValue().toString().startsWith("2_")) {
+            Esercizio2 esercizio2 = new Esercizio2();
+
+            esercizio2.setId_esercizio(dataSnapshot1
+                    .child("id_esercizio").getValue().toString());
+
+            CorrezioneEsercizio2 correzioneEsercizio2 = new CorrezioneEsercizio2();
+            correzioneEsercizio2.newInstance(id_bambino,
+                            sessionKey_genitore,esercizio2.getId_esercizio(),id_logopedista , i)
+                    .show(getParentFragmentManager() , "Dimmi che immagine è rappresentata");
+        }else if (dataSnapshot1.child("id_esercizio").
+                getValue().toString().startsWith("3_")) {
+            Esercizio3 esercizio3 = new Esercizio3();
+
+            esercizio3.setId_esercizio(dataSnapshot1
+                    .child("id_esercizio").getValue().toString());
+
+            CorrezioneEsercizio3 correzioneEsercizio3 = new CorrezioneEsercizio3();
+            correzioneEsercizio3.newInstance(id_bambino,
+                            sessionKey_genitore,esercizio3.getId_esercizio(),id_logopedista , i)
+                    .show(getParentFragmentManager() , "Riconosci l'immagine corretta");
         }
     }
 

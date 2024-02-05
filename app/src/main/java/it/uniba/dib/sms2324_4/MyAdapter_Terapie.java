@@ -746,13 +746,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         ferma_riproduzione.setVisibility(View.VISIBLE);
                                                                         try {
                                                                             File file = File.createTempFile("tempfile" , ".3gp");
-
+                                                                            mediaPlayer = new MediaPlayer();
                                                                             storageReference.getFile(file)
                                                                                     .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
                                                                                         @Override
                                                                                         public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
                                                                                             try {
-                                                                                                mediaPlayer = new MediaPlayer();
                                                                                                 mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
                                                                                                 mediaPlayer.prepare();
                                                                                                 mediaPlayer.start();
@@ -804,6 +803,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
+                                                                        dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
+
+                                                                            }
+                                                                        });
+
                                                                         Query getMonete = database.getReference("Utenti")
                                                                                 .child("Genitori")
                                                                                 .child(cfGenitore)
@@ -845,6 +851,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         esercizio_sbagliato.setVisibility(View.GONE);
 
                                                                         snapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
+
+                                                                            }
+                                                                        });
+
+                                                                        dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                             @Override
                                                                             public void onSuccess(Void unused) {
 
@@ -1066,7 +1079,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                 id_esercizio1_popup.setText(dataSnapshot.child("id_esercizio").getValue(String.class));
 
-                                                                MediaPlayer mediaPlayer = new MediaPlayer();
                                                                 FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
                                                                 StorageReference storageReference = storage.getReference(dataSnapshot.child("audio_soluzione").getValue(String.class).substring(1));
 
@@ -1078,13 +1090,14 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                 @Override
                                                                                 public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
                                                                                     try {
+                                                                                        mediaPlayer = new MediaPlayer();
+                                                                                        mediaPlayer.start();
                                                                                         mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
                                                                                         mediaPlayer.prepare();
 
                                                                                         riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
                                                                                             @Override
                                                                                             public void onClick(View view) {
-                                                                                                mediaPlayer.start();
                                                                                                 riproduci_soluzione.setVisibility(View.GONE);
                                                                                                 ferma_riproduzione.setVisibility(View.VISIBLE);
                                                                                             }
@@ -1135,6 +1148,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
+                                                                        dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
+
+                                                                            }
+                                                                        });
+
                                                                         Query getMonete = database.getReference("Utenti")
                                                                                 .child("Genitori")
                                                                                 .child(cfGenitore)
@@ -1175,7 +1195,14 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         esercizio_corretto.setVisibility(View.GONE);
                                                                         esercizio_sbagliato.setVisibility(View.GONE);
 
-                                                                        snapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                        dataSnapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
+
+                                                                            }
+                                                                        });
+
+                                                                        dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                             @Override
                                                                             public void onSuccess(Void unused) {
 
@@ -1466,6 +1493,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
+                                                                        dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
+
+                                                                            }
+                                                                        });
+
                                                                         Query getMonete = database.getReference("Utenti")
                                                                                 .child("Genitori")
                                                                                 .child(cfGenitore)
@@ -1506,7 +1540,14 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         esercizio_corretto.setVisibility(View.GONE);
                                                                         esercizio_sbagliato.setVisibility(View.GONE);
 
-                                                                        snapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                        dataSnapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
+
+                                                                            }
+                                                                        });
+
+                                                                        dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                             @Override
                                                                             public void onSuccess(Void unused) {
 
@@ -1797,6 +1838,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                            }
                                                                        });
 
+                                                                       dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                           @Override
+                                                                           public void onSuccess(Void unused) {
+
+                                                                           }
+                                                                       });
+
                                                                        Query getMonete = database.getReference("Utenti")
                                                                                .child("Genitori")
                                                                                .child(cfGenitore)
@@ -1837,7 +1885,14 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                        esercizio_corretto.setVisibility(View.GONE);
                                                                        esercizio_sbagliato.setVisibility(View.GONE);
 
-                                                                       snapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                       dataSnapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                           @Override
+                                                                           public void onSuccess(Void unused) {
+
+                                                                           }
+                                                                       });
+
+                                                                       dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                            @Override
                                                                            public void onSuccess(Void unused) {
 
@@ -2128,6 +2183,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
+                                                                        dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
+
+                                                                            }
+                                                                        });
+
                                                                         Query getMonete = database.getReference("Utenti")
                                                                                 .child("Genitori")
                                                                                 .child(cfGenitore)
@@ -2168,7 +2230,14 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         esercizio_corretto.setVisibility(View.GONE);
                                                                         esercizio_sbagliato.setVisibility(View.GONE);
 
-                                                                        snapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                        dataSnapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                            @Override
+                                                                            public void onSuccess(Void unused) {
+
+                                                                            }
+                                                                        });
+
+                                                                        dataSnapshot.child("corretto").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                             @Override
                                                                             public void onSuccess(Void unused) {
 

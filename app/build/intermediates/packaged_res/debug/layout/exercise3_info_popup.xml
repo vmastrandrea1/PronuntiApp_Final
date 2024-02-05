@@ -118,7 +118,8 @@
             android:text="Elimina Esercizio"
             android:layout_marginTop="20dp"
             android:drawableStart="@drawable/ic_delete"
-            android:background="@drawable/bg_btn"/>
+            android:background="@drawable/bg_btn"
+            android:visibility="gone"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/deassign_exercise_3"
