@@ -10,16 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -31,8 +27,6 @@ import java.util.ArrayList;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio2;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio3;
-import it.uniba.dib.sms2324_4.fragment.ElencoEsercizi;
-import it.uniba.dib.sms2324_4.fragment.ElencoPazienti;
 
 public class MyAdapter_Terapie_Bambino extends RecyclerView.Adapter<MyAdapter_Terapie_Bambino.MyViewHolder> {
 
@@ -207,9 +201,9 @@ public class MyAdapter_Terapie_Bambino extends RecyclerView.Adapter<MyAdapter_Te
                                                     Esercizio2 esercizio2 = new Esercizio2();
 
                                                     esercizio2.setId_esercizio(snapshot1.child("id_esercizio").getValue().toString());
-                                                    esercizio2.setFrase_1(snapshot1.child("frase_1").getValue().toString());
-                                                    esercizio2.setFrase_2(snapshot1.child("frase_2").getValue().toString());
-                                                    esercizio2.setFrase_3(snapshot1.child("frase_3").getValue().toString());
+                                                    esercizio2.setParola_1(snapshot1.child("frase_1").getValue().toString());
+                                                    esercizio2.setParola_2(snapshot1.child("frase_2").getValue().toString());
+                                                    esercizio2.setParola_3(snapshot1.child("frase_3").getValue().toString());
                                                     esercizio2.setCorretto((Boolean) snapshot1.child("corretto").getValue());
                                                     esercizio2.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio2.setMonete(snapshot1.child("monete").getValue(Integer.class));

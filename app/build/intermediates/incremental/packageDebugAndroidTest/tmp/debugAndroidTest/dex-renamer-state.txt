@@ -1,7 +1,7 @@
-#Wed Jan 31 09:10:41 CET 2024
-base.0=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
-base.1=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
-base.2=C\:\\Users\\masvi\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\6\\classes.dex
+#Tue Feb 06 10:06:40 CET 2024
+base.0=C\:\\Users\\LaFFurb\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=C\:\\Users\\LaFFurb\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.2=C\:\\Users\\LaFFurb\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\6\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=6/classes.dex

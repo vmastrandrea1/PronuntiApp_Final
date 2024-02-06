@@ -10,10 +10,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -286,9 +284,9 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                             frase_3 = (TextView) mDialog.findViewById(R.id.frase3_tv);
 
                             id_esercizio.setText(esercizio2.getId_esercizio());
-                            frase_1.setText("Frase 1: " + esercizio2.getFrase_1());
-                            frase_2.setText("Frase 2: " + esercizio2.getFrase_2());
-                            frase_3.setText("Frase 3: " + esercizio2.getFrase_3());
+                            frase_1.setText("Frase 1: " + esercizio2.getParola_1());
+                            frase_2.setText("Frase 2: " + esercizio2.getParola_2());
+                            frase_3.setText("Frase 3: " + esercizio2.getParola_3());
 
                             FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 

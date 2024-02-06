@@ -1,7 +1,7 @@
 package it.uniba.dib.sms2324_4.creazione.esercizi;
 
 public class Esercizio2 {
-    String frase_1, frase_2, frase_3, audio_soluzione , id_esercizio ;
+    String parola_1, parola_2, parola_3, audio_soluzione , id_esercizio ;
     int conta_assegnazioni = 0;
     int esperienza = 25;
     int monete = 10;
@@ -18,12 +18,12 @@ public class Esercizio2 {
 
     boolean esito;
 
-    public Esercizio2(String frase_1, String frase_2, String frase_3, String audio_soluzione,
+    public Esercizio2(String parola_1, String parola_2, String parola_3, String audio_soluzione,
                       String id_esercizio, int conta_assegnazioni, int esperienza, int monete,
                       boolean corretto, boolean eseguito, boolean esito) {
-        this.frase_1 = frase_1;
-        this.frase_2 = frase_2;
-        this.frase_3 = frase_3;
+        this.parola_1 = parola_1;
+        this.parola_2 = parola_2;
+        this.parola_3 = parola_3;
         this.audio_soluzione = audio_soluzione;
         this.id_esercizio = id_esercizio;
         this.conta_assegnazioni = conta_assegnazioni;
@@ -38,28 +38,28 @@ public class Esercizio2 {
         //Costruttore Vuoto
     }
 
-    public String getFrase_1() {
-        return frase_1;
+    public String getParola_1() {
+        return parola_1;
     }
 
-    public void setFrase_1(String frase_1) {
-        this.frase_1 = frase_1;
+    public void setParola_1(String parola_1) {
+        this.parola_1 = parola_1;
     }
 
-    public String getFrase_2() {
-        return frase_2;
+    public String getParola_2() {
+        return parola_2;
     }
 
-    public void setFrase_2(String frase_2) {
-        this.frase_2 = frase_2;
+    public void setParola_2(String parola_2) {
+        this.parola_2 = parola_2;
     }
 
-    public String getFrase_3() {
-        return frase_3;
+    public String getParola_3() {
+        return parola_3;
     }
 
-    public void setFrase_3(String frase_3) {
-        this.frase_3 = frase_3;
+    public void setParola_3(String parola_3) {
+        this.parola_3 = parola_3;
     }
 
     public String getAudio_soluzione() {

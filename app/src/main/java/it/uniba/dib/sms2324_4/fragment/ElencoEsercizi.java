@@ -134,9 +134,9 @@ public class ElencoEsercizi extends Fragment {
                         Esercizio2 esercizio2 = new Esercizio2();
 
                         esercizio2.setId_esercizio(dataSnapshot.child("id_esercizio").getValue().toString());
-                        esercizio2.setFrase_1(dataSnapshot.child("frase_1").getValue().toString());
-                        esercizio2.setFrase_2(dataSnapshot.child("frase_2").getValue().toString());
-                        esercizio2.setFrase_3(dataSnapshot.child("frase_3").getValue().toString());
+                        esercizio2.setParola_1(dataSnapshot.child("frase_1").getValue().toString());
+                        esercizio2.setParola_2(dataSnapshot.child("frase_2").getValue().toString());
+                        esercizio2.setParola_3(dataSnapshot.child("frase_3").getValue().toString());
                         esercizio2.setCorretto((Boolean) dataSnapshot.child("corretto").getValue());
                         esercizio2.setEseguito((Boolean) dataSnapshot.child("eseguito").getValue());
                         esercizio2.setMonete(dataSnapshot.child("monete").getValue(Integer.class));

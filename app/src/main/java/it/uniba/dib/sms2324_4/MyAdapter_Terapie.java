@@ -18,7 +18,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -42,7 +41,6 @@ import java.util.ArrayList;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio2;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio3;
-import it.uniba.dib.sms2324_4.fragment.ElencoEsercizi;
 import it.uniba.dib.sms2324_4.fragment.ElencoPazienti;
 
 public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.MyViewHolder> {
@@ -225,9 +223,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     Esercizio2 esercizio2 = new Esercizio2();
 
                                                     esercizio2.setId_esercizio(snapshot1.child("id_esercizio").getValue().toString());
-                                                    esercizio2.setFrase_1(snapshot1.child("frase_1").getValue().toString());
-                                                    esercizio2.setFrase_2(snapshot1.child("frase_2").getValue().toString());
-                                                    esercizio2.setFrase_3(snapshot1.child("frase_3").getValue().toString());
+                                                    esercizio2.setParola_1(snapshot1.child("frase_1").getValue().toString());
+                                                    esercizio2.setParola_2(snapshot1.child("frase_2").getValue().toString());
+                                                    esercizio2.setParola_3(snapshot1.child("frase_3").getValue().toString());
                                                     esercizio2.setCorretto((Boolean) snapshot1.child("corretto").getValue());
                                                     esercizio2.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio2.setMonete(snapshot1.child("monete").getValue(Integer.class));
@@ -996,9 +994,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    frase_1.setText("Frase 1: " + esercizio2.getFrase_1());
-                                                                                    frase_2.setText("Frase 2: " + esercizio2.getFrase_2());
-                                                                                    frase_3.setText("Frase 3: " + esercizio2.getFrase_3());
+                                                                                    frase_1.setText("Frase 1: " + esercizio2.getParola_1());
+                                                                                    frase_2.setText("Frase 2: " + esercizio2.getParola_2());
+                                                                                    frase_3.setText("Frase 3: " + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -1082,36 +1080,34 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                 FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
                                                                 StorageReference storageReference = storage.getReference(dataSnapshot.child("audio_soluzione").getValue(String.class).substring(1));
 
-                                                                try {
-                                                                    File file = File.createTempFile("tempfile" , ".3gp");
-
-                                                                    storageReference.getFile(file)
-                                                                            .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                                                                                @Override
-                                                                                public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                                                                                    try {
-                                                                                        mediaPlayer = new MediaPlayer();
-                                                                                        mediaPlayer.start();
-                                                                                        mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
-                                                                                        mediaPlayer.prepare();
-
-                                                                                        riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
-                                                                                            @Override
-                                                                                            public void onClick(View view) {
-                                                                                                riproduci_soluzione.setVisibility(View.GONE);
-                                                                                                ferma_riproduzione.setVisibility(View.VISIBLE);
+                                                                riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
+                                                                    @Override
+                                                                    public void onClick(View view) {
+                                                                        riproduci_soluzione.setVisibility(View.GONE);
+                                                                        ferma_riproduzione.setVisibility(View.VISIBLE);
+                                                                        try {
+                                                                            File file = File.createTempFile("tempfile" , ".3gp");
+                                                                            mediaPlayer = new MediaPlayer();
+                                                                            storageReference.getFile(file)
+                                                                                    .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                                                                                        @Override
+                                                                                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                                                                                            try {
+                                                                                                mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
+                                                                                                mediaPlayer.prepare();
+                                                                                                mediaPlayer.start();
+                                                                                            } catch (
+                                                                                                    IOException e) {
+                                                                                                throw new RuntimeException(e);
                                                                                             }
-                                                                                        });
-                                                                                    } catch (
-                                                                                            IOException e) {
-                                                                                        throw new RuntimeException(e);
-                                                                                    }
-                                                                                }
-                                                                            });
+                                                                                        }
+                                                                                    });
 
-                                                                } catch (IOException e) {
-                                                                    throw new RuntimeException(e);
-                                                                }
+                                                                        } catch (IOException e) {
+                                                                            throw new RuntimeException(e);
+                                                                        }
+                                                                    }
+                                                                });
 
                                                                 ferma_riproduzione.setOnClickListener(new View.OnClickListener() {
                                                                     @Override
@@ -1341,9 +1337,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    frase_1.setText("Frase 1: " + esercizio2.getFrase_1());
-                                                                                    frase_2.setText("Frase 2: " + esercizio2.getFrase_2());
-                                                                                    frase_3.setText("Frase 3: " + esercizio2.getFrase_3());
+                                                                                    frase_1.setText("Frase 1: " + esercizio2.getParola_1());
+                                                                                    frase_2.setText("Frase 2: " + esercizio2.getParola_2());
+                                                                                    frase_3.setText("Frase 3: " + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -1427,36 +1423,34 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                 FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
                                                                 StorageReference storageReference = storage.getReference(dataSnapshot.child("audio_soluzione").getValue(String.class).substring(1));
 
-                                                                try {
-                                                                    File file = File.createTempFile("tempfile" , ".3gp");
-
-                                                                    storageReference.getFile(file)
-                                                                            .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                                                                                @Override
-                                                                                public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                                                                                    try {
-                                                                                        mediaPlayer = new MediaPlayer();
-                                                                                        mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
-                                                                                        mediaPlayer.prepare();
-
-                                                                                        riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
-                                                                                            @Override
-                                                                                            public void onClick(View view) {
+                                                                riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
+                                                                    @Override
+                                                                    public void onClick(View view) {
+                                                                        riproduci_soluzione.setVisibility(View.GONE);
+                                                                        ferma_riproduzione.setVisibility(View.VISIBLE);
+                                                                        try {
+                                                                            File file = File.createTempFile("tempfile" , ".3gp");
+                                                                            mediaPlayer = new MediaPlayer();
+                                                                            storageReference.getFile(file)
+                                                                                    .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                                                                                        @Override
+                                                                                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                                                                                            try {
+                                                                                                mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
+                                                                                                mediaPlayer.prepare();
                                                                                                 mediaPlayer.start();
-                                                                                                riproduci_soluzione.setVisibility(View.GONE);
-                                                                                                ferma_riproduzione.setVisibility(View.VISIBLE);
+                                                                                            } catch (
+                                                                                                    IOException e) {
+                                                                                                throw new RuntimeException(e);
                                                                                             }
-                                                                                        });
-                                                                                    } catch (
-                                                                                            IOException e) {
-                                                                                        throw new RuntimeException(e);
-                                                                                    }
-                                                                                }
-                                                                            });
+                                                                                        }
+                                                                                    });
 
-                                                                } catch (IOException e) {
-                                                                    throw new RuntimeException(e);
-                                                                }
+                                                                        } catch (IOException e) {
+                                                                            throw new RuntimeException(e);
+                                                                        }
+                                                                    }
+                                                                });
 
                                                                 ferma_riproduzione.setOnClickListener(new View.OnClickListener() {
                                                                     @Override
@@ -1686,9 +1680,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    frase_1.setText("Frase 1: " + esercizio2.getFrase_1());
-                                                                                    frase_2.setText("Frase 2: " + esercizio2.getFrase_2());
-                                                                                    frase_3.setText("Frase 3: " + esercizio2.getFrase_3());
+                                                                                    frase_1.setText("Frase 1: " + esercizio2.getParola_1());
+                                                                                    frase_2.setText("Frase 2: " + esercizio2.getParola_2());
+                                                                                    frase_3.setText("Frase 3: " + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -1772,36 +1766,34 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
                                                                StorageReference storageReference = storage.getReference(dataSnapshot.child("audio_soluzione").getValue(String.class).substring(1));
 
-                                                               try {
-                                                                   File file = File.createTempFile("tempfile" , ".3gp");
-
-                                                                   storageReference.getFile(file)
-                                                                           .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                                                                               @Override
-                                                                               public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                                                                                   try {
-                                                                                       mediaPlayer = new MediaPlayer();
-                                                                                       mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
-                                                                                       mediaPlayer.prepare();
-
-                                                                                       riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
-                                                                                           @Override
-                                                                                           public void onClick(View view) {
+                                                               riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
+                                                                   @Override
+                                                                   public void onClick(View view) {
+                                                                       riproduci_soluzione.setVisibility(View.GONE);
+                                                                       ferma_riproduzione.setVisibility(View.VISIBLE);
+                                                                       try {
+                                                                           File file = File.createTempFile("tempfile" , ".3gp");
+                                                                           mediaPlayer = new MediaPlayer();
+                                                                           storageReference.getFile(file)
+                                                                                   .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                                                                                       @Override
+                                                                                       public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                                                                                           try {
+                                                                                               mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
+                                                                                               mediaPlayer.prepare();
                                                                                                mediaPlayer.start();
-                                                                                               riproduci_soluzione.setVisibility(View.GONE);
-                                                                                               ferma_riproduzione.setVisibility(View.VISIBLE);
+                                                                                           } catch (
+                                                                                                   IOException e) {
+                                                                                               throw new RuntimeException(e);
                                                                                            }
-                                                                                       });
-                                                                                   } catch (
-                                                                                           IOException e) {
-                                                                                       throw new RuntimeException(e);
-                                                                                   }
-                                                                               }
-                                                                           });
+                                                                                       }
+                                                                                   });
 
-                                                               } catch (IOException e) {
-                                                                   throw new RuntimeException(e);
-                                                               }
+                                                                       } catch (IOException e) {
+                                                                           throw new RuntimeException(e);
+                                                                       }
+                                                                   }
+                                                               });
 
                                                                ferma_riproduzione.setOnClickListener(new View.OnClickListener() {
                                                                    @Override
@@ -2031,9 +2023,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                    Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                    id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                   frase_1.setText("Frase 1: " + esercizio2.getFrase_1());
-                                                                                   frase_2.setText("Frase 2: " + esercizio2.getFrase_2());
-                                                                                   frase_3.setText("Frase 3: " + esercizio2.getFrase_3());
+                                                                                   frase_1.setText("Frase 1: " + esercizio2.getParola_1());
+                                                                                   frase_2.setText("Frase 2: " + esercizio2.getParola_2());
+                                                                                   frase_3.setText("Frase 3: " + esercizio2.getParola_3());
 
                                                                                    FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -2117,36 +2109,34 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                 FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
                                                                 StorageReference storageReference = storage.getReference(dataSnapshot.child("audio_soluzione").getValue(String.class).substring(1));
 
-                                                                try {
-                                                                    File file = File.createTempFile("tempfile" , ".3gp");
-
-                                                                    storageReference.getFile(file)
-                                                                            .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                                                                                @Override
-                                                                                public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-                                                                                    try {
-                                                                                        mediaPlayer = new MediaPlayer();
-                                                                                        mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
-                                                                                        mediaPlayer.prepare();
-
-                                                                                        riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
-                                                                                            @Override
-                                                                                            public void onClick(View view) {
+                                                                riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
+                                                                    @Override
+                                                                    public void onClick(View view) {
+                                                                        riproduci_soluzione.setVisibility(View.GONE);
+                                                                        ferma_riproduzione.setVisibility(View.VISIBLE);
+                                                                        try {
+                                                                            File file = File.createTempFile("tempfile" , ".3gp");
+                                                                            mediaPlayer = new MediaPlayer();
+                                                                            storageReference.getFile(file)
+                                                                                    .addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                                                                                        @Override
+                                                                                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                                                                                            try {
+                                                                                                mediaPlayer.setDataSource(info_dialog.getContext() , Uri.fromFile(file));
+                                                                                                mediaPlayer.prepare();
                                                                                                 mediaPlayer.start();
-                                                                                                riproduci_soluzione.setVisibility(View.GONE);
-                                                                                                ferma_riproduzione.setVisibility(View.VISIBLE);
+                                                                                            } catch (
+                                                                                                    IOException e) {
+                                                                                                throw new RuntimeException(e);
                                                                                             }
-                                                                                        });
-                                                                                    } catch (
-                                                                                            IOException e) {
-                                                                                        throw new RuntimeException(e);
-                                                                                    }
-                                                                                }
-                                                                            });
+                                                                                        }
+                                                                                    });
 
-                                                                } catch (IOException e) {
-                                                                    throw new RuntimeException(e);
-                                                                }
+                                                                        } catch (IOException e) {
+                                                                            throw new RuntimeException(e);
+                                                                        }
+                                                                    }
+                                                                });
 
                                                                 ferma_riproduzione.setOnClickListener(new View.OnClickListener() {
                                                                     @Override
@@ -2376,9 +2366,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    frase_1.setText("Frase 1: " + esercizio2.getFrase_1());
-                                                                                    frase_2.setText("Frase 2: " + esercizio2.getFrase_2());
-                                                                                    frase_3.setText("Frase 3: " + esercizio2.getFrase_3());
+                                                                                    frase_1.setText("Frase 1: " + esercizio2.getParola_1());
+                                                                                    frase_2.setText("Frase 2: " + esercizio2.getParola_2());
+                                                                                    frase_3.setText("Frase 3: " + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 

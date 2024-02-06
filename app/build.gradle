@@ -52,4 +52,7 @@ dependencies {
 
     implementation 'com.afollestad.material-dialogs:core:3.3.0'
 
+    implementation 'com.firebase:firebase-jobdispatcher:0.8.6'
+    implementation 'com.google.firebase:firebase-core:20.0.1'
+
 }

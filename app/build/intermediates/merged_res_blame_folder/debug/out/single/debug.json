@@ -1,830 +1,830 @@
 [
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\raw_background2.json.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\raw\\background2.json"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_password.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_password.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_gioco.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_gioco.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xhdpi\\ic_action_name.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_app_logo_round.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_app_logo_round.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_blubutton.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\blubutton.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_corners_button.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_corners_button.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\color_gradient_shape.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\color\\gradient_shape.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_gioco__home__page.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_gioco__home__page.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_troll.gif.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_troll.gif"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_gradient_header_purple.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\gradient_header_purple.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_app_logo.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_app_logo.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_app_logo_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_google_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_google_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_map_sentiero.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\map_sentiero.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_google_round.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_google_round.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_crea_esercizio3.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_crea_esercizio3.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_gioco.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_gioco.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_app_logo_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_ligneo.jpg.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_ligneo.jpg"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_ligneo.jpg.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_ligneo.jpg"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_calendario.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_calendario.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_google.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_google.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_dialog_esercizio3_sbagliato.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\dialog_esercizio3_sbagliato.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_elenco_esercizi.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_elenco_esercizi.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_robot.gif.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_robot.gif"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_correzione_esercizio3.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_correzione_esercizio3.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_close.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_close.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_podio.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\podio.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_elenco_pazienti.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_elenco_pazienti.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_menu_header.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\menu_header.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_app_logo.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_bordo_nero.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\bordo_nero.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_coin.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_coin.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_person.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_person.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xxhdpi_ic_esperienza.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xxhdpi\\ic_esperienza.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_corners_button_red.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_corners_button_red.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_shop.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_shop.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-hdpi_ic_esperienza.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-hdpi\\ic_esperienza.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_esercizio_svolto_popup.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\esercizio_svolto_popup.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_add_child.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_add_child.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_onde_di_colore.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_onde_di_colore.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_google.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_google.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_google.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_google.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_gradient_header.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\gradient_header.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_google_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_item_personaggio.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\item_personaggio.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_primo_posto.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\primo_posto.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_stregone.gif.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_stregone.gif"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_assegna_terapia_popup.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\assegna_terapia_popup.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_crea_esercizio2.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_crea_esercizio2.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_troll.gif.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_troll.gif"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_blubutton.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\blubutton.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_google.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_google.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_google.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_app_logo.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_app_logo.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_item_scenario.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\item_scenario.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_edit.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_edit.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_item_sfondo.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\item_sfondo.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_google_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_google_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_corners_button_grey.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_corners_button_grey.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_bg_pink.jpg.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\bg_pink.jpg"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_arrow_right.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_arrow_right.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_bg_btn.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\bg_btn.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_registrazione_bambini.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_registrazione_bambini.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_bandierina.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\bandierina.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_personaggio.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_personaggio.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_app_logo.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_app_logo.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_app_logo_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_esercizi.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\esercizi.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_app_logo_background.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_app_logo_background.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_home_black_24dp.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_home_black_24dp.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_dialog_dettaglio_item.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\dialog_dettaglio_item.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_exercise3_info_popup.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\exercise3_info_popup.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_google_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_google_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_therapy.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\therapy.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-mdpi_ic_coin.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-mdpi\\ic_coin.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_spazioviola.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_spazioviola.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_map_sentiero.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\map_sentiero.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_google.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_google.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_google.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_map_mars.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\map_mars.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_personaggio.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_personaggio.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_therapy.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\therapy.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_user.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_user.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_app_logo_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_app_logo_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_add_child.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_add_child.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_app_logo_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_app_logo_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_google.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_classifica.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_classifica.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_google_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_podio.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\podio.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_esperienza.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_esperienza.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_figli.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\figli.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xhdpi_ic_esperienza.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xhdpi\\ic_esperienza.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_registrazione_bambini.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_registrazione_bambini.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_dialog_esercizio3_giusto.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\dialog_esercizio3_giusto.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_correzione_esercizio1.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_correzione_esercizio1.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_paziente.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_paziente.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_game.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\game.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_correzione_esercizio1.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_correzione_esercizio1.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_baseline_arrow_drop_down_circle_24.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_baseline_arrow_drop_down_circle_24.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_key.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_key.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_google.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_item.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\item.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_menu_header_logopedista.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\menu_header_logopedista.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_game.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_game.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_bg_btn.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\bg_btn.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_menu_header_logopedista.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\menu_header_logopedista.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_google_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_gold.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_gold.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_map_flying_island.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\map_flying_island.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_confirm_deassign_exercise.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\confirm_deassign_exercise.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_child_profile_image.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\child_profile_image.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_esercizi.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\esercizi.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_google_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_google_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_corners_button_white.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_corners_button_white.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_login_logopedista.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_login_logopedista.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\menu_menu_genitore.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\menu\\menu_genitore.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_shop_black_24dp.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_shop_black_24dp.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_crea_esercizio1.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_crea_esercizio1.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_game.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\game.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_password.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_password.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_arrow.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_arrow.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_register_logopedista.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_register_logopedista.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-hdpi_ic_coin.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-hdpi\\ic_coin.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_child_info_popup.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\child_info_popup.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_date.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_date.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_google_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_google_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_google_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_app_logo_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_app_logo_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\raw_blackwhitebackground.json.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\raw\\blackwhitebackground.json"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_app_logo.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_app_logo.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_bimbo.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_bimbo.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_gelato.gif.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_gelato.gif"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_google_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_delete.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_delete.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_close.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_close.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_google.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_google.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\raw_background.json.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\raw\\background.json"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xxhdpi_ic_coin.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xxhdpi\\ic_coin.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_audio.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_audio.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_stregone.gif.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_stregone.gif"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_gioco.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_gioco.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_home.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-hdpi_ic_action_name.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-hdpi\\ic_action_name.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_gioco.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_gioco.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_google_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_google_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_bronze.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_bronze.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_item_scenario.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\item_scenario.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_bg_pink.jpg.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\bg_pink.jpg"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_app_logo_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_home.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_home.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-anydpi_ic_esperienza.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-anydpi\\ic_esperienza.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_patient_info_popup.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\patient_info_popup.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_confirm_delete.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\confirm_delete.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_classifica_scritta.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\classifica_scritta.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_bimbo.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_bimbo.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_cella_layout.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\cella_layout.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_app_logo_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_pazienti.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\pazienti.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_home_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_elenco_pazienti.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_elenco_pazienti.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xhdpi_ic_coin.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xhdpi\\ic_coin.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_user_logopedista.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_user_logopedista.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_arrow.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_arrow.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_map_ring_arancio.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\map_ring_arancio.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_app_logo.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_map_flying_island.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\map_flying_island.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_baseline_arrow_drop_down_circle_24.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_baseline_arrow_drop_down_circle_24.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_google_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_google_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_register_logopedista.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_register_logopedista.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_secondo_posto.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\secondo_posto.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_gradient_header_purple.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\gradient_header_purple.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_app_logo_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_app_logo_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\menu_menu_logopedista.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\menu\\menu_logopedista.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-anydpi_ic_add.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-anydpi\\ic_add.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_view_therapy_patient.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\view_therapy_patient.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_classifica.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_classifica.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-anydpi_ic_coin.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-anydpi\\ic_coin.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_dashboard_black_24dp.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_dashboard_black_24dp.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xxhdpi_ic_esperienza.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xxhdpi\\ic_esperienza.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_gradient_header.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\gradient_header.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_esercizio_svolto_popup.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\esercizio_svolto_popup.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_calendario__personalizzato.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_calendario__personalizzato.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_dialog_esercizio3_sbagliato.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\dialog_esercizio3_sbagliato.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-hdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-hdpi\\ic_action_name.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_app_logo_background.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_app_logo_background.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_bordo_nero.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\bordo_nero.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_scenario.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_scenario.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_onde_di_colore.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_onde_di_colore.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_gradient_bg_item.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\gradient_bg_item.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\menu_menu_logopedista.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\menu\\menu_logopedista.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_exercise1_info_popup.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\exercise1_info_popup.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_date.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_date.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_child_profile_image.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\child_profile_image.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_bronze.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_bronze.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_classifica.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_classifica.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_child_selection.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\child_selection.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_delete.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-anydpi_ic_esperienza.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-anydpi\\ic_esperienza.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_correzione_esercizio2.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_correzione_esercizio2.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_exercise1_info_popup.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\exercise1_info_popup.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_alieno.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\alieno.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_app_logo_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_app_logo_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_app_logo_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_regalo.jpg.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\regalo.jpg"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_primo_posto.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\primo_posto.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_scroll.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_scroll.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_shop.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\shop.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_crea_esercizio3.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_crea_esercizio3.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_elenco_esercizi.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_elenco_esercizi.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_shop.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\shop.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_patient_info_popup.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\patient_info_popup.xml"
     },
     {
-        "merged": "it.uniba.dib.sms2324_4.app-merged_res-40:/drawable_skin_cubot.gif.flat",
-        "source": "it.uniba.dib.sms2324_4.app-main-42:/drawable/skin_cubot.gif"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_add.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_home.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_person.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_app_logo_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_app_logo_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_shop.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_shop.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_item_sfondo.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\item_sfondo.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_dinosauro.gif.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_dinosauro.gif"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_calendario__personalizzato.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_calendario__personalizzato.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_classifica_scritta.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\classifica_scritta.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_corners_button.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_corners_button.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_cerclebackground.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\cerclebackground.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_paziente.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_paziente.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_dashboard_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_dialog_esercizio3_giusto.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\dialog_esercizio3_giusto.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_gold.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_gold.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_user.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_user.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_login_logopedista.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_login_logopedista.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_neutra_button_background.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\neutra_button_background.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_terzo_posto.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\terzo_posto.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_gray.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_gray.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_assegna_terapia_popup.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\assegna_terapia_popup.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_natura.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_natura.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_child.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_child.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_bandierina.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\bandierina.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_scenario.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_scenario.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_app_logo.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_exercise3_info_popup.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\exercise3_info_popup.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_confirm_deassign_exercise.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\confirm_deassign_exercise.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_gelato.gif.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_gelato.gif"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_correzione_esercizio3.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_correzione_esercizio3.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_child_selection.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\child_selection.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_polpo.gif.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_polpo.gif"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_google_background.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_google_background.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-mdpi_ic_action_name.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-mdpi\\ic_action_name.png"
+        "merged": "it.uniba.dib.sms2324_4.app-merged_res-40:/layout_fragment_correzione_esercizio3.xml.flat",
+        "source": "it.uniba.dib.sms2324_4.app-main-42:/layout/fragment_correzione_esercizio3.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_dinosauro.gif.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_dinosauro.gif"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_google_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_dialog_background.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_dialog_background.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_view_exercises_results.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\view_exercises_results.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_check.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_check.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-mdpi_ic_esperienza.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-mdpi\\ic_esperienza.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_google_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_google_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_calendario.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_calendario.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_cielo.jpg.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_cielo.jpg"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_button.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_button.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\menu_menu_genitore.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\menu\\menu_genitore.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_shop_black_24dp.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_shop_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_alieno.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\alieno.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\menu_menu_bottom_navigation.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\menu\\menu_bottom_navigation.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_app_logo_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_child.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_child.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_game.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_game.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_app_logo.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_app_logo.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_natura.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_natura.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_audio.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_audio.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_dialog_background_faded.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_dialog_background_faded.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_shop.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_shop.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_corners_button_red.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_corners_button_red.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xhdpi_ic_action_name.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xhdpi\\ic_action_name.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_cubot.gif.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_cubot.gif"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_app_logo_round.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_app_logo_round.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-mdpi_ic_coin.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-mdpi\\ic_coin.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_correzione_esercizio2.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_correzione_esercizio2.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\raw_background2.json.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\raw\\background2.json"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_exercise2_info_popup.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\exercise2_info_popup.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_pazienti.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\pazienti.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_google_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_google_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_map_ring_arancio.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\map_ring_arancio.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_app_logo_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_app_logo_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_app_logo.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_app_logo.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_crea_esercizi.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_crea_esercizi.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_corners_button_grey.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_corners_button_grey.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_background_grey_rounded_corner_20dp.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\background_grey_rounded_corner_20dp.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_spazioviola.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_spazioviola.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_gray.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_gray.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_key.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_key.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_button.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_button.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_google_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_google_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_gioco__home__page.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_gioco__home__page.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_view_exercises_results.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\view_exercises_results.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_neutra_button_background.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\neutra_button_background.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_view_therapy_patient.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\view_therapy_patient.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_polpo.gif.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_polpo.gif"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_exercise.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_exercise.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_app_logo_foreground.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_app_logo_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_confirm_delete.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\confirm_delete.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_google_round.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_google_round.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_item_personaggio.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\item_personaggio.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_gradient_header_blue.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\gradient_header_blue.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_corners_button_white.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_corners_button_white.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_esperienza.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_esperienza.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_dialog_background_faded.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_dialog_background_faded.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_exercise.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_exercise.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_dialog_esercizio_terminato.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\dialog_esercizio_terminato.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_user_logopedista.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_user_logopedista.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_sfondo_cielo.jpg.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\sfondo_cielo.jpg"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_button_logopedista.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_button_logopedista.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-anydpi_ic_coin.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-anydpi\\ic_coin.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_google_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_map_mars.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\map_mars.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-hdpi_ic_coin.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-hdpi\\ic_coin.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_app_logo_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_sfondo.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_sfondo.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_dialog_background.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_dialog_background.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xxhdpi_ic_action_name.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xxhdpi\\ic_action_name.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\menu_menu_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\menu\\menu_bottom_navigation.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_cerclebackground.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\cerclebackground.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_google_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_google.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_google.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_sfondo.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_sfondo.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_crea_esercizio1.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_crea_esercizio1.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-hdpi_ic_esperienza.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-hdpi\\ic_esperienza.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_gradient_bg_item.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\gradient_bg_item.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_regalo.jpg.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\regalo.jpg"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_app_logo_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_app_logo_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_app_logo_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_app_logo_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_add.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_add.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_edit.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_edit.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_google_background.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_google_background.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_secondo_posto.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\secondo_posto.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_crea_esercizio2.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_crea_esercizio2.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_gradient_header_blue.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\gradient_header_blue.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_exercise2_info_popup.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\exercise2_info_popup.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_crea_esercizi.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_crea_esercizi.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_app_logo_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_app_logo_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_item.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\item.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xhdpi_ic_esperienza.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xhdpi\\ic_esperienza.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_logout.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\raw_blackwhitebackground.json.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\raw\\blackwhitebackground.json"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_scroll.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_scroll.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_fragment_shop.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\fragment_shop.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-mdpi_ic_esperienza.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-mdpi\\ic_esperienza.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_cella_layout.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\cella_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\raw_background.json.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\raw\\background.json"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_google.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_google.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_bot.gif.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_bot.gif"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-mdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-mdpi\\ic_action_name.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_logout.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_logout.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-anydpi-v26_ic_app_logo.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-anydpi-v26\\ic_app_logo.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_check.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xhdpi_ic_coin.png.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xhdpi\\ic_coin.png"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-hdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-hdpi\\ic_app_logo.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\color_gradient_shape.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\color\\gradient_shape.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xxhdpi_ic_action_name.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xxhdpi\\ic_action_name.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_menu_header.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\menu_header.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_background_grey_rounded_corner_20dp.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\background_grey_rounded_corner_20dp.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-mdpi_ic_google_round.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-mdpi\\ic_google_round.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_arrow_right.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_arrow_right.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_dialog_esercizio_terminato.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\dialog_esercizio_terminato.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_google_round.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_google_round.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-anydpi_ic_add.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-anydpi\\ic_add.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_rounded_button_logopedista.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\rounded_button_logopedista.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_app_logo.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_app_logo.webp"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_skin_robot.gif.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\skin_robot.gif"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_classifica.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_classifica.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_ic_coin.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\ic_coin.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable-xxhdpi_ic_coin.png.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable-xxhdpi\\ic_coin.png"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_dialog_dettaglio_item.xml.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\dialog_dettaglio_item.xml"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_child_info_popup.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\child_info_popup.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxhdpi_ic_app_logo_foreground.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxhdpi\\ic_app_logo_foreground.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\layout_figli.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\layout\\figli.xml"
     },
     {
-        "merged": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\drawable_terzo_posto.webp.flat",
-        "source": "C:\\Users\\Stefano\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\drawable\\terzo_posto.webp"
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-merged_res-40:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.0\\it.uniba.dib.sms2324_4.app-main-42:\\mipmap-xxxhdpi\\ic_launcher.webp"
     }
 ]

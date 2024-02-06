@@ -1,26 +1,19 @@
 package it.uniba.dib.sms2324_4.fragment;
 
-import android.Manifest;
 import android.app.Dialog;
-import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.speech.tts.TextToSpeech;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
@@ -31,7 +24,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
@@ -293,7 +285,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
                     public void onInit(int status) {
                         if (status == TextToSpeech.SUCCESS) {
                             // TextToSpeech è stato inizializzato con successo
-                            textToSpeech.speak(esercizio2.getFrase_1() +"   " + esercizio2.getFrase_2() +  "   " + esercizio2.getFrase_3(), TextToSpeech.QUEUE_FLUSH, null, null);
+                            textToSpeech.speak(esercizio2.getParola_1() +"   " + esercizio2.getParola_2() +  "   " + esercizio2.getParola_3(), TextToSpeech.QUEUE_FLUSH, null, null);
                         } else {
                             // Errore durante l'inizializzazione di TextToSpeech
                         }

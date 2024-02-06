@@ -107,9 +107,9 @@ public class creaEsercizio2 extends Fragment {
                         !matcher.matches()) {
                     Toast.makeText(v.getContext(), "Inserisci un ID ESERCIZIO VALIDO", Toast.LENGTH_SHORT).show();
                 } else {
-                    esercizio2.setFrase_1(frase1.getText().toString());
-                    esercizio2.setFrase_2(frase2.getText().toString());
-                    esercizio2.setFrase_3(frase3.getText().toString());
+                    esercizio2.setParola_1(frase1.getText().toString());
+                    esercizio2.setParola_2(frase2.getText().toString());
+                    esercizio2.setParola_3(frase3.getText().toString());
                     esercizio2.setAudio_soluzione("null");
                     esercizio2.setId_esercizio("2_" + id_eserczio2.getText().toString());
 

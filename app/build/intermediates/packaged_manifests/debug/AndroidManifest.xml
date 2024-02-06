@@ -35,7 +35,6 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_app_logo_round"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/BlueTheme" >
         <activity
             android:name="it.uniba.dib.sms2324_4.Register_Logopedista"
@@ -49,6 +48,9 @@
             android:name="it.uniba.dib.sms2324_4.User"
             android:exported="false"
             android:theme="@style/BlueTheme" />
+
+        <service android:name="it.uniba.dib.sms2324_4.MyBackgroundService" />
+
         <activity
             android:name="it.uniba.dib.sms2324_4.User_Logopedista"
             android:exported="false"

@@ -47,6 +47,7 @@ import it.uniba.dib.sms2324_4.fragment.Calendario;
 import it.uniba.dib.sms2324_4.fragment.Home;
 import it.uniba.dib.sms2324_4.fragment.RegistrazioneBambini;
 
+
 public class User extends AppCompatActivity {
 
     //Dichiarazione Oggetti Grafici del Layout
@@ -59,8 +60,6 @@ public class User extends AppCompatActivity {
 
     SessionManagement sessionManagement;
     FirebaseDatabase database;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,13 +99,6 @@ public class User extends AppCompatActivity {
 
                        nameView.setText(nome + " " + cognome);
                        emailView.setText(email);
-
-                       // Crea un Intent per avviare il servizio e passare dati aggiuntivi
-                       Intent intent = new Intent(User.this, MyBackgroundService.class);
-                       intent.putExtra("session_key", cf); // Inserisci i dati che desideri passare
-
-                       // Avvia il servizio
-                       startService(intent);
                    }
                }
            }
