@@ -1,80 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crea_esercizio_2"
-            android:layout_width="220dp"
-            android:layout_height="59dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="116dp"
-            android:background="@drawable/blubutton"
-            android:text="CREA"
-            android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/annulla_btn_2"
-            android:layout_width="220dp"
-            android:layout_height="59dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="50dp"
-            android:text="ANNULLA"
-            android:textColor="@color/white"
-            android:background="@drawable/blubutton"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-
-        <EditText
-            android:id="@+id/frase1"
-            android:layout_width="191dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="408dp"
-            android:background="@drawable/blubutton"
-            android:hint="FRASE 1"
-            android:textAlignment="center"
-            android:textColorHint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <EditText
-            android:id="@+id/frase2"
-            android:layout_width="191dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="400dp"
-            android:background="@drawable/blubutton"
-            android:hint="FRASE 2"
-            android:textAlignment="center"
-            android:textColorHint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frase1"
-            app:layout_constraintVertical_bias="0.053" />
-
-        <EditText
-            android:id="@+id/frase3"
-            android:layout_width="191dp"
-            android:layout_height="64dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginBottom="300dp"
-            android:background="@drawable/blubutton"
-            android:hint="FRASE 3"
-            android:textAlignment="center"
-            android:textColorHint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frase2"
-            app:layout_constraintVertical_bias="0.15" />
 
         <EditText
             android:id="@+id/id_esercizio2"
@@ -93,6 +25,121 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/tipo_es2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/tipo_es2"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/descrizione_es2"
+            app:layout_constraintTop_toBottomOf="@+id/id_esercizio2"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/descrizione_es2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="20dp"
+            android:text="@string/descrizione_es2"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_es2"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.52">
+
+            <EditText
+                android:id="@+id/parola1"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/blubutton"
+                android:hint="PAROLA 1"
+                android:textAlignment="center"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/parola2"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/parola1"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/blubutton"
+                android:hint="PAROLA 2"
+                android:textAlignment="center"
+                android:textColorHint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/parola1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/parola3"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/parola2"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/blubutton"
+                android:hint="PAROLA 3"
+                android:textAlignment="center"
+                android:textColorHint="@color/white" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/crea_esercizio_2"
+            android:layout_width="220dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="116dp"
+            android:background="@drawable/rounded_corners_button_red"
+            android:text="CREA"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+            app:layout_constraintVertical_bias="0.846" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/annulla_btn_2"
+            android:layout_width="220dp"
+            android:layout_height="59dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/rounded_corners_button_grey"
+            android:text="ANNULLA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crea_esercizio_2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="parola1,parola2" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</FrameLayout>
+</RelativeLayout>

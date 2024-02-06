@@ -82,8 +82,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
         ImageView imageView = convertView.findViewById(R.id.imageView);
         TextView textViewNome = convertView.findViewById(R.id.textViewNome);
-        TextView textViewPrezzo = convertView.findViewById(R.id.textViewPrezzo);
-        Button buttonAcquista = convertView.findViewById(R.id.buttonAcquista);
+        Button buttonPrezzo = convertView.findViewById(R.id.buttonPrezzo);
         TextView textViewAcquistato = convertView.findViewById(R.id.textViewAcquistato);
 
         assert item != null;
@@ -91,7 +90,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         imageView.setImageResource(item.getImmagineId());
 
         textViewNome.setText(item.getNome());
-        textViewPrezzo.setText(String.valueOf(item.getPrezzo()));
+        buttonPrezzo.setText(String.valueOf(item.getPrezzo()));
 
         Query item_acquistato = database.getReference("Utenti")
                         .child("Genitori")
@@ -104,12 +103,10 @@ public class ItemAdapter extends ArrayAdapter<Item> {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
-                    textViewPrezzo.setVisibility(View.GONE);
-                    buttonAcquista.setVisibility(View.GONE);
+                    buttonPrezzo.setVisibility(View.GONE);
                     textViewAcquistato.setVisibility(View.VISIBLE);
                 } else {
-                    textViewPrezzo.setVisibility(View.VISIBLE);
-                    buttonAcquista.setVisibility(View.VISIBLE);
+                    buttonPrezzo.setVisibility(View.VISIBLE);
                     textViewAcquistato.setVisibility(View.GONE);
                 }
             }
@@ -120,7 +117,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
             }
         });
 
-        buttonAcquista.setOnClickListener(view -> {
+        buttonPrezzo.setOnClickListener(view -> {
             //SALVATGGIO SKIN
             Query monete_sufficienti = database.getReference("Utenti")
                     .child("Genitori")

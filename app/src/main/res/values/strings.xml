@@ -12,18 +12,22 @@
     <string name="nome">Nome</string>
     <string name="cognome">Cognome</string>
     <string name="codice_fiscale">Codice fiscale</string>
+    <string name="codice_fiscale_genitore_registrato">Codice fiscale genitore</string>
     <string name="db_url">https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/</string>
     <string name="logopedista">Logopedista</string>
     <string name="login_genitore">Accedi come genitore</string>
     <string name="login_logopedista">Accedi come logopedista</string>
     <string name="crea_un_account_genitore">Crea un account genitore</string>
     <string name="crea_un_account_logopedista">Crea un account logopedista</string>
+    <string name="registra_un_nuovo_paziente">Registra un nuovo paziente</string>
     <string name="sono_un_genitore">Sono un genitore</string>
     <string name="sono_un_logopedista">Sono un logopedista</string>
     <string name="data_di_nascita">Data di nascita</string>
     <string name="refreshing">Caricamento</string>
     <string name="nav_open">Navigation Open\n</string>
     <string name="nav_close">Navigation Close\n\n</string>
+    <string name="registrazione_effettuata_con_successo">Registrazione Effettuata con successo</string>
+    <string name="paziente_registrato_con_successo">Paziente registrato con successo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="registra_bambino">Registra bambino</string>
@@ -32,4 +36,14 @@
     <string name="registra_paziente">Registra Paziente</string>
     <string name="conferma_password">Conferma Password</string>
     <string name="add_button_description">Aggiungi un nuovo paziente</string>
+    <string name="assegna_terapia">Assegna terapia</string>
+    <string name="annulla">Annulla</string>
+    <string name="seleziona_il_giorno">Seleziona il giorno</string>
+    <string name="seleziona_gli_esercizi">Seleziona gli esercizi</string>
+    <string name="tipo_es3">Riconoscimento di coppie minime</string>
+    <string name="tipo_es2">Ripetizione di sequenze di parole</string>
+    <string name="tipo_es1">Denominazione immagini</string>
+    <string name="descrizione_es1">"Data una immagine, il bambino deve riconoscere la parola associata all’immagine. Per fornire la risposta il bambino registra un audio utilizzando il microfono del dispositivo. \nAl bambino saranno inoltre forniti fino a 3 aiuti audio per facilitargli il riconoscimento della parola. "</string>
+    <string name="descrizione_es2">Dato un audio che riproduce 3 parole in sequenza, il bambino dovrà registrare un audio ripetendo le parole nella sequenza corretta.</string>
+    <string name="descrizione_es3">Date due immagini e la riproduzione audio di una parola, il bambino deve riconoscere l’immagine giusta a cui la parola si riferisce.</string>
 </resources>

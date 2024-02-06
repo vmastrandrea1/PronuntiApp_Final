@@ -170,7 +170,7 @@ public class Register_Logopedista extends AppCompatActivity {
                                 finish();
 
                                 Toast.makeText(Register_Logopedista.this,
-                                        "Registrazione Effettuata con SUCCESSO",
+                                        R.string.registrazione_effettuata_con_successo,
                                         Toast.LENGTH_SHORT).show();
                             }
                         }

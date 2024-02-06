@@ -1,120 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.RegistrazioneBambini"
-    android:orientation="vertical"
-    android:padding="15dp">
+    android:background="@color/purple"
+    android:paddingHorizontal="10dp"
+    tools:context=".Register">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/createAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:gravity="center"
-        android:text="@string/registrazione_paziente"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:text="@string/registra_un_nuovo_paziente"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:paddingTop="75dp"
+        android:paddingBottom="25dp"
+        android:paddingStart="17dp"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="90dp">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView"
+        android:layout_width="0dp"
+        android:layout_height="700dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/createAccount">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/child_name"
-            android:drawableLeft="@drawable/ic_edit"
-            android:drawablePadding="10dp"
-            android:hint="@string/nome"
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </com.google.android.material.textfield.TextInputEditText>
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <!-- Nome -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/child_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nome"
+                    android:background="@color/white"
+                    android:textColorHint="@color/purple"
+                    android:textStyle="bold" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/child_surname"
-            android:drawableLeft="@drawable/ic_edit"
-            android:drawablePadding="10dp"
-            android:hint="@string/cognome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <!-- Cognome -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="210dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/child_surname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:textColorHint="@color/purple"
+                    android:textStyle="bold"
+                    android:hint="@string/cognome" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/child_cf"
-            android:drawableLeft="@drawable/ic_edit"
-            android:drawablePadding="10dp"
-            android:hint="@string/codice_fiscale"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:maxLength="16">
-        </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <!-- Codice Fiscale -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/child_birthdate"
-        style="?android:spinnerStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="-25dp"
-        android:drawableLeft="@drawable/ic_date"
-        android:drawablePadding="17sp"
-        android:text="Data di nascita"
-        android:textColorHint="@color/black"
-        android:textAllCaps="true"
-        android:textSize="18dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/child_cf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/purple"
+                    android:maxLength="16"
+                    android:textStyle="bold"
+                    android:hint="@string/codice_fiscale"
+                    android:background="@color/white"/>
 
-    </androidx.appcompat.widget.AppCompatButton>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="370dp">
+            <!-- Data di nascita -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="26dp"
+                android:paddingEnd="16dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/genitore_cf"
-            android:drawableLeft="@drawable/ic_edit"
-            android:drawablePadding="10dp"
-            android:hint="Codice Fiscale Genitore REGISTRATO"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:maxLength="16">
-        </com.google.android.material.textfield.TextInputEditText>
+                <EditText
+                    android:id="@+id/child_birthdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-10dp"
+                    android:textColorHint="@color/purple"
+                    android:maxLength="16"
+                    android:textStyle="bold"
+                    android:hint="@string/data_di_nascita"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:background="@color/white"
+                    android:autofillHints="" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <ProgressBar
-        android:id="@+id/child_progressBar"
-        android:visibility="gone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
-        android:layout_marginLeft="180dp"/>
+            <!-- Codice Fiscale Genitore -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/child_btn_register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="550sp"
-        android:background="@drawable/bg_btn"
-        android:text="@string/registra_paziente"
-        android:layout_gravity="center_horizontal"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/genitore_cf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/purple"
+                    android:maxLength="16"
+                    android:textStyle="bold"
+                    android:hint="@string/codice_fiscale_genitore_registrato"
+                    android:background="@color/white"/>
 
-</FrameLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/refreshing"
+                android:visibility="gone"/>
+
+            <!-- Pulsante di registrazione -->
+            <Button
+                android:id="@+id/child_btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/registra_paziente"
+                android:textAllCaps="true"
+                android:background="@drawable/rounded_corners_button"
+                android:layout_marginHorizontal="16dp"
+                android:textColorHint="@color/white"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,20 +2,30 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="blue">#FF1a73e8</color>
+    <color name="green">#FF099130</color>
+    <color name="grey">#FFF1F1F1</color>
     <color name="ic_app_logo_background">#FFFFFF</color>
     <color name="purple">#FF673AB7</color>
+    <color name="red">#FFF95B5A</color>
+    <color name="transparent">#00FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
     <string name="accedi_con_google">Accedi con Google</string>
     <string name="add_button_description">Aggiungi un nuovo paziente</string>
+    <string name="annulla">Annulla</string>
     <string name="app_name">PronuntiApp</string>
+    <string name="assegna_terapia">Assegna terapia</string>
     <string name="client_id">928330153737-rq866lt51639dmhg84ssh8m4kqmdlqct.apps.googleusercontent.com</string>
     <string name="codice_fiscale">Codice fiscale</string>
+    <string name="codice_fiscale_genitore_registrato">Codice fiscale genitore</string>
     <string name="cognome">Cognome</string>
     <string name="conferma_password">Conferma Password</string>
     <string name="crea_un_account_genitore">Crea un account genitore</string>
     <string name="crea_un_account_logopedista">Crea un account logopedista</string>
     <string name="data_di_nascita">Data di nascita</string>
     <string name="db_url">https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/</string>
+    <string name="descrizione_es1">"Data una immagine, il bambino deve riconoscere la parola associata all’immagine. Per fornire la risposta il bambino registra un audio utilizzando il microfono del dispositivo. \nAl bambino saranno inoltre forniti fino a 3 aiuti audio per facilitargli il riconoscimento della parola. "</string>
+    <string name="descrizione_es2">Dato un audio che riproduce 3 parole in sequenza, il bambino dovrà registrare un audio ripetendo le parole nella sequenza corretta.</string>
+    <string name="descrizione_es3">Date due immagini e la riproduzione audio di una parola, il bambino deve riconoscere l’immagine giusta a cui la parola si riferisce.</string>
     <string name="email">Email</string>
     <string name="gcm_defaultSenderId" translatable="false">928330153737</string>
     <string name="google_api_key" translatable="false">AIzaSyBrtytQf2FQAsQ1gEXu5N7VOkkb5GkSz5c</string>
@@ -34,15 +44,23 @@
     <string name="nome">Nome</string>
     <string name="non_hai_un_account_registrati">Non hai un account? Registrati</string>
     <string name="password">Password</string>
+    <string name="paziente_registrato_con_successo">Paziente registrato con successo</string>
     <string name="project_id" translatable="false">pronuntiapp-register</string>
     <string name="refreshing">Caricamento</string>
     <string name="register">Registrati</string>
     <string name="registra_bambino">Registra bambino</string>
     <string name="registra_paziente">Registra Paziente</string>
+    <string name="registra_un_nuovo_paziente">Registra un nuovo paziente</string>
     <string name="registrazione_bambini">Registrazione Bambini</string>
+    <string name="registrazione_effettuata_con_successo">Registrazione Effettuata con successo</string>
     <string name="registrazione_paziente">Registrazione Paziente</string>
+    <string name="seleziona_gli_esercizi">Seleziona gli esercizi</string>
+    <string name="seleziona_il_giorno">Seleziona il giorno</string>
     <string name="sono_un_genitore">Sono un genitore</string>
     <string name="sono_un_logopedista">Sono un logopedista</string>
+    <string name="tipo_es1">Denominazione immagini</string>
+    <string name="tipo_es2">Ripetizione di sequenze di parole</string>
+    <string name="tipo_es3">Riconoscimento di coppie minime</string>
     <style name="Base.Theme.PronuntiApp" parent="Theme.Material3.DayNight.NoActionBar">
         
         
@@ -58,9 +76,20 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="colorControlActivated">@color/blue</item>
     </style>
+    <style name="DatePickerButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
     <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
         <item name="spinBars">true</item>
         <item name="color">@android:color/white</item>
+    </style>
+    <style name="MyDatePickerDialogTheme" parent="Theme.Material3.Light.Dialog">
+        <item name="android:windowBackground">@drawable/background_grey_rounded_corner_20dp</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DatePickerButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DatePickerButtonStyle</item>
     </style>
     <style name="MyHintTextAppearance" parent="TextAppearance.Design.Hint">
         <item name="android:textColor">@color/blue</item>

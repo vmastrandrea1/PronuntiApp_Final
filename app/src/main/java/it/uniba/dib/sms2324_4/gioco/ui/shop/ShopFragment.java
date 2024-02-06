@@ -115,6 +115,8 @@ public class ShopFragment extends Fragment {
         item.add(new Item(4,"Trombone", R.drawable.skin_stregone, 800, descrizione4,Item.ItemType.PERSONAGGIO));
         item.add(new Item(5,"Oculopodio", R.drawable.skin_polpo, 900, descrizione5,Item.ItemType.PERSONAGGIO));
         item.add(new Item(6,"Robotelmo", R.drawable.skin_robot, 1000, descrizione6,Item.ItemType.PERSONAGGIO));
+        item.add(new Item(61,"Cubot", R.drawable.skin_cubot, 3000, descrizione61,Item.ItemType.PERSONAGGIO));
+
 
         item.add(new Item(7,"Sentiero", R.drawable.map_sentiero, 0, descrizione7,Item.ItemType.SCENARIO));
         item.get(7).setAcquistato(true);
@@ -163,7 +165,7 @@ public class ShopFragment extends Fragment {
     String descrizione4 = "Trombone l'Incantatore è un musicista straordinario che suona il trombone, vestito con un mantello scuro e ornamenti magici. Le sue note possono incantare chiunque le ascolti, trasportandoli in mondi fantastici. Ha un cappello a punta decorato con stelle e lune.";
     String descrizione5 = "Oculopodio è un polpo straordinario con un unico occhio centrale. Le sue braccia sono adornate da simpatiche ventose e possiede una straordinaria intelligenza. Si muove elegantemente nell'acqua, sempre alla ricerca di avventure e scoperte sottomarine.";
     String descrizione6 = "Roboelmo è un robot futuristico con un elmetto decorato. Il suo corpo metallico riflette la luce, e le sue antenne emettono segnali luminosi. Dotato di un'intelligenza artificiale avanzata, Roboelmo è programmato per svolgere compiti vari, ma ha anche una personalità affabile e curiosa.";
-
+    String descrizione61 = "Cubot è un robot cubico grigio che ama esibirsi in capriole acrobatiche. Con un design semplice e superfici riflettenti, trasforma la robotica in uno spettacolo divertente. La sua personalità vivace è evidente nelle sue espressioni digitali durante le acrobazie, portando gioia a chiunque lo incontri.";
 
     String descrizione7 = "Il Sentiero Celestiale è una via incantata che si snoda attraverso un bosco antico, illuminato da luci fatate e circondato da alberi maestosi. Il terreno morbido e liscio rende il cammino un'esperienza piacevole, mentre creature magiche danzano tra gli alberi, rendendo questo sentiero un'incantevole avventura.";
     String descrizione8 = "L'Isola Volante è un paradiso sospeso tra le nuvole, avvolto da una luce eterea e circondato da scintillanti cascate d'aria. Su questa massa di terra fluttuante, alberi fantastici e giardini colorati prosperano, mentre creature volanti e libellule giganti sfrecciano nell'aria. L'atmosfera qui è pervasa da un senso di magia e meraviglia, trasformando ogni visita in un viaggio straordinario.";

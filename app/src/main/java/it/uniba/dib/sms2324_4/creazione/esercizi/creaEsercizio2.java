@@ -1,53 +1,31 @@
 package it.uniba.dib.sms2324_4.creazione.esercizi;
 
-import static android.app.Activity.RESULT_OK;
-
-import android.app.Dialog;
-import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.api.signin.internal.Storage;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import it.uniba.dib.sms2324_4.R;
-import it.uniba.dib.sms2324_4.fragment.Home;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -101,9 +79,9 @@ public class creaEsercizio2 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_crea_esercizio2, container, false);
-        EditText frase1 = (EditText) v.findViewById(R.id.frase1);
-        EditText frase2 = (EditText) v.findViewById(R.id.frase2);
-        EditText frase3 = (EditText) v.findViewById(R.id.frase3);
+        EditText frase1 = (EditText) v.findViewById(R.id.parola1);
+        EditText frase2 = (EditText) v.findViewById(R.id.parola2);
+        EditText frase3 = (EditText) v.findViewById(R.id.parola3);
         EditText id_eserczio2 = (EditText) v.findViewById(R.id.id_esercizio2);
         Button annulla = (Button) v.findViewById(R.id.annulla_btn_2);
         Button creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);

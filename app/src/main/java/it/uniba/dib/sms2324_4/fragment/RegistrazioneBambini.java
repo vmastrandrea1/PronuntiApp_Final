@@ -47,9 +47,9 @@ public class RegistrazioneBambini extends Fragment {
     // TODO: Rename and change types of parameters
     String sessionKey;
     //Oggetti grafici
-    EditText editTextChildCf , editTextChildNome , editTextChildCognome , editTextParentCf;
+    EditText editTextChildCf , editTextChildNome , editTextChildCognome , editData, editTextParentCf;
     DatePickerDialog datePickerDialog;
-    Button registerChild , editData;
+    Button registerChild;
 
     public RegistrazioneBambini() {
         // Required empty public constructor
@@ -192,7 +192,7 @@ public class RegistrazioneBambini extends Fragment {
                                                     .child(cf)
                                                     .setValue(paziente1);
                                             Toast.makeText(v.getContext(),
-                                                    "Paziente registrato con SUCCESSO",
+                                                    R.string.paziente_registrato_con_successo,
                                                     Toast.LENGTH_SHORT).show();
 
                                             FragmentManager fragmentManager = getParentFragmentManager();
@@ -258,7 +258,7 @@ public class RegistrazioneBambini extends Fragment {
         int month = cal.get(Calendar.MONTH);
         int day = cal.get(Calendar.DAY_OF_MONTH);
 
-        int style = AlertDialog.THEME_HOLO_LIGHT;
+        int style = R.style.MyDatePickerDialogTheme;
 
         datePickerDialog = new DatePickerDialog(requireContext(), style, dateSetListener, year, month, day);
         //datePickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());

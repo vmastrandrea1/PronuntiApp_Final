@@ -5,8 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
-    android:padding="8dp"
     android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="20dp"
     app:cardElevation="10dp"
@@ -20,27 +18,13 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:background="@drawable/gradient_bg_item"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_personaggio"
-            android:background="@drawable/gradient_bg_item"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/textViewBanner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:drawableEnd="@drawable/ic_personaggio"
-            android:drawableTint="@color/design_default_color_primary"
-            android:padding="7dp"
-            android:text=""
-            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
             android:id="@+id/textViewNome"
@@ -48,65 +32,57 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorSurface"
             android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_personaggio"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/purple"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
             android:padding="8dp"
             android:text="Nome contenuto"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textViewBanner"
             app:layout_constraintTop_toBottomOf="@id/imageView" />
-
 
 
         <LinearLayout
             android:id="@+id/price_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:background="@color/purple"
             android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@id/textViewNome"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:background="@color/design_default_color_primary">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/textViewPrezzo"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="50 Monete"
-                android:textColor="@color/white"
-                android:background="@color/design_default_color_primary"
-                android:textSize="14sp"
-                android:padding="0dp"
-                android:textStyle="bold"
-                tools:ignore="RtlCompat"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <Button
-                android:id="@+id/buttonAcquista"
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPrezzo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ACQUISTA"
-                android:textSize="13sp"
+                android:layout_weight="1"
+                android:background="@color/purple"
+                android:text="500"
                 android:textColor="@color/white"
-                android:backgroundTint="@color/design_default_color_primary"/>
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/textViewAcquistato"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@color/black"
                 android:gravity="center"
+                android:padding="15dp"
                 android:text="ACQUISTATO"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:background="@color/black"
                 android:textSize="13sp"
-                android:padding="15dp"
                 android:textStyle="bold"
-                tools:ignore="RtlCompat"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="RtlCompat" />
 
         </LinearLayout>
 

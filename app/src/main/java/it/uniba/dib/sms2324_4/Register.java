@@ -178,7 +178,7 @@ public class Register extends AppCompatActivity {
                                                 finish();
 
                                                 Toast.makeText(Register.this,
-                                                        "Registrazione Effettuata con SUCCESSO",
+                                                        R.string.registrazione_effettuata_con_successo,
                                                         Toast.LENGTH_SHORT).show();
                                             }
                                         }

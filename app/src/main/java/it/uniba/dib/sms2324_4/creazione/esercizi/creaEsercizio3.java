@@ -1,15 +1,9 @@
 package it.uniba.dib.sms2324_4.creazione.esercizi;
 
-import static android.app.Activity.RESULT_OK;
-
-import android.app.Dialog;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -23,17 +17,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.auth.api.signin.internal.Storage;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -47,7 +35,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import it.uniba.dib.sms2324_4.R;
-import it.uniba.dib.sms2324_4.fragment.Home;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -105,7 +92,7 @@ public class creaEsercizio3 extends Fragment {
         View v = inflater.inflate(R.layout.fragment_crea_esercizio3, container, false);
         imageView_wrong = (ImageView) v.findViewById(R.id.image_viewer_wrong);
         imageView_right = (ImageView) v.findViewById(R.id.image_viewer_right);
-        parola_da_ascoltare = (EditText) v.findViewById(R.id.aiuto_immagine);
+        parola_da_ascoltare = (EditText) v.findViewById(R.id.parola_da_ascoltare);
         Button select_imageView_wrong = (Button) v.findViewById(R.id.select_image_wrong_button);
         Button select_imageView_right = (Button) v.findViewById(R.id.select_image_right_button);
         Button annulla = (Button) v.findViewById(R.id.annulla_btn_2);
