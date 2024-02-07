@@ -1,104 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/rounded_dialog_background"
-    android:layout_gravity="center"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:gravity="center">
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/riproduci_audio_2"
-        android:layout_width="325dp"
-        android:layout_height="82dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="277dp"
-        android:layout_marginEnd="119dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Riproduci Audio"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:visibility="gone"
-        app:cornerRadius="16dp" />
+        <TextView
+            android:id="@+id/tipo_es2"
+            android:layout_width="330dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="@string/tipo_es_game2"
+            android:textAllCaps="true"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/stop_riproduci_audio_2"
-        android:layout_width="325dp"
-        android:layout_height="82dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="277dp"
-        android:layout_marginEnd="119dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Ferma Riproduzione"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:visibility="gone"
-        app:cornerRadius="16dp" />
+        <TextView
+            android:id="@+id/descrizione_es2"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:paddingHorizontal="40dp"
+            android:text="@string/descrizione_es2_game"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_es2" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/record_solution_2"
-        android:layout_width="325dp"
-        android:layout_height="82dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="396dp"
-        android:layout_marginEnd="112dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Registra"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:cornerRadius="16dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/stop_record_solution_2"
-        android:layout_width="325dp"
-        android:layout_height="82dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="392dp"
-        android:layout_marginEnd="111dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Ferma Registrazione"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:visibility="gone"
-        app:cornerRadius="16dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ascolta_parole_btn"
+            android:layout_width="202dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/blubutton"
+            android:text="Ascolta le parole"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descrizione_es2"
+            app:layout_constraintVertical_bias="0.05" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/confirm_choice_btn"
-        android:layout_width="145dp"
-        android:layout_height="45dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="448dp"
-        android:layout_marginEnd="-2dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Conferma"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:cornerRadius="16dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/frasi_btn"
-        android:layout_width="325dp"
-        android:layout_height="80dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="111dp"
-        android:layout_marginTop="153dp"
-        android:background="@drawable/blubutton"
-        android:fontFamily="sans-serif-condensed"
-        android:text="Riproduci soluzione"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:cornerRadius="16dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/riproduci_audio_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/play_audio_button"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/confirm_choice_btn"
+            app:layout_constraintEnd_toStartOf="@+id/mic_layout"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ascolta_parole_btn"
+            app:layout_constraintVertical_bias="0.416" />
 
-</RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/stop_ascolta_parole_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/stop_button"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/confirm_choice_btn"
+            app:layout_constraintEnd_toStartOf="@+id/mic_layout"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ascolta_parole_btn"
+            app:layout_constraintVertical_bias="0.416" />
+
+
+        <RelativeLayout
+            android:id="@+id/mic_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ascolta_parole_btn">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/record_solution_2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rec_button" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stop_record_solution_2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/stop_button"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirm_choice_btn"
+            android:layout_width="156dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/blubutton"
+            android:text="Conferma"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mic_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

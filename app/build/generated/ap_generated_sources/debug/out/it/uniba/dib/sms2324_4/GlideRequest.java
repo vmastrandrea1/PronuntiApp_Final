@@ -531,6 +531,7 @@ public class GlideRequest<TranscodeType> extends RequestBuilder<TranscodeType> i
   }
 
   @Override
+  @Deprecated
   @NonNull
   @CheckResult
   public GlideRequest<TranscodeType> thumbnail(float sizeMultiplier) {

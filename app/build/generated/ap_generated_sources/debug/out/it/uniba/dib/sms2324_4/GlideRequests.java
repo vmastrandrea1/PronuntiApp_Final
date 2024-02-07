@@ -53,6 +53,12 @@ public class GlideRequests extends RequestManager {
 
   @Override
   @NonNull
+  public synchronized GlideRequests clearOnStop() {
+    return (GlideRequests) super.clearOnStop();
+  }
+
+  @Override
+  @NonNull
   public GlideRequests addDefaultRequestListener(RequestListener<Object> listener) {
     return (GlideRequests) super.addDefaultRequestListener(listener);
   }

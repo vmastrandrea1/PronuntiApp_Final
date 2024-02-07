@@ -3131,6 +3131,7 @@ int drawable ic_logout 0x7f0700ca
 int drawable ic_m3_chip_check 0x7f0700cb
 int drawable ic_m3_chip_checked_circle 0x7f0700cc
 int drawable ic_m3_chip_close 0x7f0700cd
+int drawable ic_mic 0x7f070156
 int drawable ic_mtrl_checked_circle 0x7f0700ce
 int drawable ic_mtrl_chip_checked_black 0x7f0700cf
 int drawable ic_mtrl_chip_checked_circle 0x7f0700d0
@@ -3139,11 +3140,13 @@ int drawable ic_password 0x7f0700d2
 int drawable ic_paziente 0x7f0700d3
 int drawable ic_person 0x7f0700d4
 int drawable ic_personaggio 0x7f0700d5
+int drawable ic_play_audio 0x7f070157
 int drawable ic_scenario 0x7f0700d6
 int drawable ic_search_black_24 0x7f0700d7
 int drawable ic_sfondo 0x7f0700d8
 int drawable ic_shop 0x7f0700d9
 int drawable ic_shop_black_24dp 0x7f0700da
+int drawable ic_square 0x7f070158
 int drawable m3_appbar_background 0x7f0700db
 int drawable m3_avd_hide_password 0x7f0700dc
 int drawable m3_avd_show_password 0x7f0700dd
@@ -3233,8 +3236,10 @@ int drawable notification_template_icon_bg 0x7f070130
 int drawable notification_template_icon_low_bg 0x7f070131
 int drawable notification_tile_bg 0x7f070132
 int drawable notify_panel_notification_icon_bg 0x7f070133
+int drawable play_audio_button 0x7f070159
 int drawable podio 0x7f070134
 int drawable primo_posto 0x7f070135
+int drawable rec_button 0x7f07015a
 int drawable regalo 0x7f070136
 int drawable rounded_bronze 0x7f070137
 int drawable rounded_button 0x7f070138
@@ -3263,6 +3268,7 @@ int drawable skin_polpo 0x7f07014e
 int drawable skin_robot 0x7f07014f
 int drawable skin_stregone 0x7f070150
 int drawable skin_troll 0x7f070151
+int drawable stop_button 0x7f07015b
 int drawable terzo_posto 0x7f070152
 int drawable test_level_drawable 0x7f070153
 int drawable tooltip_frame_dark 0x7f070154
@@ -3370,6 +3376,7 @@ int id anticipate 0x7f080063
 int id appBarLayout 0x7f080064
 int id arc 0x7f080065
 int id asConfigured 0x7f080066
+int id ascolta_parole_btn 0x7f0802ed
 int id async 0x7f080067
 int id audio_soluzione_tv 0x7f080068
 int id auto 0x7f080069
@@ -3412,6 +3419,10 @@ int id buttonPrezzo 0x7f08008d
 int id cache_measures 0x7f08008e
 int id callMeasure 0x7f08008f
 int id cancel_button 0x7f080090
+int id card_image_correct_select_viewer 0x7f080303
+int id card_image_viewer_right 0x7f0802fe
+int id card_image_viewer_wrong 0x7f0802fd
+int id card_image_wrong_select_viewer 0x7f080304
 int id carryVelocity 0x7f080091
 int id center 0x7f080092
 int id centerCrop 0x7f080093
@@ -3486,6 +3497,8 @@ int id delete_patient 0x7f0800d7
 int id delete_therapy 0x7f0800d8
 int id deltaRelative 0x7f0800d9
 int id dependency_ordering 0x7f0800da
+int id descrizione_e3 0x7f0802f4
+int id descrizione_es1 0x7f0802f0
 int id descrizione_es2 0x7f0800db
 int id design_bottom_sheet 0x7f0800dc
 int id design_menu_item_action_area 0x7f0800dd
@@ -3565,7 +3578,6 @@ int id fragment_container_view_tag 0x7f080126
 int id frase1_tv 0x7f080127
 int id frase2_tv 0x7f080128
 int id frase3_tv 0x7f080129
-int id frasi_btn 0x7f08012a
 int id frost 0x7f08012b
 int id fullscreen_header 0x7f08012c
 int id game_child 0x7f08012d
@@ -3584,6 +3596,7 @@ int id group_divider 0x7f080139
 int id grouping 0x7f08013a
 int id groups 0x7f08013b
 int id guideline_bottom 0x7f08013c
+int id guideline_center 0x7f080302
 int id hardware 0x7f08013d
 int id header_title 0x7f08013e
 int id hideable 0x7f08013f
@@ -3626,6 +3639,7 @@ int id jumpToEnd 0x7f080163
 int id jumpToStart 0x7f080164
 int id labeled 0x7f080165
 int id layout 0x7f080166
+int id layout_image_helpers 0x7f0802f1
 int id left 0x7f080167
 int id leftToRight 0x7f080168
 int id legacy 0x7f080169
@@ -3692,6 +3706,7 @@ int id menu_viewer 0x7f0801a5
 int id message 0x7f0801a6
 int id message_deassign_exercise 0x7f0801a7
 int id message_delete_exercise 0x7f0801a8
+int id mic_layout 0x7f0802ef
 int id middle 0x7f0801a9
 int id mini 0x7f0801aa
 int id month_grid 0x7f0801ab
@@ -3799,6 +3814,7 @@ int id pin 0x7f080210
 int id position 0x7f080211
 int id postLayout 0x7f080212
 int id pressed 0x7f080213
+int id preview_card_es1 0x7f0802fc
 int id preview_immagine_es1 0x7f080214
 int id price_layout 0x7f080215
 int id primo_posto 0x7f080216
@@ -3902,10 +3918,10 @@ int id startVertical 0x7f080277
 int id staticLayout 0x7f080278
 int id staticPostLayout 0x7f080279
 int id stop 0x7f08027a
+int id stop_ascolta_parole_2 0x7f0802ee
 int id stop_record_solution_1 0x7f08027b
 int id stop_record_solution_2 0x7f08027c
 int id stop_riproduci_audio_1 0x7f08027d
-int id stop_riproduci_audio_2 0x7f08027e
 int id stretch 0x7f08027f
 int id submenuarrow 0x7f080280
 int id submit_area 0x7f080281
@@ -3957,6 +3973,7 @@ int id textinput_suffix_text 0x7f0802ae
 int id therapy_day 0x7f0802af
 int id therapy_recycler_view 0x7f0802b0
 int id time 0x7f0802b1
+int id tipo_e3 0x7f0802fa
 int id tipo_es1 0x7f0802b2
 int id tipo_es2 0x7f0802b3
 int id tipo_es3 0x7f0802b4
@@ -4357,8 +4374,11 @@ int string crea_un_account_logopedista 0x7f110045
 int string data_di_nascita 0x7f110046
 int string db_url 0x7f110047
 int string descrizione_es1 0x7f110048
+int string descrizione_es1_game 0x7f1100e9
 int string descrizione_es2 0x7f110049
+int string descrizione_es2_game 0x7f1100ea
 int string descrizione_es3 0x7f11004a
+int string descrizione_es3_game 0x7f1100eb
 int string email 0x7f11004b
 int string error_a11y_label 0x7f11004c
 int string error_icon_content_description 0x7f11004d
@@ -4517,6 +4537,9 @@ int string status_bar_notification_info_overflow 0x7f1100e5
 int string tipo_es1 0x7f1100e6
 int string tipo_es2 0x7f1100e7
 int string tipo_es3 0x7f1100e8
+int string tipo_es_game1 0x7f1100ed
+int string tipo_es_game2 0x7f1100ec
+int string tipo_es_game3 0x7f1100ee
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
 int style Animation_AppCompat_Dialog 0x7f120002

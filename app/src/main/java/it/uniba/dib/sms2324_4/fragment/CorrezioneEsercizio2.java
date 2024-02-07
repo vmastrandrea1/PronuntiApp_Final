@@ -263,8 +263,8 @@ public class CorrezioneEsercizio2 extends DialogFragment {
         });
 
         // Configura il dialog con il layout personalizzato
-        builder.setView(view)
-                .setTitle("Ripeti le 3 frasi nell'ordine corretta");
+        builder.setView(view);
+                //.setTitle(R.string.tipo_es2);
 
         return builder.create();
     }
@@ -273,9 +273,9 @@ public class CorrezioneEsercizio2 extends DialogFragment {
     private void esecuzioneEsercizio(Esercizio2 esercizio2, View view) throws IOException {
         Button record_solution_2 = view.findViewById(R.id.record_solution_2);
         Button stop_record_solution_2 = view.findViewById(R.id.stop_record_solution_2);
-        Button frasi_btn = view.findViewById(R.id.frasi_btn);
+        Button frasi_btn = view.findViewById(R.id.ascolta_parole_btn);
         Button riproduci_audio_2 = view.findViewById(R.id.riproduci_audio_2);
-        Button stop_riproduci_audio_2 = view.findViewById(R.id.stop_riproduci_audio_2);
+        Button stop_riproduci_audio_2 = view.findViewById(R.id.stop_ascolta_parole_2);
 
         frasi_btn.setOnClickListener(new View.OnClickListener() {
             @Override

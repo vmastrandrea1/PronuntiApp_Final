@@ -428,8 +428,8 @@ public class CorrezioneEsercizio3 extends DialogFragment {
         });
 
         // Configura il dialog con il layout personalizzato
-        builder.setView(view)
-                .setTitle("Riconosci l'immagine corretta");
+        builder.setView(view);
+                //.setTitle("Riconosci l'immagine corretta");
 
         return builder.create();
 

@@ -273,7 +273,7 @@ public class CorrezioneEsercizio1 extends DialogFragment {
 
         // Configura il dialog con il layout personalizzato
         builder.setView(view)
-                .setTitle("Riconosci l'immagine")
+                //.setTitle("Riconosci l'immagine")
                 .setCancelable(false);
 
         return builder.create();

@@ -3132,6 +3132,7 @@ drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
+drawable ic_mic
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -3140,11 +3141,13 @@ drawable ic_password
 drawable ic_paziente
 drawable ic_person
 drawable ic_personaggio
+drawable ic_play_audio
 drawable ic_scenario
 drawable ic_search_black_24
 drawable ic_sfondo
 drawable ic_shop
 drawable ic_shop_black_24dp
+drawable ic_square
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3234,8 +3237,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable play_audio_button
 drawable podio
 drawable primo_posto
+drawable rec_button
 drawable regalo
 drawable rounded_bronze
 drawable rounded_button
@@ -3264,6 +3269,7 @@ drawable skin_polpo
 drawable skin_robot
 drawable skin_stregone
 drawable skin_troll
+drawable stop_button
 drawable terzo_posto
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3371,6 +3377,7 @@ id anticipate
 id appBarLayout
 id arc
 id asConfigured
+id ascolta_parole_btn
 id async
 id audio_soluzione_tv
 id auto
@@ -3413,6 +3420,10 @@ id buttonPrezzo
 id cache_measures
 id callMeasure
 id cancel_button
+id card_image_correct_select_viewer
+id card_image_viewer_right
+id card_image_viewer_wrong
+id card_image_wrong_select_viewer
 id carryVelocity
 id center
 id centerCrop
@@ -3487,6 +3498,8 @@ id delete_patient
 id delete_therapy
 id deltaRelative
 id dependency_ordering
+id descrizione_e3
+id descrizione_es1
 id descrizione_es2
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -3566,7 +3579,6 @@ id fragment_container_view_tag
 id frase1_tv
 id frase2_tv
 id frase3_tv
-id frasi_btn
 id frost
 id fullscreen_header
 id game_child
@@ -3585,6 +3597,7 @@ id group_divider
 id grouping
 id groups
 id guideline_bottom
+id guideline_center
 id hardware
 id header_title
 id hideable
@@ -3627,6 +3640,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_image_helpers
 id left
 id leftToRight
 id legacy
@@ -3693,6 +3707,7 @@ id menu_viewer
 id message
 id message_deassign_exercise
 id message_delete_exercise
+id mic_layout
 id middle
 id mini
 id month_grid
@@ -3800,6 +3815,7 @@ id pin
 id position
 id postLayout
 id pressed
+id preview_card_es1
 id preview_immagine_es1
 id price_layout
 id primo_posto
@@ -3903,10 +3919,10 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id stop
+id stop_ascolta_parole_2
 id stop_record_solution_1
 id stop_record_solution_2
 id stop_riproduci_audio_1
-id stop_riproduci_audio_2
 id stretch
 id submenuarrow
 id submit_area
@@ -3958,6 +3974,7 @@ id textinput_suffix_text
 id therapy_day
 id therapy_recycler_view
 id time
+id tipo_e3
 id tipo_es1
 id tipo_es2
 id tipo_es3
@@ -4358,8 +4375,11 @@ string crea_un_account_logopedista
 string data_di_nascita
 string db_url
 string descrizione_es1
+string descrizione_es1_game
 string descrizione_es2
+string descrizione_es2_game
 string descrizione_es3
+string descrizione_es3_game
 string email
 string error_a11y_label
 string error_icon_content_description
@@ -4518,6 +4538,9 @@ string status_bar_notification_info_overflow
 string tipo_es1
 string tipo_es2
 string tipo_es3
+string tipo_es_game1
+string tipo_es_game2
+string tipo_es_game3
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -82,18 +82,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/parola_da_ascoltare" />
 
-
-        <ImageView
-            android:id="@+id/image_viewer_wrong"
-            android:layout_width="130dp"
-            android:layout_height="90dp"
-            android:scaleType="fitCenter"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rounded_corners_button_grey"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/select_image_wrong_button" />
-
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/select_image_right_button"
             android:layout_width="170dp"
@@ -110,20 +98,61 @@
             app:layout_constraintStart_toEndOf="@+id/select_image_wrong_button"
             app:layout_constraintTop_toBottomOf="@+id/parola_da_ascoltare" />
 
-        <ImageView
-            android:id="@+id/image_viewer_right"
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_image_viewer_wrong"
             android:layout_width="130dp"
             android:layout_height="90dp"
-            android:scaleType="fitCenter"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="32dp"
-            android:background="@drawable/rounded_corners_button_grey"
-            app:layout_constraintBottom_toTopOf="@+id/annulla_btn_2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_center"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_image_wrong_button"
+            tools:layout_editor_absoluteX="32dp">
+
+            <ImageView
+                android:id="@+id/image_viewer_wrong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/rounded_corners_button_grey" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_image_viewer_right"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/guideline_center"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.945"
-            app:layout_constraintStart_toEndOf="@+id/image_viewer_wrong"
-            app:layout_constraintTop_toBottomOf="@+id/select_image_right_button"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_image_right_button">
+
+            <ImageView
+                android:id="@+id/image_viewer_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/rounded_corners_button_grey" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/annulla_btn_2"
@@ -136,7 +165,7 @@
             app:layout_constraintEnd_toStartOf="@+id/crea_esercizio_2"
             app:layout_constraintHorizontal_bias="0.169"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image_viewer_wrong"
+            app:layout_constraintTop_toBottomOf="@+id/card_image_viewer_wrong"
             app:layout_constraintVertical_bias="0.6" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -149,7 +178,7 @@
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/image_viewer_right"
+            app:layout_constraintTop_toBottomOf="@+id/card_image_viewer_right"
             app:layout_constraintVertical_bias="0.6" />
 
 

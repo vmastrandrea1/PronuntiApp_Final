@@ -53,21 +53,26 @@ drawable ic_key
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_logout
+drawable ic_mic
 drawable ic_password
 drawable ic_paziente
 drawable ic_person
 drawable ic_personaggio
+drawable ic_play_audio
 drawable ic_scenario
 drawable ic_sfondo
 drawable ic_shop
 drawable ic_shop_black_24dp
+drawable ic_square
 drawable map_flying_island
 drawable map_mars
 drawable map_ring_arancio
 drawable map_sentiero
 drawable neutra_button_background
+drawable play_audio_button
 drawable podio
 drawable primo_posto
+drawable rec_button
 drawable regalo
 drawable rounded_bronze
 drawable rounded_button
@@ -96,6 +101,7 @@ drawable skin_polpo
 drawable skin_robot
 drawable skin_stregone
 drawable skin_troll
+drawable stop_button
 drawable terzo_posto
 id AddButton
 id TVesercizio_1
@@ -116,6 +122,7 @@ id aiuto3_tv
 id annulla_btn
 id annulla_btn_2
 id appBarLayout
+id ascolta_parole_btn
 id audio_soluzione_tv
 id bandierina_1
 id bandierina_2
@@ -132,6 +139,10 @@ id button191
 id button192
 id buttonCreaEs1
 id buttonPrezzo
+id card_image_correct_select_viewer
+id card_image_viewer_right
+id card_image_viewer_wrong
+id card_image_wrong_select_viewer
 id cf
 id cf_logopedista
 id child_birthdate
@@ -163,6 +174,8 @@ id delete_exercise_2
 id delete_exercise_3
 id delete_patient
 id delete_therapy
+id descrizione_e3
+id descrizione_es1
 id descrizione_es2
 id discard_delete
 id discard_seassign
@@ -190,7 +203,6 @@ id fragmentContainer
 id frase1_tv
 id frase2_tv
 id frase3_tv
-id frasi_btn
 id game_child
 id genitore_cf
 id genitore_to_logopedista
@@ -198,6 +210,7 @@ id gioco
 id gridViewPersonaggi
 id group
 id guideline_bottom
+id guideline_center
 id id_esercizio1
 id id_esercizio1_popup
 id id_esercizio2
@@ -214,6 +227,7 @@ id image_viewer_wrong
 id image_viewer_wrong_popup
 id image_wrong_select_viewer
 id information_group
+id layout_image_helpers
 id loginNow
 id loginNow_logopedista
 id login_genitore
@@ -226,6 +240,7 @@ id menu_logopedista_viewer
 id menu_viewer
 id message_deassign_exercise
 id message_delete_exercise
+id mic_layout
 id myCardView
 id name
 id nameView
@@ -247,6 +262,7 @@ id password_logopedista
 id patient_birthdate_tv
 id patient_name_tv
 id patient_profile_image
+id preview_card_es1
 id preview_immagine_es1
 id price_layout
 id primo_posto
@@ -278,10 +294,10 @@ id select_exercise5_spinner
 id select_image_right_button
 id select_image_wrong_button
 id shop
+id stop_ascolta_parole_2
 id stop_record_solution_1
 id stop_record_solution_2
 id stop_riproduci_audio_1
-id stop_riproduci_audio_2
 id surname
 id surname_logopedista
 id tableLayout
@@ -298,6 +314,7 @@ id textViewNomeFullScreen
 id textViewPrezzoFullScreen
 id therapy_day
 id therapy_recycler_view
+id tipo_e3
 id tipo_es1
 id tipo_es2
 id tipo_es3
@@ -395,8 +412,11 @@ string crea_un_account_logopedista
 string data_di_nascita
 string db_url
 string descrizione_es1
+string descrizione_es1_game
 string descrizione_es2
+string descrizione_es2_game
 string descrizione_es3
+string descrizione_es3_game
 string email
 string gcm_defaultSenderId
 string google_api_key
@@ -432,6 +452,9 @@ string sono_un_logopedista
 string tipo_es1
 string tipo_es2
 string tipo_es3
+string tipo_es_game1
+string tipo_es_game2
+string tipo_es_game3
 style Base.Theme.PronuntiApp
 style BlueTheme
 style DatePickerButtonStyle

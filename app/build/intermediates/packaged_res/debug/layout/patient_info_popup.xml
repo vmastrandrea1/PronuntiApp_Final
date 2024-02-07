@@ -85,15 +85,15 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/add_therapy_patient"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="15dp"
                 android:text="Crea Terapia"
                 android:drawableStart="@drawable/ic_exercise"
                 android:background="@drawable/bg_btn"/>
@@ -103,7 +103,6 @@
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
                 android:text="Elimina Paziente"
                 android:drawableStart="@drawable/ic_delete"
                 android:background="@drawable/bg_btn"/>

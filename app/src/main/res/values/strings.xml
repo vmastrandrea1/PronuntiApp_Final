@@ -43,7 +43,13 @@
     <string name="tipo_es3">Riconoscimento di coppie minime</string>
     <string name="tipo_es2">Ripetizione di sequenze di parole</string>
     <string name="tipo_es1">Denominazione immagini</string>
-    <string name="descrizione_es1">"Data una immagine, il bambino deve riconoscere la parola associata all’immagine. Per fornire la risposta il bambino registra un audio utilizzando il microfono del dispositivo. \nAl bambino saranno inoltre forniti fino a 3 aiuti audio per facilitargli il riconoscimento della parola. "</string>
+    <string name="descrizione_es1">"Data una immagine, il bambino dovrà riconoscere la parola associata all’immagine. Per fornire la risposta il bambino registra un audio utilizzando il microfono del dispositivo. \nAl bambino saranno inoltre forniti fino a 3 aiuti audio per facilitargli il riconoscimento della parola. "</string>
     <string name="descrizione_es2">Dato un audio che riproduce 3 parole in sequenza, il bambino dovrà registrare un audio ripetendo le parole nella sequenza corretta.</string>
     <string name="descrizione_es3">Date due immagini e la riproduzione audio di una parola, il bambino deve riconoscere l’immagine giusta a cui la parola si riferisce.</string>
+    <string name="descrizione_es1_game">Guarda l\'immagine e registra un audio in cui pronunci la parola corrispondente. Puoi ricevere fino a 3 aiuti audio per aiutarti a riconoscere la parola.</string>
+    <string name="descrizione_es2_game">Ascolta le tre parole in sequenza e registra un audio ripetendole nella giusta sequenza.</string>
+    <string name="descrizione_es3_game">"Guarda le due immagini e ascolta l'audio che riproduce una parola. Scegli l'immagine corretta a cui la parola si riferisce.</string>
+    <string name="tipo_es_game2">Ripeti la sequenza di parole</string>
+    <string name="tipo_es_game1">Riconosci l\'immagine</string>
+    <string name="tipo_es_game3">Seleziona l\'immagine corretta</string>
 </resources>
