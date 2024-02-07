@@ -1,6 +1,6 @@
-it.uniba.dib.sms2324_4.test.app-annotation-experimental-1.3.0-0 C:\Users\Stefano\.gradle\caches\transforms-3\9c7fb1a6f2782c8c8dc1433240cd6ab8\transformed\annotation-experimental-1.3.0\res
-it.uniba.dib.sms2324_4.test.app-core-1.5.0-1 C:\Users\Stefano\.gradle\caches\transforms-3\bd8ed825c080d7fa10a62621c72647a0\transformed\core-1.5.0\res
-it.uniba.dib.sms2324_4.test.app-androidTest-2 C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\build\generated\res\resValues\androidTest\debug
-it.uniba.dib.sms2324_4.test.app-mergeDebugAndroidTestResources-3 C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-it.uniba.dib.sms2324_4.test.app-mergeDebugAndroidTestResources-4 C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-it.uniba.dib.sms2324_4.test.app-merged_res-5 C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\build\intermediates\merged_res\debugAndroidTest
+it.uniba.dib.sms2324_4.test.app-annotation-experimental-1.3.0-0 C:\Users\LaFFurb\.gradle\caches\transforms-3\5479421174e5529143b91e104093ebf7\transformed\annotation-experimental-1.3.0\res
+it.uniba.dib.sms2324_4.test.app-core-1.5.0-1 C:\Users\LaFFurb\.gradle\caches\transforms-3\a65938f7e2e2ec8de2d0fed00f5d3275\transformed\core-1.5.0\res
+it.uniba.dib.sms2324_4.test.app-androidTest-2 C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\build\generated\res\resValues\androidTest\debug
+it.uniba.dib.sms2324_4.test.app-mergeDebugAndroidTestResources-3 C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+it.uniba.dib.sms2324_4.test.app-mergeDebugAndroidTestResources-4 C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+it.uniba.dib.sms2324_4.test.app-merged_res-5 C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\build\intermediates\merged_res\debugAndroidTest
