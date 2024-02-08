@@ -1,7 +1,6 @@
 package it.uniba.dib.sms2324_4.gioco.ui.shop;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -80,17 +80,21 @@ public class ItemAdapter extends ArrayAdapter<Item> {
             convertView.setTag(item.getTipo());
         }
 
-        ImageView imageView = convertView.findViewById(R.id.imageView);
-        TextView textViewNome = convertView.findViewById(R.id.textViewNome);
-        Button buttonPrezzo = convertView.findViewById(R.id.buttonPrezzo);
-        TextView textViewAcquistato = convertView.findViewById(R.id.textViewAcquistato);
+        ImageView previewImageShopItem = convertView.findViewById(R.id.previewImageShopItem);
+        TextView nomeShopItem = convertView.findViewById(R.id.nomeShopItem);
+        Button buttonPrezzoShopItem = convertView.findViewById(R.id.buttonPrezzoShopItem);
+        TextView textViewAcquistato = convertView.findViewById(R.id.textViewAcquistatoShopItem);
 
         assert item != null;
         // Imposta l'immagine PNG nell'ImageView
-        imageView.setImageResource(item.getImmagineId());
+        previewImageShopItem.setImageResource(item.getImmagineId());
 
-        textViewNome.setText(item.getNome());
-        buttonPrezzo.setText(String.valueOf(item.getPrezzo()));
+        nomeShopItem.setText(item.getNome());
+
+        if (item.getPrezzo() == 0){
+            buttonPrezzoShopItem.setText("GRATIS");
+        }
+        else buttonPrezzoShopItem.setText(String.valueOf(item.getPrezzo()));
 
         Query item_acquistato = database.getReference("Utenti")
                         .child("Genitori")
@@ -103,10 +107,10 @@ public class ItemAdapter extends ArrayAdapter<Item> {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.exists()) {
-                    buttonPrezzo.setVisibility(View.GONE);
+                    buttonPrezzoShopItem.setVisibility(View.GONE);
                     textViewAcquistato.setVisibility(View.VISIBLE);
                 } else {
-                    buttonPrezzo.setVisibility(View.VISIBLE);
+                    buttonPrezzoShopItem.setVisibility(View.VISIBLE);
                     textViewAcquistato.setVisibility(View.GONE);
                 }
             }
@@ -117,7 +121,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
             }
         });
 
-        buttonPrezzo.setOnClickListener(view -> {
+        buttonPrezzoShopItem.setOnClickListener(view -> {
             //SALVATGGIO SKIN
             Query monete_sufficienti = database.getReference("Utenti")
                     .child("Genitori")
@@ -197,25 +201,31 @@ public class ItemAdapter extends ArrayAdapter<Item> {
     private void mostraDettagliDialog(Item item) {
         View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_dettaglio_item, null);
 
-        ImageView imageView = dialogView.findViewById(R.id.imageViewFullScreen);
+        ImageView imageViewFullScreen = dialogView.findViewById(R.id.imageViewFullScreen);
         TextView textViewNome = dialogView.findViewById(R.id.textViewNomeFullScreen);
         TextView textViewPrezzo = dialogView.findViewById(R.id.textViewPrezzoFullScreen);
         TextView textViewDescrizione = dialogView.findViewById(R.id.textViewDescrizioneFullScreen);
 
         textViewNome.setText(item.getNome());
-        textViewPrezzo.setText(item.getPrezzo() + " Monete");
+
+        if (item.getPrezzo() == 0) {
+            textViewPrezzo.setText("GRATIS");
+        }
+        else textViewPrezzo.setText(String.valueOf(item.getPrezzo()));
+
         textViewDescrizione.setText(item.getDescrizione());
 
-        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext())
+
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
+                .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                 .setView(dialogView)
-                .setPositiveButton("OK",null);
+                .setPositiveButton("OK", null);
 
         // Aggiungi il pulsante "Imposta come predefinito" solo se l'oggetto è già stato acquistato
         if (item.isAcquistato()) {
-            builder.setNeutralButton("Imposta come predefinito", (dialog, which) -> {
-                // Imposta l'oggetto come predefinito
-
-                if(item.getId() < 7){
+            builder.setNegativeButton("IMPOSTA COME PREDEFINITO", (dialog, which) -> {
+                
+        if(item.getId() < 7){
                     database.getReference("Utenti")
                             .child("Genitori")
                             .child(sessionKey)
@@ -260,18 +270,18 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         // Verifica se l'oggetto è di tipo PERSONAGGIO e applica l'animazione con Glide
         if (item.getTipo() == Item.ItemType.PERSONAGGIO) {
             if (item.getNome().equals("Tony")) {
-                imageView.setImageResource(item.getImmagineId());
+                imageViewFullScreen.setImageResource(item.getImmagineId());
             } else {
                 // Utilizza Glide per caricare la GIF animata nel layout del dialog
                 Glide.with(getContext())
                         .asGif()
-                        .load(item.getImmagineId())
+                        .load(item.getAnimazioneId())
                         .transition(DrawableTransitionOptions.withCrossFade())
-                        .into(imageView);
+                        .into(imageViewFullScreen);
             }
         } else {
             // Visualizza direttamente la risorsa per gli scenari e gli sfondi (PNG)
-            imageView.setImageResource(item.getImmagineId());
+            imageViewFullScreen.setImageResource(item.getImmagineId());
         }
 
 

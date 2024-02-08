@@ -297,21 +297,24 @@ public class CorrezioneEsercizio2 extends DialogFragment {
         record_solution_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!isRecording){
+                if (!isRecording) {
                     try {
-                        if(audio_registrato != null){
+                        if (audio_registrato != null) {
                             audio_registrato.delete();
-                        }else{
-                            audio_registrato = File.createTempFile("audio_registrato",".3gp",directory);
+                        } else {
+                            audio_registrato = File.createTempFile("audio_registrato", ".3gp", directory);
                         }
                         directory = v.getContext().getExternalFilesDir(Environment.DIRECTORY_MUSIC);
 
                         mediaRecorder = new MediaRecorder();
 
                         mediaRecorder.setAudioSource(MediaRecorder.AudioSource.DEFAULT);
-                        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-                        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
-                        mediaRecorder.setOutputFile(audio_registrato);
+                        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+                        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+                        mediaRecorder.setAudioSamplingRate(44100);
+                        mediaRecorder.setAudioEncodingBitRate(192000);
+
+                        mediaRecorder.setOutputFile(audio_registrato.getAbsolutePath());
 
                         mediaRecorder.prepare();
                         mediaRecorder.start();
@@ -325,6 +328,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
                     }
                 }
             }
+
         });
 
         stop_record_solution_2.setOnClickListener(new View.OnClickListener() {

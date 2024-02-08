@@ -54,26 +54,26 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/frase1_tv"
+                android:id="@+id/parola1_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Frase 1: "
+                android:text="Parola 1: "
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"/>
             <TextView
-                android:id="@+id/frase2_tv"
+                android:id="@+id/parola2_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Frase 2: "
+                android:text="Parola 2: "
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"/>
             <TextView
-                android:id="@+id/frase3_tv"
+                android:id="@+id/parola3_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Frase 3: "
+                android:text="Parola 3: "
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"/>

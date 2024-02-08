@@ -111,15 +111,15 @@
         <!-- ImageView per il personaggio-->
         <ImageView
             android:id="@+id/overlayImage"
-            android:layout_width="50dp"
-            android:layout_height="100dp"
+            android:layout_width="104dp"
+            android:layout_height="160dp"
             android:src="@drawable/skin_bimbo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.299"
+            app:layout_constraintHorizontal_bias="0.257"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.874" />
+            app:layout_constraintVertical_bias="0.9" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

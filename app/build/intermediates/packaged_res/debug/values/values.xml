@@ -2,12 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="blue">#FF1a73e8</color>
-    <color name="green">#FF099130</color>
+    <color name="green">#FF009252</color>
     <color name="grey">#FFF1F1F1</color>
     <color name="ic_app_logo_background">#FFFFFF</color>
     <color name="purple">#FF673AB7</color>
     <color name="red">#FFF95B5A</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="violet">#FF8C56EC</color>
     <color name="white">#FFFFFFFF</color>
     <string name="accedi_con_google">Accedi con Google</string>
     <string name="add_button_description">Aggiungi un nuovo paziente</string>
@@ -67,6 +68,9 @@
     <string name="tipo_es_game1">Riconosci l\'immagine</string>
     <string name="tipo_es_game2">Ripeti la sequenza di parole</string>
     <string name="tipo_es_game3">Seleziona l\'immagine corretta</string>
+    <style name="AlertDialogButtonStyle">
+        <item name="android:textSize">11dp</item>
+    </style>
     <style name="Base.Theme.PronuntiApp" parent="Theme.Material3.DayNight.NoActionBar">
         
         

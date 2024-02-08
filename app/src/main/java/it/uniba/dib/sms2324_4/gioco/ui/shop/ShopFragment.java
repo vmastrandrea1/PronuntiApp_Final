@@ -20,6 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Optional;
 
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.gioco.ui.gioco.GiocoFragment;
@@ -107,15 +108,18 @@ public class ShopFragment extends Fragment {
     private ArrayList<Item> creaListaPersonaggi() {
         ArrayList<Item> item = new ArrayList<>();
 
+        Optional<Integer> animazioneIdOptional = Optional.of(123); // Esempio di ID animazione
+
+
         item.add(new Item(0,"Tony", R.drawable.skin_bimbo, 0, descrizione0,Item.ItemType.PERSONAGGIO));
         item.get(0).setAcquistato(true);
-        item.add(new Item(1,"Torvaldo", R.drawable.skin_troll, 500, descrizione1,Item.ItemType.PERSONAGGIO));
-        item.add(new Item(2,"Rex Fulminatus", R.drawable.skin_dinosauro, 600, descrizione2,Item.ItemType.PERSONAGGIO));
-        item.add(new Item(3,"Gelatiello", R.drawable.skin_gelato, 700, descrizione3,Item.ItemType.PERSONAGGIO));
-        item.add(new Item(4,"Trombone", R.drawable.skin_stregone, 800, descrizione4,Item.ItemType.PERSONAGGIO));
-        item.add(new Item(5,"Oculopodio", R.drawable.skin_polpo, 900, descrizione5,Item.ItemType.PERSONAGGIO));
-        item.add(new Item(6,"Robotelmo", R.drawable.skin_robot, 1000, descrizione6,Item.ItemType.PERSONAGGIO));
-        item.add(new Item(61,"Cubot", R.drawable.skin_cubot, 3000, descrizione61,Item.ItemType.PERSONAGGIO));
+        item.add(new Item(1,"Torvaldo", R.drawable.skin_troll, 500, descrizione1,Item.ItemType.PERSONAGGIO,R.drawable.animation_troll));
+        item.add(new Item(2,"Rex Fulminatus", R.drawable.skin_dinosauro, 600, descrizione2,Item.ItemType.PERSONAGGIO,R.drawable.animation_dinosauro));
+        item.add(new Item(3,"Gelatiello", R.drawable.skin_gelato, 700, descrizione3,Item.ItemType.PERSONAGGIO,R.drawable.animation_gelato));
+        item.add(new Item(4,"Trombone", R.drawable.skin_stregone, 800, descrizione4,Item.ItemType.PERSONAGGIO,R.drawable.animation_stregone));
+        item.add(new Item(5,"Oculopodio", R.drawable.skin_polpo, 900, descrizione5,Item.ItemType.PERSONAGGIO,R.drawable.animation_polpo));
+        item.add(new Item(6,"Robotelmo", R.drawable.skin_robot, 1000, descrizione6,Item.ItemType.PERSONAGGIO,R.drawable.animation_robot));
+        item.add(new Item(61,"Cubot", R.drawable.skin_cubot, 3000, descrizione61,Item.ItemType.PERSONAGGIO,R.drawable.animation_cubot));
 
 
         item.add(new Item(7,"Sentiero", R.drawable.map_sentiero, 0, descrizione7,Item.ItemType.SCENARIO));
@@ -133,7 +137,7 @@ public class ShopFragment extends Fragment {
     }
 
     public void updateMoneteText() {
-        textViewMonete.setText("Monete: " + monete);
+        textViewMonete.setText("" + monete);
     }
 
     public int getMonete() {

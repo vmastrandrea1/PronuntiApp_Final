@@ -18,8 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:background="@drawable/rounded_dialog_background"
-            android:scaleType="fitCenter"
-            android:layout_marginBottom="16dp"/>
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:id="@+id/textViewNomeFullScreen"
@@ -28,7 +27,6 @@
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_below="@id/imageViewFullScreen"
-            android:layout_marginTop="16dp"
             android:text="Nome del Personaggio" />
 
         <TextView
@@ -38,7 +36,7 @@
             android:textSize="18sp"
             android:layout_below="@id/textViewNomeFullScreen"
             android:layout_marginTop="8dp"
-            android:text="Prezzo: 50 Monete" />
+            android:text="500" />
 
         <TextView
             android:id="@+id/textViewDescrizioneFullScreen"

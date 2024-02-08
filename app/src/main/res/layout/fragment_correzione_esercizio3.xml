@@ -76,7 +76,7 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"
-                app:cardBackgroundColor="@color/transparent"
+                android:background="@drawable/rounded_corners_button_grey"
                 android:layout_marginEnd="5dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentStart="true">
@@ -96,7 +96,7 @@
                 android:layout_height="130dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"
-                app:cardBackgroundColor="@color/transparent"
+                android:background="@drawable/rounded_corners_button_grey"
                 android:layout_marginStart="5dp"
                 android:layout_centerVertical="true"
                 android:layout_toEndOf="@+id/card_image_correct_select_viewer">

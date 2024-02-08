@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:foreground="?android:attr/selectableItemBackground"
@@ -11,14 +12,15 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_purple_item">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/previewImageShopItem"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@drawable/gradient_bg_item"
             android:scaleType="centerCrop"
+            android:padding="3dp"
             android:src="@drawable/ic_scenario"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -26,47 +28,48 @@
 
 
         <TextView
-            android:id="@+id/textViewNome"
-            android:layout_width="wrap_content"
+            android:id="@+id/nomeShopItem"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorSurface"
             android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="3dp"
             android:drawableStart="@drawable/ic_scenario"
             android:drawablePadding="8dp"
-            android:drawableTint="@color/green"
+            android:drawableTint="@color/purple"
             android:ellipsize="end"
-            android:gravity="center"
+            android:gravity="left|center"
             android:maxLines="1"
             android:padding="8dp"
             android:text="Nome contenuto"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/imageView" />
+            app:layout_constraintTop_toBottomOf="@id/previewImageShopItem" />
 
         <LinearLayout
             android:id="@+id/price_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@color/green"
+            android:background="@color/purple"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textViewNome">
+            app:layout_constraintTop_toBottomOf="@id/nomeShopItem">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonPrezzo"
+                android:id="@+id/buttonPrezzoShopItem"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/green"
+                android:background="@color/purple"
                 android:text="500"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textViewAcquistato"
+                android:id="@+id/textViewAcquistatoShopItem"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

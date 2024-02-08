@@ -201,9 +201,9 @@ public class MyAdapter_Terapie_Bambino extends RecyclerView.Adapter<MyAdapter_Te
                                                     Esercizio2 esercizio2 = new Esercizio2();
 
                                                     esercizio2.setId_esercizio(snapshot1.child("id_esercizio").getValue().toString());
-                                                    esercizio2.setParola_1(snapshot1.child("frase_1").getValue().toString());
-                                                    esercizio2.setParola_2(snapshot1.child("frase_2").getValue().toString());
-                                                    esercizio2.setParola_3(snapshot1.child("frase_3").getValue().toString());
+                                                    esercizio2.setParola_1(snapshot1.child("parola_1").getValue().toString());
+                                                    esercizio2.setParola_2(snapshot1.child("parola_2").getValue().toString());
+                                                    esercizio2.setParola_3(snapshot1.child("parola_3").getValue().toString());
                                                     esercizio2.setCorretto((Boolean) snapshot1.child("corretto").getValue());
                                                     esercizio2.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio2.setMonete(snapshot1.child("monete").getValue(Integer.class));

@@ -223,9 +223,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     Esercizio2 esercizio2 = new Esercizio2();
 
                                                     esercizio2.setId_esercizio(snapshot1.child("id_esercizio").getValue().toString());
-                                                    esercizio2.setParola_1(snapshot1.child("frase_1").getValue().toString());
-                                                    esercizio2.setParola_2(snapshot1.child("frase_2").getValue().toString());
-                                                    esercizio2.setParola_3(snapshot1.child("frase_3").getValue().toString());
+                                                    esercizio2.setParola_1(snapshot1.child("parola_1").getValue().toString());
+                                                    esercizio2.setParola_2(snapshot1.child("parola_2").getValue().toString());
+                                                    esercizio2.setParola_3(snapshot1.child("parola_3").getValue().toString());
                                                     esercizio2.setCorretto((Boolean) snapshot1.child("corretto").getValue());
                                                     esercizio2.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio2.setMonete(snapshot1.child("monete").getValue(Integer.class));
@@ -972,16 +972,16 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             //ESERCIZIO 2
                                                                         }else if(dataSnapshot.child("id_esercizio").getValue(String.class).startsWith("2_")){
                                                                             Dialog mDialog;
-                                                                            TextView txtClose , id_esercizio ,  frase_1  , frase_2 , frase_3 , cfPaziente;
+                                                                            TextView txtClose , id_esercizio , parola_1, parola_2 , parola_3 , cfPaziente;
 
                                                                             mDialog = new Dialog(v.getContext());
                                                                             mDialog.setContentView(R.layout.exercise2_info_popup);
 
                                                                             txtClose = (TextView) mDialog.findViewById(R.id.exercise2_text_close);
                                                                             id_esercizio = (TextView) mDialog.findViewById(R.id.id_esercizio2_popup);
-                                                                            frase_1 = (TextView) mDialog.findViewById(R.id.frase1_tv);
-                                                                            frase_2 = (TextView) mDialog.findViewById(R.id.frase2_tv);
-                                                                            frase_3 = (TextView) mDialog.findViewById(R.id.frase3_tv);
+                                                                            parola_1 = (TextView) mDialog.findViewById(R.id.parola1_tv);
+                                                                            parola_2 = (TextView) mDialog.findViewById(R.id.parola2_tv);
+                                                                            parola_3 = (TextView) mDialog.findViewById(R.id.parola3_tv);
 
                                                                             Query getExercise = database.getReference("Utenti")
                                                                                     .child("Logopedisti")
@@ -994,9 +994,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    frase_1.setText("Frase 1: " + esercizio2.getParola_1());
-                                                                                    frase_2.setText("Frase 2: " + esercizio2.getParola_2());
-                                                                                    frase_3.setText("Frase 3: " + esercizio2.getParola_3());
+                                                                                    parola_1.setText("Parola 1: " + esercizio2.getParola_1());
+                                                                                    parola_2.setText("Parola 2: " + esercizio2.getParola_2());
+                                                                                    parola_3.setText("Parola 3: " + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -1315,16 +1315,16 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             //ESERCIZIO 2
                                                                         }else if(dataSnapshot.child("id_esercizio").getValue(String.class).startsWith("2_")){
                                                                             Dialog mDialog;
-                                                                            TextView txtClose , id_esercizio ,  frase_1  , frase_2 , frase_3 , cfPaziente;
+                                                                            TextView txtClose , id_esercizio ,  parola_1  , parola_2 , parola_3 , cfPaziente;
 
                                                                             mDialog = new Dialog(v.getContext());
                                                                             mDialog.setContentView(R.layout.exercise2_info_popup);
 
                                                                             txtClose = (TextView) mDialog.findViewById(R.id.exercise2_text_close);
                                                                             id_esercizio = (TextView) mDialog.findViewById(R.id.id_esercizio2_popup);
-                                                                            frase_1 = (TextView) mDialog.findViewById(R.id.frase1_tv);
-                                                                            frase_2 = (TextView) mDialog.findViewById(R.id.frase2_tv);
-                                                                            frase_3 = (TextView) mDialog.findViewById(R.id.frase3_tv);
+                                                                            parola_1 = (TextView) mDialog.findViewById(R.id.parola1_tv);
+                                                                            parola_2 = (TextView) mDialog.findViewById(R.id.parola2_tv);
+                                                                            parola_3 = (TextView) mDialog.findViewById(R.id.parola3_tv);
 
                                                                             Query getExercise = database.getReference("Utenti")
                                                                                     .child("Logopedisti")
@@ -1337,9 +1337,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    frase_1.setText("Frase 1: " + esercizio2.getParola_1());
-                                                                                    frase_2.setText("Frase 2: " + esercizio2.getParola_2());
-                                                                                    frase_3.setText("Frase 3: " + esercizio2.getParola_3());
+                                                                                    parola_1.setText("Parola 1: " + esercizio2.getParola_1());
+                                                                                    parola_2.setText("Parola 2: " + esercizio2.getParola_2());
+                                                                                    parola_3.setText("Parola 3: " + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -1658,16 +1658,16 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             //ESERCIZIO 2
                                                                         }else if(dataSnapshot.child("id_esercizio").getValue(String.class).startsWith("2_")){
                                                                             Dialog mDialog;
-                                                                            TextView txtClose , id_esercizio ,  frase_1  , frase_2 , frase_3 , cfPaziente;
+                                                                            TextView txtClose , id_esercizio ,  parola_1  , parola_2 , parola_3 , cfPaziente;
 
                                                                             mDialog = new Dialog(v.getContext());
                                                                             mDialog.setContentView(R.layout.exercise2_info_popup);
 
                                                                             txtClose = (TextView) mDialog.findViewById(R.id.exercise2_text_close);
                                                                             id_esercizio = (TextView) mDialog.findViewById(R.id.id_esercizio2_popup);
-                                                                            frase_1 = (TextView) mDialog.findViewById(R.id.frase1_tv);
-                                                                            frase_2 = (TextView) mDialog.findViewById(R.id.frase2_tv);
-                                                                            frase_3 = (TextView) mDialog.findViewById(R.id.frase3_tv);
+                                                                            parola_1 = (TextView) mDialog.findViewById(R.id.parola1_tv);
+                                                                            parola_2 = (TextView) mDialog.findViewById(R.id.parola2_tv);
+                                                                            parola_3 = (TextView) mDialog.findViewById(R.id.parola3_tv);
 
                                                                             Query getExercise = database.getReference("Utenti")
                                                                                     .child("Logopedisti")
@@ -1680,9 +1680,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    frase_1.setText("Frase 1: " + esercizio2.getParola_1());
-                                                                                    frase_2.setText("Frase 2: " + esercizio2.getParola_2());
-                                                                                    frase_3.setText("Frase 3: " + esercizio2.getParola_3());
+                                                                                    parola_1.setText("Parola 1: " + esercizio2.getParola_1());
+                                                                                    parola_2.setText("Parola 2: " + esercizio2.getParola_2());
+                                                                                    parola_3.setText("Parola 3: " + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -2001,16 +2001,16 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                            //ESERCIZIO 2
                                                                        }else if(dataSnapshot.child("id_esercizio").getValue(String.class).startsWith("2_")){
                                                                            Dialog mDialog;
-                                                                           TextView txtClose , id_esercizio ,  frase_1  , frase_2 , frase_3 , cfPaziente;
+                                                                           TextView txtClose , id_esercizio ,  parola_1  , parola_2 , parola_3 , cfPaziente;
 
                                                                            mDialog = new Dialog(v.getContext());
                                                                            mDialog.setContentView(R.layout.exercise2_info_popup);
 
                                                                            txtClose = (TextView) mDialog.findViewById(R.id.exercise2_text_close);
                                                                            id_esercizio = (TextView) mDialog.findViewById(R.id.id_esercizio2_popup);
-                                                                           frase_1 = (TextView) mDialog.findViewById(R.id.frase1_tv);
-                                                                           frase_2 = (TextView) mDialog.findViewById(R.id.frase2_tv);
-                                                                           frase_3 = (TextView) mDialog.findViewById(R.id.frase3_tv);
+                                                                           parola_1 = (TextView) mDialog.findViewById(R.id.parola1_tv);
+                                                                           parola_2 = (TextView) mDialog.findViewById(R.id.parola2_tv);
+                                                                           parola_3 = (TextView) mDialog.findViewById(R.id.parola3_tv);
 
                                                                            Query getExercise = database.getReference("Utenti")
                                                                                    .child("Logopedisti")
@@ -2023,9 +2023,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                    Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                    id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                   frase_1.setText("Frase 1: " + esercizio2.getParola_1());
-                                                                                   frase_2.setText("Frase 2: " + esercizio2.getParola_2());
-                                                                                   frase_3.setText("Frase 3: " + esercizio2.getParola_3());
+                                                                                   parola_1.setText("Parola 1: " + esercizio2.getParola_1());
+                                                                                   parola_2.setText("Parola 2: " + esercizio2.getParola_2());
+                                                                                   parola_3.setText("Parola 3: " + esercizio2.getParola_3());
 
                                                                                    FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -2344,16 +2344,16 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             //ESERCIZIO 2
                                                                         }else if(dataSnapshot.child("id_esercizio").getValue(String.class).startsWith("2_")){
                                                                             Dialog mDialog;
-                                                                            TextView txtClose , id_esercizio ,  frase_1  , frase_2 , frase_3 , cfPaziente;
+                                                                            TextView txtClose , id_esercizio ,  parola_1  , parola_2 , parola_3 , cfPaziente;
 
                                                                             mDialog = new Dialog(v.getContext());
                                                                             mDialog.setContentView(R.layout.exercise2_info_popup);
 
                                                                             txtClose = (TextView) mDialog.findViewById(R.id.exercise2_text_close);
                                                                             id_esercizio = (TextView) mDialog.findViewById(R.id.id_esercizio2_popup);
-                                                                            frase_1 = (TextView) mDialog.findViewById(R.id.frase1_tv);
-                                                                            frase_2 = (TextView) mDialog.findViewById(R.id.frase2_tv);
-                                                                            frase_3 = (TextView) mDialog.findViewById(R.id.frase3_tv);
+                                                                            parola_1 = (TextView) mDialog.findViewById(R.id.parola1_tv);
+                                                                            parola_2 = (TextView) mDialog.findViewById(R.id.parola2_tv);
+                                                                            parola_3 = (TextView) mDialog.findViewById(R.id.parola3_tv);
 
                                                                             Query getExercise = database.getReference("Utenti")
                                                                                     .child("Logopedisti")
@@ -2366,9 +2366,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    frase_1.setText("Frase 1: " + esercizio2.getParola_1());
-                                                                                    frase_2.setText("Frase 2: " + esercizio2.getParola_2());
-                                                                                    frase_3.setText("Frase 3: " + esercizio2.getParola_3());
+                                                                                    parola_1.setText("Parola 1: " + esercizio2.getParola_1());
+                                                                                    parola_2.setText("Parola 2: " + esercizio2.getParola_2());
+                                                                                    parola_3.setText("Parola 3: " + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 

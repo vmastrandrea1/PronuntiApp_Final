@@ -2136,6 +2136,7 @@ color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
 color transparent
+color violet
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -3046,7 +3047,13 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable alieno
+drawable animation_cubot
+drawable animation_dinosauro
+drawable animation_gelato
+drawable animation_polpo
+drawable animation_robot
+drawable animation_stregone
+drawable animation_troll
 drawable avd_hide_password
 drawable avd_show_password
 drawable background_grey_rounded_corner_20dp
@@ -3054,6 +3061,9 @@ drawable bandierina
 drawable bg_btn
 drawable bg_pink
 drawable blubutton
+drawable border_blue_item
+drawable border_green_item
+drawable border_purple_item
 drawable bordo_nero
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3261,6 +3271,7 @@ drawable sfondo_natura
 drawable sfondo_onde_di_colore
 drawable sfondo_spazioviola
 drawable shop
+drawable skin_alieno
 drawable skin_bimbo
 drawable skin_cubot
 drawable skin_dinosauro
@@ -3274,6 +3285,7 @@ drawable terzo_posto
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font kid_font
 id ALT
 id AddButton
 id BOTTOM_END
@@ -3416,7 +3428,7 @@ id button191
 id button192
 id buttonCreaEs1
 id buttonPanel
-id buttonPrezzo
+id buttonPrezzoShopItem
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3576,9 +3588,6 @@ id floating
 id forever
 id fragmentContainer
 id fragment_container_view_tag
-id frase1_tv
-id frase2_tv
-id frase3_tv
 id frost
 id fullscreen_header
 id game_child
@@ -3618,7 +3627,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
 id imageViewFullScreen
 id image_correct_select_viewer
 id image_select_viewer
@@ -3764,6 +3772,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id nomeShopItem
 id none
 id normal
 id north
@@ -3798,8 +3807,11 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id parola1
+id parola1_tv
 id parola2
+id parola2_tv
 id parola3
+id parola3_tv
 id parola_da_ascoltare
 id password
 id password_logopedista
@@ -3815,6 +3827,7 @@ id pin
 id position
 id postLayout
 id pressed
+id previewImageShopItem
 id preview_card_es1
 id preview_immagine_es1
 id price_layout
@@ -3856,7 +3869,6 @@ id sawtooth
 id scale
 id scegliImmagine_btn
 id screen
-id scritta_classifica
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -3949,17 +3961,17 @@ id testoTextView
 id text
 id text2
 id textEnd
+id textShop
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textViewAcquistato
+id textViewAcquistatoShopItem
 id textViewDescrizione
 id textViewDescrizioneFullScreen
 id textViewEsercizioTerminato
 id textViewEsperienza
 id textViewMonete
-id textViewNome
 id textViewNomeFullScreen
 id textViewPrezzoFullScreen
 id text_input_end_icon
@@ -4543,6 +4555,7 @@ string tipo_es_game2
 string tipo_es_game3
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
+style AlertDialogButtonStyle
 style Animation_AppCompat_Dialog
 style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip

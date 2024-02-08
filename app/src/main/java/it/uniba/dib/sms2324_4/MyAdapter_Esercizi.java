@@ -267,7 +267,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                         //ESERCIZIO 2
                         }else if(list.get(pos).getClass().equals(Esercizio2.class)){
                             Dialog mDialog;
-                            TextView txtClose , id_esercizio ,  frase_1  , frase_2 , frase_3 , cfPaziente;
+                            TextView txtClose , id_esercizio ,  parola_1  , parola_2 , parola_3 , cfPaziente;
 
                             Esercizio2 esercizio2 = (Esercizio2) list.get(pos);
 
@@ -279,14 +279,14 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
 
                             txtClose = (TextView) mDialog.findViewById(R.id.exercise2_text_close);
                             id_esercizio = (TextView) mDialog.findViewById(R.id.id_esercizio2_popup);
-                            frase_1 = (TextView) mDialog.findViewById(R.id.frase1_tv);
-                            frase_2 = (TextView) mDialog.findViewById(R.id.frase2_tv);
-                            frase_3 = (TextView) mDialog.findViewById(R.id.frase3_tv);
+                            parola_1 = (TextView) mDialog.findViewById(R.id.parola1_tv);
+                            parola_2 = (TextView) mDialog.findViewById(R.id.parola2_tv);
+                            parola_3 = (TextView) mDialog.findViewById(R.id.parola3_tv);
 
                             id_esercizio.setText(esercizio2.getId_esercizio());
-                            frase_1.setText("Frase 1: " + esercizio2.getParola_1());
-                            frase_2.setText("Frase 2: " + esercizio2.getParola_2());
-                            frase_3.setText("Frase 3: " + esercizio2.getParola_3());
+                            parola_1.setText("Parola 1: " + esercizio2.getParola_1());
+                            parola_2.setText("Parola 2: " + esercizio2.getParola_2());
+                            parola_3.setText("Parola 3: " + esercizio2.getParola_3());
 
                             FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 

@@ -12,37 +12,39 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_green_item">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/previewImageShopItem"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:padding="3dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_sfondo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <TextView
-            android:id="@+id/textViewNome"
-            android:layout_width="wrap_content"
+            android:id="@+id/nomeShopItem"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorSurface"
             android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="3dp"
             android:drawableStart="@drawable/ic_sfondo"
             android:drawablePadding="8dp"
-            android:drawableTint="@color/blue"
+            android:drawableTint="@color/green"
             android:ellipsize="end"
-            android:gravity="center"
+            android:gravity="left|center"
             android:maxLines="1"
             android:padding="8dp"
             android:text="Nome contenuto"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/imageView" />
+            app:layout_constraintTop_toBottomOf="@id/previewImageShopItem" />
 
 
         <LinearLayout
@@ -54,20 +56,20 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textViewNome">
+            app:layout_constraintTop_toBottomOf="@id/nomeShopItem">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonPrezzo"
+                android:id="@+id/buttonPrezzoShopItem"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/blue"
+                android:background="@color/green"
                 android:text="500"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textViewAcquistato"
+                android:id="@+id/textViewAcquistatoShopItem"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

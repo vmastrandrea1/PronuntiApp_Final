@@ -5,16 +5,45 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-
-    <TextView
-        android:id="@+id/textViewMonete"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Monete: 1000"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:padding="30dp" />
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/kid_font"
+                android:paddingLeft="25dp"
+                android:text="SHOP"
+                android:textColor="@color/blue"
+                android:textSize="50dp" />
+
+            <TextView
+                android:id="@+id/textViewMonete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:drawableRight="@drawable/ic_coin"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="100"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 
     <GridView
@@ -22,13 +51,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:numColumns="2"
         android:columnWidth="160dp"
-        android:verticalSpacing="16dp"
-        android:horizontalSpacing="16dp"
-        android:stretchMode="columnWidth"
         android:gravity="center"
-        android:scrollbars="none"/>
+        android:horizontalSpacing="16dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="16dp" />
 
 
 </LinearLayout>

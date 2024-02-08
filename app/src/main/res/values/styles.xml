@@ -59,5 +59,9 @@
         <item name="android:backgroundTint">@color/white</item>
     </style>
 
+    <style name="AlertDialogButtonStyle">
+        <item name="android:textSize">11dp</item>
+    </style>
+
 </resources>
 

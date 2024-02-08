@@ -18,6 +18,7 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Environment;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.Voice;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,6 +42,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
@@ -380,11 +382,11 @@ public class CorrezioneEsercizio1 extends DialogFragment {
         record_solution_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!isRecording){
+                if (!isRecording) {
                     try {
-                        if(audio_registrato != null){
+                        if (audio_registrato != null) {
                             audio_registrato.delete();
-                        }else{
+                        } else {
                             audio_registrato = File.createTempFile("audio_registrato",".3gp",directory);
                         }
                         directory = v.getContext().getExternalFilesDir(Environment.DIRECTORY_MUSIC);
@@ -392,9 +394,12 @@ public class CorrezioneEsercizio1 extends DialogFragment {
                         mediaRecorder = new MediaRecorder();
 
                         mediaRecorder.setAudioSource(MediaRecorder.AudioSource.DEFAULT);
-                        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-                        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
-                        mediaRecorder.setOutputFile(audio_registrato);
+                        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+                        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+                        mediaRecorder.setAudioSamplingRate(44100);
+                        mediaRecorder.setAudioEncodingBitRate(192000);
+
+                        mediaRecorder.setOutputFile(audio_registrato.getAbsolutePath());
 
                         mediaRecorder.prepare();
                         mediaRecorder.start();

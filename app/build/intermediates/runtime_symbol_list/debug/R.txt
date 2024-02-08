@@ -2135,6 +2135,7 @@ int color switch_thumb_normal_material_light 0x7f050300
 int color tooltip_background_dark 0x7f050301
 int color tooltip_background_light 0x7f050302
 int color transparent 0x7f050303
+int color violet 0x7f050305
 int color white 0x7f050304
 int dimen abc_action_bar_content_inset_material 0x7f060000
 int dimen abc_action_bar_content_inset_with_nav 0x7f060001
@@ -3045,7 +3046,13 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f070074
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f070075
 int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
-int drawable alieno 0x7f070078
+int drawable animation_cubot 0x7f07015c
+int drawable animation_dinosauro 0x7f07015d
+int drawable animation_gelato 0x7f07015e
+int drawable animation_polpo 0x7f07015f
+int drawable animation_robot 0x7f070160
+int drawable animation_stregone 0x7f070161
+int drawable animation_troll 0x7f070162
 int drawable avd_hide_password 0x7f070079
 int drawable avd_show_password 0x7f07007a
 int drawable background_grey_rounded_corner_20dp 0x7f07007b
@@ -3053,6 +3060,9 @@ int drawable bandierina 0x7f07007c
 int drawable bg_btn 0x7f07007d
 int drawable bg_pink 0x7f07007e
 int drawable blubutton 0x7f07007f
+int drawable border_blue_item 0x7f070164
+int drawable border_green_item 0x7f070165
+int drawable border_purple_item 0x7f070166
 int drawable bordo_nero 0x7f070080
 int drawable btn_checkbox_checked_mtrl 0x7f070081
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f070082
@@ -3260,6 +3270,7 @@ int drawable sfondo_natura 0x7f07014b
 int drawable sfondo_onde_di_colore 0x7f07014c
 int drawable sfondo_spazioviola 0x7f07014d
 int drawable shop 0x7f07014e
+int drawable skin_alieno 0x7f070163
 int drawable skin_bimbo 0x7f07014f
 int drawable skin_cubot 0x7f070150
 int drawable skin_dinosauro 0x7f070151
@@ -3273,6 +3284,7 @@ int drawable terzo_posto 0x7f070158
 int drawable test_level_drawable 0x7f070159
 int drawable tooltip_frame_dark 0x7f07015a
 int drawable tooltip_frame_light 0x7f07015b
+int font kid_font 0x7f150000
 int id ALT 0x7f080000
 int id AddButton 0x7f080001
 int id BOTTOM_END 0x7f080002
@@ -3415,7 +3427,7 @@ int id button191 0x7f08008a
 int id button192 0x7f08008b
 int id buttonCreaEs1 0x7f08008c
 int id buttonPanel 0x7f08008d
-int id buttonPrezzo 0x7f08008e
+int id buttonPrezzoShopItem 0x7f0802fa
 int id cache_measures 0x7f08008f
 int id callMeasure 0x7f080090
 int id cancel_button 0x7f080091
@@ -3575,9 +3587,6 @@ int id floating 0x7f08012a
 int id forever 0x7f08012b
 int id fragmentContainer 0x7f08012c
 int id fragment_container_view_tag 0x7f08012d
-int id frase1_tv 0x7f08012e
-int id frase2_tv 0x7f08012f
-int id frase3_tv 0x7f080130
 int id frost 0x7f080131
 int id fullscreen_header 0x7f080132
 int id game_child 0x7f080133
@@ -3617,7 +3626,6 @@ int id ifRoom 0x7f080154
 int id ignore 0x7f080155
 int id ignoreRequest 0x7f080156
 int id image 0x7f080157
-int id imageView 0x7f080158
 int id imageViewFullScreen 0x7f080159
 int id image_correct_select_viewer 0x7f08015a
 int id image_select_viewer 0x7f08015b
@@ -3763,6 +3771,7 @@ int id neverCompleteToEnd 0x7f0801e6
 int id neverCompleteToStart 0x7f0801e7
 int id noScroll 0x7f0801e8
 int id noState 0x7f0801e9
+int id nomeShopItem 0x7f0802fb
 int id none 0x7f0801ea
 int id normal 0x7f0801eb
 int id north 0x7f0801ec
@@ -3797,8 +3806,11 @@ int id parentPanel 0x7f080208
 int id parentRelative 0x7f080209
 int id parent_matrix 0x7f08020a
 int id parola1 0x7f08020b
+int id parola1_tv 0x7f0802f7
 int id parola2 0x7f08020c
+int id parola2_tv 0x7f0802f8
 int id parola3 0x7f08020d
+int id parola3_tv 0x7f0802f9
 int id parola_da_ascoltare 0x7f08020e
 int id password 0x7f08020f
 int id password_logopedista 0x7f080210
@@ -3814,6 +3826,7 @@ int id pin 0x7f080219
 int id position 0x7f08021a
 int id postLayout 0x7f08021b
 int id pressed 0x7f08021c
+int id previewImageShopItem 0x7f0802fc
 int id preview_card_es1 0x7f08021d
 int id preview_immagine_es1 0x7f08021e
 int id price_layout 0x7f08021f
@@ -3855,7 +3868,6 @@ int id sawtooth 0x7f080242
 int id scale 0x7f080243
 int id scegliImmagine_btn 0x7f080244
 int id screen 0x7f080245
-int id scritta_classifica 0x7f080246
 int id scroll 0x7f080247
 int id scrollIndicatorDown 0x7f080248
 int id scrollIndicatorUp 0x7f080249
@@ -3948,17 +3960,17 @@ int id testoTextView 0x7f08029f
 int id text 0x7f0802a0
 int id text2 0x7f0802a1
 int id textEnd 0x7f0802a2
+int id textShop 0x7f080301
 int id textSpacerNoButtons 0x7f0802a3
 int id textSpacerNoTitle 0x7f0802a4
 int id textStart 0x7f0802a5
 int id textTop 0x7f0802a6
-int id textViewAcquistato 0x7f0802a7
+int id textViewAcquistatoShopItem 0x7f0802fd
 int id textViewDescrizione 0x7f0802a8
 int id textViewDescrizioneFullScreen 0x7f0802a9
 int id textViewEsercizioTerminato 0x7f0802aa
 int id textViewEsperienza 0x7f0802ab
 int id textViewMonete 0x7f0802ac
-int id textViewNome 0x7f0802ad
 int id textViewNomeFullScreen 0x7f0802ae
 int id textViewPrezzoFullScreen 0x7f0802af
 int id text_input_end_icon 0x7f0802b0
@@ -4542,6 +4554,7 @@ int string tipo_es_game2 0x7f1100ed
 int string tipo_es_game3 0x7f1100ee
 int style AlertDialog_AppCompat 0x7f120000
 int style AlertDialog_AppCompat_Light 0x7f120001
+int style AlertDialogButtonStyle 0x7f120475
 int style Animation_AppCompat_Dialog 0x7f120002
 int style Animation_AppCompat_DropDownUp 0x7f120003
 int style Animation_AppCompat_Tooltip 0x7f120004

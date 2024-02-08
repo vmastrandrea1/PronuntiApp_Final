@@ -79,9 +79,9 @@ public class creaEsercizio2 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_crea_esercizio2, container, false);
-        EditText frase1 = (EditText) v.findViewById(R.id.parola1);
-        EditText frase2 = (EditText) v.findViewById(R.id.parola2);
-        EditText frase3 = (EditText) v.findViewById(R.id.parola3);
+        EditText parola1 = (EditText) v.findViewById(R.id.parola1);
+        EditText parola2 = (EditText) v.findViewById(R.id.parola2);
+        EditText parola3 = (EditText) v.findViewById(R.id.parola3);
         EditText id_eserczio2 = (EditText) v.findViewById(R.id.id_esercizio2);
         Button annulla = (Button) v.findViewById(R.id.annulla_btn_2);
         Button creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
@@ -99,17 +99,17 @@ public class creaEsercizio2 extends Fragment {
                 // Crea un oggetto Matcher
                 Matcher matcher = pattern.matcher(id_eserczio2.getText().toString());
 
-                if (TextUtils.isEmpty(frase1.getText().toString()) ||
-                        TextUtils.isEmpty(frase2.getText().toString()) ||
-                        TextUtils.isEmpty(frase3.getText().toString())) {
+                if (TextUtils.isEmpty(parola1.getText().toString()) ||
+                        TextUtils.isEmpty(parola2.getText().toString()) ||
+                        TextUtils.isEmpty(parola3.getText().toString())) {
                     Toast.makeText(getContext(), "Inserisci 3 Frasi", Toast.LENGTH_SHORT).show();
                 } else if (TextUtils.isEmpty(id_eserczio2.getText().toString()) ||
                         !matcher.matches()) {
                     Toast.makeText(v.getContext(), "Inserisci un ID ESERCIZIO VALIDO", Toast.LENGTH_SHORT).show();
                 } else {
-                    esercizio2.setParola_1(frase1.getText().toString());
-                    esercizio2.setParola_2(frase2.getText().toString());
-                    esercizio2.setParola_3(frase3.getText().toString());
+                    esercizio2.setParola_1(parola1.getText().toString());
+                    esercizio2.setParola_2(parola2.getText().toString());
+                    esercizio2.setParola_3(parola3.getText().toString());
                     esercizio2.setAudio_soluzione("null");
                     esercizio2.setId_esercizio("2_" + id_eserczio2.getText().toString());
 
