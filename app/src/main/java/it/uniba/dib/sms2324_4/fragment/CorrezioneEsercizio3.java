@@ -417,6 +417,19 @@ public class CorrezioneEsercizio3 extends DialogFragment {
 
                             }
                         });
+
+                        database.getReference("Utenti")
+                                .child("Logopedisti")
+                                .child(id_logopedista)
+                                .child("Pazienti")
+                                .child(id_bambino)
+                                .child("esperienza")
+                                .setValue(esperienza+esercizio3.getEsperienza()).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
+
+                                    }
+                                });
                     }
 
                     @Override

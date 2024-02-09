@@ -255,6 +255,19 @@ public class CorrezioneEsercizio1 extends DialogFragment {
 
                                 }
                             });
+
+                            database.getReference("Utenti")
+                                    .child("Logopedisti")
+                                    .child(id_logopedista)
+                                    .child("Pazienti")
+                                    .child(id_bambino)
+                                    .child("esperienza")
+                                    .setValue(esperienza+esercizio1.getEsperienza()).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void unused) {
+
+                                        }
+                                    });
                         }
 
                         @Override

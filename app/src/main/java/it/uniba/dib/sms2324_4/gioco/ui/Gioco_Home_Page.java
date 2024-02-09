@@ -78,7 +78,7 @@ public class Gioco_Home_Page extends Fragment {
                     .addToBackStack(null)
                     .commit();
         } else if (itemId == R.id.classifica) {
-            ClassificaFragment fragmentClassifica = new ClassificaFragment();
+            ClassificaFragment fragmentClassifica = ClassificaFragment.newInstance(id_bambino , sessionKey , id_logopedista);
             requireActivity().getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragmentContainer, fragmentClassifica)
                     .addToBackStack(null)

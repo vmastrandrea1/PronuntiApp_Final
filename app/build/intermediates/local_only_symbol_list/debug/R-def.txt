@@ -112,6 +112,7 @@ drawable skin_polpo
 drawable skin_robot
 drawable skin_stregone
 drawable skin_troll
+drawable small_ic_app_logo
 drawable stop_button
 drawable terzo_posto
 font kid_font

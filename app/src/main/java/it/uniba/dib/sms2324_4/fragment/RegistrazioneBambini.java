@@ -172,6 +172,7 @@ public class RegistrazioneBambini extends Fragment {
                                                     .child("Bambini")
                                                     .child(cf)
                                                     .setValue(paziente);
+
                                             /*
                                             database.getReference("Utenti")
                                                     .child("Genitori")
@@ -191,6 +192,15 @@ public class RegistrazioneBambini extends Fragment {
                                                     .child("Pazienti")
                                                     .child(cf)
                                                     .setValue(paziente1);
+
+                                            database.getReference("Utenti")
+                                                    .child("Logopedisti")
+                                                    .child(sessionKey)
+                                                    .child("Pazienti")
+                                                    .child(cf)
+                                                    .child("esperienza")
+                                                    .setValue(0);
+
                                             Toast.makeText(v.getContext(),
                                                     R.string.paziente_registrato_con_successo,
                                                     Toast.LENGTH_SHORT).show();

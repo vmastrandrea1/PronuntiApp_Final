@@ -3280,6 +3280,7 @@ drawable skin_polpo
 drawable skin_robot
 drawable skin_stregone
 drawable skin_troll
+drawable small_ic_app_logo
 drawable stop_button
 drawable terzo_posto
 drawable test_level_drawable
@@ -4401,6 +4402,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string fcm_fallback_notification_channel_label
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -5853,4 +5855,5 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml ga_ad_services_config
 xml image_share_filepaths
