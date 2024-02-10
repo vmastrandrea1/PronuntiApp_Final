@@ -832,6 +832,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
+                                                                        Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                                .child("Genitori")
+                                                                                .child(cfGenitore)
+                                                                                .child("Bambini")
+                                                                                .child(cfPaziente)
+                                                                                .child("esperienza");
+                                                                        aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                            @Override
+                                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                                int esperienza = snapshot.getValue(Integer.class);
+
+                                                                                snapshot.getRef().setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                    @Override
+                                                                                    public void onSuccess(Void unused) {
+
+                                                                                    }
+                                                                                });
+
+                                                                                database.getReference("Utenti")
+                                                                                        .child("Logopedisti")
+                                                                                        .child(sessionKey)
+                                                                                        .child("Pazienti")
+                                                                                        .child(cfPaziente)
+                                                                                        .child("esperienza")
+                                                                                        .setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onSuccess(Void unused) {
+
+                                                                                            }
+                                                                                        });
+                                                                            }
+
+                                                                            @Override
+                                                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                            }
+                                                                        });
+
                                                                         correzione.setText("Correzione : CORRETTO");
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
@@ -878,6 +916,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                                     }
                                                                                 });
+                                                                            }
+
+                                                                            @Override
+                                                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                            }
+                                                                        });
+
+                                                                        Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                                .child("Genitori")
+                                                                                .child(cfGenitore)
+                                                                                .child("Bambini")
+                                                                                .child(cfPaziente)
+                                                                                .child("esperienza");
+                                                                        aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                            @Override
+                                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                                int esperienza = snapshot.getValue(Integer.class);
+
+                                                                                snapshot.getRef().setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                    @Override
+                                                                                    public void onSuccess(Void unused) {
+
+                                                                                    }
+                                                                                });
+
+                                                                                database.getReference("Utenti")
+                                                                                        .child("Logopedisti")
+                                                                                        .child(sessionKey)
+                                                                                        .child("Pazienti")
+                                                                                        .child(cfPaziente)
+                                                                                        .child("esperienza")
+                                                                                        .setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onSuccess(Void unused) {
+
+                                                                                            }
+                                                                                        });
                                                                             }
 
                                                                             @Override
@@ -1175,6 +1251,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
+                                                                        Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                                .child("Genitori")
+                                                                                .child(cfGenitore)
+                                                                                .child("Bambini")
+                                                                                .child(cfPaziente)
+                                                                                .child("esperienza");
+                                                                        aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                            @Override
+                                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                                int esperienza = snapshot.getValue(Integer.class);
+
+                                                                                snapshot.getRef().setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                    @Override
+                                                                                    public void onSuccess(Void unused) {
+
+                                                                                    }
+                                                                                });
+
+                                                                                database.getReference("Utenti")
+                                                                                        .child("Logopedisti")
+                                                                                        .child(sessionKey)
+                                                                                        .child("Pazienti")
+                                                                                        .child(cfPaziente)
+                                                                                        .child("esperienza")
+                                                                                        .setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onSuccess(Void unused) {
+
+                                                                                            }
+                                                                                        });
+                                                                            }
+
+                                                                            @Override
+                                                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                            }
+                                                                        });
+
                                                                         correzione.setText("Correzione : CORRETTO");
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
@@ -1221,6 +1335,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                                     }
                                                                                 });
+                                                                            }
+
+                                                                            @Override
+                                                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                            }
+                                                                        });
+
+                                                                        Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                                .child("Genitori")
+                                                                                .child(cfGenitore)
+                                                                                .child("Bambini")
+                                                                                .child(cfPaziente)
+                                                                                .child("esperienza");
+                                                                        aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                            @Override
+                                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                                int esperienza = snapshot.getValue(Integer.class);
+
+                                                                                snapshot.getRef().setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                    @Override
+                                                                                    public void onSuccess(Void unused) {
+
+                                                                                    }
+                                                                                });
+
+                                                                                database.getReference("Utenti")
+                                                                                        .child("Logopedisti")
+                                                                                        .child(sessionKey)
+                                                                                        .child("Pazienti")
+                                                                                        .child(cfPaziente)
+                                                                                        .child("esperienza")
+                                                                                        .setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onSuccess(Void unused) {
+
+                                                                                            }
+                                                                                        });
                                                                             }
 
                                                                             @Override
@@ -1518,6 +1670,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
+                                                                        Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                                .child("Genitori")
+                                                                                .child(cfGenitore)
+                                                                                .child("Bambini")
+                                                                                .child(cfPaziente)
+                                                                                .child("esperienza");
+                                                                        aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                            @Override
+                                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                                int esperienza = snapshot.getValue(Integer.class);
+
+                                                                                snapshot.getRef().setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                    @Override
+                                                                                    public void onSuccess(Void unused) {
+
+                                                                                    }
+                                                                                });
+
+                                                                                database.getReference("Utenti")
+                                                                                        .child("Logopedisti")
+                                                                                        .child(sessionKey)
+                                                                                        .child("Pazienti")
+                                                                                        .child(cfPaziente)
+                                                                                        .child("esperienza")
+                                                                                        .setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onSuccess(Void unused) {
+
+                                                                                            }
+                                                                                        });
+                                                                            }
+
+                                                                            @Override
+                                                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                            }
+                                                                        });
+
                                                                         correzione.setText("Correzione : CORRETTO");
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
@@ -1564,6 +1754,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                                     }
                                                                                 });
+                                                                            }
+
+                                                                            @Override
+                                                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                            }
+                                                                        });
+
+                                                                        Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                                .child("Genitori")
+                                                                                .child(cfGenitore)
+                                                                                .child("Bambini")
+                                                                                .child(cfPaziente)
+                                                                                .child("esperienza");
+                                                                        aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                            @Override
+                                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                                int esperienza = snapshot.getValue(Integer.class);
+
+                                                                                snapshot.getRef().setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                    @Override
+                                                                                    public void onSuccess(Void unused) {
+
+                                                                                    }
+                                                                                });
+
+                                                                                database.getReference("Utenti")
+                                                                                        .child("Logopedisti")
+                                                                                        .child(sessionKey)
+                                                                                        .child("Pazienti")
+                                                                                        .child(cfPaziente)
+                                                                                        .child("esperienza")
+                                                                                        .setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onSuccess(Void unused) {
+
+                                                                                            }
+                                                                                        });
                                                                             }
 
                                                                             @Override
@@ -1861,6 +2089,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                            }
                                                                        });
 
+                                                                       Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                               .child("Genitori")
+                                                                               .child(cfGenitore)
+                                                                               .child("Bambini")
+                                                                               .child(cfPaziente)
+                                                                               .child("esperienza");
+                                                                       aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                           @Override
+                                                                           public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                               int esperienza = snapshot.getValue(Integer.class);
+
+                                                                               snapshot.getRef().setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                   @Override
+                                                                                   public void onSuccess(Void unused) {
+
+                                                                                   }
+                                                                               });
+
+                                                                               database.getReference("Utenti")
+                                                                                       .child("Logopedisti")
+                                                                                       .child(sessionKey)
+                                                                                       .child("Pazienti")
+                                                                                       .child(cfPaziente)
+                                                                                       .child("esperienza")
+                                                                                       .setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                           @Override
+                                                                                           public void onSuccess(Void unused) {
+
+                                                                                           }
+                                                                                       });
+                                                                           }
+
+                                                                           @Override
+                                                                           public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                           }
+                                                                       });
+
                                                                        correzione.setText("Correzione : CORRETTO");
 
                                                                        new MaterialAlertDialogBuilder(view.getContext())
@@ -1907,6 +2173,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                                    }
                                                                                });
+                                                                           }
+
+                                                                           @Override
+                                                                           public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                           }
+                                                                       });
+
+                                                                       Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                               .child("Genitori")
+                                                                               .child(cfGenitore)
+                                                                               .child("Bambini")
+                                                                               .child(cfPaziente)
+                                                                               .child("esperienza");
+                                                                       aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                           @Override
+                                                                           public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                               int esperienza = snapshot.getValue(Integer.class);
+
+                                                                               snapshot.getRef().setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                   @Override
+                                                                                   public void onSuccess(Void unused) {
+
+                                                                                   }
+                                                                               });
+
+                                                                               database.getReference("Utenti")
+                                                                                       .child("Logopedisti")
+                                                                                       .child(sessionKey)
+                                                                                       .child("Pazienti")
+                                                                                       .child(cfPaziente)
+                                                                                       .child("esperienza")
+                                                                                       .setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                           @Override
+                                                                                           public void onSuccess(Void unused) {
+
+                                                                                           }
+                                                                                       });
                                                                            }
 
                                                                            @Override
@@ -2204,6 +2508,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
+                                                                        Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                                .child("Genitori")
+                                                                                .child(cfGenitore)
+                                                                                .child("Bambini")
+                                                                                .child(cfPaziente)
+                                                                                .child("esperienza");
+                                                                        aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                            @Override
+                                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                                int esperienza = snapshot.getValue(Integer.class);
+
+                                                                                snapshot.getRef().setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                    @Override
+                                                                                    public void onSuccess(Void unused) {
+
+                                                                                    }
+                                                                                });
+
+                                                                                database.getReference("Utenti")
+                                                                                        .child("Logopedisti")
+                                                                                        .child(sessionKey)
+                                                                                        .child("Pazienti")
+                                                                                        .child(cfPaziente)
+                                                                                        .child("esperienza")
+                                                                                        .setValue(esperienza+100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onSuccess(Void unused) {
+
+                                                                                            }
+                                                                                        });
+                                                                            }
+
+                                                                            @Override
+                                                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                            }
+                                                                        });
+
                                                                         correzione.setText("Correzione : CORRETTO");
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
@@ -2250,6 +2592,44 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                                     }
                                                                                 });
+                                                                            }
+
+                                                                            @Override
+                                                                            public void onCancelled(@NonNull DatabaseError error) {
+
+                                                                            }
+                                                                        });
+
+                                                                        Query aggiorna_progressi_exp = database.getReference("Utenti")
+                                                                                .child("Genitori")
+                                                                                .child(cfGenitore)
+                                                                                .child("Bambini")
+                                                                                .child(cfPaziente)
+                                                                                .child("esperienza");
+                                                                        aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                                                                            @Override
+                                                                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                                                                int esperienza = snapshot.getValue(Integer.class);
+
+                                                                                snapshot.getRef().setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                    @Override
+                                                                                    public void onSuccess(Void unused) {
+
+                                                                                    }
+                                                                                });
+
+                                                                                database.getReference("Utenti")
+                                                                                        .child("Logopedisti")
+                                                                                        .child(sessionKey)
+                                                                                        .child("Pazienti")
+                                                                                        .child(cfPaziente)
+                                                                                        .child("esperienza")
+                                                                                        .setValue(esperienza+50).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                                            @Override
+                                                                                            public void onSuccess(Void unused) {
+
+                                                                                            }
+                                                                                        });
                                                                             }
 
                                                                             @Override

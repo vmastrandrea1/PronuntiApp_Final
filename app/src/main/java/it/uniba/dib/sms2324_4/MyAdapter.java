@@ -249,7 +249,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                         });
 
                         mDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                        mDialog.setCancelable(false);
+                        //mDialog.setCancelable(false);
                         mDialog.show();
                     }
                 }

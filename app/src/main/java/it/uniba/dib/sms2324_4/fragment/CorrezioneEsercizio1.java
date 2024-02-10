@@ -40,6 +40,7 @@ import com.google.firebase.storage.StorageReference;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.Permission;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -111,6 +112,14 @@ public class CorrezioneEsercizio1 extends DialogFragment {
             id_logopedista = getArguments().getString(ID_LOGOPEDISTA);
             pos_esercizio = getArguments().getInt(POS_ESERCIZIO);
         }
+
+        // Verifica se il permesso è stato già concesso
+        if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO)
+                != PackageManager.PERMISSION_GRANTED) {
+            // Se il permesso non è stato concesso, richiedilo
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.RECORD_AUDIO}, PackageManager.PERMISSION_GRANTED);
+        }
+
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireActivity(), R.style.AlertDialogButtonStyle)
             .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background));
 

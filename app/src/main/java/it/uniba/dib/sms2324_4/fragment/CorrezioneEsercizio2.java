@@ -1,6 +1,8 @@
 package it.uniba.dib.sms2324_4.fragment;
 
+import android.Manifest;
 import android.app.Dialog;
+import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.net.Uri;
@@ -14,6 +16,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
@@ -90,6 +93,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
         return fragment;
     }
 
+
     @NonNull
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
@@ -100,8 +104,17 @@ public class CorrezioneEsercizio2 extends DialogFragment {
             id_logopedista = getArguments().getString(ID_LOGOPEDISTA);
             pos_esercizio = getArguments().getInt(POS_ESERCIZIO);
         }
+
+        // Verifica se il permesso è stato già concesso
+        if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO)
+                != PackageManager.PERMISSION_GRANTED) {
+            // Se il permesso non è stato concesso, richiedilo
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.RECORD_AUDIO}, 0);
+        }
+
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireActivity(), R.style.AlertDialogButtonStyle)
                 .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background));
+
 
         LayoutInflater inflater = requireActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.fragment_correzione_esercizio2, null, false);
@@ -135,9 +148,9 @@ public class CorrezioneEsercizio2 extends DialogFragment {
             @Override
             public void onClick(View v) {
                 if(esercizio2.isEseguito()){
-                   dismiss();
+                    dismiss();
 
-                   // Dialog esercizio eseguito
+                    // Dialog esercizio eseguito
                     View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_esercizio_terminato, null);
 
                     TextView textViewMonete = dialogView.findViewById(R.id.textViewMonete);
@@ -160,77 +173,77 @@ public class CorrezioneEsercizio2 extends DialogFragment {
                     cal.set(Calendar.SECOND, 0);            // Imposta i secondi a 0
                     cal.set(Calendar.MILLISECOND, 0);
 
-                   Query insert_prova = database.getReference("Utenti")
-                           .child("Logopedisti")
-                           .child(id_logopedista)
-                           .child("Pazienti")
-                           .child(id_bambino)
-                           .child("Terapie")
-                           .child(formatoData.format(cal.getTime()))
-                           .child("esercizio_" + pos_esercizio)
-                           .child(esercizio2.getId_esercizio());
-                   insert_prova.addListenerForSingleValueEvent(new ValueEventListener() {
-                       @Override
-                       public void onDataChange(@NonNull DataSnapshot snapshot) {
-                           snapshot.child("eseguito").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
-                               @Override
-                               public void onSuccess(Void unused) {
+                    Query insert_prova = database.getReference("Utenti")
+                            .child("Logopedisti")
+                            .child(id_logopedista)
+                            .child("Pazienti")
+                            .child(id_bambino)
+                            .child("Terapie")
+                            .child(formatoData.format(cal.getTime()))
+                            .child("esercizio_" + pos_esercizio)
+                            .child(esercizio2.getId_esercizio());
+                    insert_prova.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            snapshot.child("eseguito").getRef().setValue(true).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
 
-                               }
-                           });
+                                }
+                            });
 
-                           snapshot.child("corretto").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
-                               @Override
-                               public void onSuccess(Void unused) {
+                            snapshot.child("corretto").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
 
-                               }
-                           });
+                                }
+                            });
 
-                           FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
-                           StorageReference storageReference = storage.getReference("Esercizi_" + id_bambino)
-                                   .child(formatoData.format(cal.getTime()))
-                                   .child("esercizio_"+pos_esercizio)
-                                   .child(audio_registrato.getAbsolutePath());
-                           storageReference.putFile(Uri.fromFile(audio_registrato));
+                            FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
+                            StorageReference storageReference = storage.getReference("Esercizi_" + id_bambino)
+                                    .child(formatoData.format(cal.getTime()))
+                                    .child("esercizio_"+pos_esercizio)
+                                    .child(audio_registrato.getAbsolutePath());
+                            storageReference.putFile(Uri.fromFile(audio_registrato));
 
-                           snapshot.child("audio_soluzione").getRef().setValue(storageReference.getPath()).addOnSuccessListener(new OnSuccessListener<Void>() {
-                               @Override
-                               public void onSuccess(Void unused) {
+                            snapshot.child("audio_soluzione").getRef().setValue(storageReference.getPath()).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
 
-                               }
-                           });
-                       }
+                                }
+                            });
+                        }
 
-                       @Override
-                       public void onCancelled(@NonNull DatabaseError error) {
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
 
-                       }
-                   });
+                        }
+                    });
 
-                   Query aggiorna_progressi_monete = database.getReference("Utenti")
-                           .child("Genitori")
-                           .child(sessionKey)
-                           .child("Bambini")
-                           .child(id_bambino)
-                           .child("monete");
+                    Query aggiorna_progressi_monete = database.getReference("Utenti")
+                            .child("Genitori")
+                            .child(sessionKey)
+                            .child("Bambini")
+                            .child(id_bambino)
+                            .child("monete");
                     aggiorna_progressi_monete.addListenerForSingleValueEvent(new ValueEventListener() {
-                       @Override
-                       public void onDataChange(@NonNull DataSnapshot snapshot) {
-                           int monete = snapshot.getValue(Integer.class);
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            int monete = snapshot.getValue(Integer.class);
 
-                           snapshot.getRef().setValue(monete+esercizio2.getMonete()).addOnSuccessListener(new OnSuccessListener<Void>() {
-                               @Override
-                               public void onSuccess(Void unused) {
+                            snapshot.getRef().setValue(monete+esercizio2.getMonete()).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
 
-                               }
-                           });
-                       }
+                                }
+                            });
+                        }
 
-                       @Override
-                       public void onCancelled(@NonNull DatabaseError error) {
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
 
-                       }
-                   });
+                        }
+                    });
 
                     Query aggiorna_progressi_exp = database.getReference("Utenti")
                             .child("Genitori")

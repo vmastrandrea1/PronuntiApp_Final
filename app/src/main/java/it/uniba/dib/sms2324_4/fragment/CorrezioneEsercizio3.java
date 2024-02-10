@@ -108,6 +108,14 @@ public class CorrezioneEsercizio3 extends DialogFragment {
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireActivity(), R.style.AlertDialogButtonStyle)
                 .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background));
 
+
+        // Verifica se il permesso è stato già concesso
+        if (ContextCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO)
+                != PackageManager.PERMISSION_GRANTED) {
+            // Se il permesso non è stato concesso, richiedilo
+            ActivityCompat.requestPermissions(getActivity(), new String[]{Manifest.permission.RECORD_AUDIO}, PackageManager.PERMISSION_GRANTED);
+        }
+
         LayoutInflater inflater = requireActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.fragment_correzione_esercizio3, null, false);
 
