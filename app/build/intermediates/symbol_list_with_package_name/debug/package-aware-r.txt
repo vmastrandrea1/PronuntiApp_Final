@@ -3110,6 +3110,8 @@ drawable gradient_header_purple
 drawable ic_action_name
 drawable ic_add
 drawable ic_add_child
+drawable ic_add_circle
+drawable ic_add_square
 drawable ic_app_logo_background
 drawable ic_arrow
 drawable ic_arrow_back_black_24
@@ -3118,6 +3120,7 @@ drawable ic_audio
 drawable ic_baseline_arrow_drop_down_circle_24
 drawable ic_check
 drawable ic_child
+drawable ic_child_white
 drawable ic_classifica
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
@@ -3129,6 +3132,7 @@ drawable ic_delete
 drawable ic_edit
 drawable ic_esperienza
 drawable ic_exercise
+drawable ic_exercise_white
 drawable ic_game
 drawable ic_gioco
 drawable ic_google_background
@@ -3606,7 +3610,6 @@ id group
 id group_divider
 id grouping
 id groups
-id guideline_bottom
 id guideline_center
 id hardware
 id header_title
@@ -3657,6 +3660,7 @@ id light
 id line1
 id line3
 id linear
+id linear_layout
 id listMode
 id list_item
 id literal
@@ -3751,6 +3755,9 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id myCardView
+id myexercisesText
+id mykidsText
+id mypatientsText
 id name
 id nameView
 id name_logopedista
@@ -3863,6 +3870,9 @@ id riquadro1
 id riquadro2
 id riquadro3
 id rounded
+id row1
+id row2
+id row3
 id row_index_key
 id save_non_transition_alpha
 id save_overlay_view
@@ -3943,7 +3953,6 @@ id supportScrollUp
 id surname
 id surname_logopedista
 id tabMode
-id tableLayout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -3961,6 +3970,7 @@ id terzo_posto
 id testoTextView
 id text
 id text2
+id textClassifica
 id textEnd
 id textShop
 id textSpacerNoButtons

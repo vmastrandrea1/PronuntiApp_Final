@@ -13,6 +13,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
@@ -107,7 +108,8 @@ public class CorrezioneEsercizio1 extends DialogFragment {
             id_logopedista = getArguments().getString(ID_LOGOPEDISTA);
             pos_esercizio = getArguments().getInt(POS_ESERCIZIO);
         }
-        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireActivity());
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireActivity(), R.style.AlertDialogButtonStyle)
+            .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background));
 
         LayoutInflater inflater = requireActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.fragment_correzione_esercizio1, null, false);
@@ -152,7 +154,8 @@ public class CorrezioneEsercizio1 extends DialogFragment {
                     textViewMonete.setText(esercizio1.getMonete() + " Monete");
                     textViewEsperienza.setText(esercizio1.getEsperienza() + " Punti Esperienza");
 
-                    MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext())
+                    MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
+                            .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                             .setView(dialogView)
                             .setPositiveButton("OK",null)
                             .setCancelable(false);

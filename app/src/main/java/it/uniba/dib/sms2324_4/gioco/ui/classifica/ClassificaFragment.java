@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -74,7 +76,8 @@ public class ClassificaFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_classifica, container, false);
 
         // Ottieni il riferimento alla TableLayout all'interno del fragment
-        TableLayout tableLayout = rootView.findViewById(R.id.tableLayout);
+        ScrollView scrollView = rootView.findViewById(R.id.scrollable);
+        LinearLayout tableLayout = (LinearLayout) scrollView.getChildAt(0);
 
         // Aggiungi del margine al TableLayout
         int tableLayoutMarginTop = 32; // Imposta il margine superiore a tuo piacimento
@@ -108,7 +111,7 @@ public class ClassificaFragment extends Fragment {
                                 esperienza = snapshot.child("esperienza").getValue(Integer.class);
                                 scoreTextView1.setText(paziente.getNome() +
                                         paziente.getCognome() +
-                                        " ( " + esperienza + ")");
+                                        " ( " + esperienza + " )");
                             }
 
                             @Override
@@ -132,7 +135,7 @@ public class ClassificaFragment extends Fragment {
                                 esperienza = snapshot.child("esperienza").getValue(Integer.class);
                                 scoreTextView2.setText(paziente.getNome() +
                                         paziente.getCognome() +
-                                        " ( " + esperienza + ")");
+                                        " ( " + esperienza + " )");
                             }
 
                             @Override
@@ -145,7 +148,7 @@ public class ClassificaFragment extends Fragment {
                         // Imposta il testo del terzo posto
                         scoreTextView3.setText(snapshot.child("nome").getValue(String.class) +
                                 snapshot.child("cognome").getValue(String.class) +
-                                " ( " + snapshot.child("esperienza").getValue(Integer.class) + ")");
+                                " ( " + snapshot.child("esperienza").getValue(Integer.class) + " )");
                     }else{
                         // Crea una nuova riga
                         TableRow row;

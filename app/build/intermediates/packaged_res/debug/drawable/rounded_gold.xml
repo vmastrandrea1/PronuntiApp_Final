@@ -8,13 +8,12 @@
         </shape>
     </item>
 
-    <!-- Immagine sovrapposta -->
+    <!-- Immagine sovrapposta con margine -->
     <item
         android:drawable="@drawable/primo_posto"
         android:gravity="center"
-        android:width="75dp"
-        android:height="70dp"
-        android:top="70dp"
-    />
+        android:width="50dp"
+        android:height="50dp"
+        android:top="75dp" />
 
 </layer-list>

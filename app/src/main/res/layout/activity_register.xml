@@ -87,6 +87,7 @@
                     android:layout_height="wrap_content"
                     android:textColorHint="@color/blue"
                     android:maxLength="16"
+                    android:inputType="textCapCharacters"
                     android:textStyle="bold"
                     android:hint="@string/codice_fiscale"
                     android:background="@color/white"/>

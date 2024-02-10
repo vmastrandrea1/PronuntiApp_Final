@@ -3109,6 +3109,8 @@ int drawable gradient_header_purple 0x7f0700b3
 int drawable ic_action_name 0x7f0700b4
 int drawable ic_add 0x7f0700b5
 int drawable ic_add_child 0x7f0700b6
+int drawable ic_add_circle 0x7f070169
+int drawable ic_add_square 0x7f07016a
 int drawable ic_app_logo_background 0x7f0700b7
 int drawable ic_arrow 0x7f0700b8
 int drawable ic_arrow_back_black_24 0x7f0700b9
@@ -3117,6 +3119,7 @@ int drawable ic_audio 0x7f0700bb
 int drawable ic_baseline_arrow_drop_down_circle_24 0x7f0700bc
 int drawable ic_check 0x7f0700bd
 int drawable ic_child 0x7f0700be
+int drawable ic_child_white 0x7f070167
 int drawable ic_classifica 0x7f0700bf
 int drawable ic_clear_black_24 0x7f0700c0
 int drawable ic_clock_black_24dp 0x7f0700c1
@@ -3128,6 +3131,7 @@ int drawable ic_delete 0x7f0700c6
 int drawable ic_edit 0x7f0700c7
 int drawable ic_esperienza 0x7f0700c8
 int drawable ic_exercise 0x7f0700c9
+int drawable ic_exercise_white 0x7f070168
 int drawable ic_game 0x7f0700ca
 int drawable ic_gioco 0x7f0700cb
 int drawable ic_google_background 0x7f0700cc
@@ -3605,7 +3609,6 @@ int id group 0x7f09013b
 int id group_divider 0x7f09013c
 int id grouping 0x7f09013d
 int id groups 0x7f09013e
-int id guideline_bottom 0x7f09013f
 int id guideline_center 0x7f090140
 int id hardware 0x7f090141
 int id header_title 0x7f090142
@@ -3656,6 +3659,7 @@ int id light 0x7f09016e
 int id line1 0x7f09016f
 int id line3 0x7f090170
 int id linear 0x7f090171
+int id linear_layout 0x7f0902f7
 int id listMode 0x7f090172
 int id list_item 0x7f090173
 int id literal 0x7f090174
@@ -3750,6 +3754,9 @@ int id mtrl_picker_title_text 0x7f0901cc
 int id mtrl_view_tag_bottom_padding 0x7f0901cd
 int id multiply 0x7f0901ce
 int id myCardView 0x7f0901cf
+int id myexercisesText 0x7f0902f8
+int id mykidsText 0x7f0902f9
+int id mypatientsText 0x7f0902fa
 int id name 0x7f0901d0
 int id nameView 0x7f0901d1
 int id name_logopedista 0x7f0901d2
@@ -3862,6 +3869,9 @@ int id riquadro1 0x7f09023c
 int id riquadro2 0x7f09023d
 int id riquadro3 0x7f09023e
 int id rounded 0x7f09023f
+int id row1 0x7f0902fb
+int id row2 0x7f0902fc
+int id row3 0x7f0902fd
 int id row_index_key 0x7f090240
 int id save_non_transition_alpha 0x7f090241
 int id save_overlay_view 0x7f090242
@@ -3942,7 +3952,6 @@ int id supportScrollUp 0x7f09028c
 int id surname 0x7f09028d
 int id surname_logopedista 0x7f09028e
 int id tabMode 0x7f09028f
-int id tableLayout 0x7f090290
 int id tag_accessibility_actions 0x7f090291
 int id tag_accessibility_clickable_spans 0x7f090292
 int id tag_accessibility_heading 0x7f090293
@@ -3960,6 +3969,7 @@ int id terzo_posto 0x7f09029e
 int id testoTextView 0x7f09029f
 int id text 0x7f0902a0
 int id text2 0x7f0902a1
+int id textClassifica 0x7f0902fe
 int id textEnd 0x7f0902a2
 int id textShop 0x7f0902a3
 int id textSpacerNoButtons 0x7f0902a4

@@ -9,12 +9,14 @@
     <Button
         android:id="@+id/button190"
         style="@style/CardView"
-        android:textSize="20dp"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:text="@string/tipo_es1"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/rounded_button"/>
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/tipo_es1"
+        android:textSize="20dp" />
 
     <!-- Secondo pulsante -->
     <Button
@@ -34,14 +36,16 @@
     <Button
         android:id="@+id/button192"
         style="@style/CardView"
-        android:textSize="20dp"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:text="@string/tipo_es3"
         android:layout_below="@+id/button191"
-        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/rounded_button"/>
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/tipo_es3"
+        android:textSize="20dp" />
 
 
 </RelativeLayout>

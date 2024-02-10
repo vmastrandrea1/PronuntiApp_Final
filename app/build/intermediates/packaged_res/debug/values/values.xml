@@ -83,7 +83,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-        <item name="android:windowTranslucentStatus">true</item>
         <item name="colorControlActivated">@color/blue</item>
     </style>
     <style name="DatePickerButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
@@ -115,7 +114,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
-        <item name="android:windowTranslucentStatus">true</item>
         <item name="colorControlActivated">@color/purple</item>
     </style>
     <style name="RoundedImageView">

@@ -38,6 +38,8 @@ drawable gradient_header_purple
 drawable ic_action_name
 drawable ic_add
 drawable ic_add_child
+drawable ic_add_circle
+drawable ic_add_square
 drawable ic_app_logo_background
 drawable ic_arrow
 drawable ic_arrow_right
@@ -45,6 +47,7 @@ drawable ic_audio
 drawable ic_baseline_arrow_drop_down_circle_24
 drawable ic_check
 drawable ic_child
+drawable ic_child_white
 drawable ic_classifica
 drawable ic_close
 drawable ic_coin
@@ -54,6 +57,7 @@ drawable ic_delete
 drawable ic_edit
 drawable ic_esperienza
 drawable ic_exercise
+drawable ic_exercise_white
 drawable ic_game
 drawable ic_gioco
 drawable ic_google_background
@@ -219,7 +223,6 @@ id genitore_to_logopedista
 id gioco
 id gridViewPersonaggi
 id group
-id guideline_bottom
 id guideline_center
 id id_esercizio1
 id id_esercizio1_popup
@@ -237,6 +240,7 @@ id image_viewer_wrong_popup
 id image_wrong_select_viewer
 id information_group
 id layout_image_helpers
+id linear_layout
 id loginNow
 id loginNow_logopedista
 id login_genitore
@@ -251,6 +255,9 @@ id message_deassign_exercise
 id message_delete_exercise
 id mic_layout
 id myCardView
+id myexercisesText
+id mykidsText
+id mypatientsText
 id name
 id nameView
 id name_logopedista
@@ -296,6 +303,9 @@ id riproduci_soluzione_3
 id riquadro1
 id riquadro2
 id riquadro3
+id row1
+id row2
+id row3
 id scegliImmagine_btn
 id scrollable
 id secondo_posto
@@ -313,9 +323,9 @@ id stop_record_solution_2
 id stop_riproduci_audio_1
 id surname
 id surname_logopedista
-id tableLayout
 id terzo_posto
 id testoTextView
+id textClassifica
 id textShop
 id textViewAcquistatoShopItem
 id textViewDescrizione

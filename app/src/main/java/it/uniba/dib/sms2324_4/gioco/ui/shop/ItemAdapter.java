@@ -183,7 +183,8 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
         saveUserData();
 
-        new MaterialAlertDialogBuilder(getContext())
+        new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
+                .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                 .setTitle("Acquisto riuscito")
                 .setMessage("Hai acquistato " + item.getNome())
                 .setPositiveButton("OK", null)
@@ -191,7 +192,8 @@ public class ItemAdapter extends ArrayAdapter<Item> {
     }
 
     private void mostraMoneteInsufficientiDialog() {
-        new MaterialAlertDialogBuilder(getContext())
+        new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
+                .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                 .setTitle("Monete insufficienti")
                 .setMessage("Non hai abbastanza monete!")
                 .setPositiveButton("OK", null)

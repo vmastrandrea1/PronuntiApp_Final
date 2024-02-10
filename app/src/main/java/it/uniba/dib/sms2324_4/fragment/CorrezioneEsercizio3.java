@@ -21,6 +21,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
@@ -101,7 +102,8 @@ public class CorrezioneEsercizio3 extends DialogFragment {
             id_logopedista = getArguments().getString(ID_LOGOPEDISTA);
             pos_esercizio = getArguments().getInt(POS_ESERCIZIO);
         }
-        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireActivity());
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(requireActivity(), R.style.AlertDialogButtonStyle)
+                .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background));
 
         LayoutInflater inflater = requireActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.fragment_correzione_esercizio3, null, false);
@@ -195,7 +197,8 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                         textViewMonete.setText((esercizio3.getMonete()+50) + " Monete");
                         textViewEsperienza.setText((esercizio3.getEsperienza()+100) + " Punti Esperienza");
 
-                        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext())
+                        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
+                                .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                                 .setView(dialogView)
                                 .setPositiveButton("OK",null);
 
@@ -322,7 +325,8 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                 textViewMonete.setText((esercizio3.getMonete()+25)  + " Monete");
                 textViewEsperienza.setText((esercizio3.getEsperienza()+50) + " Punti Esperienza");
 
-                MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext())
+                MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
+                        .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                         .setView(dialogView)
                         .setPositiveButton("OK",null);
 

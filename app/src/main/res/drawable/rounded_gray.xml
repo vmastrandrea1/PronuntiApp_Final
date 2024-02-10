@@ -16,7 +16,6 @@ android:drawable="@drawable/secondo_posto"
 android:gravity="center"
 android:width="50dp"
 android:height="50dp"
-android:top="50dp"
-    />
+android:top="50dp" />
 
 </layer-list>
