@@ -185,21 +185,14 @@ public class RegistrazioneBambini extends Fragment {
                                              */
 
                                             //Registrazione paziente
-                                            Paziente paziente1 = new Paziente(nome , cognome , cf , dataDiNascita , editTextParentCf.getText().toString());
+                                            Paziente paziente1 = new Paziente(nome , cognome , cf , dataDiNascita ,
+                                                    editTextParentCf.getText().toString() , 0);
                                             database.getReference("Utenti")
                                                     .child("Logopedisti")
                                                     .child(sessionKey)
                                                     .child("Pazienti")
                                                     .child(cf)
                                                     .setValue(paziente1);
-
-                                            database.getReference("Utenti")
-                                                    .child("Logopedisti")
-                                                    .child(sessionKey)
-                                                    .child("Pazienti")
-                                                    .child(cf)
-                                                    .child("esperienza")
-                                                    .setValue(0);
 
                                             Toast.makeText(v.getContext(),
                                                     R.string.paziente_registrato_con_successo,

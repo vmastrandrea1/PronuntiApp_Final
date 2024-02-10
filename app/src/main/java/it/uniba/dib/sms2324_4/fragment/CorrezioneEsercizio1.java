@@ -95,6 +95,9 @@ public class CorrezioneEsercizio1 extends DialogFragment {
         args.putString(ID_LOGOPEDISTA, id_logopedista);
         args.putInt(POS_ESERCIZIO,pos_esercizio);
         fragment.setArguments(args);
+
+        fragment.setCancelable(false);
+
         return fragment;
     }
 
@@ -157,8 +160,7 @@ public class CorrezioneEsercizio1 extends DialogFragment {
                     MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
                             .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                             .setView(dialogView)
-                            .setPositiveButton("OK",null)
-                            .setCancelable(false);
+                            .setPositiveButton("OK",null);
 
                     builder.show();
 
@@ -290,9 +292,7 @@ public class CorrezioneEsercizio1 extends DialogFragment {
         });
 
         // Configura il dialog con il layout personalizzato
-        builder.setView(view)
-                //.setTitle("Riconosci l'immagine")
-                .setCancelable(false);
+        builder.setView(view);
 
         return builder.create();
     }

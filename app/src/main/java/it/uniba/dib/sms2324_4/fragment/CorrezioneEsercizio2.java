@@ -84,6 +84,9 @@ public class CorrezioneEsercizio2 extends DialogFragment {
         args.putString(ID_LOGOPEDISTA, id_logopedista);
         args.putInt(POS_ESERCIZIO,pos_esercizio);
         fragment.setArguments(args);
+
+        fragment.setCancelable(false);
+
         return fragment;
     }
 
@@ -280,7 +283,6 @@ public class CorrezioneEsercizio2 extends DialogFragment {
 
         // Configura il dialog con il layout personalizzato
         builder.setView(view);
-                //.setTitle(R.string.tipo_es2);
 
         return builder.create();
     }

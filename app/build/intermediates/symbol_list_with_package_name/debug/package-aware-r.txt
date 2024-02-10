@@ -3633,6 +3633,7 @@ id ignoreRequest
 id image
 id imageViewFullScreen
 id image_correct_select_viewer
+id image_regalo
 id image_select_viewer
 id image_viewer_right
 id image_viewer_right_popup
@@ -3978,11 +3979,14 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textViewAcquistatoShopItem
+id textViewBenFatto
 id textViewDescrizione
 id textViewDescrizioneFullScreen
 id textViewEsercizioTerminato
 id textViewEsperienza
+id textViewEsperienzaRegalo
 id textViewMonete
+id textViewMoneteRegalo
 id textViewNomeFullScreen
 id textViewPrezzoFullScreen
 id text_input_end_icon
@@ -4205,6 +4209,7 @@ layout dialog_dettaglio_item
 layout dialog_esercizio3_giusto
 layout dialog_esercizio3_sbagliato
 layout dialog_esercizio_terminato
+layout dialog_regalo_riscosso
 layout esercizi
 layout esercizio_svolto_popup
 layout exercise1_info_popup

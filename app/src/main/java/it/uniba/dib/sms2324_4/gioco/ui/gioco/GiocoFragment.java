@@ -10,11 +10,13 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -25,7 +27,6 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
@@ -58,7 +59,8 @@ public class GiocoFragment extends Fragment{
 
     private boolean[] isFlagVisible = new boolean[6]; // Un array di boolean per memorizzare lo stato di visibilità delle bandierine
 
-    public static GiocoFragment newInstance(String id_bambino, String sessionKey_genitore,String id_logopedista) {
+    public static GiocoFragment newInstance(String id_bambino, String sessionKey_genitore,
+                                            String id_logopedista) {
         GiocoFragment fragment = new GiocoFragment();
         Bundle args = new Bundle();
         args.putString(BAMBINO_ID, id_bambino);
@@ -97,9 +99,9 @@ public class GiocoFragment extends Fragment{
 
         currentButtonIndex = 0;
 
-        loadFlagVisibility();
+        loadFlagVisibility(rootView);
         
-        laodCurrentPosition();
+        loadCurrentPosition();
 
         Query id_map = database.getReference("Utenti")
                 .child("Genitori")
@@ -254,12 +256,12 @@ public class GiocoFragment extends Fragment{
         };
 
 
-        setButtonClickListeners();
+        setButtonClickListeners(rootView);
 
         return rootView;
     }
 
-    private void laodCurrentPosition() {
+    private void loadCurrentPosition() {
         Query get_position = database.getReference("Utenti")
                 .child("Genitori")
                 .child(sessionKey_genitore)
@@ -339,7 +341,7 @@ public class GiocoFragment extends Fragment{
     }
 
 
-    private void setButtonClickListeners() {
+    private void setButtonClickListeners(View rootview) {
         String data_terapia = getData();
 
         Query childExistant = database.getReference("Utenti")
@@ -399,6 +401,108 @@ public class GiocoFragment extends Fragment{
             public void onClick(View v) {
                 animateImage((buttons[5]));
                 buttons[5].setVisibility(View.GONE);
+
+                ImageView regalo = rootview.findViewById(R.id.image_regalo);
+                regalo.setVisibility(View.GONE);
+
+                database.getReference("Utenti")
+                        .child("Genitori")
+                        .child(sessionKey_genitore)
+                        .child("Bambini")
+                        .child(id_bambino)
+                        .child("X_Position")
+                        .setValue(Float.valueOf(270))
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
+
+                database.getReference("Utenti")
+                        .child("Genitori")
+                        .child(sessionKey_genitore)
+                        .child("Bambini")
+                        .child(id_bambino)
+                        .child("Y_Position")
+                        .setValue(Float.valueOf(1400))
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
+
+
+                Query aggiorna_progressi_monete = database.getReference("Utenti")
+                        .child("Genitori")
+                        .child(sessionKey_genitore)
+                        .child("Bambini")
+                        .child(id_bambino)
+                        .child("monete");
+                aggiorna_progressi_monete.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        int monete = snapshot.getValue(Integer.class);
+
+                        snapshot.getRef().setValue(monete + 100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+                Query aggiorna_progressi_exp = database.getReference("Utenti")
+                        .child("Genitori")
+                        .child(sessionKey_genitore)
+                        .child("Bambini")
+                        .child(id_bambino)
+                        .child("esperienza");
+                aggiorna_progressi_exp.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        int esperienza = snapshot.getValue(Integer.class);
+
+                        snapshot.getRef().setValue(esperienza + 500).addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
+
+                        database.getReference("Utenti")
+                                .child("Logopedisti")
+                                .child(id_logopedista)
+                                .child("Pazienti")
+                                .child(id_bambino)
+                                .child("esperienza")
+                                .setValue(esperienza + 500).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
+
+                                    }
+                                });
+
+                        View dialogView = LayoutInflater.from(rootview.getContext()).inflate(R.layout.dialog_regalo_riscosso, null);
+                        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
+                                .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
+                                .setView(dialogView)
+                                .setPositiveButton("OK",null);
+                        builder.show();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
             }
         });
     }
@@ -451,7 +555,9 @@ public class GiocoFragment extends Fragment{
     }
 
     // Metodo per caricare lo stato delle bandierine visibili
-    private void loadFlagVisibility() {
+    private void loadFlagVisibility(View rootView) {
+        ImageView regalo = rootView.findViewById(R.id.image_regalo);
+
         Query fetch_visibilty = database.getReference("Utenti")
                 .child("Logopedisti")
                 .child(id_logopedista)
@@ -471,6 +577,7 @@ public class GiocoFragment extends Fragment{
                         }else{
                             isFlagVisible[i] = true; // Preimposta lo stato delle bandierine a true se non esiste alcun valore salvato
                             buttons[i].setVisibility(View.VISIBLE);
+                            regalo.setVisibility(View.VISIBLE);
                         }
                     }
                     i++;

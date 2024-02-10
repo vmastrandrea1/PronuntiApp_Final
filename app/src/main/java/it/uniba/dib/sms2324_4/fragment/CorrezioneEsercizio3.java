@@ -89,6 +89,9 @@ public class CorrezioneEsercizio3 extends DialogFragment {
         args.putString(ID_LOGOPEDISTA, id_logopedista);
         args.putInt(POS_ESERCIZIO,pos_esercizio);
         fragment.setArguments(args);
+
+        fragment.setCancelable(false);
+
         return fragment;
     }
 
@@ -202,6 +205,8 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                                 .setView(dialogView)
                                 .setPositiveButton("OK",null);
 
+                        builder.setCancelable(false);
+
                         builder.show();
 
                         DateFormat formatoData = new SimpleDateFormat("yyyy-MM-dd");
@@ -293,6 +298,19 @@ public class CorrezioneEsercizio3 extends DialogFragment {
 
                                     }
                                 });
+
+                                database.getReference("Utenti")
+                                        .child("Logopedisti")
+                                        .child(id_logopedista)
+                                        .child("Pazienti")
+                                        .child(id_bambino)
+                                        .child("esperienza")
+                                        .setValue(esperienza + 100).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                            @Override
+                                            public void onSuccess(Void unused) {
+
+                                            }
+                                        });
                             }
 
                             @Override
@@ -322,7 +340,7 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                 TextView textViewMonete = dialogView.findViewById(R.id.textViewMonete);
                 TextView textViewEsperienza = dialogView.findViewById(R.id.textViewEsperienza);
 
-                textViewMonete.setText((esercizio3.getMonete()+25)  + " Monete");
+                textViewMonete.setText((esercizio3.getMonete()+20)  + " Monete");
                 textViewEsperienza.setText((esercizio3.getEsperienza()+50) + " Punti Esperienza");
 
                 MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
@@ -390,7 +408,7 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         int monete = snapshot.getValue(Integer.class);
 
-                        snapshot.getRef().setValue(monete+esercizio3.getMonete() + 25).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        snapshot.getRef().setValue(monete+esercizio3.getMonete() + 20).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
 
@@ -446,7 +464,6 @@ public class CorrezioneEsercizio3 extends DialogFragment {
 
         // Configura il dialog con il layout personalizzato
         builder.setView(view);
-                //.setTitle("Riconosci l'immagine corretta");
 
         return builder.create();
 

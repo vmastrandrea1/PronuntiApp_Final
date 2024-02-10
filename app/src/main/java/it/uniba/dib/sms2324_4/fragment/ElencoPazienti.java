@@ -115,6 +115,7 @@ public class ElencoPazienti extends Fragment {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 String nome, cognome , cf , dataDiNascita,cfGenitore;
+                int esperienza;
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
 
                     nome = dataSnapshot.child("nome").getValue().toString();
@@ -122,8 +123,9 @@ public class ElencoPazienti extends Fragment {
                     cf = dataSnapshot.child("cf").getValue().toString();
                     dataDiNascita = dataSnapshot.child("dataDiNascita").getValue().toString();
                     cfGenitore = dataSnapshot.child("cfGenitore").getValue().toString();
+                    esperienza = dataSnapshot.child("esperienza").getValue(Integer.class);
 
-                    Paziente paziente = new Paziente(nome , cognome , cf , dataDiNascita , cfGenitore);
+                    Paziente paziente = new Paziente(nome , cognome , cf , dataDiNascita , cfGenitore , esperienza);
                     list.add(paziente);
 
 
