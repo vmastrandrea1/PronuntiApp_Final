@@ -5,16 +5,6 @@ public class Esercizio3 {
     int conta_assegnazioni = 0;
     int esperienza = 50;
     int monete = 10;
-    boolean corretto;
-    boolean eseguito;
-
-    public boolean isEsito() {
-        return esito;
-    }
-
-    public void setEsito(boolean esito) {
-        this.esito = esito;
-    }
 
     public String getParola_immagine() {
         return parola_immagine;
@@ -26,15 +16,13 @@ public class Esercizio3 {
 
     public Esercizio3(String uriImage_corretta, String uriImage_sbagliata, String id_esercizio,
                       int conta_assegnazioni, int esperienza, int monete,
-                      boolean corretto, boolean eseguito, boolean esito, String parola_immagine) {
+                      boolean esito, String parola_immagine) {
         UriImage_corretta = uriImage_corretta;
         UriImage_sbagliata = uriImage_sbagliata;
         this.id_esercizio = id_esercizio;
         this.conta_assegnazioni = conta_assegnazioni;
         this.esperienza = esperienza;
         this.monete = monete;
-        this.corretto = corretto;
-        this.eseguito = eseguito;
         this.esito = esito;
         this.parola_immagine = parola_immagine;
     }
@@ -95,19 +83,4 @@ public class Esercizio3 {
         this.monete = monete;
     }
 
-    public boolean isCorretto() {
-        return corretto;
-    }
-
-    public void setCorretto(boolean corretto) {
-        this.corretto = corretto;
-    }
-
-    public boolean isEseguito() {
-        return eseguito;
-    }
-
-    public void setEseguito(boolean eseguito) {
-        this.eseguito = eseguito;
-    }
 }

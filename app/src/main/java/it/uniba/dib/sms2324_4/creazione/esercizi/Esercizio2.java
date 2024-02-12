@@ -1,37 +1,23 @@
 package it.uniba.dib.sms2324_4.creazione.esercizi;
 
 public class Esercizio2 {
-    String parola_1, parola_2, parola_3, audio_soluzione , id_esercizio ;
+    String parola_1;
+    String parola_2;
+    String parola_3;
+    String id_esercizio ;
     int conta_assegnazioni = 0;
     int esperienza = 25;
     int monete = 10;
-    boolean corretto;
-    boolean eseguito;
 
-    public boolean isEsito() {
-        return esito;
-    }
-
-    public void setEsito(boolean esito) {
-        this.esito = esito;
-    }
-
-    boolean esito;
-
-    public Esercizio2(String parola_1, String parola_2, String parola_3, String audio_soluzione,
-                      String id_esercizio, int conta_assegnazioni, int esperienza, int monete,
-                      boolean corretto, boolean eseguito, boolean esito) {
+    public Esercizio2(String parola_1, String parola_2, String parola_3,
+                      String id_esercizio, int conta_assegnazioni, int esperienza, int monete) {
         this.parola_1 = parola_1;
         this.parola_2 = parola_2;
         this.parola_3 = parola_3;
-        this.audio_soluzione = audio_soluzione;
         this.id_esercizio = id_esercizio;
         this.conta_assegnazioni = conta_assegnazioni;
         this.esperienza = esperienza;
         this.monete = monete;
-        this.corretto = corretto;
-        this.eseguito = eseguito;
-        this.esito = esito;
     }
 
     public Esercizio2(){
@@ -60,14 +46,6 @@ public class Esercizio2 {
 
     public void setParola_3(String parola_3) {
         this.parola_3 = parola_3;
-    }
-
-    public String getAudio_soluzione() {
-        return audio_soluzione;
-    }
-
-    public void setAudio_soluzione(String audio_soluzione) {
-        this.audio_soluzione = audio_soluzione;
     }
 
     public String getId_esercizio() {
@@ -102,19 +80,4 @@ public class Esercizio2 {
         this.monete = monete;
     }
 
-    public boolean isCorretto() {
-        return corretto;
-    }
-
-    public void setCorretto(boolean corretto) {
-        this.corretto = corretto;
-    }
-
-    public boolean isEseguito() {
-        return eseguito;
-    }
-
-    public void setEseguito(boolean eseguito) {
-        this.eseguito = eseguito;
-    }
 }

@@ -122,6 +122,32 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                         });
 
                         Button assegna_terapia_btn = mDialog.findViewById(R.id.add_therapy_patient);
+
+                        //SE NON CI SONO ESERCIZI CREATI
+                        Query conta_esercizi = database.getReference("Utenti")
+                                .child("Logopedisti")
+                                .child(sessionKey)
+                                .child("Esercizi");
+                        conta_esercizi.addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                int count = 0;
+                                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                    count++;
+                                }
+                                if(count<5){
+                                    assegna_terapia_btn.setVisibility(View.GONE);
+                                }else{
+                                    assegna_terapia_btn.setVisibility(View.VISIBLE);
+                                }
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+
+                            }
+                        });
+
                         Button view_therapy_patient = mDialog.findViewById(R.id.view_therapy_patient);
 
                         //SWITCH VISUALIZZA TERAPIA

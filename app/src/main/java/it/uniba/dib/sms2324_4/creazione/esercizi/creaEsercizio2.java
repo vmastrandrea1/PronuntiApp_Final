@@ -110,7 +110,6 @@ public class creaEsercizio2 extends Fragment {
                     esercizio2.setParola_1(parola1.getText().toString());
                     esercizio2.setParola_2(parola2.getText().toString());
                     esercizio2.setParola_3(parola3.getText().toString());
-                    esercizio2.setAudio_soluzione("null");
                     esercizio2.setId_esercizio("2_" + id_eserczio2.getText().toString());
 
                     FirebaseDatabase database = FirebaseDatabase.getInstance(getString(R.string.db_url));

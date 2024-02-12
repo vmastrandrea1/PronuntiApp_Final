@@ -71,7 +71,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
-                        android:text="Il tuo testo qui"
                         android:textColor="@color/white"
                         android:textSize="30sp"
                         android:textStyle="bold" />
@@ -100,7 +99,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
-                        android:text="Il tuo testo qui"
                         android:textColor="@color/white"
                         android:textSize="25dp"
                         android:textStyle="bold" />
@@ -129,7 +127,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
-                        android:text="Il tuo testo qui"
                         android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />

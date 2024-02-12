@@ -121,13 +121,8 @@ public class ElencoEsercizi extends Fragment {
                         esercizio1.setAiuto_2(dataSnapshot.child("aiuto_2").getValue().toString());
                         esercizio1.setAiuto_3(dataSnapshot.child("aiuto_3").getValue().toString());
                         esercizio1.setUriImage(dataSnapshot.child("uriImage").getValue().toString());
-                        esercizio1.setAudio_soluzione(dataSnapshot.child("audio_soluzione").getValue().toString());
-                        esercizio1.setCorretto((Boolean) dataSnapshot.child("corretto").getValue());
-                        esercizio1.setEseguito((Boolean) dataSnapshot.child("eseguito").getValue());
                         esercizio1.setMonete(dataSnapshot.child("monete").getValue(Integer.class));
                         esercizio1.setEsperienza(dataSnapshot.child("esperienza").getValue(Integer.class));
-                        esercizio1.setEsito((Boolean) dataSnapshot.child("esito").getValue());
-                        esercizio1.setCorretto((Boolean) dataSnapshot.child("corretto").getValue());
 
                         list.add(esercizio1);
                     }else if(dataSnapshot.child("id_esercizio").getValue().toString().startsWith("2_")){
@@ -137,12 +132,8 @@ public class ElencoEsercizi extends Fragment {
                         esercizio2.setParola_1(dataSnapshot.child("parola_1").getValue().toString());
                         esercizio2.setParola_2(dataSnapshot.child("parola_2").getValue().toString());
                         esercizio2.setParola_3(dataSnapshot.child("parola_3").getValue().toString());
-                        esercizio2.setCorretto((Boolean) dataSnapshot.child("corretto").getValue());
-                        esercizio2.setEseguito((Boolean) dataSnapshot.child("eseguito").getValue());
                         esercizio2.setMonete(dataSnapshot.child("monete").getValue(Integer.class));
                         esercizio2.setEsperienza(dataSnapshot.child("esperienza").getValue(Integer.class));
-                        esercizio2.setEsito((Boolean) dataSnapshot.child("esito").getValue());
-                        esercizio2.setCorretto((Boolean) dataSnapshot.child("corretto").getValue());
 
                         list.add(esercizio2);
                     }else if(dataSnapshot.child("id_esercizio").getValue().toString().startsWith("3_")){
@@ -151,12 +142,8 @@ public class ElencoEsercizi extends Fragment {
                         esercizio3.setId_esercizio(dataSnapshot.child("id_esercizio").getValue().toString());
                         esercizio3.setUriImage_sbagliata(dataSnapshot.child("uriImage_sbagliata").getValue().toString());
                         esercizio3.setUriImage_corretta(dataSnapshot.child("uriImage_corretta").getValue().toString());
-                        esercizio3.setCorretto((Boolean) dataSnapshot.child("corretto").getValue());
-                        esercizio3.setEseguito((Boolean) dataSnapshot.child("eseguito").getValue());
                         esercizio3.setMonete(dataSnapshot.child("monete").getValue(Integer.class));
                         esercizio3.setEsperienza(dataSnapshot.child("esperienza").getValue(Integer.class));
-                        esercizio3.setEsito((Boolean) dataSnapshot.child("esito").getValue());
-                        esercizio3.setCorretto((Boolean) dataSnapshot.child("corretto").getValue());
                         esercizio3.setParola_immagine(dataSnapshot.child("parola_immagine").getValue().toString());
 
                         list.add(esercizio3);

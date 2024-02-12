@@ -225,6 +225,7 @@ id gridViewPersonaggi
 id group
 id guideline_center
 id id_esercizio1
+id id_esercizio1_correzione_popup
 id id_esercizio1_popup
 id id_esercizio2
 id id_esercizio2_popup

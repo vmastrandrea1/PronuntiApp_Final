@@ -3622,6 +3622,7 @@ id icon
 id icon_group
 id icon_only
 id id_esercizio1
+id id_esercizio1_correzione_popup
 id id_esercizio1_popup
 id id_esercizio2
 id id_esercizio2_popup

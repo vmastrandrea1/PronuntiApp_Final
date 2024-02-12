@@ -209,14 +209,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     esercizio1.setAiuto_2(snapshot1.child("aiuto_2").getValue().toString());
                                                     esercizio1.setAiuto_3(snapshot1.child("aiuto_3").getValue().toString());
                                                     esercizio1.setUriImage(snapshot1.child("uriImage").getValue().toString());
-                                                    esercizio1.setAudio_soluzione(snapshot1.child("audio_soluzione").getValue().toString());
-                                                    esercizio1.setCorretto((Boolean) snapshot1.child("corretto").getValue());
-                                                    esercizio1.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio1.setMonete(snapshot1.child("monete").getValue(Integer.class));
                                                     esercizio1.setEsperienza(snapshot1.child("esperienza").getValue(Integer.class));
-                                                    esercizio1.setEsito((Boolean) snapshot1.child("esito").getValue());
                                                     esercizio1.setConta_assegnazioni(snapshot1.child("conta_assegnazioni").getValue(Integer.class));
-                                                    esercizio1.setCorretto((Boolean) snapshot1.child("corretto").getValue());
 
                                                     list_es.add(esercizio1);
                                                 }else if(snapshot1.child("id_esercizio").getValue().toString().startsWith("2_")){
@@ -226,13 +221,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     esercizio2.setParola_1(snapshot1.child("parola_1").getValue().toString());
                                                     esercizio2.setParola_2(snapshot1.child("parola_2").getValue().toString());
                                                     esercizio2.setParola_3(snapshot1.child("parola_3").getValue().toString());
-                                                    esercizio2.setCorretto((Boolean) snapshot1.child("corretto").getValue());
-                                                    esercizio2.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio2.setMonete(snapshot1.child("monete").getValue(Integer.class));
                                                     esercizio2.setEsperienza(snapshot1.child("esperienza").getValue(Integer.class));
-                                                    esercizio2.setEsito((Boolean) snapshot1.child("esito").getValue());
                                                     esercizio2.setConta_assegnazioni(snapshot1.child("conta_assegnazioni").getValue(Integer.class));
-                                                    esercizio2.setCorretto((Boolean) snapshot1.child("corretto").getValue());
 
                                                     list_es.add(esercizio2);
                                                 }else if(snapshot1.child("id_esercizio").getValue().toString().startsWith("3_")) {
@@ -241,13 +232,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     esercizio3.setId_esercizio(snapshot1.child("id_esercizio").getValue().toString());
                                                     esercizio3.setUriImage_sbagliata(snapshot1.child("uriImage_sbagliata").getValue().toString());
                                                     esercizio3.setUriImage_corretta(snapshot1.child("uriImage_corretta").getValue().toString());
-                                                    esercizio3.setCorretto((Boolean) snapshot1.child("corretto").getValue());
-                                                    esercizio3.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio3.setMonete(snapshot1.child("monete").getValue(Integer.class));
                                                     esercizio3.setEsperienza(snapshot1.child("esperienza").getValue(Integer.class));
-                                                    esercizio3.setEsito((Boolean) snapshot1.child("esito").getValue());
                                                     esercizio3.setConta_assegnazioni(snapshot1.child("conta_assegnazioni").getValue(Integer.class));
-                                                    esercizio3.setCorretto((Boolean) snapshot1.child("corretto").getValue());
 
                                                     list_es.add(esercizio3);
                                                 }
@@ -670,27 +657,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                             }
                                         }
 
-                                        if(TVesercizio_1.getText().toString().startsWith("1_") ||
-                                                TVesercizio_1.getText().toString().startsWith("2_")){
-                                            TVesercizio_1.setClickable(true);
-                                        }
-                                        if(TVesercizio_2.getText().toString().startsWith("1_") ||
-                                                TVesercizio_2.getText().toString().startsWith("2_")){
-                                            TVesercizio_2.setClickable(true);
-                                        }
-                                        if(TVesercizio_3.getText().toString().startsWith("1_") ||
-                                                TVesercizio_3.getText().toString().startsWith("2_")){
-                                            TVesercizio_3.setClickable(true);
-                                        }
-                                        if(TVesercizio_4.getText().toString().startsWith("1_") ||
-                                                TVesercizio_4.getText().toString().startsWith("2_")){
-                                            TVesercizio_4.setClickable(true);
-                                        }
-                                        if(TVesercizio_5.getText().toString().startsWith("1_") ||
-                                                TVesercizio_5.getText().toString().startsWith("2_")){
-                                            TVesercizio_5.setClickable(true);
-                                        }
-
                                         //VISUALIZZAZIONE ANDAMENTO ESERCIZI
                                         TVesercizio_1.setOnClickListener(new View.OnClickListener() {
                                             @Override
@@ -707,12 +673,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     @Override
                                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                                         for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                                                            if(dataSnapshot.child("eseguito").exists()){
+                                                            if(dataSnapshot.child("eseguito").exists() &&
+                                                                    !TVesercizio_1.getText().toString().startsWith("3_")){
                                                                 Dialog info_dialog = new Dialog(dialog1.getContext());
                                                                 dialog1.dismiss();
                                                                 info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
-                                                                TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_popup);
+                                                                TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
                                                                 Button riproduci_soluzione = info_dialog.findViewById(R.id.riproduci_soluzione);
                                                                 Button ferma_riproduzione = info_dialog.findViewById(R.id.ferma_riproduzione);
                                                                 Button visualizza_esercizio = info_dialog.findViewById(R.id.visualizza_esercizio);
@@ -735,7 +702,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                 FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
                                                                 StorageReference storageReference = storage.getReference(dataSnapshot.child("audio_soluzione").getValue(String.class).substring(1));
-
 
                                                                 riproduci_soluzione.setOnClickListener(new View.OnClickListener() {
                                                                     @Override
@@ -886,7 +852,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         esercizio_corretto.setVisibility(View.GONE);
                                                                         esercizio_sbagliato.setVisibility(View.GONE);
 
-                                                                        snapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                                                        dataSnapshot.child("esito").getRef().setValue(false).addOnSuccessListener(new OnSuccessListener<Void>() {
                                                                             @Override
                                                                             public void onSuccess(Void unused) {
 
@@ -1048,7 +1014,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             //ESERCIZIO 2
                                                                         }else if(dataSnapshot.child("id_esercizio").getValue(String.class).startsWith("2_")){
                                                                             Dialog mDialog;
-                                                                            TextView txtClose , id_esercizio , parola_1, parola_2 , parola_3 , cfPaziente;
+                                                                            TextView txtClose , id_esercizio ,  parola_1  , parola_2 , parola_3 , cfPaziente;
 
                                                                             mDialog = new Dialog(v.getContext());
                                                                             mDialog.setContentView(R.layout.exercise2_info_popup);
@@ -1127,12 +1093,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     @Override
                                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                                         for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                                                            if(dataSnapshot.child("eseguito").exists()){
+                                                            if(dataSnapshot.child("eseguito").exists() &&
+                                                                    !TVesercizio_2.getText().toString().startsWith("3_")){
                                                                 Dialog info_dialog = new Dialog(dialog1.getContext());
                                                                 dialog1.dismiss();
                                                                 info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
-                                                                TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_popup);
+                                                                TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
                                                                 Button riproduci_soluzione = info_dialog.findViewById(R.id.riproduci_soluzione);
                                                                 Button ferma_riproduzione = info_dialog.findViewById(R.id.ferma_riproduzione);
                                                                 Button visualizza_esercizio = info_dialog.findViewById(R.id.visualizza_esercizio);
@@ -1546,12 +1513,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     @Override
                                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                                         for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                                                            if(dataSnapshot.child("eseguito").exists()){
+                                                            if(dataSnapshot.child("eseguito").exists() &&
+                                                                    !TVesercizio_3.getText().toString().startsWith("3_")){
                                                                 Dialog info_dialog = new Dialog(dialog1.getContext());
                                                                 dialog1.dismiss();
                                                                 info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
-                                                                TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_popup);
+                                                                TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
                                                                 Button riproduci_soluzione = info_dialog.findViewById(R.id.riproduci_soluzione);
                                                                 Button ferma_riproduzione = info_dialog.findViewById(R.id.ferma_riproduzione);
                                                                 Button visualizza_esercizio = info_dialog.findViewById(R.id.visualizza_esercizio);
@@ -1965,12 +1933,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     @Override
                                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                                         for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                                                           if(dataSnapshot.child("eseguito").exists()){
+                                                           if(dataSnapshot.child("eseguito").exists() &&
+                                                                   !TVesercizio_4.getText().toString().startsWith("3_")){
                                                                Dialog info_dialog = new Dialog(dialog1.getContext());
                                                                dialog1.dismiss();
                                                                info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
-                                                               TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_popup);
+                                                               TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
                                                                Button riproduci_soluzione = info_dialog.findViewById(R.id.riproduci_soluzione);
                                                                Button ferma_riproduzione = info_dialog.findViewById(R.id.ferma_riproduzione);
                                                                Button visualizza_esercizio = info_dialog.findViewById(R.id.visualizza_esercizio);
@@ -2384,12 +2353,13 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     @Override
                                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                                         for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                                                            if(dataSnapshot.child("eseguito").exists()){
+                                                            if(dataSnapshot.child("eseguito").exists() &&
+                                                                    !TVesercizio_5.getText().toString().startsWith("3_")){
                                                                 Dialog info_dialog = new Dialog(dialog1.getContext());
                                                                 dialog1.dismiss();
                                                                 info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
-                                                                TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_popup);
+                                                                TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
                                                                 Button riproduci_soluzione = info_dialog.findViewById(R.id.riproduci_soluzione);
                                                                 Button ferma_riproduzione = info_dialog.findViewById(R.id.ferma_riproduzione);
                                                                 Button visualizza_esercizio = info_dialog.findViewById(R.id.visualizza_esercizio);

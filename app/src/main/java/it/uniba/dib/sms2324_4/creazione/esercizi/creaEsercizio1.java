@@ -134,7 +134,6 @@ public class creaEsercizio1 extends Fragment {
                     esercizio1.setAiuto_2(aiuto2.getText().toString());
                     esercizio1.setAiuto_3(aiuto3.getText().toString());
                     esercizio1.setUriImage(uriImage);
-                    esercizio1.setAudio_soluzione("null");
                     esercizio1.setId_esercizio("1_" + id_eserczio1.getText().toString());
 
                     FirebaseDatabase database = FirebaseDatabase.getInstance(getString(R.string.db_url));

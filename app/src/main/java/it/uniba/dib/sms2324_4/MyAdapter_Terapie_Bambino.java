@@ -187,14 +187,9 @@ public class MyAdapter_Terapie_Bambino extends RecyclerView.Adapter<MyAdapter_Te
                                                     esercizio1.setAiuto_2(snapshot1.child("aiuto_2").getValue().toString());
                                                     esercizio1.setAiuto_3(snapshot1.child("aiuto_3").getValue().toString());
                                                     esercizio1.setUriImage(snapshot1.child("uriImage").getValue().toString());
-                                                    esercizio1.setAudio_soluzione(snapshot1.child("audio_soluzione").getValue().toString());
-                                                    esercizio1.setCorretto((Boolean) snapshot1.child("corretto").getValue());
-                                                    esercizio1.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio1.setMonete(snapshot1.child("monete").getValue(Integer.class));
                                                     esercizio1.setEsperienza(snapshot1.child("esperienza").getValue(Integer.class));
-                                                    esercizio1.setEsito((Boolean) snapshot1.child("esito").getValue());
                                                     esercizio1.setConta_assegnazioni(snapshot1.child("conta_assegnazioni").getValue(Integer.class));
-                                                    esercizio1.setCorretto((Boolean) snapshot1.child("corretto").getValue());
 
                                                     list_es.add(esercizio1);
                                                 }else if(snapshot1.child("id_esercizio").getValue().toString().startsWith("2_")){
@@ -204,13 +199,9 @@ public class MyAdapter_Terapie_Bambino extends RecyclerView.Adapter<MyAdapter_Te
                                                     esercizio2.setParola_1(snapshot1.child("parola_1").getValue().toString());
                                                     esercizio2.setParola_2(snapshot1.child("parola_2").getValue().toString());
                                                     esercizio2.setParola_3(snapshot1.child("parola_3").getValue().toString());
-                                                    esercizio2.setCorretto((Boolean) snapshot1.child("corretto").getValue());
-                                                    esercizio2.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio2.setMonete(snapshot1.child("monete").getValue(Integer.class));
                                                     esercizio2.setEsperienza(snapshot1.child("esperienza").getValue(Integer.class));
-                                                    esercizio2.setEsito((Boolean) snapshot1.child("esito").getValue());
                                                     esercizio2.setConta_assegnazioni(snapshot1.child("conta_assegnazioni").getValue(Integer.class));
-                                                    esercizio2.setCorretto((Boolean) snapshot1.child("corretto").getValue());
 
                                                     list_es.add(esercizio2);
                                                 }else if(snapshot1.child("id_esercizio").getValue().toString().startsWith("3_")) {
@@ -219,13 +210,9 @@ public class MyAdapter_Terapie_Bambino extends RecyclerView.Adapter<MyAdapter_Te
                                                     esercizio3.setId_esercizio(snapshot1.child("id_esercizio").getValue().toString());
                                                     esercizio3.setUriImage_sbagliata(snapshot1.child("uriImage_sbagliata").getValue().toString());
                                                     esercizio3.setUriImage_corretta(snapshot1.child("uriImage_corretta").getValue().toString());
-                                                    esercizio3.setCorretto((Boolean) snapshot1.child("corretto").getValue());
-                                                    esercizio3.setEseguito((Boolean) snapshot1.child("eseguito").getValue());
                                                     esercizio3.setMonete(snapshot1.child("monete").getValue(Integer.class));
                                                     esercizio3.setEsperienza(snapshot1.child("esperienza").getValue(Integer.class));
-                                                    esercizio3.setEsito((Boolean) snapshot1.child("esito").getValue());
                                                     esercizio3.setConta_assegnazioni(snapshot1.child("conta_assegnazioni").getValue(Integer.class));
-                                                    esercizio3.setCorretto((Boolean) snapshot1.child("corretto").getValue());
 
                                                     list_es.add(esercizio3);
                                                 }

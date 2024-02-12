@@ -69,7 +69,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
     MediaPlayer mediaPlayer = new MediaPlayer();
 
     File directory;
-    File audio_registrato;
+    File audio_registrato = null;
     TextToSpeech textToSpeech = null;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
@@ -147,7 +147,7 @@ public class CorrezioneEsercizio2 extends DialogFragment {
         confirm_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(esercizio2.isEseguito()){
+                if(audio_registrato != null){
                     dismiss();
 
                     // Dialog esercizio eseguito
@@ -369,8 +369,6 @@ public class CorrezioneEsercizio2 extends DialogFragment {
                 mediaRecorder.release();
 
                 isRecording = false;
-
-                esercizio2.setEseguito(true);
 
                 record_solution_2.setVisibility(View.VISIBLE);
                 stop_record_solution_2.setVisibility(View.GONE);
