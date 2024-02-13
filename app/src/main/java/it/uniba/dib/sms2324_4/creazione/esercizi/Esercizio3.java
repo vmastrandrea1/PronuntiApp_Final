@@ -6,6 +6,14 @@ public class Esercizio3 {
     int esperienza = 50;
     int monete = 10;
 
+    public boolean isEsito() {
+        return esito;
+    }
+
+    public void setEsito(boolean esito) {
+        this.esito = esito;
+    }
+
     public String getParola_immagine() {
         return parola_immagine;
     }

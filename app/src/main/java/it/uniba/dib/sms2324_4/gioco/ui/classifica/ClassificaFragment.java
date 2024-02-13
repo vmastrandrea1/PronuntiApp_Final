@@ -148,7 +148,6 @@ public class ClassificaFragment extends Fragment {
                                 paziente.getEsperienza());
                         row.addView(cellView);
                     }
-                    Log.d("INDEX", String.valueOf(index));
                     index++;
                 }
             }

@@ -26,6 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import it.uniba.dib.sms2324_4.creazione.esercizi.CreaEsercizi;
 import it.uniba.dib.sms2324_4.fragment.Calendario;
+import it.uniba.dib.sms2324_4.fragment.Calendario_Logopedista;
 import it.uniba.dib.sms2324_4.fragment.ElencoEsercizi;
 import it.uniba.dib.sms2324_4.fragment.ElencoPazienti;
 import it.uniba.dib.sms2324_4.fragment.RegistrazioneBambini;
@@ -117,7 +118,7 @@ public class User_Logopedista extends AppCompatActivity {
                     drawerLayout.closeDrawer(GravityCompat.START);
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.menu_logopedista_viewer , new Calendario());
+                    fragmentTransaction.replace(R.id.menu_logopedista_viewer , Calendario_Logopedista.newInstance(sessionManagement.getSession()));
                     fragmentTransaction.commit();
                 }else if(item.getItemId() == R.id.nav_elenco_pazienti){
                     drawerLayout.closeDrawer(GravityCompat.START);
@@ -125,23 +126,7 @@ public class User_Logopedista extends AppCompatActivity {
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                     fragmentTransaction.replace(R.id.menu_logopedista_viewer , ElencoPazienti.newInstance(sessionManagement.getSession()));
                     fragmentTransaction.commit();
-                }
-                /*
-                else if(item.getItemId() == R.id.nav_inserisciBambino){
-                    drawerLayout.closeDrawer(GravityCompat.START);
-                    FragmentManager fragmentManager = getSupportFragmentManager();
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.menu_logopedista_viewer , RegistrazioneBambini.newInstance(sessionManagement.getSession()));
-                    fragmentTransaction.commit();
-                }else if(item.getItemId() == R.id.nav_crea_esercizi){
-                    drawerLayout.closeDrawer(GravityCompat.START);
-                    FragmentManager fragmentManager = getSupportFragmentManager();
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.menu_logopedista_viewer , CreaEsercizi.newInstance(sessionManagement.getSession()));
-                    fragmentTransaction.commit();
-                }
-                */
-                else if(item.getItemId() == R.id.nav_elenco_esercizi){
+                }else if(item.getItemId() == R.id.nav_elenco_esercizi){
                     drawerLayout.closeDrawer(GravityCompat.START);
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

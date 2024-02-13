@@ -125,7 +125,7 @@
           <theme>@style/Theme.Material3.Light</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario__personalizzato.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_logopedista.xml">
         <config>
           <theme>@style/Theme.Material3.Light</theme>
         </config>
@@ -295,7 +295,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\LaFFurb\.android\avd\Pixel_7_API_26.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\LaFFurb\.android\avd\Pixel_7_API_26.avd, c52196c3]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -345,6 +345,7 @@
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
         <option value="Class" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>

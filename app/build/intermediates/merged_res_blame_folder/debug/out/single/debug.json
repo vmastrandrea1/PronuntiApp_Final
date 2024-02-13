@@ -432,6 +432,10 @@
         "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.2\\it.uniba.dib.sms2324_4.app-main-46:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.2\\it.uniba.dib.sms2324_4.app-merged_res-44:\\layout_fragment_calendario_logopedista.xml.flat",
+        "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.2\\it.uniba.dib.sms2324_4.app-main-46:\\layout\\fragment_calendario_logopedista.xml"
+    },
+    {
         "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.2\\it.uniba.dib.sms2324_4.app-merged_res-44:\\drawable_map_ring_arancio.webp.flat",
         "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.2\\it.uniba.dib.sms2324_4.app-main-46:\\drawable\\map_ring_arancio.webp"
     },
@@ -546,10 +550,6 @@
     {
         "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.2\\it.uniba.dib.sms2324_4.app-merged_res-44:\\drawable_sfondo_onde_di_colore.webp.flat",
         "source": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.2\\it.uniba.dib.sms2324_4.app-main-46:\\drawable\\sfondo_onde_di_colore.webp"
-    },
-    {
-        "merged": "it.uniba.dib.sms2324_4.app-merged_res-44:/layout_view_exercises_results.xml.flat",
-        "source": "it.uniba.dib.sms2324_4.app-main-46:/layout/view_exercises_results.xml"
     },
     {
         "merged": "C:\\Users\\LaFFurb\\.gradle\\daemon\\8.2\\it.uniba.dib.sms2324_4.app-merged_res-44:\\mipmap-hdpi_ic_app_logo_foreground.webp.flat",

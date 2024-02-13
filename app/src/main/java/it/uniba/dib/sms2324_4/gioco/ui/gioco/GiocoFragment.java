@@ -273,7 +273,8 @@ public class GiocoFragment extends Fragment{
                 if(snapshot.child("X_Position").exists()){
                     overlayImage.setX(snapshot.child("X_Position").getValue(Float.class));
                     overlayImage.setY(snapshot.child("Y_Position").getValue(Float.class));
-                }else{
+                }
+                else{
                     overlayImage.setX(270);
                     overlayImage.setY(1400);
                 }
@@ -301,6 +302,20 @@ public class GiocoFragment extends Fragment{
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 overlayImage.setX((Float) animation.getAnimatedValue());
+
+                database.getReference("Utenti")
+                        .child("Genitori")
+                        .child(sessionKey_genitore)
+                        .child("Bambini")
+                        .child(id_bambino)
+                        .child("X_Position")
+                        .setValue(destinationX)
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
             }
         });
 
@@ -308,11 +323,26 @@ public class GiocoFragment extends Fragment{
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 overlayImage.setY((Float) animation.getAnimatedValue());
+
+                database.getReference("Utenti")
+                        .child("Genitori")
+                        .child(sessionKey_genitore)
+                        .child("Bambini")
+                        .child(id_bambino)
+                        .child("Y_Position")
+                        .setValue(destinationY)
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
             }
         });
 
         animatorX.start();
         animatorY.start();
+
     }
 
 
@@ -346,34 +376,6 @@ public class GiocoFragment extends Fragment{
                                         if (currentButtonIndex == buttonIndex) {
                                             animateImage(buttons[buttonIndex]);
 
-                                            database.getReference("Utenti")
-                                                    .child("Genitori")
-                                                    .child(sessionKey_genitore)
-                                                    .child("Bambini")
-                                                    .child(id_bambino)
-                                                    .child("X_Position")
-                                                    .setValue(overlayImage.getX())
-                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                        @Override
-                                                        public void onSuccess(Void unused) {
-
-                                                        }
-                                                    });
-
-                                            database.getReference("Utenti")
-                                                    .child("Genitori")
-                                                    .child(sessionKey_genitore)
-                                                    .child("Bambini")
-                                                    .child(id_bambino)
-                                                    .child("Y_Position")
-                                                    .setValue(overlayImage.getY())
-                                                    .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                                        @Override
-                                                        public void onSuccess(Void unused) {
-
-                                                        }
-                                                    });
-
                                             buttons[buttonIndex].setVisibility(View.GONE);
                                             try {
                                                 apriEsercizio(dataSnapshot1,buttonIndex+1);
@@ -385,6 +387,8 @@ public class GiocoFragment extends Fragment{
                                         if(currentButtonIndex == 5){
                                             buttons[5].setVisibility(View.VISIBLE);
                                         }
+
+
                                     }
                                 });
                             }
@@ -403,40 +407,13 @@ public class GiocoFragment extends Fragment{
         buttons[5].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                animateImage((buttons[5]));
+
+                animateGift(buttons[5]);
+
                 buttons[5].setVisibility(View.GONE);
 
                 ImageView regalo = rootview.findViewById(R.id.image_regalo);
                 regalo.setVisibility(View.GONE);
-
-                database.getReference("Utenti")
-                        .child("Genitori")
-                        .child(sessionKey_genitore)
-                        .child("Bambini")
-                        .child(id_bambino)
-                        .child("X_Position")
-                        .removeValue()
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-
-                            }
-                        });
-
-                database.getReference("Utenti")
-                        .child("Genitori")
-                        .child(sessionKey_genitore)
-                        .child("Bambini")
-                        .child(id_bambino)
-                        .child("Y_Position")
-                        .removeValue()
-                        .addOnSuccessListener(new OnSuccessListener<Void>() {
-                            @Override
-                            public void onSuccess(Void unused) {
-
-                            }
-                        });
-
 
                 Query aggiorna_progressi_monete = database.getReference("Utenti")
                         .child("Genitori")
@@ -494,6 +471,35 @@ public class GiocoFragment extends Fragment{
                                     }
                                 });
 
+                        //Rimozione del valore X e Y
+                        database.getReference("Utenti")
+                                .child("Genitori")
+                                .child(sessionKey_genitore)
+                                .child("Bambini")
+                                .child(id_bambino)
+                                .child("X_Position")
+                                .removeValue()
+                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
+
+                                    }
+                                });
+
+                        database.getReference("Utenti")
+                                .child("Genitori")
+                                .child(sessionKey_genitore)
+                                .child("Bambini")
+                                .child(id_bambino)
+                                .child("Y_Position")
+                                .removeValue()
+                                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                                    @Override
+                                    public void onSuccess(Void unused) {
+
+                                    }
+                                });
+
                         View dialogView = LayoutInflater.from(rootview.getContext()).inflate(R.layout.dialog_regalo_riscosso, null);
                         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
                                 .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
@@ -509,6 +515,34 @@ public class GiocoFragment extends Fragment{
                 });
             }
         });
+    }
+
+    private void animateGift(ImageButton button) {
+        float destinationX = button.getX() + button.getWidth() / 2 - overlayImage.getWidth() / 2;
+        float destinationY = button.getY() + button.getHeight() / 2 - overlayImage.getHeight() / 2;
+
+        ValueAnimator animatorX = ValueAnimator.ofFloat(overlayImage.getX(), destinationX);
+        ValueAnimator animatorY = ValueAnimator.ofFloat(overlayImage.getY(), destinationY);
+
+        animatorX.setDuration(500); // Durata dell'animazione in millisecondi
+        animatorY.setDuration(500);
+
+        animatorX.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                overlayImage.setX((Float) animation.getAnimatedValue());
+            }
+        });
+
+        animatorY.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                overlayImage.setY((Float) animation.getAnimatedValue());
+            }
+        });
+
+        animatorX.start();
+        animatorY.start();
     }
 
     private String getData() {
@@ -578,7 +612,6 @@ public class GiocoFragment extends Fragment{
                         if(dataSnapshot1.child("eseguito").exists()){
                             isFlagVisible[i] = false; // Preimposta lo stato delle bandierine a true se non esiste alcun valore salvato
                             buttons[i].setVisibility(View.GONE);
-                            regalo.setVisibility(View.GONE);
                         }else{
                             isFlagVisible[i] = true; // Preimposta lo stato delle bandierine a true se non esiste alcun valore salvato
                             buttons[i].setVisibility(View.VISIBLE);
@@ -586,6 +619,35 @@ public class GiocoFragment extends Fragment{
                         }
                     }
                     i++;
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+        Query gift_visibilty = database.getReference("Utenti")
+                .child("Genitori")
+                .child(sessionKey_genitore)
+                .child("Bambini")
+                .child(id_bambino)
+                .child("X_Position");
+        gift_visibilty.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(!snapshot.exists()){
+                    isFlagVisible[5] = false;
+                    buttons[5].setVisibility(View.GONE);
+
+                    regalo.setVisibility(View.GONE);
+                }else{
+                    isFlagVisible[5] = true;
+                    buttons[5].setVisibility(View.VISIBLE);
+
+                    regalo.setVisibility(View.VISIBLE);
                 }
             }
 

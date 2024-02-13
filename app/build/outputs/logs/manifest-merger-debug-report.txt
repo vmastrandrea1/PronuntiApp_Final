@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:2:1-60:12
-INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:2:1-60:12
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:2:1-67:12
+INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:2:1-67:12
 MERGED from [com.airbnb.android:lottie:3.7.0] C:\Users\LaFFurb\.gradle\caches\transforms-3\811713a52aa871d24bf8ce8dfc0b5d24\transformed\lottie-3.7.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-storage:20.3.0] C:\Users\LaFFurb\.gradle\caches\transforms-3\aa114179e016488eba78bd9f372a61ef\transformed\firebase-storage-20.3.0\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.android.material:material:1.10.0] C:\Users\LaFFurb\.gradle\caches\transforms-3\469807ceec247b9bd30c5f5e204f164f\transformed\material-1.10.0\AndroidManifest.xml:17:1-24:12
@@ -143,8 +143,8 @@ MERGED from [com.google.firebase:firebase-messaging:23.4.0] C:\Users\LaFFurb\.gr
 	android:name
 		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:9:22-74
 application
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:16:5-58:19
-INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:16:5-58:19
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:16:5-65:19
+INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:16:5-65:19
 MERGED from [com.airbnb.android:lottie:3.7.0] C:\Users\LaFFurb\.gradle\caches\transforms-3\811713a52aa871d24bf8ce8dfc0b5d24\transformed\lottie-3.7.0\AndroidManifest.xml:9:5-20
 MERGED from [com.airbnb.android:lottie:3.7.0] C:\Users\LaFFurb\.gradle\caches\transforms-3\811713a52aa871d24bf8ce8dfc0b5d24\transformed\lottie-3.7.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-storage:20.3.0] C:\Users\LaFFurb\.gradle\caches\transforms-3\aa114179e016488eba78bd9f372a61ef\transformed\firebase-storage-20.3.0\AndroidManifest.xml:26:5-37:19
@@ -227,6 +227,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\La
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\LaFFurb\.gradle\caches\transforms-3\e2c7fbf983e28446851c3fa2741a082d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
 		INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml
+	android:screenOrientation
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:26:9-45
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\LaFFurb\.gradle\caches\transforms-3\f7cdbdb1f1253c7a382a5fbb122f320c\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
@@ -248,67 +250,79 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\La
 	android:dataExtractionRules
 		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:18:9-65
 activity#it.uniba.dib.sms2324_4.Register_Logopedista
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:27:9-30:50
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:28:9-32:51
+	android:screenOrientation
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:32:13-49
 	android:exported
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:29:13-37
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:30:13-37
 	android:theme
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:30:13-47
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:31:13-47
 	android:name
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:28:13-49
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:29:13-49
 activity#it.uniba.dib.sms2324_4.Login_Logopedista
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:31:9-34:50
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:33:9-37:51
+	android:screenOrientation
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:37:13-49
 	android:exported
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:33:13-36
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:35:13-36
 	android:theme
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:34:13-47
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:36:13-47
 	android:name
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:32:13-46
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:34:13-46
 activity#it.uniba.dib.sms2324_4.User
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:35:9-38:48
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:38:9-42:51
+	android:screenOrientation
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:42:13-49
 	android:exported
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:40:13-37
 	android:theme
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:38:13-45
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:41:13-45
 	android:name
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:36:13-33
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:39:13-33
 activity#it.uniba.dib.sms2324_4.User_Logopedista
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:39:9-42:50
-	android:exported
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:41:13-37
-	android:theme
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:42:13-47
-	android:name
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:40:13-45
-activity#it.uniba.dib.sms2324_4.Register
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:43:9-46:48
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:43:9-47:51
+	android:screenOrientation
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:47:13-49
 	android:exported
 		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:45:13-37
 	android:theme
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:46:13-45
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:46:13-47
 	android:name
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:44:13-37
-activity#it.uniba.dib.sms2324_4.Login
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:47:9-56:20
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:44:13-45
+activity#it.uniba.dib.sms2324_4.Register
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:48:9-52:51
+	android:screenOrientation
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:52:13-49
 	android:exported
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:49:13-36
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:50:13-37
 	android:theme
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:50:13-45
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:51:13-45
 	android:name
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:48:13-34
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:49:13-37
+activity#it.uniba.dib.sms2324_4.Login
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:53:9-63:20
+	android:screenOrientation
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:57:13-49
+	android:exported
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:55:13-36
+	android:theme
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:56:13-45
+	android:name
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:54:13-34
 intent-filter#action:name:android.intent.action.MAIN+action:name:com.google.firebase.MESSAGING_EVENT+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:51:13-55:29
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:58:13-62:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:52:17-69
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:59:17-69
 	android:name
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:52:25-66
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:59:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:53:17-77
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:60:17-77
 	android:name
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:53:27-74
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:60:27-74
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:54:17-78
+ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:61:17-78
 	android:name
-		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:54:25-75
+		ADDED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml:61:25-75
 uses-sdk
 INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\AndroidManifest.xml

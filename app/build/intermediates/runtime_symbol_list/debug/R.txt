@@ -3046,6 +3046,7 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f070074
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f070075
 int drawable abc_textfield_search_material 0x7f070076
 int drawable abc_vector_test 0x7f070077
+int drawable alieno 0x7f07016b
 int drawable animation_cubot 0x7f070078
 int drawable animation_dinosauro 0x7f070079
 int drawable animation_gelato 0x7f07007a
@@ -3059,6 +3060,7 @@ int drawable background_grey_rounded_corner_20dp 0x7f070081
 int drawable bandierina 0x7f070082
 int drawable bg_btn 0x7f070083
 int drawable bg_pink 0x7f070084
+int drawable bimbo 0x7f07016c
 int drawable blubutton 0x7f070085
 int drawable border_blue_item 0x7f070086
 int drawable border_green_item 0x7f070087
@@ -3099,6 +3101,7 @@ int drawable design_ic_visibility 0x7f0700a9
 int drawable design_ic_visibility_off 0x7f0700aa
 int drawable design_password_eye 0x7f0700ab
 int drawable design_snackbar_background 0x7f0700ac
+int drawable flora_fata 0x7f07016d
 int drawable game 0x7f0700ad
 int drawable googleg_disabled_color_18 0x7f0700ae
 int drawable googleg_standard_color_18 0x7f0700af
@@ -3134,6 +3137,7 @@ int drawable ic_exercise 0x7f0700cc
 int drawable ic_exercise_white 0x7f0700cd
 int drawable ic_game 0x7f0700ce
 int drawable ic_gioco 0x7f0700cf
+int drawable ic_google 0x7f07016e
 int drawable ic_google_background 0x7f0700d0
 int drawable ic_home 0x7f0700d1
 int drawable ic_home_black_24dp 0x7f0700d2
@@ -3161,6 +3165,13 @@ int drawable ic_sfondo 0x7f0700e7
 int drawable ic_shop 0x7f0700e8
 int drawable ic_shop_black_24dp 0x7f0700e9
 int drawable ic_square 0x7f0700ea
+int drawable ic_yellow_background 0x7f07016f
+int drawable img 0x7f070170
+int drawable img_1 0x7f070171
+int drawable istockphoto_1135615577_170667a 0x7f070172
+int drawable layout_bg 0x7f070173
+int drawable ligneo 0x7f070174
+int drawable luna_leprotta 0x7f070175
 int drawable m3_appbar_background 0x7f0700eb
 int drawable m3_avd_hide_password 0x7f0700ec
 int drawable m3_avd_show_password 0x7f0700ed
@@ -3250,11 +3261,15 @@ int drawable notification_template_icon_bg 0x7f070140
 int drawable notification_template_icon_low_bg 0x7f070141
 int drawable notification_tile_bg 0x7f070142
 int drawable notify_panel_notification_icon_bg 0x7f070143
+int drawable ollie_drago 0x7f070176
 int drawable play_audio_button 0x7f070144
 int drawable podio 0x7f070145
+int drawable polly_pinguina 0x7f070177
 int drawable primo_posto 0x7f070146
 int drawable rec_button 0x7f070147
 int drawable regalo 0x7f070148
+int drawable robo_robot 0x7f070178
+int drawable rocky_razzo 0x7f070179
 int drawable rounded_bronze 0x7f070149
 int drawable rounded_button 0x7f07014a
 int drawable rounded_button_logopedista 0x7f07014b
@@ -3267,6 +3282,7 @@ int drawable rounded_dialog_background_faded 0x7f070151
 int drawable rounded_gold 0x7f070152
 int drawable rounded_gray 0x7f070153
 int drawable rounded_scroll 0x7f070154
+int drawable screenshot_2023_12_26_180227 0x7f07017a
 int drawable secondo_posto 0x7f070155
 int drawable sfondo_cielo 0x7f070156
 int drawable sfondo_ligneo 0x7f070157
@@ -3287,6 +3303,7 @@ int drawable small_ic_app_logo 0x7f070165
 int drawable stop_button 0x7f070166
 int drawable terzo_posto 0x7f070167
 int drawable test_level_drawable 0x7f070168
+int drawable timmy_tigrotto 0x7f07017b
 int drawable tooltip_frame_dark 0x7f070169
 int drawable tooltip_frame_light 0x7f07016a
 int font kid_font 0x7f080000
@@ -3370,6 +3387,7 @@ int id add 0x7f09004c
 int id add_therapy_patient 0x7f09004d
 int id adjust_height 0x7f09004e
 int id adjust_width 0x7f09004f
+int id aiuti_radio_group 0x7f090302
 int id aiuto1 0x7f090050
 int id aiuto1_btn 0x7f090051
 int id aiuto1_tv 0x7f090052
@@ -3427,13 +3445,26 @@ int id btn_login 0x7f090085
 int id btn_login_logopedista 0x7f090086
 int id btn_register 0x7f090087
 int id btn_register_logopedista 0x7f090088
+int id button1 0x7f090303
+int id button10 0x7f090304
+int id button11 0x7f090305
 int id button190 0x7f090089
 int id button191 0x7f09008a
 int id button192 0x7f09008b
+int id button2 0x7f090306
+int id button3 0x7f090307
+int id button4 0x7f090308
+int id button5 0x7f090309
+int id button6 0x7f09030a
+int id button7 0x7f09030b
+int id button8 0x7f09030c
+int id button9 0x7f09030d
 int id buttonCreaEs1 0x7f09008c
 int id buttonPanel 0x7f09008d
 int id buttonPrezzoShopItem 0x7f09008e
+int id buttonpreno 0x7f09030f
 int id cache_measures 0x7f09008f
+int id calendarView 0x7f090310
 int id callMeasure 0x7f090090
 int id cancel_button 0x7f090091
 int id card_image_correct_select_viewer 0x7f090092
@@ -3479,6 +3510,7 @@ int id confirm_button 0x7f0900b9
 int id confirm_choice_btn 0x7f0900ba
 int id confirm_deassign 0x7f0900bb
 int id confirm_delete 0x7f0900bc
+int id confirm_selection_aiuti 0x7f09030e
 int id confirm_therapy 0x7f0900bd
 int id constraint 0x7f0900be
 int id constraintLayout 0x7f0900bf
@@ -3547,6 +3579,7 @@ int id easeInOut 0x7f0900fd
 int id easeOut 0x7f0900fe
 int id east 0x7f0900ff
 int id edge 0x7f090100
+int id editText 0x7f090311
 int id edit_query 0x7f090101
 int id elastic 0x7f090102
 int id elencoEsercizi 0x7f090103
@@ -4217,7 +4250,7 @@ int layout exercise2_info_popup 0x7f0c0042
 int layout exercise3_info_popup 0x7f0c0043
 int layout figli 0x7f0c0044
 int layout fragment_calendario 0x7f0c0045
-int layout fragment_calendario__personalizzato 0x7f0c0046
+int layout fragment_calendario_logopedista 0x7f0c00a8
 int layout fragment_classifica 0x7f0c0047
 int layout fragment_correzione_esercizio1 0x7f0c0048
 int layout fragment_correzione_esercizio2 0x7f0c0049
@@ -4307,6 +4340,7 @@ int layout notification_template_part_chronometer 0x7f0c009c
 int layout notification_template_part_time 0x7f0c009d
 int layout patient_info_popup 0x7f0c009e
 int layout pazienti 0x7f0c009f
+int layout sceltafrase 0x7f0c00a7
 int layout select_dialog_item_material 0x7f0c00a0
 int layout select_dialog_multichoice_material 0x7f0c00a1
 int layout select_dialog_singlechoice_material 0x7f0c00a2

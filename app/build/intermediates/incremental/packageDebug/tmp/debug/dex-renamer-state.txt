@@ -1,4 +1,4 @@
-#Mon Feb 12 11:08:22 CET 2024
+#Tue Feb 13 13:34:18 CET 2024
 base.0=C\:\\Users\\LaFFurb\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\LaFFurb\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\Users\\LaFFurb\\AndroidStudioProjects\\PronuntiApp_Test\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
