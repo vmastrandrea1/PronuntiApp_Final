@@ -98,37 +98,37 @@ public class Register_Logopedista extends AppCompatActivity {
                 //Controllo sull'input - Se Email e Password NON sono VUOTI
                 if(TextUtils.isEmpty(email)){
                     Toast.makeText(Register_Logopedista.this ,
-                            "Inserisci Email" ,
+                            R.string.inserisci_una_email ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(TextUtils.isEmpty(password)){
                     Toast.makeText(Register_Logopedista.this ,
-                            "Inserisci Password" ,
+                            R.string.inserisci_una_password ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(TextUtils.isEmpty(nome)){
                     Toast.makeText(Register_Logopedista.this ,
-                            "Inserisci Nome" ,
+                            R.string.inserisci_un_nome ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(TextUtils.isEmpty(cognome)){
                     Toast.makeText(Register_Logopedista.this ,
-                            "Inserisci Cognome" ,
+                            R.string.inserisci_un_cognome ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(TextUtils.isEmpty(cf) || cf.length() != 16){
                     Toast.makeText(Register_Logopedista.this ,
-                            "Inserisci Codice Fiscale" ,
+                            R.string.inserisci_un_codice_fiscale ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(!editTextConfirmPassword.getText().toString().equals(editTextPassword.getText().toString())){
                     Toast.makeText(Register_Logopedista.this ,
-                            "Le Password non coincidono" ,
+                            R.string.le_password_non_coincidono ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
@@ -157,7 +157,7 @@ public class Register_Logopedista extends AppCompatActivity {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if(snapshot.exists()){
-                                Toast.makeText(Register_Logopedista.this, "Account Già registrato",
+                                Toast.makeText(Register_Logopedista.this, R.string.account_gia_registrato,
                                         Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
                             }else{

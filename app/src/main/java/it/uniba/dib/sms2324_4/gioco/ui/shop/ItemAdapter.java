@@ -261,7 +261,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
                 notifyDataSetChanged();
 
                 // Mostra un messaggio di conferma
-                Toast.makeText(getContext(), "Oggetto impostato come predefinito", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.oggetto_impostato_come_predefinito, Toast.LENGTH_SHORT).show();
 
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(container.getId(), GiocoFragment.newInstance(id_bambino,sessionKey,id_logopedista));

@@ -119,16 +119,16 @@ public class creaEsercizio1 extends Fragment {
                 Matcher matcher = pattern.matcher(id_eserczio1.getText().toString());
 
                 if(TextUtils.isEmpty(aiuto1.getText().toString())){
-                    Toast.makeText(getContext(), "Inserisci Almeno 1 aiuto", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.inserisci_almeno_un_aiuto, Toast.LENGTH_SHORT).show();
                 }else if(TextUtils.isEmpty(aiuto2.getText().toString()) &&
                         !TextUtils.isEmpty(aiuto3.getText().toString())){
-                    Toast.makeText(getContext(), "Aiuto 2 è VUOTO", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.aiuto_2_vuoto, Toast.LENGTH_SHORT).show();
                 }else if(uriImage == null){
-                    Toast.makeText(getContext(), "Inserisci un immagine", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.inserisci_un_immagine, Toast.LENGTH_SHORT).show();
                 }
                 else if(TextUtils.isEmpty(id_eserczio1.getText().toString()) ||
                         !matcher.matches()){
-                    Toast.makeText(v.getContext(), "Inserisci un ID ESERCIZIO VALIDO", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(v.getContext(), R.string.inserisci_un_nome_valido, Toast.LENGTH_SHORT).show();
                 }else{
                     esercizio1.setAiuto_1(aiuto1.getText().toString());
                     esercizio1.setAiuto_2(aiuto2.getText().toString());
@@ -146,7 +146,7 @@ public class creaEsercizio1 extends Fragment {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if(snapshot.exists()){
-                                Toast.makeText(v.getContext(), "Nome Esercizio Già usato", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(v.getContext(), R.string.nome_esercizio_gia_usato, Toast.LENGTH_SHORT).show();
                             }else{
                                 database.getReference("Utenti")
                                         .child("Logopedisti")
@@ -154,7 +154,7 @@ public class creaEsercizio1 extends Fragment {
                                         .child("Esercizi")
                                         .child(esercizio1.getId_esercizio())
                                         .setValue(esercizio1);
-                                Toast.makeText(v.getContext(), "Esercizio Creato", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(v.getContext(), R.string.esercizio_creato, Toast.LENGTH_SHORT).show();
                                 FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
                                 fragmentTransaction.replace(container.getId() , CreaEsercizi.newInstance(userID));
                                 fragmentTransaction.commit();
@@ -197,7 +197,7 @@ public class creaEsercizio1 extends Fragment {
                 @Override
                 public void onFailure(@NonNull Exception exception) {
                     // Handle unsuccessful uploads
-                    Toast.makeText(requireContext(), "Uri Non inserito nello Storage", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(requireContext(), R.string.immagine_non_inserita_nello_storage, Toast.LENGTH_SHORT).show();
                 }
             }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
@@ -206,11 +206,11 @@ public class creaEsercizio1 extends Fragment {
                     // ...
                     uriImage = storageReference.getPath();
                     image_viewer.setImageURI(file);
-                    Toast.makeText(getContext(), "Uri Acquisito", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.immagine_acquisita, Toast.LENGTH_SHORT).show();
                 }
             });
         }else{
-            Toast.makeText(requireContext(), "Uri Non Acquisito", Toast.LENGTH_SHORT).show();
+            Toast.makeText(requireContext(), R.string.immagine_non_acquisita, Toast.LENGTH_SHORT).show();
         }
     }
 }

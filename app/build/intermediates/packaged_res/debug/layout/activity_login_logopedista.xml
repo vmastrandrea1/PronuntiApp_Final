@@ -9,10 +9,10 @@
     android:paddingHorizontal="10dp"
     tools:context=".Login_Logopedista">
 
-    <!-- Sono un logopedista -->
+    <!-- Sono un genitore -->
     <TextView
         android:id="@+id/logopedista_to_genitore"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:drawablePadding="5dp"
@@ -22,11 +22,11 @@
         android:textColorHint="@color/white"
         android:textSize="16sp"
         android:textStyle="italic"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextSizeCheck"
-        tools:layout_editor_absoluteX="16dp"
         app:drawableRightCompat="@drawable/ic_arrow_right"
-        app:drawableTint="@color/white" />
+        app:drawableTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <!-- Accedi come logopedista -->
     <TextView
@@ -118,8 +118,9 @@
             <!-- Non hai un account? Registrati -->
             <TextView
                 android:id="@+id/registerNow_logopedista"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 android:drawablePadding="5dp"
                 android:hint="@string/non_hai_un_account_registrati"

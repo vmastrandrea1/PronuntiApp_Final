@@ -27,7 +27,7 @@
                 android:textStyle="bold"
                 android:layout_marginVertical="20dp"
                 android:paddingLeft="16dp"
-                android:text="I miei pazienti"
+                android:text="@string/i_miei_pazienti"
                 android:textColor="@color/black"
                 android:textSize="40dp" />
 

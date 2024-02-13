@@ -12,17 +12,17 @@
         <EditText
             android:id="@+id/id_esercizio2"
             android:layout_width="250dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="3dp"
+            android:layout_height="50dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="3dp"
-            android:background="@drawable/blubutton"
-            android:hint="NOME ESERCIZIO"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColorHint="@color/white"
+            android:background="@drawable/blue_button"
+            android:elevation="5dp"
+            android:hint="@string/nome_esercizio"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightblue"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,8 +30,10 @@
             android:id="@+id/tipo_es2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="40dp"
             android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
             android:text="@string/tipo_es2"
             android:textAllCaps="true"
             android:textStyle="bold"
@@ -43,8 +45,7 @@
             android:id="@+id/descrizione_es2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:padding="20dp"
+            android:padding="30dp"
             android:text="@string/descrizione_es2"
             app:layout_constraintTop_toBottomOf="@+id/tipo_es2"
             tools:layout_editor_absoluteX="0dp" />
@@ -52,7 +53,8 @@
 
         <RelativeLayout
             android:id="@+id/relativeLayout2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
             android:layout_height="250dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -64,14 +66,17 @@
             <EditText
                 android:id="@+id/parola1"
                 android:layout_width="250dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="1dp"
-                android:background="@drawable/blubutton"
-                android:hint="PAROLA 1"
-                android:textAlignment="center"
-                android:textColorHint="@color/white"
+                android:background="@drawable/blue_button"
+                android:elevation="5dp"
+                android:hint="@string/parola_1"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lightblue"
+                android:inputType="textCapCharacters"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.503"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
@@ -79,66 +84,65 @@
             <EditText
                 android:id="@+id/parola2"
                 android:layout_width="250dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:layout_below="@+id/parola1"
-                android:layout_marginTop="19dp"
-                android:background="@drawable/blubutton"
-                android:hint="PAROLA 2"
-                android:textAlignment="center"
-                android:textColorHint="@color/white"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_button"
+                android:elevation="5dp"
+                android:hint="@string/parola_2"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lightblue"
+                android:inputType="textCapCharacters"
                 app:layout_constraintBottom_toBottomOf="@+id/parola1"
-                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <EditText
                 android:id="@+id/parola3"
                 android:layout_width="250dp"
-                android:layout_height="70dp"
+                android:layout_height="50dp"
                 android:layout_below="@+id/parola2"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="19dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="1dp"
-                android:background="@drawable/blubutton"
-                android:hint="PAROLA 3"
-                android:textAlignment="center"
-                android:textColorHint="@color/white" />
+                android:background="@drawable/blue_button"
+                android:elevation="5dp"
+                android:hint="@string/parola_3"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lightblue"
+                android:inputType="textCapCharacters"/>
 
         </RelativeLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crea_esercizio_2"
-            android:layout_width="220dp"
-            android:layout_height="59dp"
-            android:layout_marginBottom="116dp"
-            android:background="@drawable/rounded_corners_button_red"
-            android:text="CREA"
-            android:textColor="@color/white"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
-            app:layout_constraintVertical_bias="0.846" />
+            app:layout_constraintVertical_bias="0.5"
+            tools:layout_editor_absoluteX="0dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/annulla_btn_2"
-            android:layout_width="220dp"
-            android:layout_height="59dp"
-            android:layout_marginBottom="48dp"
-            android:background="@drawable/rounded_corners_button_grey"
-            android:text="ANNULLA"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/crea_esercizio_2"
-            app:layout_constraintVertical_bias="1.0" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/annulla_btn_2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_corners_button_grey"
+                android:text="@string/annulla" />
 
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/group"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:constraint_referenced_ids="parola1,parola2" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/crea_esercizio_2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/rounded_corners_button_red"
+                android:text="@string/crea"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

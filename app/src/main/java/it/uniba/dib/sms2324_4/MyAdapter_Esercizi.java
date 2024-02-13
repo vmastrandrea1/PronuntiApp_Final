@@ -194,7 +194,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                                                     .removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
                                                         public void onSuccess(Void unused) {
-                                                            Toast.makeText(v.getContext(), "Esercizio eliminato", Toast.LENGTH_SHORT).show();
+                                                            Toast.makeText(v.getContext(), R.string.esercizio_eliminato, Toast.LENGTH_SHORT).show();
                                                             delete_item.dismiss();
                                                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                                             fragmentTransaction.replace(container.getId() , ElencoEsercizi.newInstance(sessionKey));
@@ -338,7 +338,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                                                     .removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
                                                         public void onSuccess(Void unused) {
-                                                            Toast.makeText(v.getContext(), "Esercizio eliminato", Toast.LENGTH_SHORT).show();
+                                                            Toast.makeText(v.getContext(), R.string.esercizio_eliminato, Toast.LENGTH_SHORT).show();
                                                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                                             fragmentTransaction.replace(container.getId() , ElencoEsercizi.newInstance(sessionKey));
                                                             fragmentTransaction.commit();
@@ -434,7 +434,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                                                     .removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
                                                         @Override
                                                         public void onSuccess(Void unused) {
-                                                            Toast.makeText(v.getContext(), "Esercizio eliminato", Toast.LENGTH_SHORT).show();
+                                                            Toast.makeText(v.getContext(), R.string.esercizio_eliminato, Toast.LENGTH_SHORT).show();
                                                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                                             fragmentTransaction.replace(container.getId() , ElencoEsercizi.newInstance(sessionKey));
                                                             fragmentTransaction.commit();

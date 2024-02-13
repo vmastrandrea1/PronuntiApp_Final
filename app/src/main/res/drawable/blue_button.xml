@@ -1,0 +1,15 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/colorControlHighlight">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp" />
+            <gradient
+                android:startColor="#78C7EF"
+                android:endColor="#018BCE"
+                android:angle="180" />
+            <stroke
+                android:width="5dp"
+                android:color="@color/white" /> <!-- Larghezza e colore del bordo -->
+        </shape>
+    </item>
+</ripple>

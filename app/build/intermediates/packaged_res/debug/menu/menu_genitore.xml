@@ -7,12 +7,12 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_child"
             android:iconTint="@color/black"
-            android:title="Elenco Figli" />
+            android:title="@string/figli" />
         <item
             android:id="@+id/nav_calendar"
             android:icon="@drawable/ic_date"
             android:iconTint="@color/black"
-            android:title="Prenotazioni" />
+            android:title="@string/prenotazioni" />
     </group>
     <item
         android:id="@+id/nav_logout"

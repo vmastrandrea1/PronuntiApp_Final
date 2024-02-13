@@ -41,7 +41,7 @@
             android:gravity="left|center"
             android:maxLines="1"
             android:padding="8dp"
-            android:text="Nome contenuto"
+            android:text="@string/nome_contenuto"
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/purple"
-                android:text="500"
+                android:text="@string/_500"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -76,7 +76,7 @@
                 android:background="@color/black"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="ACQUISTATO"
+                android:text="@string/acquistato"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="13sp"

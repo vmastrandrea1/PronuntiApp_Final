@@ -102,10 +102,10 @@ public class creaEsercizio2 extends Fragment {
                 if (TextUtils.isEmpty(parola1.getText().toString()) ||
                         TextUtils.isEmpty(parola2.getText().toString()) ||
                         TextUtils.isEmpty(parola3.getText().toString())) {
-                    Toast.makeText(getContext(), "Inserisci 3 Frasi", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.inserisci_3_parole, Toast.LENGTH_SHORT).show();
                 } else if (TextUtils.isEmpty(id_eserczio2.getText().toString()) ||
                         !matcher.matches()) {
-                    Toast.makeText(v.getContext(), "Inserisci un ID ESERCIZIO VALIDO", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(v.getContext(), R.string.inserisci_un_nome_valido, Toast.LENGTH_SHORT).show();
                 } else {
                     esercizio2.setParola_1(parola1.getText().toString());
                     esercizio2.setParola_2(parola2.getText().toString());
@@ -122,7 +122,7 @@ public class creaEsercizio2 extends Fragment {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if (snapshot.exists()) {
-                                Toast.makeText(v.getContext(), "Nome Esercizio Già usato", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(v.getContext(), R.string.nome_esercizio_gia_usato, Toast.LENGTH_SHORT).show();
                             } else {
                                 database.getReference("Utenti")
                                         .child("Logopedisti")
@@ -130,7 +130,7 @@ public class creaEsercizio2 extends Fragment {
                                         .child("Esercizi")
                                         .child(esercizio2.getId_esercizio())
                                         .setValue(esercizio2);
-                                Toast.makeText(v.getContext(), "Esercizio Creato", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(v.getContext(), R.string.esercizio_creato, Toast.LENGTH_SHORT).show();
                                 FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
                                 fragmentTransaction.replace(container.getId(), CreaEsercizi.newInstance(userID));
                                 fragmentTransaction.commit();

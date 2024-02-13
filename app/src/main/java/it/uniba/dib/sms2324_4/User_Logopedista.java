@@ -108,7 +108,7 @@ public class User_Logopedista extends AppCompatActivity {
                 if(item.getItemId() == R.id.nav_logout_logo){
                     sessionManagement.removeSession();
                     Toast.makeText(User_Logopedista.this ,
-                            "Arrivederci " + sessionManagement.getNome(),
+                            getString(R.string.arrivederci) + sessionManagement.getNome(),
                             Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext() , Login_Logopedista.class);
                     startActivity(intent);

@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:text="Esercizio 3"
+            android:text="@string/esercizio_3"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -54,7 +54,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="-80dp"
-            android:text="Immagine Sbagliata: "
+            android:text="@string/immagine_sbagliata_colon"
             android:textColor="@color/white" />
 
         <androidx.cardview.widget.CardView
@@ -82,7 +82,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginRight="-80dp"
             android:layout_marginTop="-145dp"
-            android:text="Immagine Corretta: "
+            android:text="@string/immagine_corretta_colon"
             android:textColor="@color/white" />
 
         <androidx.cardview.widget.CardView
@@ -106,7 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_gravity="center_horizontal"
-            android:text="Parola da Ascoltare: "
+            android:text="@string/parola_da_ascoltare_colon"
             android:textColor="@color/white" />
 
 
@@ -115,7 +115,7 @@
             android:layout_width="150dp"
             android:layout_height="40dp"
             android:layout_marginLeft="160dp"
-            android:text="Elimina Esercizio"
+            android:text="@string/elimina_esercizio"
             android:layout_marginTop="20dp"
             android:drawableStart="@drawable/ic_delete"
             android:background="@drawable/bg_btn"
@@ -125,7 +125,7 @@
             android:id="@+id/deassign_exercise_3"
             android:layout_width="150dp"
             android:layout_height="40dp"
-            android:text="Rimuovi Assegnazione"
+            android:text="@string/rimuovi_assegnazione"
             android:layout_marginTop="-40dp"
             android:layout_marginLeft="10dp"
             android:drawableStart="@drawable/ic_exercise"

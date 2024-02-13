@@ -2,7 +2,7 @@
     android:color="?attr/colorControlHighlight">
     <item>
         <shape android:shape="rectangle">
-            <corners android:radius="20dp" /> <!-- Imposta l'arrotondamento degli angoli -->
+            <corners android:radius="30dp" /> <!-- Imposta l'arrotondamento degli angoli -->
             <solid android:color="@color/grey"/>
         </shape>
     </item>

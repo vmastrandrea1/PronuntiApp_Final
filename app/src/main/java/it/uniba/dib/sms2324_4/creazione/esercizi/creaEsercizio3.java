@@ -113,13 +113,13 @@ public class creaEsercizio3 extends Fragment {
                 Matcher matcher = pattern.matcher(id_esercizio3.getText().toString());
 
                 if (uriImage_wrong == null || uriImage_right == null){
-                    Toast.makeText(getContext(), "Inserisci Immagini", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.inserisci_le_immagini, Toast.LENGTH_SHORT).show();
                 }else if(TextUtils.isEmpty(id_esercizio3.getText().toString()) ||
                         !matcher.matches()){
-                    Toast.makeText(getContext(), "Inserisci un ID ESERCIZIO VALIDO", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.inserisci_un_nome_valido, Toast.LENGTH_SHORT).show();
                 }else if(TextUtils.isEmpty(parola_da_ascoltare.getText().toString())
                             || !pattern.matcher(parola_da_ascoltare.getText().toString()).matches()){
-                    Toast.makeText(getContext(), "Inserisci la Parola relativa all'Immagine Corretta", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.inserisci_la_parola_relativa_all_immagine_corretta, Toast.LENGTH_SHORT).show();
                 }else{
                     esercizio3.setId_esercizio("3_" + id_esercizio3.getText().toString());
                     esercizio3.setUriImage_corretta(uriImage_right);
@@ -136,7 +136,7 @@ public class creaEsercizio3 extends Fragment {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if (snapshot.exists()) {
-                                Toast.makeText(getContext(), "Nome Esercizio Già usato", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), R.string.nome_esercizio_gia_usato, Toast.LENGTH_SHORT).show();
                             } else {
                                 database.getReference("Utenti")
                                         .child("Logopedisti")
@@ -144,7 +144,7 @@ public class creaEsercizio3 extends Fragment {
                                         .child("Esercizi")
                                         .child(esercizio3.getId_esercizio())
                                         .setValue(esercizio3);
-                                Toast.makeText(getContext(), "Esercizio Creato", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), R.string.esercizio_creato, Toast.LENGTH_SHORT).show();
                                 FragmentManager fragmentManager = getParentFragmentManager();
                                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                 fragmentTransaction.replace(container.getId(), CreaEsercizi.newInstance(userID));
@@ -206,7 +206,7 @@ public class creaEsercizio3 extends Fragment {
                 @Override
                 public void onFailure(@NonNull Exception exception) {
                     // Handle unsuccessful uploads
-                    Toast.makeText(getContext(), "Uri Non inserito nello Storage", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.immagine_non_inserita_nello_storage, Toast.LENGTH_SHORT).show();
                 }
             }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
@@ -215,7 +215,7 @@ public class creaEsercizio3 extends Fragment {
                     // ...
                     uriImage_wrong = storageReference.getPath();
                     imageView_wrong.setImageURI(file);
-                    Toast.makeText(getContext(), "Uri Acquisito", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.immagine_acquisita, Toast.LENGTH_SHORT).show();
                 }
             });
         }else if(requestCode == 2 && data != null){
@@ -229,7 +229,7 @@ public class creaEsercizio3 extends Fragment {
                 @Override
                 public void onFailure(@NonNull Exception exception) {
                     // Handle unsuccessful uploads
-                    Toast.makeText(getContext(), "Uri Non inserito nello Storage", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.immagine_non_inserita_nello_storage, Toast.LENGTH_SHORT).show();
                 }
             }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                 @Override
@@ -238,11 +238,11 @@ public class creaEsercizio3 extends Fragment {
                     // ...
                     uriImage_right = storageReference.getPath();
                     imageView_right.setImageURI(file);
-                    Toast.makeText(getContext(), "Uri Acquisito", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.immagine_acquisita, Toast.LENGTH_SHORT).show();
                 }
             });
         }else{
-            Toast.makeText(getContext(), "Uri Non Acquisito", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), R.string.immagine_non_acquisita, Toast.LENGTH_SHORT).show();
         }
     }
 }

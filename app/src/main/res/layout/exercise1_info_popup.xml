@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:text="Esercizio 1"
+            android:text="@string/esercizio_1"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-75dp"
-                android:text="Immagine scelta: "
+                android:text="@string/immagine_scelta"
                 android:textColor="@color/white" />
 
             <androidx.cardview.widget.CardView
@@ -94,7 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Aiuto 1: "
+                android:text="@string/aiuto_1_colon"
                 android:textColor="@color/white" />
 
             <TextView
@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Aiuto 2: "
+                android:text="@string/aiuto_2_colon"
                 android:textColor="@color/white" />
 
             <TextView
@@ -110,7 +110,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="Aiuto 3: "
+                android:text="@string/aiuto_3_colon"
                 android:textColor="@color/white" />
 
         </LinearLayout>
@@ -122,7 +122,7 @@
             android:layout_marginLeft="160dp"
             android:background="@drawable/bg_btn"
             android:drawableStart="@drawable/ic_delete"
-            android:text="Elimina Esercizio"
+            android:text="@string/elimina_esercizio"
             android:visibility="gone"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -131,7 +131,7 @@
             android:layout_height="40dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="-40dp"
-            android:text="Rimuovi Assegnazione"
+            android:text="@string/rimuovi_assegnazione"
             android:drawableStart="@drawable/ic_exercise"
             android:background="@drawable/bg_btn"
             android:visibility="gone" />

@@ -111,23 +111,23 @@ public class RegistrazioneBambini extends Fragment {
             public void onClick(View v) {
                 if(TextUtils.isEmpty(editTextChildCf.getText()) || editTextChildCf.getText().toString().length() != 16){
                     Toast.makeText(requireContext(),
-                            "Inserisci Codice Fiscale",
+                            R.string.inserisci_un_codice_fiscale,
                             Toast.LENGTH_SHORT).show();
                 }else if(TextUtils.isEmpty(editTextChildCognome.getText())){
                     Toast.makeText(requireContext(),
-                            "Inserisci Cognome",
+                            R.string.inserisci_un_cognome,
                             Toast.LENGTH_SHORT).show();
                 }else if(TextUtils.isEmpty(editTextChildNome.getText())){
                     Toast.makeText(requireContext(),
-                            "Inserisci Nome",
+                            R.string.inserisci_un_nome,
                             Toast.LENGTH_SHORT).show();
-                }else if(editData.getText().toString().compareTo("Data di nascita") == 0){
+                }else if(editData.getText().toString().compareTo(getString(R.string.data_di_nascita)) == 0){
                     Toast.makeText(requireContext(),
-                            "Inserisci Data di nascita",
+                            R.string.inserisci_una_data_di_nascita,
                             Toast.LENGTH_SHORT).show();
                 }else if(TextUtils.isEmpty(editTextParentCf.getText())){
                     Toast.makeText(requireContext(),
-                            "Inserisci Codice Fiscale Genitore",
+                            R.string.inserisci_il_codice_fiscale_del_genitore,
                             Toast.LENGTH_SHORT).show();
                 }else{
                     //Controllo se il genitore è registrato nel sistema
@@ -150,7 +150,7 @@ public class RegistrazioneBambini extends Fragment {
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                         if(snapshot.exists()){
                                             Toast.makeText(v.getContext(),
-                                                    "Bambino già registrato",
+                                                    R.string.bambino_gia_registrato,
                                                     Toast.LENGTH_SHORT).show();
                                         }else{
                                             String nome, cognome , cf , dataDiNascita;
@@ -212,7 +212,7 @@ public class RegistrazioneBambini extends Fragment {
                                 });
                             }else{
                                 Toast.makeText(v.getContext(),
-                                        "Genitore non registrato",
+                                        R.string.genitore_non_registrato,
                                         Toast.LENGTH_SHORT).show();
                             }
                         }

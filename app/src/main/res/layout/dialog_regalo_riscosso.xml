@@ -21,7 +21,7 @@
             android:textSize="25sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp"
-            android:text="Ben fatto" />
+            android:text="@string/ben_fatto" />
 
         <TextView
             android:id="@+id/textViewDescrizione"
@@ -30,7 +30,7 @@
             android:textSize="20sp"
             android:layout_below="@id/textViewBenFatto"
             android:layout_marginTop="26dp"
-            android:text="Congratulazioni! Hai ottenuto:" />
+            android:text="@string/congratulazioni_hai_ottenuto" />
 
         <TextView
             android:id="@+id/textViewMoneteRegalo"
@@ -42,7 +42,7 @@
             android:drawableTint="#FFFFB700"
             android:drawablePadding="10sp"
             android:layout_marginTop="30dp"
-            android:text="100 Monete" />
+            android:text="@string/_100_monete" />
 
         <TextView
             android:id="@+id/textViewEsperienzaRegalo"
@@ -54,7 +54,7 @@
             android:drawableTint="#FF0066FF"
             android:drawablePadding="8sp"
             android:layout_marginTop="10dp"
-            android:text="500 Punti Esperienza" />
+            android:text="@string/_500_punti_esperienza" />
 
     </RelativeLayout>
 

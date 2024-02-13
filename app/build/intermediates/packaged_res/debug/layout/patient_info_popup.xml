@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
-                android:text="Pippo Baudo"
+                android:text="@string/pippo_baudo"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
 
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
-                android:text="18 Mar 74"
+                android:text="@string/_18_marzo_74"
                 android:textColor="@color/white" />
 
             <TextView
@@ -68,20 +68,31 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
-                android:text="Mario Rossi"
+                android:text="@string/mario_rossi"
                 android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/therapy_not_ready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textSize="10dp"
+                android:textAlignment="center"
+                android:text="@string/aggiungi_n_esercizi_per_creare_una_nuova_terapia"
+                android:textColor="@color/grey" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/view_therapy_patient"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="15dp"
-                android:text="Visualizza Terapie"
-                android:paddingLeft="10dp"
-                android:drawableStart="@drawable/ic_exercise"
-                android:background="@drawable/bg_btn"
                 android:layout_gravity="center"
-                android:visibility="gone"/>
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_btn"
+                android:drawableStart="@drawable/ic_exercise"
+                android:paddingLeft="10dp"
+                android:text="@string/visualizza_terapie"
+                android:visibility="gone" />
 
         </LinearLayout>
 
@@ -95,7 +106,7 @@
                 android:id="@+id/add_therapy_patient"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
-                android:text="Crea Terapia"
+                android:text="@string/crea_terapia"
                 android:paddingHorizontal="10dp"
                 android:drawablePadding="10dp"
                 android:drawableStart="@drawable/ic_add_circle"
@@ -106,7 +117,7 @@
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:layout_marginLeft="25dp"
-                android:text="Elimina Paziente"
+                android:text="@string/elimina_paziente"
                 android:paddingHorizontal="10dp"
                 android:gravity="center"
                 android:drawableStart="@drawable/ic_delete"

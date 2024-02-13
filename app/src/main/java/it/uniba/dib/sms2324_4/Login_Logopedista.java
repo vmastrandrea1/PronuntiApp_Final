@@ -105,6 +105,7 @@ public class Login_Logopedista extends AppCompatActivity {
         String userID = sessionManagement.getSession();
 
         if(userID.compareTo("NULL")!=0) {
+            Toast.makeText(this, getString(R.string.bentornato) + sessionManagement.getNome(), Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(), User_Logopedista.class);
             startActivity(intent);
             finish();
@@ -178,13 +179,13 @@ public class Login_Logopedista extends AppCompatActivity {
                 //Controllo sull'input - Se Email e Password non sono VUOTI
                 if(TextUtils.isEmpty(email)){
                     Toast.makeText(Login_Logopedista.this,
-                            "Inserisci email",
+                            R.string.inserisci_l_email,
                             Toast.LENGTH_SHORT).show();;
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(TextUtils.isEmpty(password)){
                     Toast.makeText(Login_Logopedista.this ,
-                            "Inserisci Password" ,
+                            R.string.inserisci_la_password ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
@@ -212,7 +213,7 @@ public class Login_Logopedista extends AppCompatActivity {
                                 if(dataSnapshot.child("email").getValue().toString().compareToIgnoreCase(email)==0
                                         && dataSnapshot.child("password").getValue().toString().compareTo(passwordCrypted)==0){
                                     Toast.makeText(Login_Logopedista.this,
-                                            "Benvenuto " + dataSnapshot.child("nome").getValue().toString(),
+                                            getString(R.string.benvenuto) + dataSnapshot.child("nome").getValue().toString(),
                                             Toast.LENGTH_SHORT).show();
                                     //Salvataggio Sessione
                                     String nome = dataSnapshot.child("nome").getValue().toString();
@@ -232,7 +233,7 @@ public class Login_Logopedista extends AppCompatActivity {
                             }
                            if(!logged){
                                Toast.makeText(Login_Logopedista.this,
-                                       "Accesso Negato!",
+                                       R.string.accesso_negato,
                                        Toast.LENGTH_SHORT).show();
                                progressBar.setVisibility(View.GONE);
                            }

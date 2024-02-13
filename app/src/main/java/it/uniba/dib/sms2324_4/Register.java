@@ -95,43 +95,43 @@ public class Register extends AppCompatActivity {
                 //Controllo sull'input - Se Email e Password NON sono VUOTI
                 if(TextUtils.isEmpty(email)){
                     Toast.makeText(Register.this ,
-                            "Inserisci Email" ,
+                            R.string.inserisci_una_email ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(TextUtils.isEmpty(password)){
                     Toast.makeText(Register.this ,
-                            "Inserisci Password" ,
+                            R.string.inserisci_una_password ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(TextUtils.isEmpty(nome)){
                     Toast.makeText(Register.this ,
-                            "Inserisci Nome" ,
+                            R.string.inserisci_un_nome ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(TextUtils.isEmpty(cognome)){
                     Toast.makeText(Register.this ,
-                            "Inserisci Cognome" ,
+                            R.string.inserisci_un_cognome ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(TextUtils.isEmpty(cf) || cf.length() != 16){
                     Toast.makeText(Register.this ,
-                            "Inserisci Codice Fiscale" ,
+                            R.string.inserisci_un_codice_fiscale ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(!TextUtils.isEmpty(password) && TextUtils.isEmpty(confirmPassword)) {
                     Toast.makeText(Register.this ,
-                            "Conferma Password" ,
+                            R.string.conferma_la_password ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else if(password.compareTo(confirmPassword)!=0) {
                     Toast.makeText(Register.this ,
-                            "Le password non coincidono" ,
+                            R.string.le_password_non_coincidono ,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
@@ -157,7 +157,7 @@ public class Register extends AppCompatActivity {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 if(snapshot.exists()){
-                                    Toast.makeText(Register.this, "Account Già registrato",
+                                    Toast.makeText(Register.this, R.string.account_gia_registrato,
                                             Toast.LENGTH_SHORT).show();
                                 }else{
                                     Query fetchData2 = FirebaseDatabase.getInstance(getString(R.string.db_url)).getReference("Utenti").child("Genitori")
@@ -167,7 +167,7 @@ public class Register extends AppCompatActivity {
                                         @Override
                                         public void onDataChange (@NonNull DataSnapshot snapshot){
                                             if (snapshot.exists()) {
-                                                Toast.makeText(Register.this, "Account Già registrato",
+                                                Toast.makeText(Register.this, R.string.account_gia_registrato,
                                                         Toast.LENGTH_SHORT).show();
                                             } else {
                                                 reference.child("Utenti").child("Genitori").child(cf).setValue(genitore);

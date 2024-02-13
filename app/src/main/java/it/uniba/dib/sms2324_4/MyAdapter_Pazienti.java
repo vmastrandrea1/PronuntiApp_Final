@@ -1,5 +1,6 @@
 package it.uniba.dib.sms2324_4;
 
+
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
@@ -114,6 +115,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                         child_owner.setText("CF Genitore: " + cfGenitore);
 
 
+
                         txtClose.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
@@ -122,6 +124,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                         });
 
                         Button assegna_terapia_btn = mDialog.findViewById(R.id.add_therapy_patient);
+                        TextView therapy_not_ready = mDialog.findViewById(R.id.therapy_not_ready);
 
                         //SE NON CI SONO ESERCIZI CREATI
                         Query conta_esercizi = database.getReference("Utenti")
@@ -136,9 +139,19 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                     count++;
                                 }
                                 if(count<5){
+
+                                    int eserciziMancanti = 5 - count;
                                     assegna_terapia_btn.setVisibility(View.GONE);
+                                    therapy_not_ready.setVisibility(View.VISIBLE);
+                                    therapy_not_ready.setText("Aggiungi " + eserciziMancanti + " esercizi \nper creare una nuova terapia");
+                                    if(count==4){
+                                        therapy_not_ready.setText("Aggiungi un altro esercizio \nper creare una nuova terapia");
+
+                                    }
+
                                 }else{
                                     assegna_terapia_btn.setVisibility(View.VISIBLE);
+                                    therapy_not_ready.setVisibility(View.GONE);
                                 }
                             }
 
@@ -277,7 +290,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                         delete_patient.dismiss();
                                         mDialog.dismiss();
 
-                                        Toast.makeText(v.getContext(), "Paziente Eliminato", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(v.getContext(), R.string.paziente_eliminato, Toast.LENGTH_SHORT).show();
                                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                         fragmentTransaction.replace(container.getId() , ElencoPazienti.newInstance(sessionKey));
                                         fragmentTransaction.commit();
@@ -332,7 +345,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                                         if(!snapshot.exists()){
-                                            Toast.makeText(v.getContext(), "Nessun Esercizio", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(v.getContext(), R.string.nessun_esercizio, Toast.LENGTH_SHORT).show();
                                             assegna_terapia_dialog.dismiss();
                                             mDialog.dismiss();
                                         }else{
@@ -415,7 +428,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                             e.printStackTrace();
                                         }
                                         if(set.size()!=5){
-                                            Toast.makeText(v.getContext(), "Gli esercizi devono essere DIVERSI fra loro", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(v.getContext(), R.string.gli_esercizi_devono_essere_diversi_fra_loro, Toast.LENGTH_SHORT).show();
                                         }else if( therapy_day_select != null &&
                                                 (therapy_date.after(dataOdierna) || therapy_date.equals(dataOdierna)) ){
                                             Query day_selected_false = database.getReference("Utenti")
@@ -429,7 +442,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                                 @Override
                                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                                                     if(snapshot.exists()){
-                                                        Toast.makeText(v.getContext(), "Giorno non disponibile", Toast.LENGTH_SHORT).show();
+                                                        Toast.makeText(v.getContext(), R.string.giorno_non_disponibile, Toast.LENGTH_SHORT).show();
                                                     }else{
                                                         //ASSEGNA ESERCIZIO 1
                                                         database.getReference("Utenti")
@@ -638,7 +651,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
 
                                                         count_assegnazioni = 0;
 
-                                                        Toast.makeText(v.getContext(), "Terapia Salvata", Toast.LENGTH_SHORT).show();
+                                                        Toast.makeText(v.getContext(), R.string.terapia_salvata, Toast.LENGTH_SHORT).show();
                                                         assegna_terapia_dialog.dismiss();
                                                         mDialog.dismiss();
 
@@ -654,7 +667,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                                 }
                                             });
                                         }else{
-                                            Toast.makeText(v.getContext(), "Giorno Non Consentito ", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(v.getContext(), R.string.giorno_non_consentito, Toast.LENGTH_SHORT).show();
                                         }
                                     }
                                 });

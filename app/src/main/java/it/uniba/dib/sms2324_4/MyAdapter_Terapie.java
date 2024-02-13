@@ -558,7 +558,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                     }
                                                 });
 
-                                        Toast.makeText(v.getContext(), "Terapia eliminata", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(v.getContext(), R.string.terapia_eliminata, Toast.LENGTH_SHORT).show();
                                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                         fragmentTransaction.replace(container.getId() , ElencoPazienti.newInstance(sessionKey));
                                         fragmentTransaction.commit();

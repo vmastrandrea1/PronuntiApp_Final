@@ -40,7 +40,7 @@
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:paddingHorizontal="10dp"
-                android:text="Coreggi Esercizio"
+                android:text="@string/coreggi_esercizio"
                 android:drawableStart="@drawable/ic_add_circle"
                 android:background="@drawable/bg_btn"
                 android:visibility="gone"/>
@@ -51,7 +51,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="25dp"
                 android:paddingHorizontal="10dp"
-                android:text="Elimina Terapia"
+                android:text="@string/elimina_terapia"
                 android:drawableStart="@drawable/ic_delete"
                 android:background="@drawable/bg_btn"
                 android:visibility="gone"/>

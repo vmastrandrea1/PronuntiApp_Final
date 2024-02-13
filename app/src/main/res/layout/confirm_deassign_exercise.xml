@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Sei sicuro di voler rimuovere la terapia?"
+                android:text="@string/sei_sicuro_di_voler_rimuovere_la_terapia"
                 android:textSize="20dp"
                 android:padding="25dp"/>
 
@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-10dp"
-                android:text="Sì, rimuovila"
+                android:text="@string/si_rimuovila"
                 android:textAllCaps="true"
                 android:background="@drawable/rounded_corners_button_red"
                 android:layout_marginHorizontal="16dp"
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="No"
+                android:text="@string/no"
                 android:textAllCaps="true"
                 android:background="@drawable/rounded_corners_button_grey"
                 android:layout_marginHorizontal="16dp"/>

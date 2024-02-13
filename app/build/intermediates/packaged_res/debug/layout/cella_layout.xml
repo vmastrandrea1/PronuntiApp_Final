@@ -9,7 +9,7 @@
         android:id="@+id/testoTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="4) Quarto classificato"
+        android:text="@string/_4_quarto_classificato"
         android:layout_marginTop="50dp"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

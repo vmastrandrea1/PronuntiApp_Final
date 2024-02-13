@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
-            android:text="Pippo Baudo"
+            android:text="@string/pippo_baudo"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:text="18 Mar 74"
+            android:text="@string/_18_marzo_74"
             android:textColor="@color/white" />
 
         <TextView
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="5dp"
-            android:text="Dott. Mario"
+            android:text="@string/dott_mario_rossi"
             android:textColor="@color/white" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -74,7 +74,7 @@
             android:clickable="true"
             android:paddingLeft="10dp"
             android:drawableStart="@drawable/ic_exercise"
-            android:text="Le mie Terapie"
+            android:text="@string/le_mie_terapie"
             android:visibility="gone"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -87,7 +87,7 @@
             android:clickable="true"
             android:paddingLeft="10dp"
             android:drawableStart="@drawable/ic_game"
-            android:text="Gioca adesso"
+            android:text="@string/gioca_adesso"
             android:visibility="gone"/>
 
 

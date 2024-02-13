@@ -8,8 +8,7 @@
     android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="20dp"
     app:cardElevation="10dp"
-    app:cardUseCompatPadding="true"
-    android:backgroundTint="@color/purple">
+    app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -27,7 +26,7 @@
             android:padding="20dp"
             android:drawableStart="@drawable/ic_exercise"
             android:drawablePadding="10dp"
-            android:text="Esercizio"
+            android:text="@string/esercizio"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="25dp"

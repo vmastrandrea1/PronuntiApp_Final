@@ -147,7 +147,7 @@ public class User extends AppCompatActivity {
                if(item.getItemId() == R.id.nav_logout){
                    sessionManagement.removeSession();
                    Toast.makeText(User.this,
-                           "Arrivederci " + sessionManagement.getNome(),
+                           getString(R.string.arrivederci) + sessionManagement.getNome(),
                            Toast.LENGTH_SHORT).show();
                    Intent intent = new Intent(getApplicationContext() , Login.class);
                    startActivity(intent);

@@ -175,8 +175,9 @@
             <!-- Hai già un account? Accedi -->
             <TextView
                 android:id="@+id/loginNow"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:hint="@string/hai_gia_un_account_accedi"
                 android:padding="30dp"
                 android:textAlignment="center"
