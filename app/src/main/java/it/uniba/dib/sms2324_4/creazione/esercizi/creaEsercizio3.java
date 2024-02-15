@@ -119,7 +119,7 @@ public class creaEsercizio3 extends Fragment {
                     Toast.makeText(getContext(), R.string.inserisci_un_nome_valido, Toast.LENGTH_SHORT).show();
                 }else if(TextUtils.isEmpty(parola_da_ascoltare.getText().toString())
                             || !pattern.matcher(parola_da_ascoltare.getText().toString()).matches()){
-                    Toast.makeText(getContext(), R.string.inserisci_la_parola_relativa_all_immagine_corretta, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), R.string.inserisci_una_parola_valida, Toast.LENGTH_SHORT).show();
                 }else{
                     esercizio3.setId_esercizio("3_" + id_esercizio3.getText().toString());
                     esercizio3.setUriImage_corretta(uriImage_right);

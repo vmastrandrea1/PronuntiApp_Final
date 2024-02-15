@@ -20,7 +20,7 @@
             android:fontFamily="@font/kid_font"
             android:gravity="center"
             android:padding="30dp"
-            android:text="@string/tipo_es_game1"
+            android:text="@string/riconosci_immagine"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="25dp"

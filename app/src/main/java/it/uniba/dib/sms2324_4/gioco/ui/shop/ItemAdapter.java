@@ -92,7 +92,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         nomeShopItem.setText(item.getNome());
 
         if (item.getPrezzo() == 0){
-            buttonPrezzoShopItem.setText("GRATIS");
+            buttonPrezzoShopItem.setText(convertView.getResources().getText(R.string.gratis));
         }
         else buttonPrezzoShopItem.setText(String.valueOf(item.getPrezzo()));
 
@@ -211,7 +211,8 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         textViewNome.setText(item.getNome());
 
         if (item.getPrezzo() == 0) {
-            textViewPrezzo.setText("GRATIS");
+            textViewPrezzo.setText(dialogView.getResources().getText(R.string.gratis));
+
         }
         else textViewPrezzo.setText(String.valueOf(item.getPrezzo()));
 

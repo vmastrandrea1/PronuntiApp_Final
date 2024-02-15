@@ -19,7 +19,7 @@
             android:layout_marginTop="28dp"
             android:gravity="center"
             android:padding="30dp"
-            android:text="@string/tipo_es_game2"
+            android:text="@string/ripeti_sequenza_di_parole"
             android:textAllCaps="true"
             android:textSize="25dp"
             android:textColor="@color/black"

@@ -44,14 +44,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/AddButton"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="25dp"
-            android:background="@drawable/rounded_button_logopedista"
-            android:drawableTop="@drawable/ic_add_child"
+            android:background="@drawable/circle_button_add_patient"
             android:drawableTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

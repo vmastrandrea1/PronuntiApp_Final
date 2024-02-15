@@ -26,7 +26,7 @@
             android:layout_marginTop="44dp"
             android:ems="10"
             android:gravity="center"
-            android:background="@drawable/rounded_button_logopedista"
+            android:background="@drawable/circle_button_add_exercise"
             android:text="@string/inserisci_ora"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"

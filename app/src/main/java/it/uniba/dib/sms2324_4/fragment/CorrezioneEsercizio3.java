@@ -199,7 +199,18 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                     public void onClick(View v) {
                         dismiss();
 
-                        // Dialog esercizio eseguito
+                        // Suono da riprodurre quando il dialog appare
+                        MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.win);
+                        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release(); // Rilascia il MediaPlayer dopo che il suono è stato riprodotto completamente
+                            }
+                        });
+                        mediaPlayer.start();
+
+
+                        // Dialog esercizio giusto
                         View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_esercizio3_giusto, null);
 
                         TextView textViewMonete = dialogView.findViewById(R.id.textViewMonete);
@@ -209,7 +220,7 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                         textViewEsperienza.setText((esercizio3.getEsperienza()+100) + " Punti Esperienza");
 
                         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
-                                .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
+                                .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background_green_border))
                                 .setView(dialogView)
                                 .setPositiveButton("OK",null);
 
@@ -342,7 +353,18 @@ public class CorrezioneEsercizio3 extends DialogFragment {
             public void onClick(View v) {
                 dismiss();
 
-                // Dialog esercizio eseguito
+                // Suono da riprodurre quando il dialog appare
+                MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.lose);
+                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release(); // Rilascia il MediaPlayer dopo che il suono è stato riprodotto completamente
+                    }
+                });
+                mediaPlayer.start();
+
+
+                // Dialog esercizio sbagliato
                 View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_esercizio3_sbagliato, null);
 
                 TextView textViewMonete = dialogView.findViewById(R.id.textViewMonete);
@@ -352,7 +374,7 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                 textViewEsperienza.setText((esercizio3.getEsperienza()+50) + " Punti Esperienza");
 
                 MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
-                        .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
+                        .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background_red_border))
                         .setView(dialogView)
                         .setPositiveButton("OK",null);
 

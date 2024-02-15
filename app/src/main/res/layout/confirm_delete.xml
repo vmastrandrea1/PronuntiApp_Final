@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-10dp"
-                android:text="Sì, cancella"
+                android:text="@string/si_cancella"
                 android:textAllCaps="true"
                 android:background="@drawable/rounded_corners_button_red"
                 android:layout_marginHorizontal="16dp"
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:text="No"
+                android:text="@string/no"
                 android:textAllCaps="true"
                 android:background="@drawable/rounded_corners_button_grey"
                 android:layout_marginHorizontal="16dp"/>

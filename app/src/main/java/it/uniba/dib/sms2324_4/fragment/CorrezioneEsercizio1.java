@@ -157,6 +157,17 @@ public class CorrezioneEsercizio1 extends DialogFragment {
                 if(audio_registrato != null){
                    dismiss();
 
+                    // Suono da riprodurre quando il dialog appare
+                    MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.neutral);
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            mp.release(); // Rilascia il MediaPlayer dopo che il suono è stato riprodotto completamente
+                        }
+                    });
+                    mediaPlayer.start();
+
+
                    // Dialog esercizio eseguito
                     View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_esercizio_terminato, null);
 

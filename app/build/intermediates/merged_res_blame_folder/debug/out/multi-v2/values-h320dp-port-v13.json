@@ -4,7 +4,7 @@
             "outputFile": "it.uniba.dib.sms2324_4.app-mergeDebugResources-42:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Scalera\\.gradle\\caches\\transforms-3\\469807ceec247b9bd30c5f5e204f164f\\transformed\\material-1.10.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "C:\\Users\\Stefano\\.gradle\\caches\\transforms-3\\469807ceec247b9bd30c5f5e204f164f\\transformed\\material-1.10.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

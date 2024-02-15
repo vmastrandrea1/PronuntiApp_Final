@@ -1,6 +1,7 @@
 package it.uniba.dib.sms2324_4.gioco.ui.gioco;
 
 import android.animation.ValueAnimator;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -499,6 +500,16 @@ public class GiocoFragment extends Fragment{
 
                                     }
                                 });
+
+                        // Suono da riprodurre quando il dialog appare
+                        MediaPlayer mediaPlayer = MediaPlayer.create(getContext(), R.raw.win);
+                        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.release(); // Rilascia il MediaPlayer dopo che il suono è stato riprodotto completamente
+                            }
+                        });
+                        mediaPlayer.start();
 
                         View dialogView = LayoutInflater.from(rootview.getContext()).inflate(R.layout.dialog_regalo_riscosso, null);
                         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)

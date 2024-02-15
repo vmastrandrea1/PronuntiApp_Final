@@ -23,13 +23,13 @@
             android:ellipsize="end"
             android:gravity="left"
             android:maxLines="1"
-            android:padding="20dp"
+            android:padding="15dp"
             android:drawableStart="@drawable/ic_exercise"
             android:drawablePadding="10dp"
             android:text="@string/esercizio"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:textStyle="bold"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
