@@ -81,6 +81,8 @@ public class ElencoEsercizi extends Fragment {
         // Ottieni il riferimento al pulsante
         Button buttonCreaEsercizio = view.findViewById(R.id.AddButton);
 
+
+        // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {

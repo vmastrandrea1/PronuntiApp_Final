@@ -22,14 +22,14 @@
         android:roundIcon="@mipmap/ic_app_logo_round"
         android:supportsRtl="true"
         android:theme="@style/BlueTheme"
-        tools:targetApi="27"
+        tools:targetApi="26"
         android:screenOrientation="portrait">
 
         <activity
             android:name=".Register_Logopedista"
             android:exported="false"
             android:theme="@style/PurpleTheme"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Login_Logopedista"
             android:exported="true"

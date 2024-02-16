@@ -87,6 +87,8 @@ public class creaEsercizio2 extends Fragment {
         Button annulla = (Button) v.findViewById(R.id.annulla_btn_2);
         Button creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
 
+
+        // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {

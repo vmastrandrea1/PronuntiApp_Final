@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
@@ -17,6 +18,7 @@ import androidx.fragment.app.Fragment;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -36,6 +38,7 @@ import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio3;
 import it.uniba.dib.sms2324_4.fragment.CorrezioneEsercizio1;
 import it.uniba.dib.sms2324_4.fragment.CorrezioneEsercizio2;
 import it.uniba.dib.sms2324_4.fragment.CorrezioneEsercizio3;
+import it.uniba.dib.sms2324_4.fragment.Home;
 
 
 public class GiocoFragment extends Fragment{
@@ -97,6 +100,22 @@ public class GiocoFragment extends Fragment{
 
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_gioco, container, false);
+
+        // GESTIONE PULSANTE BACK
+        OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                BottomNavigationView bottomNavigationView = container.findViewById(R.id.bottomBar);
+
+                getParentFragmentManager()
+                        .beginTransaction()
+                        .replace(container.getId() , Home.newInstance(sessionKey_genitore))
+                        .commit();
+            }
+        };
+
+        // Aggiungi il callback al gestore dei pressioni del pulsante "back"
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
 
         currentButtonIndex = 0;
 
@@ -662,9 +681,6 @@ public class GiocoFragment extends Fragment{
 
                     regalo.setVisibility(View.GONE);
                 }else{
-                    isFlagVisible[5] = true;
-                    buttons[5].setVisibility(View.VISIBLE);
-
                     regalo.setVisibility(View.VISIBLE);
                 }
             }

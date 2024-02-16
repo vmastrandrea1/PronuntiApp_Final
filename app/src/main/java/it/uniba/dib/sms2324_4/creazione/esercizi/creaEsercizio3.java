@@ -100,6 +100,8 @@ public class creaEsercizio3 extends Fragment {
         Button creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
         EditText id_esercizio3 = (EditText) v.findViewById(R.id.id_esercizio3);
 
+
+        // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {

@@ -1,7 +1,9 @@
 package it.uniba.dib.sms2324_4.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -32,6 +34,7 @@ import it.uniba.dib.sms2324_4.MyAdapter;
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.SessionManagement;
 import it.uniba.dib.sms2324_4.Skin;
+import it.uniba.dib.sms2324_4.User;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -100,6 +103,22 @@ public class Home extends Fragment {
                 .child("Genitori")
                 .child(sessionManagement.getSession())
                 .child("Bambini");
+
+
+        // GESTIONE PULSANTE BACK
+        OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                Intent intent = new Intent(requireContext(), User.class);
+                requireActivity().finish();
+            }
+        };
+
+        // Aggiungi il callback al gestore dei pressioni del pulsante "back"
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
+
+
+
         childExistant.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

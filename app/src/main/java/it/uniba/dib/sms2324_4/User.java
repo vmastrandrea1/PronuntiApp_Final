@@ -132,43 +132,60 @@ public class User extends AppCompatActivity {
         });
 
 
-       ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this , drawerLayout , toolbar , R.string.nav_open , R.string.nav_close );
-       drawerLayout.addDrawerListener(toggle);
-       toggle.syncState();
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this , drawerLayout , toolbar , R.string.nav_open , R.string.nav_close );
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
 
-       FragmentManager fragmentManager = getSupportFragmentManager();
-       FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-       fragmentTransaction.replace(R.id.menu_viewer , Home.newInstance(sessionManagement.getSession()));
-       fragmentTransaction.commit();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.menu_viewer , Home.newInstance(sessionManagement.getSession()));
+        fragmentTransaction.commit();
 
-       navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-           @Override
-           public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-               if(item.getItemId() == R.id.nav_logout){
-                   sessionManagement.removeSession();
-                   Toast.makeText(User.this,
-                           getString(R.string.arrivederci) + sessionManagement.getNome(),
-                           Toast.LENGTH_SHORT).show();
-                   Intent intent = new Intent(getApplicationContext() , Login.class);
-                   startActivity(intent);
-                   finish();
-                   return  true;
-               }else if(item.getItemId() == R.id.nav_calendar){
-                   drawerLayout.closeDrawer(GravityCompat.START);
-                   FragmentManager fragmentManager = getSupportFragmentManager();
-                   FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                   fragmentTransaction.replace(R.id.menu_viewer , new Calendario());
-                   fragmentTransaction.commit();
-               }else if(item.getItemId() == R.id.nav_home){
-                   drawerLayout.closeDrawer(GravityCompat.START);
-                   FragmentManager fragmentManager = getSupportFragmentManager();
-                   FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                   fragmentTransaction.replace(R.id.menu_viewer , Home.newInstance(sessionManagement.getSession()));
-                   fragmentTransaction.commit();
-               }
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if(item.getItemId() == R.id.nav_logout){
+                    sessionManagement.removeSession();
+                    Toast.makeText(User.this,
+                            getString(R.string.arrivederci) + sessionManagement.getNome(),
+                            Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getApplicationContext() , Login.class);
+                    startActivity(intent);
+                    finish();
+                    return  true;
+                }else if(item.getItemId() == R.id.nav_calendar){
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.menu_viewer , new Calendario());
+                    fragmentTransaction.commit();
+                }else if(item.getItemId() == R.id.nav_home){
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.menu_viewer , Home.newInstance(sessionManagement.getSession()));
+                    fragmentTransaction.commit();
+                }
 
-               return false;
-           }
-       });
-   }
+                return false;
+            }
+        });
+    }
+
+    @Override
+    public void onBackPressed() {
+        // Ottieni il fragment attualmente visualizzato
+        Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.menu_viewer);
+
+        // Verifica se il fragment attuale è il fragment Home
+        if (currentFragment instanceof Home) {
+            // Chiudi l'applicazione
+            finish();
+        } else {
+            // Altrimenti, esegui l'azione di default (tornare al fragment precedente o chiudere l'activity)
+            super.onBackPressed();
+        }
+    }
+
+
 }

@@ -99,6 +99,8 @@ public class creaEsercizio1 extends Fragment {
         Button creazione_esercizio = (Button)v.findViewById(R.id.buttonCreaEs1);
         image_viewer = (ImageView) v.findViewById(R.id.preview_immagine_es1);
 
+
+        // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
@@ -111,6 +113,7 @@ public class creaEsercizio1 extends Fragment {
 
         // Aggiungi il callback al gestore dei pressioni del pulsante "back"
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
+
 
         scegli_immagine.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -81,6 +81,8 @@ public class RegistrazioneBambini extends Fragment {
 
         initDatePicker();
 
+
+        // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
@@ -93,6 +95,7 @@ public class RegistrazioneBambini extends Fragment {
 
         // Aggiungi il callback al gestore dei pressioni del pulsante "back"
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
+
 
         editTextChildCf = view.findViewById(R.id.child_cf);
         editTextChildCognome = view.findViewById(R.id.child_surname);

@@ -1,13 +1,11 @@
 package it.uniba.dib.sms2324_4.gioco.ui.classifica;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
-import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
@@ -23,13 +21,10 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 
 import it.uniba.dib.sms2324_4.Paziente;
 import it.uniba.dib.sms2324_4.R;
-import it.uniba.dib.sms2324_4.gioco.ui.gioco.GiocoFragment;
 
 public class ClassificaFragment extends Fragment {
 
