@@ -218,4 +218,14 @@
     <string name="primo_classificato_1000">Primo classificato ( 1000 )</string>
     <string name="secondo_classificato_500">Secondo classificato ( 500 )</string>
     <string name="terzo_classificato_100">Terzo classificato ( 100 )</string>
+
+    <string name="paziente">Paziente</string>
+    <string name="inserisci_ora_inizio">Inserisci Ora Inizio</string>
+    <string name="clicca_qui">Clicca Qui</string>
+    <string name="inserisci_ora_fine">Inserisci Ora Fine</string>
+    <string name="prenotazione_effettuata_con_successo">Prenotazione Effettuata con SUCCESSO</string>
+    <string name="sovrapposizione_prenotazioni">Ora di Inizio NON VALIDA</string>
+    <string name="hai_gi_una_prenotazione_per_questo_paziente">Hai già una prenotazione per questo paziente</string>
+    <string name="hai_gi_una_prenotazione_per_quest_ora">Hai già una prenotazione per quest\'ora</string>
+    <string name="orario_non_valido">Orario non Valido</string>
 </resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:attr/colorControlHighlight">
+
+    <!-- Contenuto dell'effetto ripple -->
+    <item android:id="@android:id/background">
+        <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item
+                android:top="2dp"
+                android:bottom="2dp"
+                android:left="2dp"
+                android:right="2dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/purple"/>
+                </shape>
+            </item>
+            <item
+                android:drawable="@drawable/ic_date"
+                android:bottom="25dp"
+                android:left="25dp"
+                android:right="25dp"
+                android:top="25dp"/>
+        </layer-list>
+    </item>
+</ripple>

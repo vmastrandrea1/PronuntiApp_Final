@@ -22,7 +22,7 @@
         android:roundIcon="@mipmap/ic_app_logo_round"
         android:supportsRtl="true"
         android:theme="@style/BlueTheme"
-        tools:targetApi="26"
+        tools:targetApi="27"
         android:screenOrientation="portrait">
 
         <activity

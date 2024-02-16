@@ -218,4 +218,14 @@
     <string name="primo_classificato_1000">First place ( 1000 )</string>
     <string name="secondo_classificato_500">Second place ( 500 )</string>
     <string name="terzo_classificato_100">Third place ( 100 )</string>
+
+    <string name="paziente">Patient</string>
+    <string name="inserisci_ora_inizio">Insert Start Time</string>
+    <string name="clicca_qui">Click Here</string>
+    <string name="inserisci_ora_fine">Insert End Time</string>
+    <string name="prenotazione_effettuata_con_successo">Reservation Done SUCCESSFULY</string>
+    <string name="sovrapposizione_prenotazioni">Start Time INVALID</string>
+    <string name="hai_gi_una_prenotazione_per_questo_paziente">You already have a reservation for this patient</string>
+    <string name="hai_gi_una_prenotazione_per_quest_ora">You already have a reservation for this time</string>
+    <string name="orario_non_valido">Time Invalid</string>
 </resources>
