@@ -2,6 +2,7 @@ package it.uniba.dib.sms2324_4.creazione.esercizi;
 
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -85,6 +86,19 @@ public class creaEsercizio2 extends Fragment {
         EditText id_eserczio2 = (EditText) v.findViewById(R.id.id_esercizio2);
         Button annulla = (Button) v.findViewById(R.id.annulla_btn_2);
         Button creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
+
+        OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                getParentFragmentManager()
+                        .beginTransaction()
+                        .replace(container.getId() , CreaEsercizi.newInstance(userID))
+                        .commit();
+            }
+        };
+
+        // Aggiungi il callback al gestore dei pressioni del pulsante "back"
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
 
 
         creazione_esercizio.setOnClickListener(new View.OnClickListener() {

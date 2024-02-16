@@ -265,7 +265,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                 Dialog delete_item = new Dialog(dialog.getContext());
 
                                 dialog.dismiss();
-                                delete_item.setContentView(R.layout.confirm_delete);
+                                delete_item.setContentView(R.layout.confirm_delete_therapy);
                                 Button confirm , discard;
 
                                 confirm = delete_item.findViewById(R.id.confirm_delete);

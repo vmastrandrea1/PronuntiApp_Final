@@ -257,6 +257,16 @@ public class Register_Logopedista extends AppCompatActivity {
         return "JAN";
     }
 
+    @Override
+    public void onBackPressed() {
+        // Avvia l'Activity Login
+        super.onBackPressed();
+        Intent intent = new Intent(this, Login_Logopedista.class);
+        startActivity(intent);
+        // Chiudi l'Activity corrente
+        finish();
+    }
+
     private static String hashPasswordSHA3(String password) throws Exception {
         SHA3.DigestSHA3 digestSHA3 = new SHA3.Digest256();
         byte[] hashBytes = digestSHA3.digest(password.getBytes());

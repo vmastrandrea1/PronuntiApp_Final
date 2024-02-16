@@ -118,10 +118,10 @@ public class GiocoFragment extends Fragment{
 
                     ConstraintLayout constraintLayout = rootView.findViewById(R.id.constraintLayout);
                     switch (id_map_selezionato){
-                        case 8:
+                        case 9:
                             constraintLayout.setBackgroundResource(R.drawable.map_flying_island);
                             break;
-                        case 9:
+                        case 10:
                             constraintLayout.setBackgroundResource(R.drawable.map_mars);
                             break;
                         default:
@@ -193,6 +193,13 @@ public class GiocoFragment extends Fragment{
                                     .diskCacheStrategy(DiskCacheStrategy.NONE) // Disabilita la cache per le GIF per evitare problemi di riproduzione
                                     .into(overlayImage);
                             break;
+                        case 7:
+                            Glide.with(rootView.getContext())
+                                    .asBitmap()
+                                    .load(R.drawable.skin_cubot)
+                                    .diskCacheStrategy(DiskCacheStrategy.NONE) // Disabilita la cache per le GIF per evitare problemi di riproduzione
+                                    .into(overlayImage);
+                            break;
                         default:
                             Glide.with(rootView.getContext())
                                     .asBitmap()
@@ -225,13 +232,13 @@ public class GiocoFragment extends Fragment{
                     ConstraintLayout wallpaper_game = rootView.findViewById(R.id.wallpaper_game);
 
                     switch (id_sfondo_selezionato){
-                        case 11:
+                        case 12:
                             wallpaper_game.setBackgroundResource(R.drawable.sfondo_spazioviola);
                             break;
-                        case 12:
+                        case 13:
                             wallpaper_game.setBackgroundResource(R.drawable.sfondo_onde_di_colore);
                             break;
-                        case 13:
+                        case 14:
                             wallpaper_game.setBackgroundResource(R.drawable.sfondo_natura);
                             break;
                         default:

@@ -216,7 +216,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                             public void onClick(View v) {
                                 Dialog delete_patient = new Dialog(mDialog.getContext());
                                 mDialog.dismiss();
-                                delete_patient.setContentView(R.layout.confirm_delete);
+                                delete_patient.setContentView(R.layout.confirm_delete_patient);
 
                                 Button confirm , discard;
 

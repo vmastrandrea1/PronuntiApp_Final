@@ -48,43 +48,52 @@
 
 
         <LinearLayout
-            android:id="@+id/price_layout"
-            android:layout_width="0dp"
+            android:id="@+id/bg_layout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="190dp"
             android:background="@color/blue"
             android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/buttonPrezzoShopItem"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/blue"
-                android:text="@string/_500"
-                android:textColor="@color/white"
-                android:textStyle="bold"/>
+            app:layout_constraintTop_toBottomOf="@id/nomeShopItem">
 
             <TextView
                 android:id="@+id/textViewAcquistatoShopItem"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@color/black"
                 android:gravity="center"
                 android:padding="15dp"
                 android:text="@string/acquistato"
+                android:textAllCaps="true"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="13sp"
                 android:textStyle="bold"
                 android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="RtlCompat" />
+                app:layout_constraintTop_toTopOf="parent" />
 
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPrezzoShopItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:drawableTint="@color/white"
+                android:drawableRight="@drawable/ic_coin"
+                android:paddingHorizontal="5dp"
+                android:drawablePadding="5dp"
+                android:textAlignment="textEnd"
+                android:text="500"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                style="@style/Smaller_Drawable"/>
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

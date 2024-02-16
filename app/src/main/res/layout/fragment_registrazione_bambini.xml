@@ -50,6 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/nome"
+                    android:inputType="textCapSentences"
                     android:background="@color/white"
                     android:textColorHint="@color/purple"
                     android:textStyle="bold" />
@@ -70,7 +71,8 @@
                     android:background="@color/white"
                     android:textColorHint="@color/purple"
                     android:textStyle="bold"
-                    android:hint="@string/cognome" />
+                    android:hint="@string/cognome"
+                    android:inputType="textCapSentences"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 

@@ -228,7 +228,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         if (item.isAcquistato()) {
             builder.setNegativeButton("IMPOSTA COME PREDEFINITO", (dialog, which) -> {
                 
-        if(item.getId() < 7){
+        if(item.getId() < 8){
                     database.getReference("Utenti")
                             .child("Genitori")
                             .child(sessionKey)
@@ -237,7 +237,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
                             .child("id_personaggio_selezionato")
                             .setValue(item.getId());
 
-                }else if(item.getId() < 10){
+                }else if(item.getId() < 11){
                     database.getReference("Utenti")
                             .child("Genitori")
                             .child(sessionKey)

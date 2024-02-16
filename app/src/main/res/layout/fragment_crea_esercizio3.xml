@@ -17,11 +17,12 @@
             android:background="@drawable/blue_button"
             android:elevation="5dp"
             android:hint="@string/nome_esercizio"
+
             android:textSize="16dp"
             android:gravity="center"
             android:textColor="@color/white"
             android:textColorHint="@color/lightblue"
-            android:inputType="textCapCharacters"
+            android:inputType="textCapSentences"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,9 +34,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:gravity="center"
-            android:textSize="16dp"
+            android:textSize="22dp"
             android:textColor="@color/black"
             android:text="@string/tipo_es3"
+            android:fontFamily="@font/kid_font"
             android:textAllCaps="true"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/descrizione_es2"
@@ -46,11 +48,11 @@
             android:id="@+id/descrizione_es2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="6dp"
-            android:padding="30dp"
+            android:paddingHorizontal="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"
             android:text="@string/descrizione_es3"
-            app:layout_constraintTop_toBottomOf="@+id/tipo_es3"
-            tools:layout_editor_absoluteX="0dp" />
+            app:layout_constraintTop_toBottomOf="@+id/tipo_es3" />
 
         <EditText
             android:id="@+id/parola_da_ascoltare"

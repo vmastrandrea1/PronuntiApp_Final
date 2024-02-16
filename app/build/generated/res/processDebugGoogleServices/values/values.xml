@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="gcm_defaultSenderId" translatable="false">928330153737</string>
-    <string name="google_api_key" translatable="false">AIzaSyBrtytQf2FQAsQ1gEXu5N7VOkkb5GkSz5c</string>
-    <string name="google_app_id" translatable="false">1:928330153737:android:a3083ebf5ab1312d0c1dd8</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBrtytQf2FQAsQ1gEXu5N7VOkkb5GkSz5c</string>
-    <string name="google_storage_bucket" translatable="false">pronuntiapp-register.appspot.com</string>
-    <string name="project_id" translatable="false">pronuntiapp-register</string>
-</resources>

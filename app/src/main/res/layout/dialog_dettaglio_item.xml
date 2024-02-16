@@ -33,10 +33,17 @@
             android:id="@+id/textViewPrezzoFullScreen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="22sp"
+            android:layout_marginStart="-10dp"
+            android:drawablePadding="5dp"
+            android:textColor="@color/darkgrey"
+            android:drawableRight="@drawable/ic_coin"
+            android:drawableTint="@color/yellow"
             android:layout_below="@id/textViewNomeFullScreen"
             android:layout_marginTop="8dp"
-            android:text="@string/_500" />
+            android:text="@string/_500"
+            style="@style/Smaller_Drawable"/>
+
 
         <TextView
             android:id="@+id/textViewDescrizioneFullScreen"

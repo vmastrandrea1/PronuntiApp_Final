@@ -1,3 +1,0 @@
-it.uniba.dib.sms2324_4.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -98,6 +99,19 @@ public class creaEsercizio3 extends Fragment {
         Button annulla = (Button) v.findViewById(R.id.annulla_btn_2);
         Button creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
         EditText id_esercizio3 = (EditText) v.findViewById(R.id.id_esercizio3);
+
+        OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                getParentFragmentManager()
+                        .beginTransaction()
+                        .replace(container.getId() , CreaEsercizi.newInstance(userID))
+                        .commit();
+            }
+        };
+
+        // Aggiungi il callback al gestore dei pressioni del pulsante "back"
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
 
 
         creazione_esercizio.setOnClickListener(new View.OnClickListener() {

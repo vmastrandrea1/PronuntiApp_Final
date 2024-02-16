@@ -109,35 +109,37 @@ public class ShopFragment extends Fragment {
 
         Optional<Integer> animazioneIdOptional = Optional.of(123); // Esempio di ID animazione
 
-
-        item.add(new Item(0,"Tony", R.drawable.skin_bimbo, 0, getString(R.string.descrizione_item_0),Item.ItemType.PERSONAGGIO));
+        //PERSONAGGI
+        item.add(new Item(0, getString(R.string.tony), R.drawable.skin_bimbo, 0, getString(R.string.descrizione_item_0),Item.ItemType.PERSONAGGIO));
         item.get(0).setAcquistato(true);
-        item.add(new Item(1,"Torvaldo", R.drawable.skin_troll, 500, getString(R.string.descrizione_item_1),Item.ItemType.PERSONAGGIO,R.drawable.animation_troll));
-        item.add(new Item(2,"Rex Fulminatus", R.drawable.skin_dinosauro, 600, getString(R.string.descrizione_item_2),Item.ItemType.PERSONAGGIO,R.drawable.animation_dinosauro));
-        item.add(new Item(3,"Gelatiello", R.drawable.skin_gelato, 700, getString(R.string.descrizione_item_3),Item.ItemType.PERSONAGGIO,R.drawable.animation_gelato));
-        item.add(new Item(4,"Trombone", R.drawable.skin_stregone, 800, getString(R.string.descrizione_item_4),Item.ItemType.PERSONAGGIO,R.drawable.animation_stregone));
-        item.add(new Item(5,"Oculopodio", R.drawable.skin_polpo, 900, getString(R.string.descrizione_item_5),Item.ItemType.PERSONAGGIO,R.drawable.animation_polpo));
-        item.add(new Item(6,"Robotelmo", R.drawable.skin_robot, 1000, getString(R.string.descrizione_item_6),Item.ItemType.PERSONAGGIO,R.drawable.animation_robot));
-        item.add(new Item(61,"Cubot", R.drawable.skin_cubot, 3000, getString(R.string.descrizione_item_61),Item.ItemType.PERSONAGGIO,R.drawable.animation_cubot));
+        item.add(new Item(1, getString(R.string.torvaldo), R.drawable.skin_troll, 500, getString(R.string.descrizione_item_1),Item.ItemType.PERSONAGGIO,R.drawable.animation_troll));
+        item.add(new Item(2, getString(R.string.rex_fulminatus), R.drawable.skin_dinosauro, 600, getString(R.string.descrizione_item_2),Item.ItemType.PERSONAGGIO,R.drawable.animation_dinosauro));
+        item.add(new Item(3, getString(R.string.gelatiello), R.drawable.skin_gelato, 700, getString(R.string.descrizione_item_3),Item.ItemType.PERSONAGGIO,R.drawable.animation_gelato));
+        item.add(new Item(4, getString(R.string.trombone), R.drawable.skin_stregone, 800, getString(R.string.descrizione_item_4),Item.ItemType.PERSONAGGIO,R.drawable.animation_stregone));
+        item.add(new Item(5, getString(R.string.oculopodio), R.drawable.skin_polpo, 900, getString(R.string.descrizione_item_5),Item.ItemType.PERSONAGGIO,R.drawable.animation_polpo));
+        item.add(new Item(6, getString(R.string.robotelmo), R.drawable.skin_robot, 1000, getString(R.string.descrizione_item_6),Item.ItemType.PERSONAGGIO,R.drawable.animation_robot));
+        item.add(new Item(7, getString(R.string.cubot), R.drawable.skin_cubot, 1500, getString(R.string.descrizione_item_7),Item.ItemType.PERSONAGGIO,R.drawable.animation_cubot));
 
+        //MAPPE
+        item.add(new Item(8, getString(R.string.sentiero), R.drawable.map_sentiero, 0, getString(R.string.descrizione_item_8),Item.ItemType.SCENARIO));
+        item.get(8).setAcquistato(true);
+        item.add(new Item(9, getString(R.string.flying_island), R.drawable.map_flying_island, 600, getString(R.string.descrizione_item_9),Item.ItemType.SCENARIO));
+        item.add(new Item(10, getString(R.string.marte), R.drawable.map_mars, 700, getString(R.string.descrizione_item_10),Item.ItemType.SCENARIO));
 
-        item.add(new Item(7,"Sentiero", R.drawable.map_sentiero, 0, getString(R.string.descrizione_item_7),Item.ItemType.SCENARIO));
-        item.get(7).setAcquistato(true);
-        item.add(new Item(8,"Flying island", R.drawable.map_flying_island, 600, getString(R.string.descrizione_item_8),Item.ItemType.SCENARIO));
-        item.add(new Item(9,"Marte", R.drawable.map_mars, 700, getString(R.string.descrizione_item_9),Item.ItemType.SCENARIO));
-
-        item.add(new Item(10,"Cielo", R.drawable.sfondo_cielo, 0, getString(R.string.descrizione_item_10),Item.ItemType.SFONDO));
-        item.get(10).setAcquistato(true);
-        item.add(new Item(11,"Spazio viola", R.drawable.sfondo_spazioviola, 600, getString(R.string.descrizione_item_11),Item.ItemType.SFONDO));
-        item.add(new Item(12,"Onde di colore", R.drawable.sfondo_onde_di_colore, 500, getString(R.string.descrizione_item_12),Item.ItemType.SFONDO));
-        item.add(new Item(13,"Natura", R.drawable.sfondo_natura, 800, getString(R.string.descrizione_item_13),Item.ItemType.SFONDO));
+        //SFONDI
+        item.add(new Item(11, getString(R.string.cielo), R.drawable.sfondo_cielo, 0, getString(R.string.descrizione_item_11),Item.ItemType.SFONDO));
+        item.get(11).setAcquistato(true);
+        item.add(new Item(12, getString(R.string.spazio_viola), R.drawable.sfondo_spazioviola, 600, getString(R.string.descrizione_item_12),Item.ItemType.SFONDO));
+        item.add(new Item(13, getString(R.string.onde_di_colore), R.drawable.sfondo_onde_di_colore, 500, getString(R.string.descrizione_item_13),Item.ItemType.SFONDO));
+        item.add(new Item(14, getString(R.string.natura), R.drawable.sfondo_natura, 800, getString(R.string.descrizione_item_14),Item.ItemType.SFONDO));
 
         return item;
     }
 
     public void updateMoneteText() {
-        textViewMonete.setText("" + monete);
+        textViewMonete.setText(String.valueOf(monete));
     }
+
 
     public int getMonete() {
         return monete;

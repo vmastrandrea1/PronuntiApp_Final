@@ -51,6 +51,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/white"
                     android:hint="@string/nome"
+                    android:inputType="textCapSentences"
                     android:textColorHint="@color/blue"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -73,6 +74,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:hint="@string/cognome"
+                    android:inputType="textCapSentences"
                     android:background="@color/white"/>
 
             </com.google.android.material.textfield.TextInputLayout>

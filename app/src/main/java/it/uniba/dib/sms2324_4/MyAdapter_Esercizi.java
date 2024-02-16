@@ -171,12 +171,12 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                                 }
                             });
 
-                            //ELIMINAZIONE ESERCIZIO 1
+                            //ELIMINA ESERCIZIO 1
                             delete_exercise.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
                                     mDialog.dismiss();
-                                    delete_item.setContentView(R.layout.confirm_delete);
+                                    delete_item.setContentView(R.layout.confirm_delete_exercise);
                                     Button confirm , discard;
 
                                     confirm = delete_item.findViewById(R.id.confirm_delete);
@@ -319,7 +319,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                                 @Override
                                 public void onClick(View v) {
                                     mDialog.dismiss();
-                                    delete_item.setContentView(R.layout.confirm_delete);
+                                    delete_item.setContentView(R.layout.confirm_delete_exercise);
                                     Button confirm , discard;
 
                                     confirm = delete_item.findViewById(R.id.confirm_delete);
@@ -382,7 +382,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                             mDialog.setContentView(R.layout.exercise3_info_popup);
 
                             parola_immagine = mDialog.findViewById(R.id.ex3_parola_da_ascoltare);
-                            parola_immagine.setText(esercizio3.getParola_immagine());
+                            parola_immagine.setText("Parola da ascoltare: " + esercizio3.getParola_immagine());
 
                             Dialog delete_item = new Dialog(mDialog.getContext());
 
@@ -415,7 +415,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                                 @Override
                                 public void onClick(View v) {
                                     mDialog.dismiss();
-                                    delete_item.setContentView(R.layout.confirm_delete);
+                                    delete_item.setContentView(R.layout.confirm_delete_exercise);
                                     Button confirm , discard;
 
                                     confirm = delete_item.findViewById(R.id.confirm_delete);

@@ -2,20 +2,18 @@
 
     <!-- Sfondo rettangolo personalizzato -->
     <item>
+        <shape>
+            <corners android:radius="20dp" />
+            <solid android:color="#C0C0C0" />
+        </shape>
+    </item>
 
-<shape>
-    <corners android:radius="20dp" />
-    <solid android:color="#C0C0C0" />
-    </shape>
-</item>
-
-
-
-<item
-android:drawable="@drawable/secondo_posto"
-android:gravity="center"
-android:width="50dp"
-android:height="50dp"
-android:top="50dp" />
-
+    <item
+        android:drawable="@drawable/secondo_posto"
+        android:gravity="right|bottom"
+        android:width="40dp"
+        android:height="40dp"
+        android:top="40dp"
+        android:right="15dp"
+        android:bottom="10dp"/>
 </layer-list>

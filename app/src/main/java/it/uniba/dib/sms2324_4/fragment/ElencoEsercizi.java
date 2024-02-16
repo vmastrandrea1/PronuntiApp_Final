@@ -2,6 +2,7 @@ package it.uniba.dib.sms2324_4.fragment;
 
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -79,6 +80,19 @@ public class ElencoEsercizi extends Fragment {
 
         // Ottieni il riferimento al pulsante
         Button buttonCreaEsercizio = view.findViewById(R.id.AddButton);
+
+        OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                getParentFragmentManager()
+                        .beginTransaction()
+                        .replace(container.getId() , ElencoPazienti.newInstance(userID))
+                        .commit();
+            }
+        };
+
+        // Aggiungi il callback al gestore dei pressioni del pulsante "back"
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
 
         // Gestisci il click sul pulsante
         buttonCreaEsercizio.setOnClickListener(new View.OnClickListener() {

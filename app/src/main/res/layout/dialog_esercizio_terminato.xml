@@ -39,11 +39,11 @@
             android:id="@+id/textViewMonete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:layout_below="@id/textViewDescrizione"
             android:drawableEnd="@drawable/ic_coin"
             android:drawableTint="#FFFFB700"
-            android:drawablePadding="10sp"
+            android:drawablePadding="8sp"
             android:layout_marginTop="30dp"
             android:text="@string/_10_monete" />
 

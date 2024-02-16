@@ -48,43 +48,44 @@
         <LinearLayout
             android:layout_width="120dp"
             android:layout_height="170dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="30dp"
-            android:gravity="center">
+            android:layout_gravity="right"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/ex1_image_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-75dp"
                 android:text="@string/immagine_scelta"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="109dp"
-                android:layout_height="98dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="20dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="-110dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                app:cardCornerRadius="20dp">
+                android:layout_marginBottom="10dp">
 
                 <ImageView
                     android:id="@+id/ex1_image_viewer"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop" />
             </androidx.cardview.widget.CardView>
 
-
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="165dp"
             android:layout_height="170dp"
             android:layout_gravity="left"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="15dp"
             android:layout_marginTop="-170dp"
             android:orientation="vertical">
 
@@ -99,7 +100,7 @@
                 android:id="@+id/aiuto2_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="30dp"
                 android:text="@string/aiuto_2_colon"
                 android:textColor="@color/white" />
 
@@ -107,7 +108,7 @@
                 android:id="@+id/aiuto3_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="30dp"
                 android:text="@string/aiuto_3_colon"
                 android:textColor="@color/white" />
 
@@ -119,30 +120,31 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:visibility="gone">
+            android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/delete_exercise_1"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="50dp"
                 android:paddingHorizontal="10dp"
                 android:text="@string/elimina_esercizio"
                 android:drawableStart="@drawable/ic_delete"
-                android:background="@drawable/bg_btn" />
+                android:background="@drawable/bg_btn"
+                android:visibility="gone"/>
 
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/deassign_exercise_1"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:paddingHorizontal="10dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="50dp"
-                android:text="@string/rimuovi_assegnazione"
-                android:drawableStart="@drawable/ic_exercise"
-                android:background="@drawable/bg_btn" />
+                <!--
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/deassign_exercise_1"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/rimuovi_assegnazione"
+                    android:drawableStart="@drawable/ic_exercise"
+                    android:background="@drawable/bg_btn"
+                    android:visibility="gone"/>
+                -->
 
         </LinearLayout>
     </LinearLayout>

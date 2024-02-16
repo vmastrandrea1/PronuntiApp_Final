@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:layout_margin="25dp"
     app:cardCornerRadius="20dp"
-    android:backgroundTint="@color/purple"
+    android:backgroundTint="?attr/colorPrimary"
     app:cardElevation="10dp">
 
     <LinearLayout
@@ -28,8 +28,8 @@
 
         <ImageView
             android:id="@+id/exercise_profile_image"
-            android:layout_width="183dp"
-            android:layout_height="123dp"
+            android:layout_width="170dp"
+            android:layout_height="110dp"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:src="@drawable/ic_exercise"

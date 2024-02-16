@@ -200,7 +200,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/confirm_choice_btn"
-            android:layout_width="156dp"
+            android:layout_width="wrap_content"
             android:layout_height="53dp"
             android:layout_marginTop="25dp"
             android:background="@drawable/blue_button"
@@ -208,6 +208,7 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             app:cornerRadius="16dp"
+            android:paddingHorizontal="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/mic_layout" />

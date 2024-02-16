@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -35,6 +36,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import it.uniba.dib.sms2324_4.R;
+import it.uniba.dib.sms2324_4.fragment.ElencoEsercizi;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -96,6 +98,19 @@ public class creaEsercizio1 extends Fragment {
         Button annulla = (Button)v.findViewById(R.id.annulla_btn);
         Button creazione_esercizio = (Button)v.findViewById(R.id.buttonCreaEs1);
         image_viewer = (ImageView) v.findViewById(R.id.preview_immagine_es1);
+
+        OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                getParentFragmentManager()
+                        .beginTransaction()
+                        .replace(container.getId() , CreaEsercizi.newInstance(userID))
+                        .commit();
+            }
+        };
+
+        // Aggiungi il callback al gestore dei pressioni del pulsante "back"
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
 
         scegli_immagine.setOnClickListener(new View.OnClickListener() {
             @Override

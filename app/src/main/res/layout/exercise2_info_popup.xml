@@ -27,7 +27,7 @@
             android:drawableTint="@color/white" />
 
         <ImageView
-            android:id="@+id/exercise2_profile_image"
+            android:id="@+id/exercise_profile_image"
             android:layout_width="170dp"
             android:layout_height="110dp"
             android:layout_gravity="center"
@@ -59,7 +59,7 @@
                 android:text="@string/parola_1_colon"
                 android:textColor="@color/white"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginBottom="30dp"/>
             <TextView
                 android:id="@+id/parola2_tv"
                 android:layout_width="match_parent"
@@ -67,15 +67,16 @@
                 android:text="@string/parola_2_colon"
                 android:textColor="@color/white"
                 android:gravity="center_horizontal"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginBottom="30dp"/>
+
             <TextView
                 android:id="@+id/parola3_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/parola_3_colon"
                 android:textColor="@color/white"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="5dp"/>
+                android:gravity="center_horizontal"/>
+
 
         </LinearLayout>
 
@@ -85,30 +86,32 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:layout_marginTop="20dp"
-            android:orientation="horizontal"
-            android:visibility="gone">
+            android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/delete_exercise_2"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
-                android:layout_marginLeft="50dp"
                 android:paddingHorizontal="10dp"
                 android:text="@string/elimina_esercizio"
                 android:drawableStart="@drawable/ic_delete"
-                android:background="@drawable/bg_btn" />
+                android:background="@drawable/bg_btn"
+                android:visibility="gone"/>
 
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/deassign_exercise_2"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:paddingHorizontal="10dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="50dp"
-                android:text="@string/rimuovi_assegnazione"
-                android:drawableStart="@drawable/ic_exercise"
-                android:background="@drawable/bg_btn" />
+            <!--
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/deassign_exercise_2"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/rimuovi_assegnazione"
+                    android:drawableStart="@drawable/ic_exercise"
+                    android:background="@drawable/bg_btn"
+                    android:visibility="gone"/>
+             -->
 
         </LinearLayout>
     </LinearLayout>

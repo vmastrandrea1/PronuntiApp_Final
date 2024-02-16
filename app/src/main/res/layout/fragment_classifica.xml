@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:paddingHorizontal="15dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +24,9 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/kid_font"
                 android:gravity="center"
-                android:text="CLASSIFICA"
+                android:paddingTop="15dp"
+                android:text="@string/classifica"
+                android:textAllCaps="true"
                 android:textColor="@color/blue"
                 android:textSize="50dp" />
 
@@ -38,14 +40,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_margin="10dp">
+        android:layout_marginHorizontal="10dp">
 
         <!-- LinearLayout verticale -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="15dp">
 
             <!-- Testo "CLASSIFICA" -->
 
@@ -70,9 +72,11 @@
                         android:id="@+id/primo_posto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="8dp"
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/primo_classificato_1000"
                         android:textColor="@color/white"
-                        android:textSize="30sp"
+                        android:textSize="28sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
@@ -98,7 +102,9 @@
                         android:id="@+id/secondo_posto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="8dp"
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/secondo_classificato_500"
                         android:textColor="@color/white"
                         android:textSize="25dp"
                         android:textStyle="bold" />
@@ -126,7 +132,9 @@
                         android:id="@+id/terzo_posto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="8dp"
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="20dp"
+                        android:text="@string/terzo_classificato_100"
                         android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />

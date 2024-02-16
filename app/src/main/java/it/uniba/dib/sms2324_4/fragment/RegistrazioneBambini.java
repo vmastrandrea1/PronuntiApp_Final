@@ -91,6 +91,9 @@ public class RegistrazioneBambini extends Fragment {
             }
         };
 
+        // Aggiungi il callback al gestore dei pressioni del pulsante "back"
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
+
         editTextChildCf = view.findViewById(R.id.child_cf);
         editTextChildCognome = view.findViewById(R.id.child_surname);
         editTextChildNome = view.findViewById(R.id.child_name);

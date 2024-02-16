@@ -61,5 +61,16 @@
         <item name="android:textSize">11dp</item>
     </style>
 
+    <style name="Smaller_Drawable">
+        <item name="android:textSize">20sp</item>
+        <item name="android:scaleX">0.7</item>
+        <item name="android:scaleY">0.7</item>
+    </style>
+
+    <style name="RoundedSquare">
+        <item name="cornerSizeTopLeft">18.5dp</item>
+        <item name="cornerSizeTopRight">18.5dp</item>
+    </style>
+
 </resources>
 

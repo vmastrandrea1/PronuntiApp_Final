@@ -21,14 +21,17 @@
 
         <TextView
             android:id="@+id/editText"
-            android:layout_width="219dp"
+            android:layout_width="150dp"
             android:layout_height="53dp"
             android:layout_marginTop="44dp"
             android:ems="10"
             android:gravity="center"
-            android:background="@drawable/circle_button_add_exercise"
+            android:background="@drawable/rounded_corners_button"
+            android:drawableTint="@color/white"
+            android:paddingHorizontal="15dp"
             android:text="@string/inserisci_ora"
             android:textColor="@color/white"
+            android:textAllCaps="true"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/calendarView" />
@@ -40,6 +43,7 @@
             android:layout_marginTop="128dp"
             android:text="@string/aggiungi_prenotazione"
             android:textAllCaps="true"
+            android:background="@drawable/rounded_corners_button"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent"
