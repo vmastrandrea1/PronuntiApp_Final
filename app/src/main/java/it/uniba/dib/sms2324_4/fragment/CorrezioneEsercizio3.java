@@ -216,8 +216,8 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                         TextView textViewMonete = dialogView.findViewById(R.id.textViewMonete);
                         TextView textViewEsperienza = dialogView.findViewById(R.id.textViewEsperienza);
 
-                        textViewMonete.setText((esercizio3.getMonete()+50) + " Monete");
-                        textViewEsperienza.setText((esercizio3.getEsperienza()+100) + " Punti Esperienza");
+                        textViewMonete.setText((esercizio3.getMonete()+50) + getString(R.string.monete));
+                        textViewEsperienza.setText((esercizio3.getEsperienza()+100) + getString(R.string.punti_esperienza));
 
                         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
                                 .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background_green_border))
@@ -370,8 +370,8 @@ public class CorrezioneEsercizio3 extends DialogFragment {
                 TextView textViewMonete = dialogView.findViewById(R.id.textViewMonete);
                 TextView textViewEsperienza = dialogView.findViewById(R.id.textViewEsperienza);
 
-                textViewMonete.setText((esercizio3.getMonete()+20)  + " Monete");
-                textViewEsperienza.setText((esercizio3.getEsperienza()+50) + " Punti Esperienza");
+                textViewMonete.setText((esercizio3.getMonete()+20)  + getString(R.string.monete));
+                textViewEsperienza.setText((esercizio3.getEsperienza()+50) + getString(R.string.punti_esperienza));
 
                 MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
                         .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background_red_border))

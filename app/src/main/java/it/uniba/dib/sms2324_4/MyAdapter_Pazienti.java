@@ -112,7 +112,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
 
                         child_name_tv.setText(nomeCognome);
                         child_birthdate_tv.setText(dataDiNascita);
-                        child_owner.setText("CF Genitore: " + cfGenitore);
+                        child_owner.setText(v.getResources().getText(R.string.cf_genitore) + cfGenitore);
 
 
 
@@ -143,9 +143,9 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                     int eserciziMancanti = 5 - count;
                                     assegna_terapia_btn.setVisibility(View.GONE);
                                     therapy_not_ready.setVisibility(View.VISIBLE);
-                                    therapy_not_ready.setText("Aggiungi " + eserciziMancanti + " esercizi \nper creare una nuova terapia");
+                                    therapy_not_ready.setText(v.getResources().getText(R.string.aggiungi) + " " + eserciziMancanti + v.getResources().getText(R.string.esercizi_per_creare_una_nuova_terapia));
                                     if(count==4){
-                                        therapy_not_ready.setText("Aggiungi un altro esercizio \nper creare una nuova terapia");
+                                        therapy_not_ready.setText(v.getResources().getText(R.string.aggiungi_un_altro_esercizio_per_creare_una_nuova_terapia));
 
                                     }
 

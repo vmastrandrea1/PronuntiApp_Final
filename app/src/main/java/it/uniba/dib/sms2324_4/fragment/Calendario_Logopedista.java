@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
@@ -81,6 +82,22 @@ public class Calendario_Logopedista extends Fragment {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.fragment_calendario_logopedista, container, false);
 
+
+        // GESTIONE PULSANTE BACK
+        OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                getParentFragmentManager()
+                        .beginTransaction()
+                        .replace(container.getId() , ElencoPazienti.newInstance(sessionKey))
+                        .commit();
+            }
+        };
+
+        // Aggiungi il callback al gestore dei pressioni del pulsante "back"
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
+
+
         FirebaseDatabase database = FirebaseDatabase.getInstance(view.getContext().getString(R.string.db_url));
         calendarView = view.findViewById(R.id.calendarView);
 
@@ -106,7 +123,7 @@ public class Calendario_Logopedista extends Fragment {
                         String nomeCognome = dataSnapshot.child("nome").getValue(String.class)
                                  + " " +
                                 dataSnapshot.child("cognome").getValue(String.class);
-                        elencoPazienti.add(cf + " ("+ nomeCognome + ")");
+                        elencoPazienti.add(nomeCognome.toUpperCase() + "\n("+ cf + ")");
                     }
 
                     elencoPazienti_spinner.setAdapter(elencoPazienti);

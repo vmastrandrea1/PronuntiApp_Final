@@ -4,113 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Calendario_Logopedista">
+    tools:context=".fragment.Calendario_Logopedista"
+    android:layout_marginHorizontal="20dp">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/myReservationsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="25dp"
+                android:text="@string/prenotazioni"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
         <CalendarView
             android:id="@+id/calendarView"
-            android:layout_width="358dp"
-            android:layout_height="313dp"
-            android:layout_marginTop="32dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/editText_ora_inizio"
-            android:layout_width="165dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="44dp"
-            android:gravity="center"
-            android:text="@string/inserisci_ora_inizio"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.065"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout" />
 
         <TextView
             android:id="@+id/timePicker_ora_inizio"
-            android:layout_width="165dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="44dp"
-            android:background="@drawable/rounded_corners_button"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corners_button_grey"
             android:gravity="center"
-            android:text="@string/clicca_qui"
-            android:textColor="@color/white"
+            android:hint="@string/dalle_ore"
             android:textSize="20dp"
-            app:layout_constraintStart_toEndOf="@+id/editText_ora_inizio"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
         <TextView
-            android:id="@+id/editText_ora_fine"
-            android:layout_width="165dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:gravity="center"
-            android:text="@string/inserisci_ora_fine"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText_ora_inizio" />
-
-        <TextView
             android:id="@+id/timePicker_ora_fine"
-            android:layout_width="165dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/rounded_corners_button"
+            android:layout_width="130dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_corners_button_grey"
             android:gravity="center"
-            android:text="Clicca Qui"
-            android:textColor="@color/white"
+            android:hint="@string/alle_ore"
             android:textSize="20dp"
-            app:layout_constraintStart_toEndOf="@+id/editText_ora_fine"
-            app:layout_constraintTop_toBottomOf="@+id/timePicker_ora_inizio" />
-
-        <TextView
-            android:id="@+id/editText_spinner_paziente"
-            android:layout_width="165dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="28dp"
-            android:gravity="center"
-            android:text="@string/paziente"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText_ora_fine" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
         <Spinner
             android:id="@+id/elencoPazienti_spinner"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="80dp"
-            android:background="@drawable/rounded_corners_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rounded_corners_button_grey"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="12dp"
             android:spinnerMode="dropdown"
-            app:layout_constraintBottom_toTopOf="@+id/buttonpreno"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText_spinner_paziente"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timePicker_ora_inizio" />
 
         <Button
             android:id="@+id/buttonpreno"
-            android:layout_width="wrap_content"
-            android:layout_height="61dp"
-            android:layout_marginBottom="16dp"
-            android:text="@string/aggiungi_prenotazione"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:background="@drawable/rounded_corners_button"
+            android:text="@string/aggiungi"
             android:textAllCaps="true"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toStartOf="@+id/view_reservation"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elencoPazienti_spinner"
+            app:layout_constraintVertical_bias="0.2" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/view_reservation"

@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="Non hai terapie per oggi"
+            android:text="@string/non_hai_terapie_per_oggi"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"

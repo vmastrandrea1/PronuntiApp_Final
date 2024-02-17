@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.fragment.Home;
 
@@ -56,6 +58,10 @@ public class NoTherapyFragment extends Fragment {
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
+                // Nascondi la navbar
+                BottomNavigationView bottomNavigationView = requireActivity().findViewById(R.id.bottomBar);
+                bottomNavigationView.setVisibility(View.GONE);
+
                 getParentFragmentManager()
                         .beginTransaction()
                         .replace(container.getId() , Home.newInstance(sessionKey_genitore))
@@ -69,4 +75,15 @@ public class NoTherapyFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_no_therapy, container, false);
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        // Mostra la navbar
+        BottomNavigationView bottomNavigationView = requireActivity().findViewById(R.id.bottomBar);
+        bottomNavigationView.setVisibility(View.VISIBLE);
+    }
+
+
 }

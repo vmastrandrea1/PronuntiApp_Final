@@ -15,7 +15,7 @@
                 </shape>
             </item>
             <item
-                android:drawable="@drawable/ic_date"
+                android:drawable="@drawable/ic_date_white"
                 android:bottom="25dp"
                 android:left="25dp"
                 android:right="25dp"

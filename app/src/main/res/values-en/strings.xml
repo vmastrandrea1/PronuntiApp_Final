@@ -79,7 +79,7 @@
     <string name="_100_monete">100 Coins</string>
     <string name="_500_punti_esperienza">500 Experience Points</string>
     <string name="inserisci_ora">Enter Time</string>
-    <string name="aggiungi_prenotazione">Add booking</string>
+    <string name="aggiungi_prenotazione">Add\nbooking</string>
     <string name="i_miei_figli">My children</string>
     <string name="_4_quarto_classificato">4) Fourth place</string>
     <string name="_18_marzo_74">March 18, 74</string>
@@ -218,7 +218,6 @@
     <string name="primo_classificato_1000">First place ( 1000 )</string>
     <string name="secondo_classificato_500">Second place ( 500 )</string>
     <string name="terzo_classificato_100">Third place ( 100 )</string>
-
     <string name="paziente">Patient</string>
     <string name="inserisci_ora_inizio">Insert Start Time</string>
     <string name="clicca_qui">Click Here</string>
@@ -228,4 +227,25 @@
     <string name="hai_gi_una_prenotazione_per_questo_paziente">You already have a reservation for this patient</string>
     <string name="hai_gi_una_prenotazione_per_quest_ora">You already have a reservation for this time</string>
     <string name="orario_non_valido">Time Invalid</string>
+    <string name="alle_ore">To h.</string>
+    <string name="dalle_ore">From h.</string>
+    <string name="aggiungi">Add</string>
+    <string name="non_hai_terapie_per_oggi">You have no therapies today</string>
+    <string name="esercizi_per_creare_una_nuova_terapia">Exercises \nto create a new therapy</string>
+    <string name="aggiungi_un_altro_esercizio_per_creare_una_nuova_terapia">Add another exercise \nto create a new therapy</string>
+    <string name="correzione_corretto">Correction: CORRECT</string>
+    <string name="correzione_sbagliato">Correction: WRONG</string>
+    <string name="esercizio_corretto">Correct Exercise</string>
+    <string name="esito_correzione_corretto">Correction Outcome: CORRECT</string>
+    <string name="ok">OK</string>
+    <string name="monete">Coins</string>
+    <string name="punti_esperienza">Experience Points</string>
+    <string name="dove_vai">Where are you going?</string>
+    <string name="devi_eseguire_prima_l_esercizio">You must perform the exercise first\n(• ᴖ •｡)</string>
+    <string name="acquisto_riuscito">Purchase successful</string>
+    <string name="monete_insufficienti">Insufficient coins</string>
+    <string name="non_hai_abbastanza_monete">You don\'t have enough coins!</string>
+    <string name="esito_correzione_sbagliato">Correction Outcome: WRONG</string>
+    <string name="hai_acquistato">"You have purchased "</string>
+    <string name="imposta_come_predefinito">SET AS DEFAULT</string>
 </resources>

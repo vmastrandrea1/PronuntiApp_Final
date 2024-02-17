@@ -105,7 +105,9 @@ public class GiocoFragment extends Fragment{
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                BottomNavigationView bottomNavigationView = container.findViewById(R.id.bottomBar);
+                // Nascondi la navbar
+                BottomNavigationView bottomNavigationView = requireActivity().findViewById(R.id.bottomBar);
+                bottomNavigationView.setVisibility(View.GONE);
 
                 getParentFragmentManager()
                         .beginTransaction()
@@ -287,6 +289,16 @@ public class GiocoFragment extends Fragment{
 
         return rootView;
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        // Mostra la navbar
+        BottomNavigationView bottomNavigationView = requireActivity().findViewById(R.id.bottomBar);
+        bottomNavigationView.setVisibility(View.VISIBLE);
+    }
+
 
     private void loadCurrentPosition() {
         Query get_position = database.getReference("Utenti")

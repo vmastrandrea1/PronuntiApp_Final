@@ -103,19 +103,20 @@
 
 
             <!-- Pulsante Accedi -->
+
+            <!-- Non hai un account? Registrati -->
             <Button
                 android:id="@+id/btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:backgroundTint="@color/blue"
                 android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="50dp"
                 android:background="@drawable/rounded_corners_button"
+                android:backgroundTint="@color/blue"
                 android:text="@string/login"
                 android:textAllCaps="true"
                 android:textColor="@color/white" />
 
-            <!-- Non hai un account? Registrati -->
             <TextView
                 android:id="@+id/registerNow"
                 android:layout_width="wrap_content"

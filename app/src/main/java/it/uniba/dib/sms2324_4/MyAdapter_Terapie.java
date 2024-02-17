@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -745,9 +746,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                 if(dataSnapshot.child("esito").exists()){
                                                                     if(dataSnapshot.child("esito").getValue(Boolean.class)){
-                                                                        correzione.setText("Correzione : CORRETTO");
+                                                                        correzione.setText(view.getResources().getText(R.string.correzione_corretto));
                                                                     }else{
-                                                                        correzione.setText("Correzione : SBAGLIATO");
+                                                                        correzione.setText(view.getResources().getText(R.string.correzione_sbagliato));
                                                                     }
 
                                                                     esercizio_corretto.setVisibility(View.GONE);
@@ -836,12 +837,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
-                                                                        correzione.setText("Correzione : CORRETTO");
+                                                                        correzione.setText(R.string.correzione_corretto);
 
-                                                                        new MaterialAlertDialogBuilder(view.getContext())
-                                                                                .setTitle("Esercizio Corretto")
-                                                                                .setMessage("Esito Correzione : CORRETTO")
-                                                                                .setPositiveButton("OK", null)
+                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
+                                                                                .setTitle(R.string.esercizio_corretto)
+                                                                                .setMessage(R.string.esito_correzione_corretto)
+                                                                                .setPositiveButton(R.string.ok, null)
                                                                                 .show();
                                                                     }
                                                                 });
@@ -928,12 +929,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
-                                                                        correzione.setText("Correzione : SBAGLIATO");
+                                                                        correzione.setText(R.string.correzione_sbagliato);
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
-                                                                                .setTitle("Esercizio Corretto")
-                                                                                .setMessage("Esito Correzione : SBAGLIATO")
-                                                                                .setPositiveButton("OK", null)
+                                                                                .setTitle(R.string.esercizio_corretto)
+                                                                                .setMessage(R.string.esito_correzione_sbagliato)
+                                                                                .setPositiveButton(R.string.ok, null)
                                                                                 .show();
                                                                     }
                                                                 });
@@ -969,9 +970,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio1 esercizio1 = snapshot.getValue(Esercizio1.class);
 
                                                                                     id_esercizio.setText(esercizio1.getId_esercizio());
-                                                                                    aiuto_1.setText("Aiuto 1: " + esercizio1.getAiuto_1());
-                                                                                    aiuto_2.setText("Aiuto 2: " + esercizio1.getAiuto_2());
-                                                                                    aiuto_3.setText("Aiuto 3: " + esercizio1.getAiuto_3());
+                                                                                    aiuto_1.setText(view.getResources().getText(R.string.aiuto_1_colon) + esercizio1.getAiuto_1());
+                                                                                    aiuto_2.setText(view.getResources().getText(R.string.aiuto_2_colon) + esercizio1.getAiuto_2());
+                                                                                    aiuto_3.setText(view.getResources().getText(R.string.aiuto_3_colon) + esercizio1.getAiuto_3());
 
 
                                                                                     FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
@@ -1036,9 +1037,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    parola_1.setText("Parola 1: " + esercizio2.getParola_1());
-                                                                                    parola_2.setText("Parola 2: " + esercizio2.getParola_2());
-                                                                                    parola_3.setText("Parola 3: " + esercizio2.getParola_3());
+                                                                                    parola_1.setText(view.getResources().getText(R.string.parola_1_colon) + esercizio2.getParola_1());
+                                                                                    parola_2.setText(view.getResources().getText(R.string.parola_2_colon) + esercizio2.getParola_2());
+                                                                                    parola_3.setText(view.getResources().getText(R.string.parola_3_colon) + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -1165,9 +1166,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                 if(dataSnapshot.child("esito").exists()){
                                                                     if(dataSnapshot.child("esito").getValue(Boolean.class)){
-                                                                        correzione.setText("Correzione : CORRETTO");
+                                                                        correzione.setText(R.string.correzione_corretto);
                                                                     }else{
-                                                                        correzione.setText("Correzione : SBAGLIATO");
+                                                                        correzione.setText(R.string.correzione_sbagliato);
                                                                     }
 
                                                                     esercizio_corretto.setVisibility(View.GONE);
@@ -1256,12 +1257,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
-                                                                        correzione.setText("Correzione : CORRETTO");
+                                                                        correzione.setText(R.string.correzione_corretto);
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
-                                                                                .setTitle("Esercizio Corretto")
-                                                                                .setMessage("Esito Correzione : CORRETTO")
-                                                                                .setPositiveButton("OK", null)
+                                                                                .setTitle(R.string.esercizio_corretto)
+                                                                                .setMessage(R.string.esito_correzione_corretto)
+                                                                                .setPositiveButton(R.string.ok, null)
                                                                                 .show();
                                                                     }
                                                                 });
@@ -1348,12 +1349,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
-                                                                        correzione.setText("Correzione : SBAGLIATO");
+                                                                        correzione.setText(R.string.correzione_sbagliato);
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
-                                                                                .setTitle("Esercizio Corretto")
-                                                                                .setMessage("Esito Correzione : SBAGLIATO")
-                                                                                .setPositiveButton("OK", null)
+                                                                                .setTitle(R.string.esercizio_corretto)
+                                                                                .setMessage(R.string.esito_correzione_sbagliato)
+                                                                                .setPositiveButton(R.string.ok, null)
                                                                                 .show();
                                                                     }
                                                                 });
@@ -1389,9 +1390,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio1 esercizio1 = snapshot.getValue(Esercizio1.class);
 
                                                                                     id_esercizio.setText(esercizio1.getId_esercizio());
-                                                                                    aiuto_1.setText("Aiuto 1: " + esercizio1.getAiuto_1());
-                                                                                    aiuto_2.setText("Aiuto 2: " + esercizio1.getAiuto_2());
-                                                                                    aiuto_3.setText("Aiuto 3: " + esercizio1.getAiuto_3());
+                                                                                    aiuto_1.setText(view.getResources().getText(R.string.aiuto_1_colon) + esercizio1.getAiuto_1());
+                                                                                    aiuto_2.setText(view.getResources().getText(R.string.aiuto_2_colon) + esercizio1.getAiuto_2());
+                                                                                    aiuto_3.setText(view.getResources().getText(R.string.aiuto_3_colon) + esercizio1.getAiuto_3());
 
 
                                                                                     FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
@@ -1456,9 +1457,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    parola_1.setText("Parola 1: " + esercizio2.getParola_1());
-                                                                                    parola_2.setText("Parola 2: " + esercizio2.getParola_2());
-                                                                                    parola_3.setText("Parola 3: " + esercizio2.getParola_3());
+                                                                                    parola_1.setText(view.getResources().getText(R.string.parola_1_colon) + esercizio2.getParola_1());
+                                                                                    parola_2.setText(view.getResources().getText(R.string.parola_2_colon) + esercizio2.getParola_2());
+                                                                                    parola_3.setText(view.getResources().getText(R.string.parola_3_colon) + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -1585,9 +1586,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                 if(dataSnapshot.child("esito").exists()){
                                                                     if(dataSnapshot.child("esito").getValue(Boolean.class)){
-                                                                        correzione.setText("Correzione : CORRETTO");
+                                                                        correzione.setText(R.string.correzione_corretto);
                                                                     }else{
-                                                                        correzione.setText("Correzione : SBAGLIATO");
+                                                                        correzione.setText(R.string.correzione_sbagliato);
                                                                     }
 
                                                                     esercizio_corretto.setVisibility(View.GONE);
@@ -1676,12 +1677,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
-                                                                        correzione.setText("Correzione : CORRETTO");
+                                                                        correzione.setText(R.string.correzione_corretto);
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
-                                                                                .setTitle("Esercizio Corretto")
-                                                                                .setMessage("Esito Correzione : CORRETTO")
-                                                                                .setPositiveButton("OK", null)
+                                                                                .setTitle(R.string.esercizio_corretto)
+                                                                                .setMessage(R.string.esito_correzione_corretto)
+                                                                                .setPositiveButton(R.string.ok, null)
                                                                                 .show();
                                                                     }
                                                                 });
@@ -1768,12 +1769,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
-                                                                        correzione.setText("Correzione : SBAGLIATO");
+                                                                        correzione.setText(R.string.correzione_sbagliato);
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
-                                                                                .setTitle("Esercizio Corretto")
-                                                                                .setMessage("Esito Correzione : SBAGLIATO")
-                                                                                .setPositiveButton("OK", null)
+                                                                                .setTitle(R.string.esercizio_corretto)
+                                                                                .setMessage(R.string.esito_correzione_sbagliato)
+                                                                                .setPositiveButton(R.string.ok, null)
                                                                                 .show();
                                                                     }
                                                                 });
@@ -1809,9 +1810,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio1 esercizio1 = snapshot.getValue(Esercizio1.class);
 
                                                                                     id_esercizio.setText(esercizio1.getId_esercizio());
-                                                                                    aiuto_1.setText("Aiuto 1: " + esercizio1.getAiuto_1());
-                                                                                    aiuto_2.setText("Aiuto 2: " + esercizio1.getAiuto_2());
-                                                                                    aiuto_3.setText("Aiuto 3: " + esercizio1.getAiuto_3());
+                                                                                    aiuto_1.setText(view.getResources().getText(R.string.aiuto_1_colon) + esercizio1.getAiuto_1());
+                                                                                    aiuto_2.setText(view.getResources().getText(R.string.aiuto_2_colon) + esercizio1.getAiuto_2());
+                                                                                    aiuto_3.setText(view.getResources().getText(R.string.aiuto_3_colon) + esercizio1.getAiuto_3());
 
 
                                                                                     FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
@@ -1876,9 +1877,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    parola_1.setText("Parola 1: " + esercizio2.getParola_1());
-                                                                                    parola_2.setText("Parola 2: " + esercizio2.getParola_2());
-                                                                                    parola_3.setText("Parola 3: " + esercizio2.getParola_3());
+                                                                                    parola_1.setText(view.getResources().getText(R.string.parola_1_colon) + esercizio2.getParola_1());
+                                                                                    parola_2.setText(view.getResources().getText(R.string.parola_2_colon) + esercizio2.getParola_2());
+                                                                                    parola_3.setText(view.getResources().getText(R.string.parola_3_colon) + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -2005,9 +2006,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                if(dataSnapshot.child("esito").exists()){
                                                                    if(dataSnapshot.child("esito").getValue(Boolean.class)){
-                                                                       correzione.setText("Correzione : CORRETTO");
+                                                                       correzione.setText(R.string.correzione_corretto);
                                                                    }else{
-                                                                       correzione.setText("Correzione : SBAGLIATO");
+                                                                       correzione.setText(R.string.correzione_sbagliato);
                                                                    }
 
                                                                    esercizio_corretto.setVisibility(View.GONE);
@@ -2096,12 +2097,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                            }
                                                                        });
 
-                                                                       correzione.setText("Correzione : CORRETTO");
+                                                                       correzione.setText(R.string.correzione_corretto);
 
                                                                        new MaterialAlertDialogBuilder(view.getContext())
-                                                                               .setTitle("Esercizio Corretto")
-                                                                               .setMessage("Esito Correzione : CORRETTO")
-                                                                               .setPositiveButton("OK", null)
+                                                                               .setTitle(R.string.esercizio_corretto)
+                                                                               .setMessage(R.string.esito_correzione_corretto)
+                                                                               .setPositiveButton(R.string.ok, null)
                                                                                .show();
                                                                    }
                                                                });
@@ -2188,12 +2189,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                            }
                                                                        });
 
-                                                                       correzione.setText("Correzione : SBAGLIATO");
+                                                                       correzione.setText(R.string.correzione_sbagliato);
 
                                                                        new MaterialAlertDialogBuilder(view.getContext())
-                                                                               .setTitle("Esercizio Corretto")
-                                                                               .setMessage("Esito Correzione : SBAGLIATO")
-                                                                               .setPositiveButton("OK", null)
+                                                                               .setTitle(R.string.esercizio_corretto)
+                                                                               .setMessage(R.string.esito_correzione_sbagliato)
+                                                                               .setPositiveButton(R.string.ok, null)
                                                                                .show();
                                                                    }
                                                                });
@@ -2229,9 +2230,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                    Esercizio1 esercizio1 = snapshot.getValue(Esercizio1.class);
 
                                                                                    id_esercizio.setText(esercizio1.getId_esercizio());
-                                                                                   aiuto_1.setText("Aiuto 1: " + esercizio1.getAiuto_1());
-                                                                                   aiuto_2.setText("Aiuto 2: " + esercizio1.getAiuto_2());
-                                                                                   aiuto_3.setText("Aiuto 3: " + esercizio1.getAiuto_3());
+                                                                                   aiuto_1.setText(view.getResources().getText(R.string.aiuto_1_colon) + esercizio1.getAiuto_1());
+                                                                                   aiuto_2.setText(view.getResources().getText(R.string.aiuto_2_colon) + esercizio1.getAiuto_2());
+                                                                                   aiuto_3.setText(view.getResources().getText(R.string.aiuto_3_colon) + esercizio1.getAiuto_3());
 
 
                                                                                    FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
@@ -2296,9 +2297,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                    Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                    id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                   parola_1.setText("Parola 1: " + esercizio2.getParola_1());
-                                                                                   parola_2.setText("Parola 2: " + esercizio2.getParola_2());
-                                                                                   parola_3.setText("Parola 3: " + esercizio2.getParola_3());
+                                                                                   parola_1.setText(view.getResources().getText(R.string.parola_1_colon) + esercizio2.getParola_1());
+                                                                                   parola_2.setText(view.getResources().getText(R.string.parola_2_colon) + esercizio2.getParola_2());
+                                                                                   parola_3.setText(view.getResources().getText(R.string.parola_3_colon) + esercizio2.getParola_3());
 
                                                                                    FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -2425,9 +2426,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                 if(dataSnapshot.child("esito").exists()){
                                                                     if(dataSnapshot.child("esito").getValue(Boolean.class)){
-                                                                        correzione.setText("Correzione : CORRETTO");
+                                                                        correzione.setText(R.string.correzione_corretto);
                                                                     }else{
-                                                                        correzione.setText("Correzione : SBAGLIATO");
+                                                                        correzione.setText(R.string.correzione_sbagliato);
                                                                     }
 
                                                                     esercizio_corretto.setVisibility(View.GONE);
@@ -2516,12 +2517,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
-                                                                        correzione.setText("Correzione : CORRETTO");
+                                                                        correzione.setText(R.string.correzione_corretto);
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
-                                                                                .setTitle("Esercizio Corretto")
-                                                                                .setMessage("Esito Correzione : CORRETTO")
-                                                                                .setPositiveButton("OK", null)
+                                                                                .setTitle(R.string.esercizio_corretto)
+                                                                                .setMessage(R.string.esito_correzione_corretto)
+                                                                                .setPositiveButton(R.string.ok, null)
                                                                                 .show();
                                                                     }
                                                                 });
@@ -2608,12 +2609,12 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                             }
                                                                         });
 
-                                                                        correzione.setText("Correzione : SBAGLIATO");
+                                                                        correzione.setText(R.string.correzione_sbagliato);
 
                                                                         new MaterialAlertDialogBuilder(view.getContext())
-                                                                                .setTitle("Esercizio Corretto")
-                                                                                .setMessage("Esito Correzione : SBAGLIATO")
-                                                                                .setPositiveButton("OK", null)
+                                                                                .setTitle(R.string.esercizio_corretto)
+                                                                                .setMessage(R.string.esito_correzione_sbagliato)
+                                                                                .setPositiveButton(R.string.ok, null)
                                                                                 .show();
                                                                     }
                                                                 });
@@ -2716,9 +2717,9 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                                     Esercizio2 esercizio2 = snapshot.getValue(Esercizio2.class);
 
                                                                                     id_esercizio.setText(esercizio2.getId_esercizio());
-                                                                                    parola_1.setText("Parola 1: " + esercizio2.getParola_1());
-                                                                                    parola_2.setText("Parola 2: " + esercizio2.getParola_2());
-                                                                                    parola_3.setText("Parola 3: " + esercizio2.getParola_3());
+                                                                                    parola_1.setText(view.getResources().getText(R.string.parola_1_colon) + esercizio2.getParola_1());
+                                                                                    parola_2.setText(view.getResources().getText(R.string.parola_2_colon) + esercizio2.getParola_2());
+                                                                                    parola_3.setText(view.getResources().getText(R.string.parola_3_colon) + esercizio2.getParola_3());
 
                                                                                     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 

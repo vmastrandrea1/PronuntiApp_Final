@@ -230,9 +230,9 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
 
 
                             id_esercizio.setText(esercizio1.getId_esercizio());
-                            aiuto_1.setText("Aiuto 1: " + esercizio1.getAiuto_1());
-                            aiuto_2.setText("Aiuto 2: " + esercizio1.getAiuto_2());
-                            aiuto_3.setText("Aiuto 3: " + esercizio1.getAiuto_3());
+                            aiuto_1.setText(v.getResources().getText(R.string.aiuto_1_colon) + esercizio1.getAiuto_1());
+                            aiuto_2.setText(v.getResources().getText(R.string.aiuto_2_colon) + esercizio1.getAiuto_2());
+                            aiuto_3.setText(v.getResources().getText(R.string.aiuto_3_colon) + esercizio1.getAiuto_3());
 
 
                             FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
@@ -284,9 +284,9 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                             parola_3 = (TextView) mDialog.findViewById(R.id.parola3_tv);
 
                             id_esercizio.setText(esercizio2.getId_esercizio());
-                            parola_1.setText("Parola 1: " + esercizio2.getParola_1());
-                            parola_2.setText("Parola 2: " + esercizio2.getParola_2());
-                            parola_3.setText("Parola 3: " + esercizio2.getParola_3());
+                            parola_1.setText(v.getResources().getText(R.string.parola_1_colon) + esercizio2.getParola_1());
+                            parola_2.setText(v.getResources().getText(R.string.parola_2_colon) + esercizio2.getParola_2());
+                            parola_3.setText(v.getResources().getText(R.string.parola_3_colon) + esercizio2.getParola_3());
 
                             FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
@@ -382,7 +382,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                             mDialog.setContentView(R.layout.exercise3_info_popup);
 
                             parola_immagine = mDialog.findViewById(R.id.ex3_parola_da_ascoltare);
-                            parola_immagine.setText("Parola da ascoltare: " + esercizio3.getParola_immagine());
+                            parola_immagine.setText(v.getResources().getText(R.string.parola_da_ascoltare) + esercizio3.getParola_immagine());
 
                             Dialog delete_item = new Dialog(mDialog.getContext());
 

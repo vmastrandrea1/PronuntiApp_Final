@@ -166,8 +166,8 @@ public class CorrezioneEsercizio2 extends DialogFragment {
                     TextView textViewMonete = dialogView.findViewById(R.id.textViewMonete);
                     TextView textViewEsperienza = dialogView.findViewById(R.id.textViewEsperienza);
 
-                    textViewMonete.setText(esercizio2.getMonete() + " Monete");
-                    textViewEsperienza.setText(esercizio2.getEsperienza() + " Punti Esperienza");
+                    textViewMonete.setText(esercizio2.getMonete() + getString(R.string.monete));
+                    textViewEsperienza.setText(esercizio2.getEsperienza() + getString(R.string.punti_esperienza));
 
                     MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
                             .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
@@ -295,10 +295,11 @@ public class CorrezioneEsercizio2 extends DialogFragment {
 
 
                 }else{
-                    new MaterialAlertDialogBuilder(v.getContext())
-                            .setTitle("Dove vai?")
-                            .setMessage("Devi eseguire prima l'esercizio (• ᴖ •｡)")
-                            .setPositiveButton("OK", null)
+                    new MaterialAlertDialogBuilder(v.getContext(), R.style.AlertDialogButtonStyle)
+                            .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
+                            .setTitle(R.string.dove_vai)
+                            .setMessage(R.string.devi_eseguire_prima_l_esercizio)
+                            .setPositiveButton(R.string.ok, null)
                             .show();
                 }
             }

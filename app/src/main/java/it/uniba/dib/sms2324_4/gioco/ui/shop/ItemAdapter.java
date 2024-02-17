@@ -185,18 +185,18 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
         new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
                 .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
-                .setTitle("Acquisto riuscito")
-                .setMessage("Hai acquistato " + item.getNome())
-                .setPositiveButton("OK", null)
+                .setTitle(R.string.acquisto_riuscito)
+                //.setMessage("Hai acquistato " + item.getNome())
+                .setPositiveButton(R.string.ok, null)
                 .show();
     }
 
     private void mostraMoneteInsufficientiDialog() {
         new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
                 .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
-                .setTitle("Monete insufficienti")
-                .setMessage("Non hai abbastanza monete!")
-                .setPositiveButton("OK", null)
+                .setTitle(R.string.monete_insufficienti)
+                .setMessage(R.string.non_hai_abbastanza_monete)
+                .setPositiveButton(R.string.ok, null)
                 .show();
     }
 
@@ -222,11 +222,11 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
                 .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                 .setView(dialogView)
-                .setPositiveButton("OK", null);
+                .setPositiveButton(R.string.ok, null);
 
         // Aggiungi il pulsante "Imposta come predefinito" solo se l'oggetto è già stato acquistato
         if (item.isAcquistato()) {
-            builder.setNegativeButton("IMPOSTA COME PREDEFINITO", (dialog, which) -> {
+            builder.setNegativeButton(R.string.imposta_come_predefinito, (dialog, which) -> {
                 
         if(item.getId() < 8){
                     database.getReference("Utenti")
