@@ -28,6 +28,20 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="TextSizeCheck" />
 
+    <Button
+        android:id="@+id/direct_access_genitore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners_button"
+        android:text="Accesso Diretto"
+        android:textAllCaps="true"
+        android:textColorHint="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="35dp" />
+
     <!-- Accedi come genitore -->
     <TextView
         android:id="@+id/login_genitore"

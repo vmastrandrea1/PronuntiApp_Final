@@ -58,6 +58,11 @@
           <theme>@style/BlueTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_reservation.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_dettaglio_item.xml">
         <config>
           <theme>@style/Theme.Material3.Light</theme>
@@ -248,12 +253,37 @@
           <theme>@style/Theme.Material3.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/reservation.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/reservation_info_popup.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/therapy.xml">
         <config>
           <theme>@style/Theme.Material3.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/time.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/view_exercises_results.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/view_reservation.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/view_reservation_time.xml">
         <config>
           <theme>@style/BlueTheme</theme>
         </config>
@@ -289,31 +319,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a457bb-a7d3-4a2a-90ab-85549a33a37a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/MyAdapter_Esercizi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/MyAdapter_Esercizi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/MyAdapter_Pazienti.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/MyAdapter_Pazienti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/MyAdapter_Terapie.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/MyAdapter_Terapie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/fragment/Calendario_Logopedista.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/fragment/Calendario_Logopedista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/fragment/CorrezioneEsercizio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/fragment/CorrezioneEsercizio1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/fragment/CorrezioneEsercizio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/fragment/CorrezioneEsercizio2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/fragment/CorrezioneEsercizio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/fragment/CorrezioneEsercizio3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/gioco/ui/gioco/GiocoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/gioco/ui/gioco/GiocoFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/gioco/ui/gioco/NoTherapyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/gioco/ui/gioco/NoTherapyFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/gioco/ui/shop/ItemAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/gioco/ui/shop/ItemAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_view_reservation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_view_reservation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_date.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_date.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_logopedista.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_logopedista.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_classifica.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_classifica.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_no_therapy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_no_therapy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-    </list>
+    <list default="true" id="a7a457bb-a7d3-4a2a-90ab-85549a33a37a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -322,7 +328,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[6f308bf5]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\LaFFurb\.android\avd\Pixel_7_API_26.avd, c52196c3]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -420,7 +426,7 @@
     "com.google.services.firebase.aqiPopupShown": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_directory_selection": "C:/Users/LaFFurb/AndroidStudioProjects/PronuntiApp_Test/app/src/main/java",
-    "last_opened_file_path": "C:/Users/Scalera/AndroidStudioProjects/PronuntiApp_Final/app/src/main/res/drawable",
+    "last_opened_file_path": "C:/Users/LaFFurb/AndroidStudioProjects/PronuntiApp_Test/app/src/main/res/layout",
     "project.structure.last.edited": "Dependencies",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -441,11 +447,11 @@
       <recent name="it.uniba.dib.sms2324_4" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\layout" />
       <recent name="C:\Users\Scalera\AndroidStudioProjects\PronuntiApp_Final\app\src\main\res\drawable" />
       <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\layout" />
       <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\drawable" />
       <recent name="C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\src\main\res\layout" />
-      <recent name="C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\src\main\res\drawable" />
     </key>
     <key name="android.template.-1700629409">
       <recent name="it.uniba.dib.sms2324_4" />
@@ -470,6 +476,7 @@
       <recent name="it.uniba.dib.sms2324_4" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.uniba.dib.sms2324_4" />
       <recent name="it.uniba.dib.sms2324_4.fragment" />
       <recent name="it.uniba.dib.sms2324_4.creazione.esercizi" />
     </key>

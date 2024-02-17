@@ -248,4 +248,8 @@
     <string name="esito_correzione_sbagliato">Correction Outcome: WRONG</string>
     <string name="hai_acquistato">"You have purchased "</string>
     <string name="imposta_come_predefinito">SET AS DEFAULT</string>
+    <string name="elimina_prenotazione">Delete Reservation</string>
+    <string name="sei_sicuro_di_voler_eliminare_la_prenotazione">Are you sure you want to delete the reservation?</string>
+    <string name="prenotazione_eliminata">Reservation Deleted</string>
+    <string name="non_hai_appuntamenti">You don\'t have any reservations</string>
 </resources>

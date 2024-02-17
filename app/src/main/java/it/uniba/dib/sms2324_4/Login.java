@@ -28,7 +28,7 @@ public class Login extends AppCompatActivity {
 
     TextInputEditText editTextEmail , editTextPassword;
     Button buttonLog;
-    Button googleLogin_btn;
+    Button directAccess;
     TextView switchToLogo;
     CheckBox stayLogged;
 
@@ -116,6 +116,32 @@ public class Login extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         registerNow = findViewById(R.id.registerNow);
         switchToLogo = findViewById(R.id.genitore_to_logopedista);
+
+        directAccess = findViewById(R.id.direct_access_genitore);
+
+        directAccess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String nome = "Default";
+                String cognome = "Genitore";
+                String cf = "DGDGSGDGDGDGDGDG" ;
+                Toast.makeText(Login.this,
+                        getString(R.string.benvenuto) + nome,
+                        Toast.LENGTH_SHORT).show();
+                //Salvataggio Sessione
+
+                Logopedisti user = new Logopedisti(nome , cognome , cf  , "defaultlogopedista@gmail.com" ,
+                        "1d6442ddcfd9db1ff81df77cbefcd5afcc8c7ca952ab3101ede17a84b866d3f3");
+                SessionManagement sessionManagement = new SessionManagement(Login.this);
+                sessionManagement.saveSession(user,"genitore",nome);
+
+                Intent intent = new Intent(getApplicationContext() , User.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
         //stayLogged = findViewById(R.id.stayLogged);
 
         //googleLogin_btn = findViewById(R.id.btn_googleLogin);

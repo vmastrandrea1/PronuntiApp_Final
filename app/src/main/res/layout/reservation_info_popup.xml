@@ -51,7 +51,7 @@
                 android:gravity="center_horizontal"
                 android:layout_marginBottom="30dp"/>
             <TextView
-                android:id="@+id/parola2_tv"
+                android:id="@+id/cfPaziente_prenotazione"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/parola_2_colon"
@@ -60,7 +60,7 @@
                 android:layout_marginBottom="30dp"/>
 
             <TextView
-                android:id="@+id/parola3_tv"
+                android:id="@+id/ora_fine_prenotazione"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/parola_3_colon"
@@ -79,15 +79,15 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/delete_exercise_2"
+                android:id="@+id/delete_reservation"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
-                android:paddingHorizontal="10dp"
-                android:text="@string/elimina_esercizio"
-                android:drawableStart="@drawable/ic_delete"
+                android:layout_marginLeft="25dp"
                 android:background="@drawable/bg_btn"
-                android:visibility="gone"/>
-
+                android:drawableStart="@drawable/ic_delete"
+                android:paddingHorizontal="10dp"
+                android:text="@string/elimina_prenotazione"
+                android:visibility="visible" />
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

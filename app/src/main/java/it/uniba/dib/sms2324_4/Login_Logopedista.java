@@ -47,7 +47,7 @@ public class Login_Logopedista extends AppCompatActivity {
 
     TextInputEditText editTextEmail , editTextPassword;
     Button buttonLog;
-    Button googleLogin_btn;
+    Button directAccess;
     TextView switchToLogin;
 
     //Variabili Firebase
@@ -126,6 +126,32 @@ public class Login_Logopedista extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar_logopedista);
         registerNow = findViewById(R.id.registerNow_logopedista);
         switchToLogin = findViewById(R.id.logopedista_to_genitore);
+
+        directAccess = findViewById(R.id.direct_access_logo);
+
+        directAccess.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String nome = "Default";
+                String cognome = "Logopedista";
+                String cf = "DLDLDLDLDLDLDLDL" ;
+                Toast.makeText(Login_Logopedista.this,
+                        getString(R.string.benvenuto) + nome,
+                        Toast.LENGTH_SHORT).show();
+                //Salvataggio Sessione
+
+                Logopedisti user = new Logopedisti(nome , cognome , cf  , "defaultlogopedista@gmail.com" ,
+                        "1d6442ddcfd9db1ff81df77cbefcd5afcc8c7ca952ab3101ede17a84b866d3f3");
+                SessionManagement sessionManagement = new SessionManagement(Login_Logopedista.this);
+                sessionManagement.saveSession(user,"logopedista",nome);
+
+                Intent intent = new Intent(getApplicationContext() , User_Logopedista.class);
+                startActivity(intent);
+                finish();
+
+            }
+        });
 
         //googleLogin_btn = findViewById(R.id.btn_googleLogin);
 

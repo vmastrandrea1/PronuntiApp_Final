@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -195,6 +196,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                             @Override
                             public void onClick(View v) {
                                 mDialog.dismiss();
+                                Log.i("ID_BAMBINO" ,  list.get(pos).getCf());
                                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                 fragmentTransaction.replace(container.getId() , Gioco_Home_Page.newInstance(list.get(pos).getCf(),sessionKey,list.get(pos).getCfLogopedista()));
                                 fragmentTransaction.commit();

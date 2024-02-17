@@ -248,4 +248,8 @@
     <string name="esito_correzione_sbagliato">Esito Correzione : SBAGLIATO</string>
     <string name="hai_acquistato">"Hai acquistato "</string>
     <string name="imposta_come_predefinito">IMPOSTA COME PREDEFINITO</string>
+    <string name="elimina_prenotazione">Elimina Prenotazione</string>
+    <string name="sei_sicuro_di_voler_eliminare_la_prenotazione">Sei sicuro di voler eliminare la prenotazione?</string>
+    <string name="prenotazione_eliminata">Prenotazione Eliminata</string>
+    <string name="non_hai_appuntamenti">Non hai prenotazioni</string>
 </resources>

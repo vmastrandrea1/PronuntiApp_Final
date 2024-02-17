@@ -32,6 +32,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import it.uniba.dib.sms2324_4.R;
+import it.uniba.dib.sms2324_4.SessionManagement;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio2;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio3;
@@ -52,6 +53,7 @@ public class GiocoFragment extends Fragment{
     private static final String ID_LOGOPEDISTA = "ID_LOGOPEDISTA";
     private String id_bambino;
     private String sessionKey_genitore;
+
     private String id_logopedista;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");

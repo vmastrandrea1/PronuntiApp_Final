@@ -9,17 +9,21 @@
     android:paddingHorizontal="10dp"
     tools:context=".Register_Logopedista">
 
+    <!-- Pulsante di registrazione -->
+
     <TextView
         android:id="@+id/createAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingStart="17dp"
+        android:paddingTop="75dp"
+        android:paddingBottom="25dp"
         android:text="@string/crea_un_account_logopedista"
         android:textColor="@color/white"
         android:textSize="40sp"
-        android:paddingTop="75dp"
-        android:paddingBottom="25dp"
-        android:paddingStart="17dp"
-        tools:ignore="MissingConstraints,RtlSymmetry" />
+        tools:ignore="MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/myCardView"
