@@ -18,7 +18,7 @@
         android:scrollbars="vertical">
 
         <TextView
-            android:id="@+id/exercise2_text_close"
+            android:id="@+id/reservation_text_close"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_gravity="end"

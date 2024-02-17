@@ -252,4 +252,6 @@
     <string name="sei_sicuro_di_voler_eliminare_la_prenotazione">Are you sure you want to delete the reservation?</string>
     <string name="prenotazione_eliminata">Reservation Deleted</string>
     <string name="non_hai_appuntamenti">You don\'t have any reservations</string>
+    <string name="non_hai_pazienti">You don\'t have any patients</string>
+    <string name="orario">Time</string>
 </resources>

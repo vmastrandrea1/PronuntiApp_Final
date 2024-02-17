@@ -36,7 +36,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import it.uniba.dib.sms2324_4.R;
-import it.uniba.dib.sms2324_4.fragment.ElencoEsercizi;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/blue"
     android:paddingHorizontal="10dp"
-    tools:context=".Register">
+    tools:context=".accesso.Register">
 
     <TextView
         android:id="@+id/createAccount"

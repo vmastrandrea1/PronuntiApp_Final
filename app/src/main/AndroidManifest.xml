@@ -26,32 +26,32 @@
         android:screenOrientation="portrait">
 
         <activity
-            android:name=".Register_Logopedista"
+            android:name=".accesso.Register_Logopedista"
             android:exported="false"
             android:theme="@style/PurpleTheme"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Login_Logopedista"
+            android:name=".accesso.Login_Logopedista"
             android:exported="true"
             android:theme="@style/PurpleTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".User"
+            android:name=".genitore.User"
             android:exported="false"
             android:theme="@style/BlueTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".User_Logopedista"
+            android:name=".logopedista.User_Logopedista"
             android:exported="false"
             android:theme="@style/PurpleTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Register"
+            android:name=".accesso.Register"
             android:exported="false"
             android:theme="@style/BlueTheme"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".Login"
+            android:name=".accesso.Login"
             android:exported="true"
             android:theme="@style/BlueTheme"
             android:screenOrientation="portrait">

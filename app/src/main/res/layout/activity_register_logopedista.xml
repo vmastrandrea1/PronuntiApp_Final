@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/purple"
     android:paddingHorizontal="10dp"
-    tools:context=".Register_Logopedista">
+    tools:context=".accesso.Register_Logopedista">
 
     <!-- Pulsante di registrazione -->
 

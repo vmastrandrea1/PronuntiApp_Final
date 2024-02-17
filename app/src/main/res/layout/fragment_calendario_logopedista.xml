@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Calendario_Logopedista"
+    tools:context=".logopedista.menu.Calendario_Logopedista"
     android:layout_marginHorizontal="20dp">
     >
 

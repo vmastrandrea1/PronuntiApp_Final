@@ -13,8 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import it.uniba.dib.sms2324_4.R;
-import it.uniba.dib.sms2324_4.fragment.ElencoEsercizi;
-import it.uniba.dib.sms2324_4.fragment.ElencoPazienti;
+import it.uniba.dib.sms2324_4.logopedista.menu.ElencoEsercizi;
 
 /**
  * A simple {@link Fragment} subclass.
