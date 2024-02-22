@@ -58,14 +58,8 @@ public class NoTherapyFragment extends Fragment {
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
-                // Nascondi la navbar
-                BottomNavigationView bottomNavigationView = requireActivity().findViewById(R.id.bottomBar);
-                bottomNavigationView.setVisibility(View.GONE);
-
-                getParentFragmentManager()
-                        .beginTransaction()
-                        .replace(container.getId() , Home.newInstance(sessionKey_genitore))
-                        .commit();
+                // Chiudi l'app
+                getActivity().finish();
             }
         };
 

@@ -56,25 +56,8 @@ public class Register_Logopedista extends AppCompatActivity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register_logopedista);
-
-
-        //initDatePicker();
-        //Istanza della variabile FirebaseAuth
-        mAuth = FirebaseAuth.getInstance();
-        editTextName = findViewById(R.id.name_logopedista);
-        editTextSurname = findViewById(R.id.surname_logopedista);
-        editTextCF = findViewById(R.id.cf_logopedista);
-
-        editTextEmail = findViewById(R.id.email_logopedista);
-        editTextPassword = findViewById(R.id.password_logopedista);
-        editTextConfirmPassword = findViewById(R.id.conferma_password_logopedista);
-        buttonReg = findViewById(R.id.btn_register_logopedista);
-        progressBar = findViewById(R.id.progressBar_logopedista);
-        loginNow = findViewById(R.id.loginNow_logopedista);
-
+    protected void onPostResume() {
+        super.onPostResume();
 
         //Definizione Metodo Ascoltatore della TextView LoginNow
         loginNow.setOnClickListener(new View.OnClickListener() {
@@ -189,6 +172,27 @@ public class Register_Logopedista extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register_logopedista);
+
+
+        //initDatePicker();
+        //Istanza della variabile FirebaseAuth
+        mAuth = FirebaseAuth.getInstance();
+        editTextName = findViewById(R.id.name_logopedista);
+        editTextSurname = findViewById(R.id.surname_logopedista);
+        editTextCF = findViewById(R.id.cf_logopedista);
+
+        editTextEmail = findViewById(R.id.email_logopedista);
+        editTextPassword = findViewById(R.id.password_logopedista);
+        editTextConfirmPassword = findViewById(R.id.conferma_password_logopedista);
+        buttonReg = findViewById(R.id.btn_register_logopedista);
+        progressBar = findViewById(R.id.progressBar_logopedista);
+        loginNow = findViewById(R.id.loginNow_logopedista);
     }
 
     private String getTodaysDate()

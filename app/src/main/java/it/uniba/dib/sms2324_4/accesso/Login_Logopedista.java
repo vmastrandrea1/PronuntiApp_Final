@@ -39,79 +39,9 @@ public class Login_Logopedista extends AppCompatActivity {
     ProgressBar progressBar;
     TextView registerNow;
 
-    /*
-
-    private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result) {
-                    if(result.getResultCode() == RESULT_OK){
-                        Task<GoogleSignInAccount> accountTask = GoogleSignIn.getSignedInAccountFromIntent(result.getData());
-                        try{
-                            GoogleSignInAccount signInAccount = accountTask.getResult(ApiException.class);
-                            AuthCredential authCredential = GoogleAuthProvider.getCredential(signInAccount.getIdToken(), null);
-                            mAuth.signInWithCredential(authCredential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                  if(task.isSuccessful()){
-
-                                      mAuth = FirebaseAuth.getInstance();
-                                      Glide.with(Login.this).load(mAuth.getCurrentUser().getPhotoUrl()).into(imageView);
-
-
-                                      Toast.makeText(Login.this,
-                                              "Login Effettuato con SUCCESSO",
-                                              Toast.LENGTH_SHORT).show();
-                                      Intent intent = new Intent(getApplicationContext() , User.class);
-                                      startActivity(intent);
-                                      finish();
-                                  }else{
-                                      Toast.makeText(Login.this,
-                                              "Login NEGATO",
-                                              Toast.LENGTH_SHORT).show();
-                                  }
-                                }
-                            });
-                        } catch (ApiException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }
-            });
-
-     */
     @Override
-    public void onStart() {
-        super.onStart();
-
-        //Recupero Sessione
-        SessionManagement sessionManagement = new SessionManagement(Login_Logopedista.this);
-        String userID = sessionManagement.getSession();
-
-        if(userID.compareTo("NULL")!=0) {
-            Toast.makeText(this, getString(R.string.bentornato) + " " + sessionManagement.getNome(), Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(getApplicationContext(), User_Logopedista.class);
-            startActivity(intent);
-            finish();
-        }
-
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_logopedista);
-
-        //Istanza della variabile FirebaseAuth
-        //mAuth = FirebaseAuth.getInstance();
-        editTextEmail = findViewById(R.id.email_logopedista);
-        editTextPassword = findViewById(R.id.password_logopedista);
-        buttonLog = findViewById(R.id.btn_login_logopedista);
-        progressBar = findViewById(R.id.progressBar_logopedista);
-        registerNow = findViewById(R.id.registerNow_logopedista);
-        switchToLogin = findViewById(R.id.logopedista_to_genitore);
-
-        directAccess = findViewById(R.id.direct_access_logo);
+    protected void onPostResume() {
+        super.onPostResume();
 
         directAccess.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -241,12 +171,12 @@ public class Login_Logopedista extends AppCompatActivity {
                                     logged = true;
                                 }
                             }
-                           if(!logged){
-                               Toast.makeText(Login_Logopedista.this,
-                                       R.string.accesso_negato,
-                                       Toast.LENGTH_SHORT).show();
-                               progressBar.setVisibility(View.GONE);
-                           }
+                            if(!logged){
+                                Toast.makeText(Login_Logopedista.this,
+                                        R.string.accesso_negato,
+                                        Toast.LENGTH_SHORT).show();
+                                progressBar.setVisibility(View.GONE);
+                            }
                         }
 
                         @Override
@@ -257,6 +187,83 @@ public class Login_Logopedista extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    /*
+
+        private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+                new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult result) {
+                        if(result.getResultCode() == RESULT_OK){
+                            Task<GoogleSignInAccount> accountTask = GoogleSignIn.getSignedInAccountFromIntent(result.getData());
+                            try{
+                                GoogleSignInAccount signInAccount = accountTask.getResult(ApiException.class);
+                                AuthCredential authCredential = GoogleAuthProvider.getCredential(signInAccount.getIdToken(), null);
+                                mAuth.signInWithCredential(authCredential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<AuthResult> task) {
+                                      if(task.isSuccessful()){
+
+                                          mAuth = FirebaseAuth.getInstance();
+                                          Glide.with(Login.this).load(mAuth.getCurrentUser().getPhotoUrl()).into(imageView);
+
+
+                                          Toast.makeText(Login.this,
+                                                  "Login Effettuato con SUCCESSO",
+                                                  Toast.LENGTH_SHORT).show();
+                                          Intent intent = new Intent(getApplicationContext() , User.class);
+                                          startActivity(intent);
+                                          finish();
+                                      }else{
+                                          Toast.makeText(Login.this,
+                                                  "Login NEGATO",
+                                                  Toast.LENGTH_SHORT).show();
+                                      }
+                                    }
+                                });
+                            } catch (ApiException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                });
+
+         */
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        //Recupero Sessione
+        SessionManagement sessionManagement = new SessionManagement(Login_Logopedista.this);
+        String userID = sessionManagement.getSession();
+
+        if(userID.compareTo("NULL")!=0) {
+            Toast.makeText(this, getString(R.string.bentornato) + " " + sessionManagement.getNome(), Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getApplicationContext(), User_Logopedista.class);
+            startActivity(intent);
+            finish();
+        }
+
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login_logopedista);
+
+        //Istanza della variabile FirebaseAuth
+        //mAuth = FirebaseAuth.getInstance();
+        editTextEmail = findViewById(R.id.email_logopedista);
+        editTextPassword = findViewById(R.id.password_logopedista);
+        buttonLog = findViewById(R.id.btn_login_logopedista);
+        progressBar = findViewById(R.id.progressBar_logopedista);
+        registerNow = findViewById(R.id.registerNow_logopedista);
+        switchToLogin = findViewById(R.id.logopedista_to_genitore);
+
+        directAccess = findViewById(R.id.direct_access_logo);
+
+
     }
 
     private static String hashPasswordSHA3(String password) throws Exception {

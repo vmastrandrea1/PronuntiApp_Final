@@ -49,23 +49,8 @@ public class Register extends AppCompatActivity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
-
-        //Istanza della variabile FirebaseAuth
-        mAuth = FirebaseAuth.getInstance();
-        editTextName = findViewById(R.id.name);
-        editTextSurname = findViewById(R.id.surname);
-        editTextCF = findViewById(R.id.cf);
-
-        editTextEmail = findViewById(R.id.email);
-        editTextPassword = findViewById(R.id.password);
-        editTextConfirmPassword = findViewById(R.id.confirmPassword);
-        buttonReg = findViewById(R.id.btn_register);
-        progressBar = findViewById(R.id.progressBar);
-        loginNow = findViewById(R.id.loginNow);
-
+    protected void onPostResume() {
+        super.onPostResume();
 
         //Definizione Metodo Ascoltatore della TextView LoginNow
         loginNow.setOnClickListener(new View.OnClickListener() {
@@ -135,70 +120,89 @@ public class Register extends AppCompatActivity {
                     progressBar.setVisibility(View.GONE);
                     return;
                 }else {
-                        String passwordCrypted ;
-                        //Registrazione tramite RealtimeDatabase
-                        progressBar.setVisibility(View.GONE);
-                        FirebaseDatabase database = FirebaseDatabase.getInstance(getString(R.string.db_url));
-                        DatabaseReference reference = database.getReference();
+                    String passwordCrypted ;
+                    //Registrazione tramite RealtimeDatabase
+                    progressBar.setVisibility(View.GONE);
+                    FirebaseDatabase database = FirebaseDatabase.getInstance(getString(R.string.db_url));
+                    DatabaseReference reference = database.getReference();
 
-                        try {
-                            passwordCrypted = hashPasswordSHA3(password);
-                        } catch (Exception e) {
-                            throw new RuntimeException(e);
-                        }
+                    try {
+                        passwordCrypted = hashPasswordSHA3(password);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
 
                     Genitori genitore = new Genitori(nome, cognome , cf , email , passwordCrypted );
 
-                        Query fetchData = FirebaseDatabase.getInstance(getString(R.string.db_url)).getReference("Utenti").child("Genitori")
-                                .orderByChild("cf")
-                                .equalTo(cf);
-                        fetchData.addListenerForSingleValueEvent(new ValueEventListener() {
-                            @Override
-                            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                if(snapshot.exists()){
-                                    Toast.makeText(Register.this, R.string.account_gia_registrato,
-                                            Toast.LENGTH_SHORT).show();
-                                }else{
-                                    Query fetchData2 = FirebaseDatabase.getInstance(getString(R.string.db_url)).getReference("Utenti").child("Genitori")
-                                            .orderByChild("email")
-                                            .equalTo(email);
-                                    fetchData2.addListenerForSingleValueEvent(new ValueEventListener() {
-                                        @Override
-                                        public void onDataChange (@NonNull DataSnapshot snapshot){
-                                            if (snapshot.exists()) {
-                                                Toast.makeText(Register.this, R.string.account_gia_registrato,
-                                                        Toast.LENGTH_SHORT).show();
-                                            } else {
-                                                reference.child("Utenti").child("Genitori").child(cf).setValue(genitore);
-                                                SessionManagement sessionManagement = new SessionManagement(Register.this);
-                                                sessionManagement.saveSession(genitore,"genitore",nome);
-                                                Intent intent = new Intent(getApplicationContext(), User.class);
-                                                startActivity(intent);
-                                                finish();
+                    Query fetchData = FirebaseDatabase.getInstance(getString(R.string.db_url)).getReference("Utenti").child("Genitori")
+                            .orderByChild("cf")
+                            .equalTo(cf);
+                    fetchData.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            if(snapshot.exists()){
+                                Toast.makeText(Register.this, R.string.account_gia_registrato,
+                                        Toast.LENGTH_SHORT).show();
+                            }else{
+                                Query fetchData2 = FirebaseDatabase.getInstance(getString(R.string.db_url)).getReference("Utenti").child("Genitori")
+                                        .orderByChild("email")
+                                        .equalTo(email);
+                                fetchData2.addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange (@NonNull DataSnapshot snapshot){
+                                        if (snapshot.exists()) {
+                                            Toast.makeText(Register.this, R.string.account_gia_registrato,
+                                                    Toast.LENGTH_SHORT).show();
+                                        } else {
+                                            reference.child("Utenti").child("Genitori").child(cf).setValue(genitore);
+                                            SessionManagement sessionManagement = new SessionManagement(Register.this);
+                                            sessionManagement.saveSession(genitore,"genitore",nome);
+                                            Intent intent = new Intent(getApplicationContext(), User.class);
+                                            startActivity(intent);
+                                            finish();
 
-                                                Toast.makeText(Register.this,
-                                                        R.string.registrazione_effettuata_con_successo,
-                                                        Toast.LENGTH_SHORT).show();
-                                            }
+                                            Toast.makeText(Register.this,
+                                                    R.string.registrazione_effettuata_con_successo,
+                                                    Toast.LENGTH_SHORT).show();
                                         }
+                                    }
 
-                                        @Override
-                                        public void onCancelled(@NonNull DatabaseError error) {
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
 
-                                        }
-                                    });
-                                }
+                                    }
+                                });
                             }
+                        }
 
-                            @Override
-                            public void onCancelled(@NonNull DatabaseError error) {
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
 
-                            }
-                        });
+                        }
+                    });
 
-                    }
+                }
             }
         });
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register);
+
+        //Istanza della variabile FirebaseAuth
+        mAuth = FirebaseAuth.getInstance();
+        editTextName = findViewById(R.id.name);
+        editTextSurname = findViewById(R.id.surname);
+        editTextCF = findViewById(R.id.cf);
+
+        editTextEmail = findViewById(R.id.email);
+        editTextPassword = findViewById(R.id.password);
+        editTextConfirmPassword = findViewById(R.id.confirmPassword);
+        buttonReg = findViewById(R.id.btn_register);
+        progressBar = findViewById(R.id.progressBar);
+        loginNow = findViewById(R.id.loginNow);
     }
 
     @Override

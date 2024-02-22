@@ -132,6 +132,7 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                     if(pos != RecyclerView.NO_POSITION){
                         backDialog.dismiss();
                         Dialog reservationDialog = new Dialog(v.getContext());
+                        reservationDialog.setContentView(R.layout.reservation_info_popup);
 
                         TextView reservation_text_close = reservationDialog.findViewById(R.id.reservation_text_close);
                         reservation_text_close.setOnClickListener(new View.OnClickListener() {
@@ -140,8 +141,6 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                                 reservationDialog.dismiss();
                             }
                         });
-
-                        reservationDialog.setContentView(R.layout.reservation_info_popup);
 
                         Query reservationExistant = database.getReference("Utenti")
                                 .child("Logopedisti")
