@@ -17,7 +17,7 @@
             android:id="@+id/nav_calendar_logo"
             android:icon="@drawable/ic_date"
             android:iconTint="@color/black"
-            android:title="@string/prenotazioni" />
+            android:title="@string/appuntamenti" />
     </group>
 
     <item

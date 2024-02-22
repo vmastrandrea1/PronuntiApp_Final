@@ -40,8 +40,8 @@ public class Login_Logopedista extends AppCompatActivity {
     TextView registerNow;
 
     @Override
-    protected void onPostResume() {
-        super.onPostResume();
+    protected void onResume() {
+        super.onResume();
 
         directAccess.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,18 +49,18 @@ public class Login_Logopedista extends AppCompatActivity {
 
                 String nome = "Default";
                 String cognome = "Logopedista";
-                String cf = "DLDLDLDLDLDLDLDL" ;
+                String cf = "DLDLDLDLDLDLDLDL";
                 Toast.makeText(Login_Logopedista.this,
                         getString(R.string.benvenuto) + nome,
                         Toast.LENGTH_SHORT).show();
                 //Salvataggio Sessione
 
-                Logopedisti user = new Logopedisti(nome , cognome , cf  , "defaultlogopedista@gmail.com" ,
+                Logopedisti user = new Logopedisti(nome, cognome, cf, "defaultlogopedista@gmail.com",
                         "1d6442ddcfd9db1ff81df77cbefcd5afcc8c7ca952ab3101ede17a84b866d3f3");
                 SessionManagement sessionManagement = new SessionManagement(Login_Logopedista.this);
-                sessionManagement.saveSession(user,"logopedista",nome);
+                sessionManagement.saveSession(user, "logopedista", nome);
 
-                Intent intent = new Intent(getApplicationContext() , User_Logopedista.class);
+                Intent intent = new Intent(getApplicationContext(), User_Logopedista.class);
                 startActivity(intent);
                 finish();
 
@@ -90,7 +90,7 @@ public class Login_Logopedista extends AppCompatActivity {
         registerNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =  new Intent(getApplicationContext() , Register_Logopedista.class);
+                Intent intent = new Intent(getApplicationContext(), Register_Logopedista.class);
                 startActivity(intent);
                 finish();
             }
@@ -101,7 +101,7 @@ public class Login_Logopedista extends AppCompatActivity {
         switchToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =  new Intent(getApplicationContext() , Login.class);
+                Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
                 finish();
             }
@@ -117,25 +117,26 @@ public class Login_Logopedista extends AppCompatActivity {
                 password = String.valueOf(editTextPassword.getText());
 
                 //Controllo sull'input - Se Email e Password non sono VUOTI
-                if(TextUtils.isEmpty(email)){
+                if (TextUtils.isEmpty(email)) {
                     Toast.makeText(Login_Logopedista.this,
                             R.string.inserisci_l_email,
-                            Toast.LENGTH_SHORT).show();;
+                            Toast.LENGTH_SHORT).show();
+                    ;
                     progressBar.setVisibility(View.GONE);
                     return;
-                }else if(TextUtils.isEmpty(password)){
-                    Toast.makeText(Login_Logopedista.this ,
-                            R.string.inserisci_la_password ,
+                } else if (TextUtils.isEmpty(password)) {
+                    Toast.makeText(Login_Logopedista.this,
+                            R.string.inserisci_la_password,
                             Toast.LENGTH_SHORT).show();
                     progressBar.setVisibility(View.GONE);
                     return;
-                }else{
+                } else {
                     //Tentativo di Login
                     //Autenticazione Realtime Database
                     FirebaseDatabase database = FirebaseDatabase.getInstance(getString(R.string.db_url));
                     DatabaseReference reference = database.getReference();
 
-                    String passwordCrypted ;
+                    String passwordCrypted;
 
                     try {
                         passwordCrypted = hashPasswordSHA3(password);
@@ -149,9 +150,9 @@ public class Login_Logopedista extends AppCompatActivity {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             boolean logged = false;
-                            for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                                if(dataSnapshot.child("email").getValue().toString().compareToIgnoreCase(email)==0
-                                        && dataSnapshot.child("password").getValue().toString().compareTo(passwordCrypted)==0){
+                            for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                                if (dataSnapshot.child("email").getValue().toString().compareToIgnoreCase(email) == 0
+                                        && dataSnapshot.child("password").getValue().toString().compareTo(passwordCrypted) == 0) {
                                     Toast.makeText(Login_Logopedista.this,
                                             getString(R.string.benvenuto) + dataSnapshot.child("nome").getValue().toString(),
                                             Toast.LENGTH_SHORT).show();
@@ -160,18 +161,18 @@ public class Login_Logopedista extends AppCompatActivity {
                                     String cognome = dataSnapshot.child("cognome").getValue().toString();
                                     String cf = dataSnapshot.child("cf").getValue().toString();
 
-                                    Logopedisti user = new Logopedisti(nome , cognome , cf  , email , passwordCrypted);
+                                    Logopedisti user = new Logopedisti(nome, cognome, cf, email, passwordCrypted);
                                     SessionManagement sessionManagement = new SessionManagement(Login_Logopedista.this);
-                                    sessionManagement.saveSession(user,"logopedista",nome);
+                                    sessionManagement.saveSession(user, "logopedista", nome);
 
-                                    Intent intent = new Intent(getApplicationContext() , User_Logopedista.class);
+                                    Intent intent = new Intent(getApplicationContext(), User_Logopedista.class);
                                     startActivity(intent);
                                     finish();
 
                                     logged = true;
                                 }
                             }
-                            if(!logged){
+                            if (!logged) {
                                 Toast.makeText(Login_Logopedista.this,
                                         R.string.accesso_negato,
                                         Toast.LENGTH_SHORT).show();
@@ -188,6 +189,7 @@ public class Login_Logopedista extends AppCompatActivity {
             }
         });
     }
+
 
     /*
 
@@ -265,6 +267,8 @@ public class Login_Logopedista extends AppCompatActivity {
 
 
     }
+
+
 
     private static String hashPasswordSHA3(String password) throws Exception {
         SHA3.DigestSHA3 digestSHA3 = new SHA3.Digest256();

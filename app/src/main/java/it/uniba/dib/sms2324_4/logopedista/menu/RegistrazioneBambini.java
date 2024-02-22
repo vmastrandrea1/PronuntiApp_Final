@@ -48,37 +48,15 @@ public class RegistrazioneBambini extends Fragment {
     EditText editTextChildCf , editTextChildNome , editTextChildCognome , editData, editTextParentCf;
     DatePickerDialog datePickerDialog;
     Button registerChild;
+    private ViewGroup container;
 
     public RegistrazioneBambini() {
         // Required empty public constructor
     }
 
-
-    // TODO: Rename and change types and number of parameters
-    public static RegistrazioneBambini newInstance(String sessionKey) {
-        RegistrazioneBambini fragment = new RegistrazioneBambini();
-        Bundle args = new Bundle();
-        args.putString(SESSION_KEY, sessionKey);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            sessionKey = getArguments().getString(SESSION_KEY);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
-        View view = inflater.inflate(R.layout.fragment_registrazione_bambini, container, false);
-
-        initDatePicker();
-
+    public void onResume() {
+        super.onResume();
 
         // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
@@ -93,14 +71,6 @@ public class RegistrazioneBambini extends Fragment {
 
         // Aggiungi il callback al gestore dei pressioni del pulsante "back"
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
-
-
-        editTextChildCf = view.findViewById(R.id.child_cf);
-        editTextChildCognome = view.findViewById(R.id.child_surname);
-        editTextChildNome = view.findViewById(R.id.child_name);
-        editData = view.findViewById(R.id.child_birthdate);
-        registerChild = view.findViewById(R.id.child_btn_register);
-        editTextParentCf = view.findViewById(R.id.genitore_cf);
 
         //Definizione Metodo Ascoltatore del buttone Data
         editData.setOnClickListener(new View.OnClickListener() {
@@ -229,9 +199,43 @@ public class RegistrazioneBambini extends Fragment {
                 }
             }
         });
+    }
+
+    // TODO: Rename and change types and number of parameters
+    public static RegistrazioneBambini newInstance(String sessionKey) {
+        RegistrazioneBambini fragment = new RegistrazioneBambini();
+        Bundle args = new Bundle();
+        args.putString(SESSION_KEY, sessionKey);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            sessionKey = getArguments().getString(SESSION_KEY);
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_registrazione_bambini, container, false);
+
+        initDatePicker();
+
+        editTextChildCf = view.findViewById(R.id.child_cf);
+        editTextChildCognome = view.findViewById(R.id.child_surname);
+        editTextChildNome = view.findViewById(R.id.child_name);
+        editData = view.findViewById(R.id.child_birthdate);
+        registerChild = view.findViewById(R.id.child_btn_register);
+        editTextParentCf = view.findViewById(R.id.genitore_cf);
+
+        this.container = container;
 
         // Inflate the layout for this fragment
-
         return view;
 
     }

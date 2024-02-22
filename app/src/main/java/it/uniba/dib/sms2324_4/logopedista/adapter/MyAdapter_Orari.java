@@ -26,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 import it.uniba.dib.sms2324_4.R;
-import it.uniba.dib.sms2324_4.logopedista.menu.Calendario_Logopedista;
+import it.uniba.dib.sms2324_4.logopedista.menu.Prenotazioni_Logopedista;
 
 public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyViewHolder> {
 
@@ -236,9 +236,9 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                                                             }
                                                         });
 
-                                                        Toast.makeText(v.getContext(), R.string.prenotazione_eliminata, Toast.LENGTH_SHORT).show();
+                                                        Toast.makeText(v.getContext(), R.string.appuntamento_eliminato, Toast.LENGTH_SHORT).show();
                                                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                                                        fragmentTransaction.replace(container.getId() , Calendario_Logopedista.newInstance(sessionKey));
+                                                        fragmentTransaction.replace(container.getId() , Prenotazioni_Logopedista.newInstance(sessionKey));
                                                         fragmentTransaction.commit();
                                                         reservationDialog.dismiss();
                                                         delete_item.dismiss();

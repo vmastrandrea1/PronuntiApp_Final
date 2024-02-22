@@ -44,6 +44,13 @@ public class ElencoPazienti extends Fragment {
 
     TextView childSelection;
 
+   private SessionManagement sessionManagement;
+   private RecyclerView recyclerView;
+   private MyAdapter_Pazienti myAdapter;
+   private ArrayList<Paziente> list;
+   private Button buttonRegistraPaziente;
+    private ViewGroup container;
+
     public ElencoPazienti() {
         // Required empty public constructor
     }
@@ -73,31 +80,20 @@ public class ElencoPazienti extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_elenco_pazienti, container, false);
-
-        // Ottieni il riferimento al pulsante
-        Button buttonRegistraPaziente = view.findViewById(R.id.AddButton);
+    public void onResume() {
+        super.onResume();
 
         // Gestisci il click sul pulsante
         buttonRegistraPaziente.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    FragmentManager fragmentManager = getParentFragmentManager();
-                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    fragmentTransaction.replace(container.getId() , RegistrazioneBambini.newInstance(userID));
-                    fragmentTransaction.commit();
-                }
-            });
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(container.getId() , RegistrazioneBambini.newInstance(userID));
+                fragmentTransaction.commit();
+            }
+        });
 
-        SessionManagement sessionManagement = new SessionManagement(requireContext());
-        RecyclerView recyclerView;
-        MyAdapter_Pazienti myAdapter;
-        ArrayList<Paziente> list;
-
-        recyclerView = view.findViewById(R.id.elencoPazienti);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
 
@@ -137,6 +133,21 @@ public class ElencoPazienti extends Fragment {
 
             }
         });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_elenco_pazienti, container, false);
+
+        recyclerView = view.findViewById(R.id.elencoPazienti);
+        sessionManagement = new SessionManagement(requireContext());
+
+        // Ottieni il riferimento al pulsante
+        buttonRegistraPaziente = view.findViewById(R.id.AddButton);
+
+        this.container = container;
 
         return  view;
     }

@@ -44,6 +44,12 @@ public class ElencoEsercizi extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String userID;
+    private SessionManagement sessionManagement;
+    private Button buttonCreaEsercizio;
+    private RecyclerView recyclerView;
+    private MyAdapter_Esercizi myAdapter;
+    private ArrayList<Object> list;
+    private ViewGroup container;
 
     public ElencoEsercizi() {
         // Required empty public constructor
@@ -73,14 +79,8 @@ public class ElencoEsercizi extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_elenco_esercizi, container, false);
-
-        // Ottieni il riferimento al pulsante
-        Button buttonCreaEsercizio = view.findViewById(R.id.AddButton);
-
+    public void onResume() {
+        super.onResume();
 
         // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
@@ -106,15 +106,6 @@ public class ElencoEsercizi extends Fragment {
                 fragmentTransaction.commit();
             }
         });
-
-        SessionManagement sessionManagement = new SessionManagement(requireContext());
-        RecyclerView recyclerView;
-        MyAdapter_Esercizi myAdapter;
-        ArrayList<Object> list;
-
-        recyclerView = view.findViewById(R.id.elencoEsercizi);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
 
         list = new ArrayList<>();
         myAdapter = new MyAdapter_Esercizi(requireContext(),list,userID,container,getParentFragmentManager());
@@ -173,6 +164,24 @@ public class ElencoEsercizi extends Fragment {
 
             }
         });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_elenco_esercizi, container, false);
+
+        // Ottieni il riferimento al pulsante
+        buttonCreaEsercizio = view.findViewById(R.id.AddButton);
+        recyclerView = view.findViewById(R.id.elencoEsercizi);
+
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
+
+        sessionManagement = new SessionManagement(requireContext());
+        
+        this.container = container;
 
         return view;
     }

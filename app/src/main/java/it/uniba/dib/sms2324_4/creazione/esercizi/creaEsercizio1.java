@@ -54,8 +54,18 @@ public class creaEsercizio1 extends Fragment {
     Esercizio1 esercizio1 = new Esercizio1();
     ImageView image_viewer;
 
-    String uriImage = null;
+    View v;
+    EditText aiuto1;
+    EditText aiuto2;
+    EditText aiuto3;
+    EditText id_eserczio1;
+    Button scegli_immagine;
+    Button annulla;
+    Button creazione_esercizio;
 
+    ViewGroup container;
+
+    String uriImage = null;
 
     public creaEsercizio1() {
         // Required empty public constructor
@@ -85,18 +95,8 @@ public class creaEsercizio1 extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_crea_esercizio1, container, false);
-        EditText aiuto1=(EditText)v.findViewById(R.id.aiuto1);
-        EditText aiuto2=(EditText)v.findViewById(R.id.aiuto2);
-        EditText aiuto3=(EditText)v.findViewById(R.id.aiuto3);
-        EditText id_eserczio1 = (EditText)v.findViewById(R.id.id_esercizio1);
-        Button scegli_immagine = (Button)v.findViewById(R.id.scegliImmagine_btn);
-        Button annulla = (Button)v.findViewById(R.id.annulla_btn);
-        Button creazione_esercizio = (Button)v.findViewById(R.id.buttonCreaEs1);
-        image_viewer = (ImageView) v.findViewById(R.id.preview_immagine_es1);
+    public void onResume() {
+        super.onResume();
 
 
         // GESTIONE PULSANTE BACK
@@ -196,6 +196,23 @@ public class creaEsercizio1 extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        v = inflater.inflate(R.layout.fragment_crea_esercizio1, container, false);
+        aiuto1 = (EditText)v.findViewById(R.id.aiuto1);
+        aiuto2 = (EditText)v.findViewById(R.id.aiuto2);
+        aiuto3 = (EditText)v.findViewById(R.id.aiuto3);
+        id_eserczio1 = (EditText)v.findViewById(R.id.id_esercizio1);
+        scegli_immagine = (Button)v.findViewById(R.id.scegliImmagine_btn);
+        annulla = (Button)v.findViewById(R.id.annulla_btn);
+        creazione_esercizio = (Button)v.findViewById(R.id.buttonCreaEs1);
+        image_viewer = (ImageView) v.findViewById(R.id.preview_immagine_es1);
+
+        this.container = container;
 
         return v;
     }

@@ -56,8 +56,8 @@ public class Register_Logopedista extends AppCompatActivity {
     }
 
     @Override
-    protected void onPostResume() {
-        super.onPostResume();
+    protected void onResume() {
+        super.onResume();
 
         //Definizione Metodo Ascoltatore della TextView LoginNow
         loginNow.setOnClickListener(new View.OnClickListener() {

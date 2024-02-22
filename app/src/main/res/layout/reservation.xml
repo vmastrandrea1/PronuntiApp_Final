@@ -26,7 +26,7 @@
             android:drawableStart="@drawable/ic_date"
             android:drawableTint="@color/black"
             android:drawablePadding="10dp"
-            android:text="@string/prenotazioni"
+            android:text="@string/appuntamenti"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="20dp"

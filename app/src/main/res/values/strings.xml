@@ -150,7 +150,7 @@
     <string name="cf_genitore">"CF Genitore: "</string>
     <string name="gioca">Gioca</string>
     <string name="classifica">Classifica</string>
-    <string name="prenotazioni">Prenotazioni</string>
+    <string name="appuntamenti">Appuntamenti</string>
     <string name="figli">Figli</string>
     <string name="esercizi">Esercizi</string>
     <string name="pazienti">Pazienti</string>
@@ -166,7 +166,7 @@
     <string name="le_password_non_coincidono">Le password non coincidono</string>
     <string name="inserisci_l_email">Inserisci l\'email</string>
     <string name="inserisci_la_password">Inserisci la password</string>
-    <string name="arrivederci">Arrivederci </string>
+    <string name="arrivederci">"Arrivederci </string>
     <string name="benvenuto">"Benvenuto "</string>
     <string name="accesso_negato">Accesso Negato!</string>
     <string name="inserisci_una_data_di_nascita">Inserisci una data di nascita</string>
@@ -222,10 +222,10 @@
     <string name="inserisci_ora_inizio">Inserisci Ora Inizio</string>
     <string name="clicca_qui">Clicca Qui</string>
     <string name="inserisci_ora_fine">Inserisci Ora Fine</string>
-    <string name="prenotazione_effettuata_con_successo">Prenotazione Effettuata con SUCCESSO</string>
-    <string name="sovrapposizione_prenotazioni">Ora di Inizio NON VALIDA</string>
-    <string name="hai_gi_una_prenotazione_per_questo_paziente">Hai già una prenotazione per questo paziente</string>
-    <string name="hai_gi_una_prenotazione_per_quest_ora">Hai già una prenotazione per quest\'ora</string>
+    <string name="appuntamento_creato_con_successo">Appuntamento salvato</string>
+    <string name="sovrapposizione_prenotazioni">Ora di Inizio invalido</string>
+    <string name="hai_gi_un_appuntamento_per_questo_paziente">Hai già un apputamento per questo paziente</string>
+    <string name="hai_gi_un_appuntamento_per_quest_ora">Hai già un appuntamento per quest\'ora</string>
     <string name="orario_non_valido">Orario non Valido</string>
     <string name="alle_ore">Alle ore</string>
     <string name="dalle_ore">Dalle ore</string>
@@ -248,10 +248,11 @@
     <string name="esito_correzione_sbagliato">Esito Correzione : SBAGLIATO</string>
     <string name="hai_acquistato">"Hai acquistato "</string>
     <string name="imposta_come_predefinito">IMPOSTA COME PREDEFINITO</string>
-    <string name="elimina_prenotazione">Elimina Prenotazione</string>
-    <string name="sei_sicuro_di_voler_eliminare_la_prenotazione">Sei sicuro di voler eliminare la prenotazione?</string>
-    <string name="prenotazione_eliminata">Prenotazione Eliminata</string>
-    <string name="non_hai_appuntamenti">Non hai prenotazioni</string>
+    <string name="elimina_appuntamento">Elimina Appuntamento</string>
+    <string name="sei_sicuro_di_voler_eliminare_l_appuntamento">Sei sicuro di voler eliminare l\' appuntamento?</string>
+    <string name="appuntamento_eliminato">Appuntamento eliminato</string>
+    <string name="non_hai_appuntamenti">Non hai appuntamenti</string>
     <string name="non_hai_pazienti">Non hai pazienti</string>
     <string name="orario">Orario</string>
+    <string name="le_mie_prenotazioni">I miei appuntamenti</string>
 </resources>

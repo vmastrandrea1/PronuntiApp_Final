@@ -118,11 +118,6 @@
           <theme>@style/BlueTheme</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_logopedista.xml">
-        <config>
-          <theme>@style/Theme.Material3.Light</theme>
-        </config>
-      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_classifica.xml">
         <config>
           <theme>@style/Theme.Material3.Light</theme>
@@ -184,6 +179,16 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+        <config>
+          <theme>@style/Theme.Material3.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_prenotazioni_logopedista.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_registra_prenotazioni.xml">
         <config>
           <theme>@style/Theme.Material3.Light</theme>
         </config>
@@ -263,6 +268,16 @@
           <theme>@style/BlueTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/view_reservation.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/view_reservation_time.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/view_therapy_patient.xml">
         <config>
           <theme>@style/Theme.Material3.Light</theme>
@@ -303,7 +318,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\masvi\.android\avd\Pixel_7_API_26.avd, c52196c3]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\LaFFurb\.android\avd\Pixel_7_API_26.avd, adb-c52196c3-VjFrAp._adb-tls-connect._tcp]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -436,11 +451,11 @@
       <recent name="it.uniba.dib.sms2324_4.creazione.esercizi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res" />
       <recent name="C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\raw" />
       <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\drawable" />
       <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\layout" />
       <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\java\it\uniba\dib\sms2324_4\gioco" />
-      <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\raw" />
     </key>
     <key name="android.template.-2031597778">
       <recent name="it.uniba.dib.sms2324_4" />

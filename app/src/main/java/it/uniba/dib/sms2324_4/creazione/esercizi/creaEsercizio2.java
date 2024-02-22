@@ -47,6 +47,15 @@ public class creaEsercizio2 extends Fragment {
 
     String uriImage = null;
 
+    EditText parola1;
+    EditText parola2;
+    EditText parola3;
+    EditText id_eserczio2;
+    Button annulla;
+    Button creazione_esercizio;
+
+    ViewGroup container;
+
 
     public creaEsercizio2() {
         // Required empty public constructor
@@ -68,25 +77,8 @@ public class creaEsercizio2 extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            userID = getArguments().getString(SESSION_KEY);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_crea_esercizio2, container, false);
-        EditText parola1 = (EditText) v.findViewById(R.id.parola1);
-        EditText parola2 = (EditText) v.findViewById(R.id.parola2);
-        EditText parola3 = (EditText) v.findViewById(R.id.parola3);
-        EditText id_eserczio2 = (EditText) v.findViewById(R.id.id_esercizio2);
-        Button annulla = (Button) v.findViewById(R.id.annulla_btn_2);
-        Button creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
-
+    public void onResume() {
+        super.onResume();
 
         // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
@@ -171,6 +163,30 @@ public class creaEsercizio2 extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            userID = getArguments().getString(SESSION_KEY);
+        }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View v = inflater.inflate(R.layout.fragment_crea_esercizio2, container, false);
+
+        parola1 = (EditText) v.findViewById(R.id.parola1);
+        parola2 = (EditText) v.findViewById(R.id.parola2);
+        parola3 = (EditText) v.findViewById(R.id.parola3);
+        id_eserczio2 = (EditText) v.findViewById(R.id.id_esercizio2);
+        annulla = (Button) v.findViewById(R.id.annulla_btn_2);
+        creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
+
+        this.container = container;
 
         return v;
     }

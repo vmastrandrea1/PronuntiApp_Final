@@ -44,8 +44,8 @@ public class Login extends AppCompatActivity {
     TextView registerNow;
 
     @Override
-    protected void onPostResume() {
-        super.onPostResume();
+    protected void onResume() {
+        super.onResume();
 
         directAccess.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -195,45 +195,45 @@ public class Login extends AppCompatActivity {
 
     /*
 
-        private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
-                new ActivityResultCallback<ActivityResult>() {
-                    @Override
-                    public void onActivityResult(ActivityResult result) {
-                        if(result.getResultCode() == RESULT_OK){
-                            Task<GoogleSignInAccount> accountTask = GoogleSignIn.getSignedInAccountFromIntent(result.getData());
-                            try{
-                                GoogleSignInAccount signInAccount = accountTask.getResult(ApiException.class);
-                                AuthCredential authCredential = GoogleAuthProvider.getCredential(signInAccount.getIdToken(), null);
-                                mAuth.signInWithCredential(authCredential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                                    @Override
-                                    public void onComplete(@NonNull Task<AuthResult> task) {
-                                      if(task.isSuccessful()){
+            private final ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+                    new ActivityResultCallback<ActivityResult>() {
+                        @Override
+                        public void onActivityResult(ActivityResult result) {
+                            if(result.getResultCode() == RESULT_OK){
+                                Task<GoogleSignInAccount> accountTask = GoogleSignIn.getSignedInAccountFromIntent(result.getData());
+                                try{
+                                    GoogleSignInAccount signInAccount = accountTask.getResult(ApiException.class);
+                                    AuthCredential authCredential = GoogleAuthProvider.getCredential(signInAccount.getIdToken(), null);
+                                    mAuth.signInWithCredential(authCredential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<AuthResult> task) {
+                                          if(task.isSuccessful()){
 
-                                          mAuth = FirebaseAuth.getInstance();
-                                          Glide.with(Login.this).load(mAuth.getCurrentUser().getPhotoUrl()).into(imageView);
+                                              mAuth = FirebaseAuth.getInstance();
+                                              Glide.with(Login.this).load(mAuth.getCurrentUser().getPhotoUrl()).into(imageView);
 
 
-                                          Toast.makeText(Login.this,
-                                                  "Login Effettuato con SUCCESSO",
-                                                  Toast.LENGTH_SHORT).show();
-                                          Intent intent = new Intent(getApplicationContext() , User.class);
-                                          startActivity(intent);
-                                          finish();
-                                      }else{
-                                          Toast.makeText(Login.this,
-                                                  "Login NEGATO",
-                                                  Toast.LENGTH_SHORT).show();
-                                      }
-                                    }
-                                });
-                            } catch (ApiException e) {
-                                e.printStackTrace();
+                                              Toast.makeText(Login.this,
+                                                      "Login Effettuato con SUCCESSO",
+                                                      Toast.LENGTH_SHORT).show();
+                                              Intent intent = new Intent(getApplicationContext() , User.class);
+                                              startActivity(intent);
+                                              finish();
+                                          }else{
+                                              Toast.makeText(Login.this,
+                                                      "Login NEGATO",
+                                                      Toast.LENGTH_SHORT).show();
+                                          }
+                                        }
+                                    });
+                                } catch (ApiException e) {
+                                    e.printStackTrace();
+                                }
                             }
                         }
-                    }
-                });
+                    });
 
-         */
+             */
     @Override
     public void onStart() {
         super.onStart();

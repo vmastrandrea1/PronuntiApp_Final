@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
+import android.net.ParseException;
 import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -37,7 +38,10 @@ import com.google.firebase.storage.StorageReference;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
@@ -118,11 +122,28 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
         return  new MyViewHolder(v , list , sessionKey , fragmentManager , container , backDialog , cfPaziente, cfGenitore);
     }
 
+    private static String formatDate(String inputDate) {
+        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        SimpleDateFormat outputFormat = new SimpleDateFormat("dd MMMM yyyy", Locale.getDefault());
+
+        try {
+            Date date = inputFormat.parse(inputDate);
+            return outputFormat.format(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            // Gestione dell'eccezione in caso di errore nella formattazione della data
+            return null;
+        } catch (java.text.ParseException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         String terapie = list.get(position);
-        holder.tvTherapyName.setText(terapie);
+        holder.tvTherapyName.setText(formatDate(terapie));
 
 
     }
@@ -839,13 +860,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         });
 
                                                                         correzione.setText(R.string.correzione_corretto);
-
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_corretto)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 
@@ -933,12 +947,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
 
                                                                         correzione.setText(R.string.correzione_sbagliato);
 
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_sbagliato)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 
@@ -1261,13 +1269,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         });
 
                                                                         correzione.setText(R.string.correzione_corretto);
-
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_corretto)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 
@@ -1354,13 +1355,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         });
 
                                                                         correzione.setText(R.string.correzione_sbagliato);
-
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_sbagliato)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 
@@ -1683,13 +1677,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         });
 
                                                                         correzione.setText(R.string.correzione_corretto);
-
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_corretto)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 
@@ -1776,13 +1763,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         });
 
                                                                         correzione.setText(R.string.correzione_sbagliato);
-
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_sbagliato)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 
@@ -2105,13 +2085,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         });
 
                                                                         correzione.setText(R.string.correzione_corretto);
-
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_corretto)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 
@@ -2198,13 +2171,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         });
 
                                                                         correzione.setText(R.string.correzione_sbagliato);
-
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_sbagliato)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 
@@ -2527,13 +2493,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         });
 
                                                                         correzione.setText(R.string.correzione_corretto);
-
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_corretto)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 
@@ -2620,13 +2579,6 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                                         });
 
                                                                         correzione.setText(R.string.correzione_sbagliato);
-
-                                                                        new MaterialAlertDialogBuilder(view.getContext(), R.style.AlertDialogButtonStyle)
-                                                                                .setBackground(ContextCompat.getDrawable(view.getContext(), R.drawable.rounded_dialog_background))
-                                                                                .setTitle(R.string.esercizio_corretto)
-                                                                                .setMessage(R.string.esito_correzione_sbagliato)
-                                                                                .setPositiveButton(R.string.ok, null)
-                                                                                .show();
                                                                     }
                                                                 });
 

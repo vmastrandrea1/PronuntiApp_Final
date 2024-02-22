@@ -150,7 +150,7 @@
     <string name="cf_genitore">"Parent CF: "</string>
     <string name="gioca">Play</string>
     <string name="classifica">Ranking</string>
-    <string name="prenotazioni">Bookings</string>
+    <string name="appuntamenti">Appointments</string>
     <string name="figli">Children</string>
     <string name="esercizi">Exercises</string>
     <string name="pazienti">Patients</string>
@@ -166,8 +166,8 @@
     <string name="le_password_non_coincidono">Passwords do not match</string>
     <string name="inserisci_l_email">Enter the email</string>
     <string name="inserisci_la_password">Enter the password</string>
-    <string name="arrivederci">Goodbye </string>
-    <string name="benvenuto">Welcome </string>
+    <string name="arrivederci">"Goodbye "</string>
+    <string name="benvenuto">"Welcome "</string>
     <string name="accesso_negato">Access Denied!</string>
     <string name="inserisci_una_data_di_nascita">Enter a date of birth</string>
     <string name="inserisci_il_codice_fiscale_del_genitore">Enter the parent\'s tax code</string>
@@ -222,10 +222,10 @@
     <string name="inserisci_ora_inizio">Insert Start Time</string>
     <string name="clicca_qui">Click Here</string>
     <string name="inserisci_ora_fine">Insert End Time</string>
-    <string name="prenotazione_effettuata_con_successo">Reservation Done SUCCESSFULY</string>
-    <string name="sovrapposizione_prenotazioni">Start Time INVALID</string>
-    <string name="hai_gi_una_prenotazione_per_questo_paziente">You already have a reservation for this patient</string>
-    <string name="hai_gi_una_prenotazione_per_quest_ora">You already have a reservation for this time</string>
+    <string name="appuntamento_creato_con_successo">Appointment saved</string>
+    <string name="sovrapposizione_prenotazioni">Start Time invalid</string>
+    <string name="hai_gi_un_appuntamento_per_questo_paziente">You already have an appointment for this patient</string>
+    <string name="hai_gi_un_appuntamento_per_quest_ora">You already have a appointment for this time</string>
     <string name="orario_non_valido">Time Invalid</string>
     <string name="alle_ore">To h.</string>
     <string name="dalle_ore">From h.</string>
@@ -248,10 +248,11 @@
     <string name="esito_correzione_sbagliato">Correction Outcome: WRONG</string>
     <string name="hai_acquistato">"You have purchased "</string>
     <string name="imposta_come_predefinito">SET AS DEFAULT</string>
-    <string name="elimina_prenotazione">Delete Reservation</string>
-    <string name="sei_sicuro_di_voler_eliminare_la_prenotazione">Are you sure you want to delete the reservation?</string>
-    <string name="prenotazione_eliminata">Reservation Deleted</string>
+    <string name="elimina_appuntamento">Delete Appointment</string>
+    <string name="sei_sicuro_di_voler_eliminare_l_appuntamento">Are you sure you want to delete the appointment?</string>
+    <string name="appuntamento_eliminato">Appointment deleted</string>
     <string name="non_hai_appuntamenti">You don\'t have any reservations</string>
     <string name="non_hai_pazienti">You don\'t have any patients</string>
     <string name="orario">Time</string>
+    <string name="le_mie_prenotazioni">My Reservations</string>
 </resources>

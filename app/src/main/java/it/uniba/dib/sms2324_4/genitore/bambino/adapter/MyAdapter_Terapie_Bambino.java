@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.ParseException;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +23,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 
 import it.uniba.dib.sms2324_4.logopedista.adapter.MyAdapter_Esercizi;
 import it.uniba.dib.sms2324_4.R;
@@ -101,11 +105,27 @@ public class MyAdapter_Terapie_Bambino extends RecyclerView.Adapter<MyAdapter_Te
         return  new MyViewHolder(v , list , sessionKey , fragmentManager , container , backDialog , cfPaziente);
     }
 
+    private static String formatDate(String inputDate) {
+        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        SimpleDateFormat outputFormat = new SimpleDateFormat("dd MMMM yyyy", Locale.getDefault());
+
+        try {
+            Date date = inputFormat.parse(inputDate);
+            return outputFormat.format(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            // Gestione dell'eccezione in caso di errore nella formattazione della data
+            return null;
+        } catch (java.text.ParseException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         String terapie = list.get(position);
-        holder.tvTherapyName.setText(terapie);
+        holder.tvTherapyName.setText(formatDate(terapie));
 
 
     }

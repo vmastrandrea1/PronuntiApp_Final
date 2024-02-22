@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.ParseException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +21,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 
 import it.uniba.dib.sms2324_4.R;
 
@@ -77,28 +81,42 @@ public class MyAdapter_Prenotazioni extends RecyclerView.Adapter<MyAdapter_Preno
 
 
     public MyAdapter_Prenotazioni(Context context, ArrayList<String> list, String sessionKey,
-                                  FragmentManager fragmentManager , ViewGroup container, Dialog backDialog) {
+                                  FragmentManager fragmentManager , ViewGroup container) {
         this.context = context;
         this.list = list;
         this.sessionKey = sessionKey;
         this.fragmentManager = fragmentManager;
         this.container = container;
-        this.backDialog = backDialog;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.reservation,parent,false);
-        return  new MyViewHolder(v , list , sessionKey , fragmentManager , container, backDialog);
+        return  new MyViewHolder(v , list , sessionKey , fragmentManager , container);
+    }
+
+    private static String formatDate(String inputDate) {
+        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        SimpleDateFormat outputFormat = new SimpleDateFormat("dd MMMM yyyy", Locale.getDefault());
+
+        try {
+            Date date = inputFormat.parse(inputDate);
+            return outputFormat.format(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            // Gestione dell'eccezione in caso di errore nella formattazione della data
+            return null;
+        } catch (java.text.ParseException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         String prenotazione = list.get(position);
-        holder.tvchildReservation.setText(prenotazione);
-
+        holder.tvchildReservation.setText(formatDate(prenotazione));
 
     }
 
@@ -114,7 +132,7 @@ public class MyAdapter_Prenotazioni extends RecyclerView.Adapter<MyAdapter_Preno
         private final FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
         public MyViewHolder(@NonNull View itemView , ArrayList<String> list ,String  sessionKey,
-                            FragmentManager fragmentManager , ViewGroup container , Dialog backDialog) {
+                            FragmentManager fragmentManager , ViewGroup container) {
             super(itemView);
 
             tvchildReservation = itemView.findViewById(R.id.tvchildReservation);
@@ -124,8 +142,6 @@ public class MyAdapter_Prenotazioni extends RecyclerView.Adapter<MyAdapter_Preno
                 public void onClick(View v) {
                     int pos = getAdapterPosition();
                     if(pos != RecyclerView.NO_POSITION){
-
-                        backDialog.dismiss();
 
                         RecyclerView recyclerView;
                         MyAdapter_Orari myAdapter;

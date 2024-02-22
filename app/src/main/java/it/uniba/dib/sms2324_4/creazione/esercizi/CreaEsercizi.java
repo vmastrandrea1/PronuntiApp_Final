@@ -27,6 +27,11 @@ public class CreaEsercizi extends Fragment {
     private static final String SESSION_KEY = "key";
 
     private String userID;
+    private Button bt1;
+    private Button bt2;
+    private Button bt3;
+
+    private ViewGroup container;
 
     // TODO: Rename and change types of parameters
 
@@ -58,17 +63,8 @@ public class CreaEsercizi extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_crea_esercizi, container, false);
-
-        //String ok=getIntent().getExtras().getString("nome");
-        //toolbar.setTitle(ok);
-        Button bt1=(Button)view.findViewById(R.id.button190);
-        Button bt2=(Button)view.findViewById(R.id.button191);
-        Button bt3=(Button)view.findViewById(R.id.button192);
-
+    public void onResume() {
+        super.onResume();
 
         // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
@@ -114,6 +110,21 @@ public class CreaEsercizi extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_crea_esercizi, container, false);
+
+        //String ok=getIntent().getExtras().getString("nome");
+        //toolbar.setTitle(ok);
+        bt1=(Button)view.findViewById(R.id.button190);
+        bt2=(Button)view.findViewById(R.id.button191);
+        bt3=(Button)view.findViewById(R.id.button192);
+
+        this.container = container;
 
         return view;
     }

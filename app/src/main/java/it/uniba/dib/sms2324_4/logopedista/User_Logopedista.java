@@ -27,7 +27,8 @@ import com.google.firebase.database.ValueEventListener;
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.accesso.Login_Logopedista;
 import it.uniba.dib.sms2324_4.accesso.SessionManagement;
-import it.uniba.dib.sms2324_4.logopedista.menu.Calendario_Logopedista;
+import it.uniba.dib.sms2324_4.logopedista.menu.Prenotazioni_Logopedista;
+import it.uniba.dib.sms2324_4.logopedista.menu.RegistraPrenotazioni;
 import it.uniba.dib.sms2324_4.logopedista.menu.ElencoEsercizi;
 import it.uniba.dib.sms2324_4.logopedista.menu.ElencoPazienti;
 
@@ -118,7 +119,7 @@ public class User_Logopedista extends AppCompatActivity {
                     drawerLayout.closeDrawer(GravityCompat.START);
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                    fragmentTransaction.replace(R.id.menu_logopedista_viewer , Calendario_Logopedista.newInstance(sessionManagement.getSession()));
+                    fragmentTransaction.replace(R.id.menu_logopedista_viewer , Prenotazioni_Logopedista.newInstance(sessionManagement.getSession()));
                     fragmentTransaction.commit();
                 }else if(item.getItemId() == R.id.nav_elenco_pazienti){
                     drawerLayout.closeDrawer(GravityCompat.START);

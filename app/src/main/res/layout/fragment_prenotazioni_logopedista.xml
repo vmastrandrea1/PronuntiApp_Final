@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".genitore.menu.Calendario_Genitore"
-    android:layout_marginHorizontal="20dp">
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="20dp"
+    tools:context=".logopedista.menu.Prenotazioni_Logopedista">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="527dp">
-
+        android:layout_height="match_parent">
         <LinearLayout
             android:id="@+id/linear_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="20dp"
             android:orientation="horizontal"
+            android:layout_marginVertical="20dp"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/myReservationsText"
+                android:id="@+id/myreservationsText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:paddingLeft="25dp"
-                android:text="@string/appuntamenti"
+                android:textStyle="bold"
+                android:layout_marginVertical="20dp"
+                android:paddingLeft="16dp"
+                android:text="@string/le_mie_prenotazioni"
                 android:textColor="@color/black"
-                android:textSize="40dp"
-                android:textStyle="bold" />
+                android:textSize="40dp" />
 
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/reservations_rv"
+            android:id="@+id/reservationList"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
@@ -45,5 +42,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_reservation"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/circle_button_add_reservation"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

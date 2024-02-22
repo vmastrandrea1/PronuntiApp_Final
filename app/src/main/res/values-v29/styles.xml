@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BlueTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorControlActivated">@color/blue</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="PurpleTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:statusBarColor">@color/purple</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="colorControlActivated">@color/purple</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="RoundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="TextInputEditTextTheme">
+        <item name="hintTextAppearance">@style/MyHintTextAppearance</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="MyHintTextAppearance" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="PurpleSelected">
+        <item name="colorControlActivated">@color/purple</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="Theme.Material3.Light.Dialog">
+        <item name="android:windowBackground">@drawable/background_grey_rounded_corner_20dp</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+        <item name="colorAccent">@color/purple</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DatePickerButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DatePickerButtonStyle</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="DatePickerButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="AlertDialogButtonStyle">
+        <item name="android:textSize">11dp</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="Smaller_Drawable">
+        <item name="android:textSize">20sp</item>
+        <item name="android:scaleX">0.7</item>
+        <item name="android:scaleY">0.7</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <style name="RoundedSquare">
+        <item name="cornerSizeTopLeft">18.5dp</item>
+        <item name="cornerSizeTopRight">18.5dp</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+</resources>

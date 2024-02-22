@@ -57,6 +57,13 @@ public class creaEsercizio3 extends Fragment {
     String uriImage_wrong = null;
     String uriImage_right = null;
 
+    Button select_imageView_wrong;
+    Button select_imageView_right;
+    Button annulla;
+    Button creazione_esercizio;
+    EditText id_esercizio3;
+
+    ViewGroup container;
 
 
     public creaEsercizio3() {
@@ -87,19 +94,8 @@ public class creaEsercizio3 extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_crea_esercizio3, container, false);
-        imageView_wrong = (ImageView) v.findViewById(R.id.image_viewer_wrong);
-        imageView_right = (ImageView) v.findViewById(R.id.image_viewer_right);
-        parola_da_ascoltare = (EditText) v.findViewById(R.id.parola_da_ascoltare);
-        Button select_imageView_wrong = (Button) v.findViewById(R.id.select_image_wrong_button);
-        Button select_imageView_right = (Button) v.findViewById(R.id.select_image_right_button);
-        Button annulla = (Button) v.findViewById(R.id.annulla_btn_2);
-        Button creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
-        EditText id_esercizio3 = (EditText) v.findViewById(R.id.id_esercizio3);
-
+    public void onResume() {
+        super.onResume();
 
         // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
@@ -134,7 +130,7 @@ public class creaEsercizio3 extends Fragment {
                         !matcher.matches()){
                     Toast.makeText(getContext(), R.string.inserisci_un_nome_valido, Toast.LENGTH_SHORT).show();
                 }else if(TextUtils.isEmpty(parola_da_ascoltare.getText().toString())
-                            || !pattern.matcher(parola_da_ascoltare.getText().toString()).matches()){
+                        || !pattern.matcher(parola_da_ascoltare.getText().toString()).matches()){
                     Toast.makeText(getContext(), R.string.inserisci_una_parola_valida, Toast.LENGTH_SHORT).show();
                 }else{
                     esercizio3.setId_esercizio("3_" + id_esercizio3.getText().toString());
@@ -204,6 +200,24 @@ public class creaEsercizio3 extends Fragment {
                 startActivityForResult(iGallery , 2);
             }
         });
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View v = inflater.inflate(R.layout.fragment_crea_esercizio3, container, false);
+
+        imageView_wrong = (ImageView) v.findViewById(R.id.image_viewer_wrong);
+        imageView_right = (ImageView) v.findViewById(R.id.image_viewer_right);
+        parola_da_ascoltare = (EditText) v.findViewById(R.id.parola_da_ascoltare);
+        select_imageView_wrong = (Button) v.findViewById(R.id.select_image_wrong_button);
+        select_imageView_right = (Button) v.findViewById(R.id.select_image_right_button);
+        annulla = (Button) v.findViewById(R.id.annulla_btn_2);
+        creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
+        id_esercizio3 = (EditText) v.findViewById(R.id.id_esercizio3);
+
+        this.container = container;
 
         return v;
     }
