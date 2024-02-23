@@ -241,7 +241,7 @@ public class Login_Logopedista extends AppCompatActivity {
         String userID = sessionManagement.getSession();
 
         if(userID.compareTo("NULL")!=0) {
-            Toast.makeText(this, getString(R.string.bentornato) + " " + sessionManagement.getNome(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.bentornato) + sessionManagement.getNome(), Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(getApplicationContext(), User_Logopedista.class);
             startActivity(intent);
             finish();

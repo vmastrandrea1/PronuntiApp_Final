@@ -244,13 +244,13 @@ public class Login extends AppCompatActivity {
 
         if(userID.compareTo("NULL")!=0){
             if(sessionManagement.getProfile().compareTo("genitore")==0){
-                Toast.makeText(this, getString(R.string.bentornato) + " " + sessionManagement.getNome(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.bentornato) + sessionManagement.getNome(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext() , User.class);
                 startActivity(intent);
                 finish();
             } else{
 
-                Toast.makeText(this, getString(R.string.bentornato) + " " + sessionManagement.getNome(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getString(R.string.bentornato) + sessionManagement.getNome(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext() , User_Logopedista.class);
                 startActivity(intent);
                 finish();

@@ -213,8 +213,8 @@ public class creaEsercizio3 extends Fragment {
         parola_da_ascoltare = (EditText) v.findViewById(R.id.parola_da_ascoltare);
         select_imageView_wrong = (Button) v.findViewById(R.id.select_image_wrong_button);
         select_imageView_right = (Button) v.findViewById(R.id.select_image_right_button);
-        annulla = (Button) v.findViewById(R.id.annulla_btn_2);
-        creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_2);
+        annulla = (Button) v.findViewById(R.id.annulla_btn_3);
+        creazione_esercizio = (Button) v.findViewById(R.id.crea_esercizio_3);
         id_esercizio3 = (EditText) v.findViewById(R.id.id_esercizio3);
 
         this.container = container;

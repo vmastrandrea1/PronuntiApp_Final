@@ -101,6 +101,9 @@ public class Gioco_Home_Page extends Fragment {
         });
 
         BottomNavigationView bottomNavigationView = v.findViewById(R.id.bottomBar);
+
+        // Imposta il gioco selezionato di default
+        bottomNavigationView.setSelectedItemId(R.id.gioco);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

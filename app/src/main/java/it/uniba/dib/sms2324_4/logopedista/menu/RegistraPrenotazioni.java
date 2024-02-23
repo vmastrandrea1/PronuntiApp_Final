@@ -87,7 +87,7 @@ public class RegistraPrenotazioni extends Fragment {
             public void handleOnBackPressed() {
                 getParentFragmentManager()
                         .beginTransaction()
-                        .replace(container.getId() , ElencoPazienti.newInstance(sessionKey))
+                        .replace(container.getId() , Prenotazioni_Logopedista.newInstance(sessionKey))
                         .commit();
             }
         };
@@ -204,7 +204,7 @@ public class RegistraPrenotazioni extends Fragment {
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 if(snapshot.exists()){
                                     Toast.makeText(view.getContext(),
-                                            R.string.hai_gi_un_appuntamento_per_quest_ora,
+                                            R.string.hai_gia_un_appuntamento_per_quest_ora,
                                             Toast.LENGTH_SHORT).show();
                                 }else{
                                     //CONTROLLO SE ESISTE UNA PRENOTAZIONE PER UN DETERMINATO PAZIENTE
@@ -220,7 +220,7 @@ public class RegistraPrenotazioni extends Fragment {
                                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                                             if(snapshot.exists()){
                                                 Toast.makeText(view.getContext(),
-                                                        R.string.hai_gi_un_appuntamento_per_questo_paziente,
+                                                        R.string.hai_gia_un_appuntamento_per_questo_paziente,
                                                         Toast.LENGTH_SHORT).show();
                                             }else{
                                                 //CONTROLLO SE LA PRENOTAZIONE SI SOVRAPPONE AD UN ALTRA
@@ -243,7 +243,7 @@ public class RegistraPrenotazioni extends Fragment {
                                                         }
                                                         if(flag == true){
                                                             Toast.makeText(view.getContext(),
-                                                                    R.string.sovrapposizione_prenotazioni,
+                                                                    R.string.sovrapposizione_appuntamenti,
                                                                     Toast.LENGTH_SHORT).show();
                                                         }else{
                                                             Query fetchCfGenitore = database.getReference("Utenti")

@@ -35,7 +35,7 @@
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/rounded_corners_button"
-        android:text="Accesso Diretto"
+        android:text="@string/accesso_diretto"
         android:textAllCaps="true"
         android:textColorHint="@color/white"
         app:layout_constraintTop_toTopOf="parent"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,102 +10,97 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/id_esercizio3"
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/blue_button"
-            android:elevation="5dp"
-            android:hint="@string/nome_esercizio"
-
-            android:textSize="16dp"
-            android:gravity="center"
-            android:textColor="@color/white"
-            android:textColorHint="@color/lightblue"
-            android:inputType="textCapSentences"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/tipo_es3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginBottom="52dp"
             android:gravity="center"
-            android:textSize="22dp"
-            android:textColor="@color/black"
+            android:paddingTop="40dp"
             android:text="@string/tipo_es3"
-            android:fontFamily="@font/kid_font"
-            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="25dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/descrizione_es2"
-            app:layout_constraintTop_toBottomOf="@+id/id_esercizio3"
             tools:layout_editor_absoluteX="0dp" />
 
-        <TextView
-            android:id="@+id/descrizione_es2"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/id_esercizioinput3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="30dp"
-            android:paddingTop="20dp"
-            android:paddingBottom="30dp"
-            android:text="@string/descrizione_es3"
-            app:layout_constraintTop_toBottomOf="@+id/tipo_es3" />
+            android:layout_marginTop="40dp"
+            android:padding="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/tipo_es3"
+            tools:layout_editor_absoluteX="0dp">
+
+            <EditText
+                android:id="@+id/id_esercizio3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/white"
+                android:hint="@string/nome_esercizio"
+                android:inputType="textCapSentences"
+                android:textColorHint="@color/blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:theme="@style/TextInputEditTextTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <EditText
             android:id="@+id/parola_da_ascoltare"
             android:layout_width="212dp"
             android:layout_height="50dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/blue_button"
-            android:hint="@string/parola_da_ascoltare"
-            android:textSize="14dp"
             android:elevation="5dp"
             android:gravity="center"
+            android:hint="@string/parola_da_ascoltare"
+            android:inputType="textCapCharacters"
             android:textColor="@color/white"
             android:textColorHint="@color/lightblue"
-            android:inputType="textCapCharacters"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="14dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.367" />
+            app:layout_constraintTop_toBottomOf="@+id/id_esercizioinput3" />
 
-
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/select_image_wrong_button"
-            android:layout_width="170dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="60dp"
-            android:background="@drawable/blue_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_corners_button"
             android:elevation="5dp"
-            android:gravity="center"
+            android:layout_marginTop="60dp"
             android:hint="@string/immagine_sbagliata"
+            android:paddingVertical="0dp"
             android:textAlignment="center"
             android:textColorHint="@color/white"
-            android:textSize="12dp"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline_center"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/parola_da_ascoltare" />
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/select_image_right_button"
-            android:layout_width="170dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/blue_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_corners_button"
             android:elevation="5dp"
+            android:layout_marginTop="60dp"
             android:hint="@string/immagine_corretta"
+            android:paddingVertical="0dp"
             android:textAlignment="center"
             android:textColorHint="@color/white"
-            android:textSize="12dp"
+            android:textSize="10dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/select_image_wrong_button"
+            app:layout_constraintStart_toStartOf="@+id/guideline_center"
             app:layout_constraintTop_toBottomOf="@+id/parola_da_ascoltare" />
 
 
@@ -114,12 +110,12 @@
             android:layout_height="90dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="0dp"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guideline_center"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintVertical_bias="0.1"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/select_image_wrong_button"
+            app:layout_constraintVertical_bias="0.1"
             tools:layout_editor_absoluteX="32dp">
 
             <ImageView
@@ -139,11 +135,11 @@
             android:layout_height="90dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="0dp"
-            app:layout_constraintVertical_bias="0.1"
-            app:layout_constraintStart_toEndOf="@+id/guideline_center"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/select_image_right_button">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline_center"
+            app:layout_constraintTop_toBottomOf="@+id/select_image_right_button"
+            app:layout_constraintVertical_bias="0.1">
 
             <ImageView
                 android:id="@+id/image_viewer_right"
@@ -164,23 +160,23 @@
 
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/annulla_btn_2"
-            android:layout_width="160dp"
-            android:layout_height="45dp"
+            android:id="@+id/annulla_btn_3"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:layout_marginStart="16dp"
             android:background="@drawable/rounded_corners_button_grey"
             android:text="@string/annulla"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/crea_esercizio_2"
+            app:layout_constraintEnd_toStartOf="@+id/crea_esercizio_3"
             app:layout_constraintHorizontal_bias="0.169"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/card_image_viewer_wrong"
             app:layout_constraintVertical_bias="0.6" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crea_esercizio_2"
-            android:layout_width="160dp"
-            android:layout_height="45dp"
+            android:id="@+id/crea_esercizio_3"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
             android:layout_marginEnd="24dp"
             android:background="@drawable/rounded_corners_button_red"
             android:text="@string/crea"

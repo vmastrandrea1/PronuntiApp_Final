@@ -86,7 +86,7 @@
                 android:background="@drawable/bg_btn"
                 android:drawableStart="@drawable/ic_delete"
                 android:paddingHorizontal="10dp"
-                android:drawablePadding="10dp"
+                android:drawablePadding="20dp"
                 android:text="@string/elimina_appuntamento"
                 android:visibility="visible" />
         </LinearLayout>

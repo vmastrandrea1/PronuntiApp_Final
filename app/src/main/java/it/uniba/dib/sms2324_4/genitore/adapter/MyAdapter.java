@@ -142,7 +142,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 if(snapshot.exists()){
-                                    String info_logo_string = "Dott. "
+                                    String info_logo_string = v.getContext().getString(R.string.dott)
                                             + snapshot.child("nome").getValue().toString()
                                             + " " + snapshot.child("cognome").getValue().toString();
                                     child_therapist.setText(info_logo_string);

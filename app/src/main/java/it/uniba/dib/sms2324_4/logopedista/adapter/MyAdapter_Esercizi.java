@@ -383,7 +383,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                             mDialog.setContentView(R.layout.exercise3_info_popup);
 
                             parola_immagine = mDialog.findViewById(R.id.ex3_parola_da_ascoltare);
-                            parola_immagine.setText(v.getResources().getText(R.string.parola_da_ascoltare) + esercizio3.getParola_immagine());
+                            parola_immagine.setText(v.getResources().getText(R.string.parola_da_ascoltare_colon) + esercizio3.getParola_immagine());
 
                             Dialog delete_item = new Dialog(mDialog.getContext());
 

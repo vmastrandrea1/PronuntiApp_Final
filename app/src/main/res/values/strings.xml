@@ -42,7 +42,7 @@
     <string name="tipo_es3">Riconoscimento di coppie minime</string>
     <string name="tipo_es2">Ripetizione di sequenze di parole</string>
     <string name="tipo_es1">Denominazione di immagini</string>
-    <string name="descrizione_es1">"Data una immagine, il bambino deve riconoscere la parola associata ad essa.\nAl bambino sono forniti fino a 3 aiuti audio per facilitargli il riconoscimento della parola. "</string>
+    <string name="descrizione_es1">"Data una immagine, il bambino deve riconoscere la parola associata ad essa. Al bambino sono forniti fino a 3 aiuti audio per facilitargli il riconoscimento della parola. "</string>
     <string name="descrizione_es2">Dato un audio che riproduce 3 parole in sequenza, il bambino deve registrare un audio ripetendo le parole nella sequenza corretta.</string>
     <string name="descrizione_es3">Date due immagini e la riproduzione audio di una parola, il bambino deve riconoscere l’immagine giusta a cui la parola si riferisce.</string>
     <string name="descrizione_es1_game">Guarda l\'immagine e registra un audio in cui pronunci la parola corrispondente.\nHai fino a 3 aiuti audio per aiutarti a riconoscere la parola.</string>
@@ -64,7 +64,6 @@
     <string name="nome_esercizio_gia_usato">Nome esercizio già usato</string>
     <string name="immagine_non_inserita_nello_storage">Immagine non inserita nello storage</string>
     <string name="oggetto_impostato_come_predefinito">Oggetto impostato come predefinito</string>
-    <string name="bentornato">Bentornato </string>
     <string name="esercizio_eliminato">Esercizio eliminato</string>
     <string name="account_gia_registrato">Account già registrato</string>
     <string name="paziente_eliminato">Paziente eliminato</string>
@@ -79,7 +78,7 @@
     <string name="_100_monete">100 Monete</string>
     <string name="_500_punti_esperienza">500 Punti Esperienza</string>
     <string name="inserisci_ora">Inserisci Ora</string>
-    <string name="aggiungi_prenotazione">Aggiungi\nprenotazione</string>
+    <string name="aggiungi_appuntamento">Aggiungi appuntamento</string>
     <string name="i_miei_figli">I miei figli</string>
     <string name="_4_quarto_classificato">4) Quarto classificato</string>
     <string name="_18_marzo_74">18 Marzo 74</string>
@@ -115,8 +114,8 @@
     <string name="esercizio_3">Esercizio 3</string>
     <string name="esercizio_4">Esercizio 4</string>
     <string name="esercizio_5">Esercizio 5</string>
-    <string name="immagine_sbagliata">IMMAGINE SBAGLIATA</string>
-    <string name="immagine_corretta">IMMAGINE CORRETTA</string>
+    <string name="immagine_sbagliata">IMMAGINE\nSBAGLIATA</string>
+    <string name="immagine_corretta">IMMAGINE\nCORRETTA</string>
     <string name="parola_da_ascoltare">PAROLA DA ASCOLTARE</string>
     <string name="ascolta_la_parola">Ascolta la parola</string>
     <string name="ascolta_le_parole">Ascolta le parole</string>
@@ -156,7 +155,7 @@
     <string name="pazienti">Pazienti</string>
     <string name="immagine_corretta_colon">Immagine corretta:</string>
     <string name="immagine_sbagliata_colon">Immagine sbagliata:</string>
-    <string name="parola_da_ascoltare_colon">Parola da ascoltare:</string>
+    <string name="parola_da_ascoltare_colon">"Parola da ascoltare: "</string>
     <string name="inserisci_una_email">Inserisci una email</string>
     <string name="inserisci_una_password">Inserisci una password</string>
     <string name="inserisci_un_nome">Inserisci un nome</string>
@@ -166,9 +165,10 @@
     <string name="le_password_non_coincidono">Le password non coincidono</string>
     <string name="inserisci_l_email">Inserisci l\'email</string>
     <string name="inserisci_la_password">Inserisci la password</string>
-    <string name="arrivederci">"Arrivederci </string>
+    <string name="arrivederci">"Arrivederci "</string>
     <string name="benvenuto">"Benvenuto "</string>
-    <string name="accesso_negato">Accesso Negato!</string>
+    <string name="bentornato">"Bentornato "</string>
+    <string name="accesso_negato">Accesso negato</string>
     <string name="inserisci_una_data_di_nascita">Inserisci una data di nascita</string>
     <string name="inserisci_il_codice_fiscale_del_genitore">Inserisci il codice fiscale del genitore</string>
     <string name="bambino_gia_registrato">Bambino già registrato</string>
@@ -219,13 +219,13 @@
     <string name="secondo_classificato_500">Secondo classificato ( 500 )</string>
     <string name="terzo_classificato_100">Terzo classificato ( 100 )</string>
     <string name="paziente">Paziente</string>
-    <string name="inserisci_ora_inizio">Inserisci Ora Inizio</string>
+    <string name="inserisci_ora_inizio">Inserisci l\'orario di inizio</string>
     <string name="clicca_qui">Clicca Qui</string>
-    <string name="inserisci_ora_fine">Inserisci Ora Fine</string>
+    <string name="inserisci_ora_fine">Inserisci l\'orario di fine</string>
     <string name="appuntamento_creato_con_successo">Appuntamento salvato</string>
-    <string name="sovrapposizione_prenotazioni">Ora di Inizio invalido</string>
-    <string name="hai_gi_un_appuntamento_per_questo_paziente">Hai già un apputamento per questo paziente</string>
-    <string name="hai_gi_un_appuntamento_per_quest_ora">Hai già un appuntamento per quest\'ora</string>
+    <string name="sovrapposizione_appuntamenti">Orario di inizio non valido</string>
+    <string name="hai_gia_un_appuntamento_per_questo_paziente">Hai già un apputamento per questo paziente</string>
+    <string name="hai_gia_un_appuntamento_per_quest_ora">Hai già un appuntamento per quest\'ora</string>
     <string name="orario_non_valido">Orario non Valido</string>
     <string name="alle_ore">Alle ore</string>
     <string name="dalle_ore">Dalle ore</string>
@@ -249,10 +249,15 @@
     <string name="hai_acquistato">"Hai acquistato "</string>
     <string name="imposta_come_predefinito">IMPOSTA COME PREDEFINITO</string>
     <string name="elimina_appuntamento">Elimina Appuntamento</string>
-    <string name="sei_sicuro_di_voler_eliminare_l_appuntamento">Sei sicuro di voler eliminare l\' appuntamento?</string>
+    <string name="sei_sicuro_di_voler_eliminare_l_appuntamento">Sei sicuro di voler eliminare l\'appuntamento?</string>
     <string name="appuntamento_eliminato">Appuntamento eliminato</string>
     <string name="non_hai_appuntamenti">Non hai appuntamenti</string>
     <string name="non_hai_pazienti">Non hai pazienti</string>
+    <string name="i_miei_appuntamenti">I miei appuntamenti</string>
     <string name="orario">Orario</string>
-    <string name="le_mie_prenotazioni">I miei appuntamenti</string>
+    <string name="bambino_colon">"Bambino: "</string>
+    <string name="ora_fine_colon">"Ora fine: "</string>
+    <string name="paziente_colon">"Paziente: "</string>
+    <string name="dott">"Dott. "</string>
+    <string name="accesso_diretto">Accesso diretto</string>
 </resources>

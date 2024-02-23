@@ -91,6 +91,7 @@
                 android:background="@drawable/bg_btn"
                 android:drawableStart="@drawable/ic_exercise"
                 android:paddingLeft="10dp"
+                android:paddingHorizontal="10dp"
                 android:text="@string/visualizza_terapie"
                 android:visibility="gone" />
 

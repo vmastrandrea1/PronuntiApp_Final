@@ -309,7 +309,42 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a457bb-a7d3-4a2a-90ab-85549a33a37a" name="Changes" comment="" />
+    <list default="true" id="a7a457bb-a7d3-4a2a-90ab-85549a33a37a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/accesso/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/accesso/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/accesso/Login_Logopedista.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/accesso/Login_Logopedista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/CreaEsercizi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/CreaEsercizi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter_Orari_Genitore.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter_Orari_Genitore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/Gioco_Home_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/Gioco_Home_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Esercizi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Esercizi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Orari.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Orari.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/Calendario_Logopedista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/RegistraPrenotazioni.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/RegistraPrenotazioni.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_logopedista.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_logopedista.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/assegna_terapia_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/assegna_terapia_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_genitore.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_genitore.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_logopedista.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizi.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_prenotazioni_logopedista.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_prenotazioni_logopedista.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_registra_prenotazioni.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_registra_prenotazioni.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/patient_info_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/patient_info_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/reservation_info_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/reservation_info_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_therapy_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_therapy_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -318,7 +353,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\LaFFurb\.android\avd\Pixel_7_API_26.avd, adb-c52196c3-VjFrAp._adb-tls-connect._tcp]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[6f308bf5]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -417,7 +452,7 @@
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/LaFFurb/AndroidStudioProjects/PronuntiApp_Test/app/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/masvi/AndroidStudioProjects/PronuntiApp_Test/app/release/PronuntiApp2.0.0.apk&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Stefano/AndroidStudioProjects/PronuntiApp_Final/app/src/main/res/drawable&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Dependencies&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -438,11 +473,11 @@
       <recent name="it.uniba.dib.sms2324_4" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\src\main\res\drawable" />
       <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\layout" />
       <recent name="C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\layout" />
       <recent name="C:\Users\Scalera\AndroidStudioProjects\PronuntiApp_Final\app\src\main\res\drawable" />
       <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\drawable" />
-      <recent name="C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\src\main\res\layout" />
     </key>
     <key name="android.template.-1700629409">
       <recent name="it.uniba.dib.sms2324_4" />

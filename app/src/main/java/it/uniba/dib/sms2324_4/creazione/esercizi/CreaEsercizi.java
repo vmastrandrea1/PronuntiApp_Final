@@ -3,6 +3,7 @@ package it.uniba.dib.sms2324_4.creazione.esercizi;
 import android.os.Bundle;
 
 import androidx.activity.OnBackPressedCallback;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -27,9 +28,9 @@ public class CreaEsercizi extends Fragment {
     private static final String SESSION_KEY = "key";
 
     private String userID;
-    private Button bt1;
-    private Button bt2;
-    private Button bt3;
+    private CardView bt1;
+    private CardView bt2;
+    private CardView bt3;
 
     private ViewGroup container;
 
@@ -120,9 +121,9 @@ public class CreaEsercizi extends Fragment {
 
         //String ok=getIntent().getExtras().getString("nome");
         //toolbar.setTitle(ok);
-        bt1=(Button)view.findViewById(R.id.button190);
-        bt2=(Button)view.findViewById(R.id.button191);
-        bt3=(Button)view.findViewById(R.id.button192);
+        bt1=view.findViewById(R.id.tipoEs1);
+        bt2=view.findViewById(R.id.tipoEs2);
+        bt3=view.findViewById(R.id.tipoEs3);
 
         this.container = container;
 

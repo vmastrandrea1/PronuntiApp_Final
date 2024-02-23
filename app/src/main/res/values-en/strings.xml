@@ -42,7 +42,7 @@
     <string name="tipo_es3">Minimal pair recognition</string>
     <string name="tipo_es2">Word sequence repetition</string>
     <string name="tipo_es1">Image naming</string>
-    <string name="descrizione_es1">Given an image, the child must recognize the associated word.\nThe child is provided with up to 3 audio aids to help recognize the word.</string>
+    <string name="descrizione_es1">Given an image, the child must recognize the associated word. The child is provided with up to 3 audio aids to help recognize the word.</string>
     <string name="descrizione_es2">Given an audio playing 3 words in sequence, the child must record an audio repeating the words in the correct sequence.</string>
     <string name="descrizione_es3">Given two images and the audio playback of a word, the child must recognize the correct image to which the word refers.</string>
     <string name="descrizione_es1_game">Look at the image and record an audio pronouncing the corresponding word.\nYou have up to 3 audio aids to help you recognize the word.</string>
@@ -64,7 +64,6 @@
     <string name="nome_esercizio_gia_usato">Exercise name already used</string>
     <string name="immagine_non_inserita_nello_storage">Image not inserted in storage</string>
     <string name="oggetto_impostato_come_predefinito">Object set as default</string>
-    <string name="bentornato">Welcome back </string>
     <string name="esercizio_eliminato">Exercise deleted</string>
     <string name="account_gia_registrato">Account already registered</string>
     <string name="paziente_eliminato">Patient deleted</string>
@@ -79,7 +78,7 @@
     <string name="_100_monete">100 Coins</string>
     <string name="_500_punti_esperienza">500 Experience Points</string>
     <string name="inserisci_ora">Enter Time</string>
-    <string name="aggiungi_prenotazione">Add\nbooking</string>
+    <string name="aggiungi_appuntamento">Add booking</string>
     <string name="i_miei_figli">My children</string>
     <string name="_4_quarto_classificato">4) Fourth place</string>
     <string name="_18_marzo_74">March 18, 74</string>
@@ -115,8 +114,8 @@
     <string name="esercizio_3">Exercise 3</string>
     <string name="esercizio_4">Exercise 4</string>
     <string name="esercizio_5">Exercise 5</string>
-    <string name="immagine_sbagliata">WRONG IMAGE</string>
-    <string name="immagine_corretta">CORRECT IMAGE</string>
+    <string name="immagine_sbagliata">WRONG\nIMAGE</string>
+    <string name="immagine_corretta">CORRECT\nIMAGE</string>
     <string name="parola_da_ascoltare">WORD TO LISTEN</string>
     <string name="ascolta_la_parola">Listen to the word</string>
     <string name="ascolta_le_parole">Listen to the words</string>
@@ -156,7 +155,7 @@
     <string name="pazienti">Patients</string>
     <string name="immagine_corretta_colon">Correct image:</string>
     <string name="immagine_sbagliata_colon">Wrong image:</string>
-    <string name="parola_da_ascoltare_colon">Word to listen:</string>
+    <string name="parola_da_ascoltare_colon">"Word to listen: "</string>
     <string name="inserisci_una_email">Enter an email</string>
     <string name="inserisci_una_password">Enter a password</string>
     <string name="inserisci_un_nome">Enter a name</string>
@@ -168,7 +167,8 @@
     <string name="inserisci_la_password">Enter the password</string>
     <string name="arrivederci">"Goodbye "</string>
     <string name="benvenuto">"Welcome "</string>
-    <string name="accesso_negato">Access Denied!</string>
+    <string name="bentornato">"Welcome back "</string>
+    <string name="accesso_negato">Access denied</string>
     <string name="inserisci_una_data_di_nascita">Enter a date of birth</string>
     <string name="inserisci_il_codice_fiscale_del_genitore">Enter the parent\'s tax code</string>
     <string name="bambino_gia_registrato">Child already registered</string>
@@ -223,12 +223,12 @@
     <string name="clicca_qui">Click Here</string>
     <string name="inserisci_ora_fine">Insert End Time</string>
     <string name="appuntamento_creato_con_successo">Appointment saved</string>
-    <string name="sovrapposizione_prenotazioni">Start Time invalid</string>
-    <string name="hai_gi_un_appuntamento_per_questo_paziente">You already have an appointment for this patient</string>
-    <string name="hai_gi_un_appuntamento_per_quest_ora">You already have a appointment for this time</string>
+    <string name="sovrapposizione_appuntamenti">Start Time invalid</string>
+    <string name="hai_gia_un_appuntamento_per_questo_paziente">You already have an appointment for this patient</string>
+    <string name="hai_gia_un_appuntamento_per_quest_ora">You already have a appointment for this time</string>
     <string name="orario_non_valido">Time Invalid</string>
-    <string name="alle_ore">To h.</string>
-    <string name="dalle_ore">From h.</string>
+    <string name="alle_ore">Ending at</string>
+    <string name="dalle_ore">Starting at</string>
     <string name="aggiungi">Add</string>
     <string name="non_hai_terapie_per_oggi">You have no therapies today</string>
     <string name="esercizi_per_creare_una_nuova_terapia">Exercises \nto create a new therapy</string>
@@ -254,5 +254,10 @@
     <string name="non_hai_appuntamenti">You don\'t have any reservations</string>
     <string name="non_hai_pazienti">You don\'t have any patients</string>
     <string name="orario">Time</string>
-    <string name="le_mie_prenotazioni">My Reservations</string>
+    <string name="i_miei_appuntamenti">My appointments</string>
+    <string name="bambino_colon">"Child: "</string>
+    <string name="ora_fine_colon">"Start at: "</string>
+    <string name="paziente_colon">"Patient: "</string>
+    <string name="dott">"Dr. "</string>
+    <string name="accesso_diretto">Direct access</string>
 </resources>

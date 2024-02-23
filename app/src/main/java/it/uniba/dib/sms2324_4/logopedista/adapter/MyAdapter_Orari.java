@@ -165,7 +165,7 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot snapshot1) {
 
-                                        cfPaziente_prenotazione.setText("Paziente: " +
+                                        cfPaziente_prenotazione.setText(v.getContext().getString(R.string.paziente_colon) +
                                                 snapshot1.child("nome").getValue(String.class)
                                                 + " "
                                                 + snapshot1.child("cognome").getValue(String.class)
@@ -173,7 +173,7 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                                                 + snapshot1.child("cf").getValue(String.class)
                                                 + ")");
                                         giorno_prenotazione.setText(date);
-                                        ora_fine_prenotazione.setText("Ora fine : " + snapshot.child("ora_fine").getValue(String.class));
+                                        ora_fine_prenotazione.setText(v.getContext().getString(R.string.ora_fine_colon) + snapshot.child("ora_fine").getValue(String.class));
 
                                         //ELIMINA PRENOTAZIONE
                                         Button delete_reservation = reservationDialog.findViewById(R.id.delete_reservation);
