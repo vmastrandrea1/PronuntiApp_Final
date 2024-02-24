@@ -201,7 +201,30 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                 if(snapshot.exists()){
                                     elimina_paziente.setVisibility(View.GONE);
                                 }else{
-                                    elimina_paziente.setVisibility(View.VISIBLE);
+                                    Query conta_appuntamenti = database.getReference("Utenti")
+                                            .child("Logopedisti")
+                                            .child(sessionKey)
+                                            .child("Appuntamenti");
+                                    conta_appuntamenti.addListenerForSingleValueEvent(new ValueEventListener() {
+                                        @Override
+                                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                            for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                                for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
+                                                    if(dataSnapshot1.child("cfPaziente").getValue(String.class)
+                                                            .compareTo(list.get(pos).getCf()) == 0){
+                                                        elimina_paziente.setVisibility(View.GONE);
+                                                    }else{
+                                                        elimina_paziente.setVisibility(View.VISIBLE);
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        @Override
+                                        public void onCancelled(@NonNull DatabaseError error) {
+
+                                        }
+                                    });
                                 }
                             }
 

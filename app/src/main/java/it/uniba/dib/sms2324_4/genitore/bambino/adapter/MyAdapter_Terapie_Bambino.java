@@ -235,6 +235,7 @@ public class MyAdapter_Terapie_Bambino extends RecyclerView.Adapter<MyAdapter_Te
                                                     esercizio3.setMonete(snapshot1.child("monete").getValue(Integer.class));
                                                     esercizio3.setEsperienza(snapshot1.child("esperienza").getValue(Integer.class));
                                                     esercizio3.setConta_assegnazioni(snapshot1.child("conta_assegnazioni").getValue(Integer.class));
+                                                    esercizio3.setParola_immagine(snapshot1.child("parola_immagine").getValue(String.class));
 
                                                     list_es.add(esercizio3);
                                                 }

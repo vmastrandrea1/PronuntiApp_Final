@@ -19,8 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import it.uniba.dib.sms2324_4.logopedista.menu.ElencoPazienti;
-import it.uniba.dib.sms2324_4.genitore.adapter.MyAdapter_Prenotazioni_Genitore;
+import it.uniba.dib.sms2324_4.genitore.adapter.MyAdapter_Appuntamenti_Genitore;
 import it.uniba.dib.sms2324_4.R;
 
 /**
@@ -79,7 +78,7 @@ public class Calendario_Genitore extends Fragment {
         FirebaseDatabase database = FirebaseDatabase.getInstance(view.getContext().getString(R.string.db_url));
 
         RecyclerView recyclerView;
-        MyAdapter_Prenotazioni_Genitore myAdapter;
+        MyAdapter_Appuntamenti_Genitore myAdapter;
         ArrayList<String> list;
 
         recyclerView = view.findViewById(R.id.reservations_rv);
@@ -87,13 +86,13 @@ public class Calendario_Genitore extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
 
         list = new ArrayList<>();
-        myAdapter = new MyAdapter_Prenotazioni_Genitore(view.getContext(),list,sessionKey,getParentFragmentManager(),container);
+        myAdapter = new MyAdapter_Appuntamenti_Genitore(view.getContext(),list,sessionKey,getParentFragmentManager(),container);
         recyclerView.setAdapter(myAdapter);
 
         Query reservationExistant = database.getReference("Utenti")
                 .child("Genitori")
                 .child(sessionKey)
-                .child("Prenotazioni");
+                .child("Appuntamenti");
         reservationExistant.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

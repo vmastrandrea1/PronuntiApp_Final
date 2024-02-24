@@ -30,7 +30,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import it.uniba.dib.sms2324_4.R;
-import it.uniba.dib.sms2324_4.logopedista.menu.Prenotazioni_Logopedista;
+import it.uniba.dib.sms2324_4.logopedista.menu.Appuntamenti_Logopedista;
 
 public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyViewHolder> {
 
@@ -149,7 +149,7 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                         Query reservationExistant = database.getReference("Utenti")
                                 .child("Logopedisti")
                                 .child(sessionKey)
-                                .child("Prenotazioni")
+                                .child("Appuntamenti")
                                 .child(date)
                                 .child(list.get(pos));
                         reservationExistant.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -199,7 +199,7 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                                                         database.getReference("Utenti")
                                                                 .child("Logopedisti")
                                                                 .child(sessionKey)
-                                                                .child("Prenotazioni")
+                                                                .child("Appuntamenti")
                                                                 .child(date)
                                                                 .child(list.get(pos))
                                                                 .removeValue()
@@ -222,7 +222,7 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                                                                 database.getReference("Utenti")
                                                                         .child("Genitori")
                                                                         .child(snapshot.getValue(String.class))
-                                                                        .child("Prenotazioni")
+                                                                        .child("Appuntamenti")
                                                                         .child(date)
                                                                         .child(list.get(pos))
                                                                         .removeValue()
@@ -242,7 +242,7 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
 
                                                         Toast.makeText(v.getContext(), R.string.appuntamento_eliminato, Toast.LENGTH_SHORT).show();
                                                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                                                        fragmentTransaction.replace(container.getId() , Prenotazioni_Logopedista.newInstance(sessionKey));
+                                                        fragmentTransaction.replace(container.getId() , Appuntamenti_Logopedista.newInstance(sessionKey));
                                                         fragmentTransaction.commit();
                                                         reservationDialog.dismiss();
                                                         delete_item.dismiss();

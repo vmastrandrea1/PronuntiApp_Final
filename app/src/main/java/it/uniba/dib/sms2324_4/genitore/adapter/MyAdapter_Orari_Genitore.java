@@ -137,7 +137,7 @@ public class MyAdapter_Orari_Genitore extends RecyclerView.Adapter<MyAdapter_Ora
                         Query reservationExistant = database.getReference("Utenti")
                                 .child("Genitori")
                                 .child(sessionKey)
-                                .child("Prenotazioni")
+                                .child("Appuntamenti")
                                 .child(date)
                                 .child(list.get(pos));
                         reservationExistant.addListenerForSingleValueEvent(new ValueEventListener() {
