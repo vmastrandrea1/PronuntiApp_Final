@@ -101,14 +101,14 @@
     <string name="esercizio_terminato">Exercise finished</string>
     <string name="esercizio">Exercise</string>
     <string name="immagine_scelta">Selected image:</string>
-    <string name="aiuto_1_colon">Help 1:</string>
-    <string name="aiuto_2_colon">Help 2:</string>
-    <string name="aiuto_3_colon">Help 3:</string>
+    <string name="aiuto_1_colon">"Help 1: "</string>
+    <string name="aiuto_2_colon">"Help 2: "</string>
+    <string name="aiuto_3_colon">"Help 3: "</string>
     <string name="elimina_esercizio">Delete exercise</string>
     <string name="rimuovi_assegnazione">Remove assignment</string>
-    <string name="parola_1_colon">Word 1:</string>
-    <string name="parola_2_colon">Word 2:</string>
-    <string name="parola_3_colon">Word 3:</string>
+    <string name="parola_1_colon">"Word 1: "</string>
+    <string name="parola_2_colon">"Word 2: "</string>
+    <string name="parola_3_colon">"Word 3: "</string>
     <string name="esercizio_1">Exercise 1</string>
     <string name="esercizio_2">Exercise 2</string>
     <string name="esercizio_3">Exercise 3</string>
@@ -153,8 +153,8 @@
     <string name="figli">Children</string>
     <string name="esercizi">Exercises</string>
     <string name="pazienti">Patients</string>
-    <string name="immagine_corretta_colon">Correct image:</string>
-    <string name="immagine_sbagliata_colon">Wrong image:</string>
+    <string name="immagine_corretta_colon">"Correct image: "</string>
+    <string name="immagine_sbagliata_colon">"Wrong image: "</string>
     <string name="parola_da_ascoltare_colon">"Word to listen: "</string>
     <string name="inserisci_una_email">Enter an email</string>
     <string name="inserisci_una_password">Enter a password</string>
@@ -256,8 +256,11 @@
     <string name="orario">Time</string>
     <string name="i_miei_appuntamenti">My appointments</string>
     <string name="bambino_colon">"Child: "</string>
-    <string name="ora_fine_colon">"Start at: "</string>
+    <string name="ora_fine_colon">"It ends at: "</string>
     <string name="paziente_colon">"Patient: "</string>
     <string name="dott">"Dr. "</string>
     <string name="accesso_diretto">Direct access</string>
+    <string name="seleziona_una_tipologia">Select type:</string>
+    <string name="giorno_appuntamento_colon">"Appointment date: \n"</string>
+    <string name="correggi_gli_esercizi">Correct the exercises</string>
 </resources>

@@ -46,8 +46,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:paddingHorizontal="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/name_logopedista"
@@ -67,8 +66,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:paddingHorizontal="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/surname_logopedista"
@@ -87,8 +85,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:paddingHorizontal="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/cf_logopedista"
@@ -109,8 +106,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:paddingHorizontal="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/email_logopedista"
@@ -129,8 +125,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
+                android:paddingHorizontal="16dp"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -151,8 +146,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
+                android:paddingHorizontal="16dp"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText

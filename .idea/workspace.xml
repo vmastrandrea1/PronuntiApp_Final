@@ -58,6 +58,26 @@
           <theme>@style/BlueTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_exercise.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_patient.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_reservation.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_therapy.xml">
+        <config>
+          <theme>@style/BlueTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_dettaglio_item.xml">
         <config>
           <theme>@style/Theme.Material3.Light</theme>
@@ -311,39 +331,47 @@
   <component name="ChangeListManager">
     <list default="true" id="a7a457bb-a7d3-4a2a-90ab-85549a33a37a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/accesso/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/accesso/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/accesso/Login_Logopedista.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/accesso/Login_Logopedista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/CreaEsercizi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/CreaEsercizi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter_Orari_Genitore.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter_Orari_Genitore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/Gioco_Home_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/Gioco_Home_Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Esercizi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Esercizi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Orari.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Orari.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/Calendario_Logopedista.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/RegistraPrenotazioni.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/RegistraPrenotazioni.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_btn.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_add_exercise.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_add_exercise.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_add_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_add_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_add_reservation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_add_reservation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_view_reservation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_button_view_reservation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/play_audio_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/play_audio_button.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/play_audio_button_white.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/play_audio_button_white.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/rec_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rec_button.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/stop_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/stop_button.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/stop_button_white.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/stop_button_white.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_logopedista.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login_logopedista.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_logopedista.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_logopedista.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/assegna_terapia_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/assegna_terapia_popup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_genitore.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_genitore.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_calendario_logopedista.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/child_info_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/child_info_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_exercise.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_exercise.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_patient.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_reservation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_reservation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_therapy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/confirm_delete_therapy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/esercizio_svolto_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/esercizio_svolto_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/exercise1_info_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/exercise1_info_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/exercise2_info_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/exercise2_info_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/exercise3_info_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/exercise3_info_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_correzione_esercizio1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_correzione_esercizio1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_correzione_esercizio2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_correzione_esercizio2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizi.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizi.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_crea_esercizio3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_prenotazioni_logopedista.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_prenotazioni_logopedista.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_registra_prenotazioni.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_registra_prenotazioni.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/patient_info_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/patient_info_popup.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/reservation_info_popup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/reservation_info_popup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_exercises_results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_exercises_results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/view_therapy_patient.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_therapy_patient.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -401,10 +429,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
-        <option value="resourceFile" />
         <option value="valueResourceFile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>

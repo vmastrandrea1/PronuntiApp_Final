@@ -88,7 +88,7 @@
                 android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/bg_btn"
+                android:background="@drawable/rounded_corners_button_white"
                 android:drawableStart="@drawable/ic_exercise"
                 android:paddingLeft="10dp"
                 android:paddingHorizontal="10dp"
@@ -111,7 +111,7 @@
                 android:paddingHorizontal="10dp"
                 android:drawablePadding="10dp"
                 android:drawableStart="@drawable/ic_add_circle"
-                android:background="@drawable/bg_btn"/>
+                android:background="@drawable/rounded_corners_button_white"/>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/delete_patient"
@@ -122,7 +122,7 @@
                 android:paddingHorizontal="10dp"
                 android:gravity="center"
                 android:drawableStart="@drawable/ic_delete"
-                android:background="@drawable/bg_btn"/>
+                android:background="@drawable/rounded_corners_button_white"/>
         </LinearLayout>
     </LinearLayout>
 

@@ -6,7 +6,7 @@
     android:layout_height="260dp"
     android:layout_gravity="center"
     app:cardCornerRadius="20dp"
-    app:cardElevation="10dp">
+    app:cardElevation="0dp">
 
     <LinearLayout
         android:orientation="vertical"
@@ -40,9 +40,9 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/confirm_delete"
-                android:layout_width="match_parent"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-10dp"
+                android:layout_marginTop="-20dp"
                 android:text="@string/si_elimina"
                 android:textAllCaps="true"
                 android:background="@drawable/rounded_corners_button_red"
@@ -51,7 +51,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/discard_delete"
-                android:layout_width="match_parent"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:text="@string/no"

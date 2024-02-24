@@ -101,14 +101,14 @@
     <string name="esercizio_terminato">Esercizio terminato</string>
     <string name="esercizio">Esercizio</string>
     <string name="immagine_scelta">Immagine scelta:</string>
-    <string name="aiuto_1_colon">Aiuto 1 :</string>
-    <string name="aiuto_2_colon">Aiuto 2 :</string>
-    <string name="aiuto_3_colon">Aiuto 3 :</string>
+    <string name="aiuto_1_colon">"Aiuto 1: "</string>
+    <string name="aiuto_2_colon">"Aiuto 2: "</string>
+    <string name="aiuto_3_colon">"Aiuto 3: "</string>
     <string name="elimina_esercizio">Elimina esercizio</string>
     <string name="rimuovi_assegnazione">Rimuovi assegnazione</string>
-    <string name="parola_1_colon">Parola 1:</string>
-    <string name="parola_2_colon">Parola 2:</string>
-    <string name="parola_3_colon">Parola 3:</string>
+    <string name="parola_1_colon">"Parola 1: "</string>
+    <string name="parola_2_colon">"Parola 2: "</string>
+    <string name="parola_3_colon">"Parola 3: "</string>
     <string name="esercizio_1">Esercizio 1</string>
     <string name="esercizio_2">Esercizio 2</string>
     <string name="esercizio_3">Esercizio 3</string>
@@ -153,8 +153,8 @@
     <string name="figli">Figli</string>
     <string name="esercizi">Esercizi</string>
     <string name="pazienti">Pazienti</string>
-    <string name="immagine_corretta_colon">Immagine corretta:</string>
-    <string name="immagine_sbagliata_colon">Immagine sbagliata:</string>
+    <string name="immagine_corretta_colon">"Immagine corretta: "</string>
+    <string name="immagine_sbagliata_colon">"Immagine sbagliata: "</string>
     <string name="parola_da_ascoltare_colon">"Parola da ascoltare: "</string>
     <string name="inserisci_una_email">Inserisci una email</string>
     <string name="inserisci_una_password">Inserisci una password</string>
@@ -256,8 +256,11 @@
     <string name="i_miei_appuntamenti">I miei appuntamenti</string>
     <string name="orario">Orario</string>
     <string name="bambino_colon">"Bambino: "</string>
-    <string name="ora_fine_colon">"Ora fine: "</string>
+    <string name="ora_fine_colon">"Finisce alle: "</string>
     <string name="paziente_colon">"Paziente: "</string>
     <string name="dott">"Dott. "</string>
     <string name="accesso_diretto">Accesso diretto</string>
+    <string name="seleziona_una_tipologia">Seleziona una tipologia:</string>
+    <string name="giorno_appuntamento_colon">"Giorno appuntamento: \n"</string>
+    <string name="correggi_gli_esercizi">Correggi gli esercizi</string>
 </resources>

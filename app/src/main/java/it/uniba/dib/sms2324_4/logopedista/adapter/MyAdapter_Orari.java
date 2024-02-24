@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.ParseException;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +24,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.logopedista.menu.Prenotazioni_Logopedista;
@@ -172,7 +176,7 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                                                 + "\n("
                                                 + snapshot1.child("cf").getValue(String.class)
                                                 + ")");
-                                        giorno_prenotazione.setText(date);
+                                        giorno_prenotazione.setText(v.getContext().getString(R.string.giorno_appuntamento_colon) + formatDate(date).toUpperCase());
                                         ora_fine_prenotazione.setText(v.getContext().getString(R.string.ora_fine_colon) + snapshot.child("ora_fine").getValue(String.class));
 
                                         //ELIMINA PRENOTAZIONE
@@ -279,6 +283,22 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
                 }
             });
 
+        }
+    }
+
+    private static String formatDate(String inputDate) {
+        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        SimpleDateFormat outputFormat = new SimpleDateFormat("dd MMMM yyyy", Locale.getDefault());
+
+        try {
+            Date date = inputFormat.parse(inputDate);
+            return outputFormat.format(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            // Gestione dell'eccezione in caso di errore nella formattazione della data
+            return null;
+        } catch (java.text.ParseException e) {
+            throw new RuntimeException(e);
         }
     }
 

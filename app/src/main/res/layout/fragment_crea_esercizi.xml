@@ -20,7 +20,7 @@
             android:layout_marginTop="30dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Seleziona una tipologia:"
+            android:text="@string/seleziona_una_tipologia"
             android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold" />

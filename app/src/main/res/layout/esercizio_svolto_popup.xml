@@ -77,7 +77,7 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:layout_marginTop="10dp"
@@ -135,7 +135,7 @@
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="20dp"
         android:layout_marginHorizontal="20dp"
-        android:background="@drawable/bg_btn"
+        android:background="@drawable/rounded_corners_button_white"
         android:drawableStart="@drawable/ic_exercise"
         android:paddingLeft="10dp"
         android:text="@string/visualizza_esercizio"

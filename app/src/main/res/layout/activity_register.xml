@@ -42,8 +42,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:paddingHorizontal="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/name"
@@ -61,8 +60,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:paddingHorizontal="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/surname"
@@ -80,8 +78,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:paddingHorizontal="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/cf"
@@ -100,8 +97,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp">
+                android:paddingHorizontal="16dp">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/email"
@@ -118,8 +114,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
+                android:paddingHorizontal="16dp"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -138,8 +133,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
+                android:paddingHorizontal="16dp"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText

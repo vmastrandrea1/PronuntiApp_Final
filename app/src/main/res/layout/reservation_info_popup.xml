@@ -46,7 +46,7 @@
                 android:id="@+id/giorno_prenotazione"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/parola_1_colon"
+                android:text="@string/giorno_appuntamento_colon"
                 android:textColor="@color/white"
                 android:gravity="center_horizontal"
                 android:layout_marginBottom="30dp"/>
@@ -54,7 +54,7 @@
                 android:id="@+id/cfPaziente_prenotazione"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/parola_2_colon"
+                android:text="@string/bambino_colon"
                 android:textColor="@color/white"
                 android:gravity="center_horizontal"
                 android:layout_marginBottom="30dp"/>
@@ -63,7 +63,7 @@
                 android:id="@+id/ora_fine_prenotazione"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/parola_3_colon"
+                android:text="@string/ora_fine_colon"
                 android:textColor="@color/white"
                 android:gravity="center_horizontal"/>
 
@@ -83,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:layout_marginLeft="25dp"
-                android:background="@drawable/bg_btn"
+                android:background="@drawable/rounded_corners_button_white"
                 android:drawableStart="@drawable/ic_delete"
                 android:paddingHorizontal="10dp"
                 android:drawablePadding="20dp"
