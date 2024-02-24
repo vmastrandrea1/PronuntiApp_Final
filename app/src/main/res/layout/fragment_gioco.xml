@@ -16,110 +16,138 @@
         android:background="@drawable/map_sentiero"
         app:layout_constraintTop_toTopOf="parent">
 
-
-        <!-- ImageButton con vincoli della bandierina4-->
-        <ImageButton
-            android:id="@+id/bandierina_4"
-            android:layout_width="54dp"
-            android:layout_height="78dp"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/bandierina"
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/regalo_static"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            tools:ignore="MissingConstraints"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            android:scaleX="-1"
+            app:lottie_rawRes="@raw/regalo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.221"
+            app:layout_constraintHorizontal_bias="0.252"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.486" />
+            app:layout_constraintVertical_bias="0.2" />
 
-        <!-- ImageButton con vincoli della bandierina2-->
-        <ImageButton
-            android:id="@+id/bandierina_2"
-            android:layout_width="54dp"
-            android:layout_height="78dp"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/bandierina"
+        <!-- ImageButton con vincoli del regalo-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/regalo_moving"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            tools:ignore="MissingConstraints"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:scaleX="-1"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/regalo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.677"
+            app:layout_constraintHorizontal_bias="0.252"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.717" />
-
-        <!-- ImageButton con vincoli della bandierina3-->
-        <ImageButton
-            android:id="@+id/bandierina_3"
-            android:layout_width="54dp"
-            android:layout_height="78dp"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/bandierina"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.43"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.628" />
-
-        <!-- ImageButton con vincoli della bandierina1-->
-        <ImageButton
-            android:id="@+id/bandierina_1"
-            android:layout_width="54dp"
-            android:layout_height="78dp"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/bandierina"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.858"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintVertical_bias="0.2" />
 
         <!-- ImageButton con vincoli della bandierina5-->
-        <ImageButton
+        <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/bandierina_5"
             android:layout_width="54dp"
             android:layout_height="78dp"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
-            android:src="@drawable/bandierina"
+            android:scaleType="fitCenter"
+            tools:ignore="MissingConstraints"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:scaleX="-1"
+            app:lottie_rawRes="@raw/waving_flag"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.372"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.392" />
+            app:layout_constraintVertical_bias="0.42" />
 
-        <!-- ImageButton con vincoli del regalo-->
-        <ImageButton
-            android:id="@+id/regalo"
-            android:layout_width="73dp"
-            android:layout_height="69dp"
-            android:background="@android:color/transparent"
-            android:scaleType="centerCrop"
+
+        <!-- ImageButton con vincoli della bandierina4-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bandierina_4"
+            android:layout_width="54dp"
+            android:layout_height="78dp"
+            android:scaleType="fitCenter"
+            tools:ignore="MissingConstraints"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:scaleX="-1"
+            app:lottie_rawRes="@raw/waving_flag"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.252"
+            app:layout_constraintHorizontal_bias="0.221"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.236" />
+            app:layout_constraintVertical_bias="0.52" />
 
-        <ImageView
-            android:id="@+id/image_regalo"
-            android:layout_width="73dp"
-            android:layout_height="69dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/regalo"
-            android:scaleType="centerCrop"
+
+
+
+        <!-- ImageButton con vincoli della bandierina3-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bandierina_3"
+            android:layout_width="54dp"
+            android:layout_height="78dp"
+            android:scaleType="fitCenter"
+            tools:ignore="MissingConstraints"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:scaleX="-1"
+            app:lottie_rawRes="@raw/waving_flag"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.252"
+            app:layout_constraintHorizontal_bias="0.43"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.236" />
+            app:layout_constraintVertical_bias="0.63" />
+
+
+        <!-- ImageButton con vincoli della bandierina2-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bandierina_2"
+            android:layout_width="54dp"
+            android:layout_height="78dp"
+            android:scaleType="fitCenter"
+            tools:ignore="MissingConstraints"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:scaleX="-1"
+            app:lottie_rawRes="@raw/waving_flag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.677"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.73" />
+
+
+        <!-- ImageButton con vincoli della bandierina1-->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bandierina_1"
+            android:layout_width="54dp"
+            android:layout_height="78dp"
+            android:scaleType="fitCenter"
+            tools:ignore="MissingConstraints"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:scaleX="-1"
+            app:lottie_rawRes="@raw/waving_flag"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.86" />
+
 
         <!-- ImageView per il personaggio-->
         <ImageView

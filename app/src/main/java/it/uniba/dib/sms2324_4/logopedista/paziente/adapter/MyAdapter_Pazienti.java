@@ -674,6 +674,16 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
 
                                                         count_assegnazioni = 0;
 
+                                                        database.getReference("Utenti")
+                                                                .child("Logopedisti")
+                                                                .child(sessionKey)
+                                                                .child("Pazienti")
+                                                                .child(list.get(pos).getCf())
+                                                                .child("Terapie")
+                                                                .child(therapy_day_select)
+                                                                .child("regalo_riscattato")
+                                                                .setValue(false);
+
                                                         Toast.makeText(v.getContext(), R.string.terapia_salvata, Toast.LENGTH_SHORT).show();
                                                         assegna_terapia_dialog.dismiss();
                                                         mDialog.dismiss();

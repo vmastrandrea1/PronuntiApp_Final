@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.activity.OnBackPressedCallback;
@@ -15,6 +14,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -41,7 +41,9 @@ public class GiocoFragment extends Fragment{
 
     private ImageView overlayImage;
     int currentButtonIndex = 0;
-    private ImageButton[] buttons;
+
+    private LottieAnimationView[] animationViews;
+
 
     private static final String BAMBINO_ID = "BAMBINO_ID";
     private static  final String SESSION_KEY = "SESSION_KEY";
@@ -113,7 +115,7 @@ public class GiocoFragment extends Fragment{
         currentButtonIndex = 0;
 
         loadFlagVisibility(rootView);
-        
+
         loadCurrentPosition();
 
         Query id_map = database.getReference("Utenti")
@@ -265,29 +267,20 @@ public class GiocoFragment extends Fragment{
             }
         });
 
-        buttons = new ImageButton[]{ //bottoni per il regalo e le bandierine
+        animationViews = new LottieAnimationView[]{
                 rootView.findViewById(R.id.bandierina_1),
                 rootView.findViewById(R.id.bandierina_2),
                 rootView.findViewById(R.id.bandierina_3),
                 rootView.findViewById(R.id.bandierina_4),
                 rootView.findViewById(R.id.bandierina_5),
-                rootView.findViewById(R.id.regalo)
-
+                rootView.findViewById(R.id.regalo_moving)
         };
+
 
 
         setButtonClickListeners(rootView);
 
         return rootView;
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-
-        // Mostra la navbar
-        BottomNavigationView bottomNavigationView = requireActivity().findViewById(R.id.bottomBar);
-        bottomNavigationView.setVisibility(View.VISIBLE);
     }
 
 
@@ -307,6 +300,7 @@ public class GiocoFragment extends Fragment{
                 else{
                     overlayImage.setX(270);
                     overlayImage.setY(1400);
+                    animationViews[5].setVisibility(View.GONE);
                 }
             }
 
@@ -318,7 +312,7 @@ public class GiocoFragment extends Fragment{
 
     }
 
-    private void animateImage(final ImageButton button) {
+    private void animateImage(final LottieAnimationView button) {
         float destinationX = button.getX() + button.getWidth() / 2 - overlayImage.getWidth() / 2;
         float destinationY = button.getY() + button.getHeight() / 2 - overlayImage.getHeight() / 2;
 
@@ -387,11 +381,12 @@ public class GiocoFragment extends Fragment{
                 .child("Terapie")
                 .child(data_terapia);
 
-        buttons[5].setVisibility(View.GONE);
-
         childExistant.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                ImageView regalo_static = rootview.findViewById(R.id.regalo_static);
+
                 int i = 0;
                 if(snapshot.exists()){
                     for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
@@ -400,13 +395,13 @@ public class GiocoFragment extends Fragment{
                             if(dataSnapshot1.child("eseguito").exists()){
                                 currentButtonIndex++;
                             }else{
-                                buttons[i].setOnClickListener(new View.OnClickListener() {
+                                animationViews[i].setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
                                         if (currentButtonIndex == buttonIndex) {
-                                            animateImage(buttons[buttonIndex]);
+                                            animateImage(animationViews[buttonIndex]);
 
-                                            buttons[buttonIndex].setVisibility(View.GONE);
+                                            animationViews[buttonIndex].setVisibility(View.GONE);
                                             try {
                                                 apriEsercizio(dataSnapshot1,buttonIndex+1);
                                             } catch (IOException e) {
@@ -415,7 +410,8 @@ public class GiocoFragment extends Fragment{
                                             currentButtonIndex++;
                                         }
                                         if(currentButtonIndex == 5){
-                                            buttons[5].setVisibility(View.VISIBLE);
+                                            animationViews[5].setVisibility(View.VISIBLE);
+                                            regalo_static.setVisibility(View.GONE);
                                         }
                                     }
                                 });
@@ -432,16 +428,30 @@ public class GiocoFragment extends Fragment{
             }
         });
 
-        buttons[5].setOnClickListener(new View.OnClickListener() {
+        animationViews[5].setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                animateGift(buttons[5]);
+                animateGift(animationViews[5]);
 
-                buttons[5].setVisibility(View.GONE);
+                // fa sparire regalo moving quando premuto
+                animationViews[5].setVisibility(View.GONE);
 
-                ImageView regalo = rootview.findViewById(R.id.image_regalo);
-                regalo.setVisibility(View.GONE);
+                database.getReference("Utenti")
+                        .child("Logopedisti")
+                        .child(id_logopedista)
+                        .child("Pazienti")
+                        .child(id_bambino)
+                        .child("Terapie")
+                        .child(getData())
+                        .child("regalo_riscattato")
+                        .setValue(true)
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
 
                 Query aggiorna_progressi_monete = database.getReference("Utenti")
                         .child("Genitori")
@@ -539,7 +549,7 @@ public class GiocoFragment extends Fragment{
                         mediaPlayer.start();
 
                         View dialogView = LayoutInflater.from(rootview.getContext()).inflate(R.layout.dialog_regalo_riscosso, null);
-                        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext(), R.style.AlertDialogButtonStyle)
+                        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext())
                                 .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                                 .setView(dialogView)
                                 .setPositiveButton("OK",null);
@@ -555,9 +565,9 @@ public class GiocoFragment extends Fragment{
         });
     }
 
-    private void animateGift(ImageButton button) {
-        float destinationX = button.getX() + button.getWidth() / 2 - overlayImage.getWidth() / 2;
-        float destinationY = button.getY() + button.getHeight() / 2 - overlayImage.getHeight() / 2;
+    private void animateGift(LottieAnimationView animationView) {
+        float destinationX = animationView.getX() + animationView.getWidth() / 2 - overlayImage.getWidth() / 2;
+        float destinationY = animationView.getY() + animationView.getHeight() / 2 - overlayImage.getHeight() / 2;
 
         ValueAnimator animatorX = ValueAnimator.ofFloat(overlayImage.getX(), destinationX);
         ValueAnimator animatorY = ValueAnimator.ofFloat(overlayImage.getY(), destinationY);
@@ -582,6 +592,7 @@ public class GiocoFragment extends Fragment{
         animatorX.start();
         animatorY.start();
     }
+
 
     private String getData() {
         DateFormat formatoData = new SimpleDateFormat("yyyy-MM-dd");
@@ -632,7 +643,7 @@ public class GiocoFragment extends Fragment{
 
     // Metodo per caricare lo stato delle bandierine visibili
     private void loadFlagVisibility(View rootView) {
-        ImageView regalo = rootView.findViewById(R.id.image_regalo);
+        LottieAnimationView regalo_static = rootView.findViewById(R.id.regalo_static);
 
         Query fetch_visibilty = database.getReference("Utenti")
                 .child("Logopedisti")
@@ -645,15 +656,49 @@ public class GiocoFragment extends Fragment{
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 int i = 0;
-                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
-                        if(dataSnapshot1.child("eseguito").exists()){
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
+                        if (dataSnapshot1.child("eseguito").exists()) {
                             isFlagVisible[i] = false; // Preimposta lo stato delle bandierine a true se non esiste alcun valore salvato
-                            buttons[i].setVisibility(View.GONE);
-                        }else{
+                            animationViews[i].setVisibility(View.GONE);
+                        } else {
                             isFlagVisible[i] = true; // Preimposta lo stato delle bandierine a true se non esiste alcun valore salvato
-                            buttons[i].setVisibility(View.VISIBLE);
-                            regalo.setVisibility(View.VISIBLE);
+                            animationViews[i].setVisibility(View.VISIBLE);
+                            regalo_static.setVisibility(View.VISIBLE);
+                        }
+
+                        if(i==4){
+                            if(animationViews[4].getVisibility() == View.GONE){
+                                Query gift_visibilty = database.getReference("Utenti")
+                                        .child("Logopedisti")
+                                        .child(id_logopedista)
+                                        .child("Pazienti")
+                                        .child(id_bambino)
+                                        .child("Terapie")
+                                        .child(getData())
+                                        .child("regalo_riscattato");
+                                gift_visibilty.addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        if(!snapshot.getValue(Boolean.class)){
+                                            isFlagVisible[5] = true;
+                                            regalo_static.setVisibility(View.GONE);
+                                            animationViews[5].setVisibility(View.VISIBLE);
+                                        }else{
+                                            regalo_static.setVisibility(View.GONE);
+                                            animationViews[5].setVisibility(View.GONE);
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                    }
+                                });
+                            }else{
+                                regalo_static.setVisibility(View.VISIBLE);
+                                animationViews[5].setVisibility(View.GONE);
+                            }
                         }
                     }
                     i++;
@@ -667,29 +712,5 @@ public class GiocoFragment extends Fragment{
         });
 
 
-        Query gift_visibilty = database.getReference("Utenti")
-                .child("Genitori")
-                .child(sessionKey_genitore)
-                .child("Bambini")
-                .child(id_bambino)
-                .child("X_Position");
-        gift_visibilty.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(!snapshot.exists()){
-                    isFlagVisible[5] = false;
-                    buttons[5].setVisibility(View.GONE);
-
-                    regalo.setVisibility(View.GONE);
-                }else{
-                    regalo.setVisibility(View.VISIBLE);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
     }
 }
