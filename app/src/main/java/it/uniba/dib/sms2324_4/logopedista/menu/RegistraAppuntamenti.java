@@ -129,7 +129,9 @@ public class RegistraAppuntamenti extends Fragment {
                 int hour = calendar.get(Calendar.HOUR_OF_DAY);
                 int minute = calendar.get(Calendar.MINUTE);
 
-                TimePickerDialog timePickerDialog = new TimePickerDialog(getContext(),
+                int style = R.style.MyDatePickerDialogTheme;
+
+                TimePickerDialog timePickerDialog = new TimePickerDialog(getContext(), style,
                         new TimePickerDialog.OnTimeSetListener() {
                             @Override
                             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
@@ -147,7 +149,9 @@ public class RegistraAppuntamenti extends Fragment {
                 int hour = calendar.get(Calendar.HOUR_OF_DAY);
                 int minute = calendar.get(Calendar.MINUTE);
 
-                TimePickerDialog timePickerDialog = new TimePickerDialog(getContext(),
+                int style = R.style.MyDatePickerDialogTheme;
+
+                TimePickerDialog timePickerDialog = new TimePickerDialog(getContext(), style,
                         new TimePickerDialog.OnTimeSetListener() {
                             @Override
                             public void onTimeSet(TimePicker view, int hourOfDay, int minute) {

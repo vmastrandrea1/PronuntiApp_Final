@@ -230,7 +230,7 @@
     <string name="alle_ore">Ending at</string>
     <string name="dalle_ore">Starting at</string>
     <string name="aggiungi">Add</string>
-    <string name="non_hai_terapie_per_oggi">You have no therapies today</string>
+    <string name="non_hai_terapie_per_oggi">You have no exercise to do for today</string>
     <string name="esercizi_per_creare_una_nuova_terapia">Exercises \nto create a new therapy</string>
     <string name="aggiungi_un_altro_esercizio_per_creare_una_nuova_terapia">Add another exercise \nto create a new therapy</string>
     <string name="correzione_corretto">Correction: CORRECT</string>
@@ -263,4 +263,5 @@
     <string name="seleziona_una_tipologia">Select type:</string>
     <string name="giorno_appuntamento_colon">"Appointment date: \n"</string>
     <string name="correggi_gli_esercizi">Correct the exercises</string>
+    <string name="hai_terminato_gli_esercizi_per_oggi">You\'ve finished the exercises today</string>
 </resources>

@@ -11,5 +11,6 @@
     <color name="violet">#FF8C56EC</color>
     <color name="green">#FF009252</color>
     <color name="red">#FFF95B5A</color>
+    <color name="darkred">#FFE62041</color>
     <color name="yellow">#FFFFB700</color>
 </resources>

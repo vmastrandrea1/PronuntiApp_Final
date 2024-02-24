@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0AC9FE"
+    android:background="#1DCEFF"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".genitore.menu.gioco.ui.gioco.NoTherapyFragment">
 
@@ -18,20 +18,21 @@
             android:id="@+id/lottieAnimationView"
             android:layout_width="wrap_content"
             android:layout_height="350dp"
-            android:scaleType="centerCrop"
+            android:scaleType="fitCenter"
+            android:paddingHorizontal="80dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/sleeping_animation" />
+            app:lottie_rawRes="@raw/shiba" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="@string/non_hai_terapie_per_oggi"
+            android:text="@string/hai_terminato_gli_esercizi_per_oggi"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:paddingHorizontal="60dp"

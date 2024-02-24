@@ -230,7 +230,7 @@
     <string name="alle_ore">Alle ore</string>
     <string name="dalle_ore">Dalle ore</string>
     <string name="aggiungi">Aggiungi</string>
-    <string name="non_hai_terapie_per_oggi">Non hai terapie per oggi</string>
+    <string name="non_hai_terapie_per_oggi">Non hai esercizi da fare per oggi</string>
     <string name="esercizi_per_creare_una_nuova_terapia">" esercizi \nper creare una nuova terapia"</string>
     <string name="aggiungi_un_altro_esercizio_per_creare_una_nuova_terapia">Aggiungi un altro esercizio \nper creare una nuova terapia</string>
     <string name="correzione_corretto">Correzione : CORRETTO</string>
@@ -263,4 +263,5 @@
     <string name="seleziona_una_tipologia">Seleziona una tipologia:</string>
     <string name="giorno_appuntamento_colon">"Giorno appuntamento: \n"</string>
     <string name="correggi_gli_esercizi">Correggi gli esercizi</string>
+    <string name="hai_terminato_gli_esercizi_per_oggi">Hai terminato gli esercizi per oggi</string>
 </resources>

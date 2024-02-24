@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,6 +27,7 @@ import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.genitore.menu.gioco.ui.classifica.ClassificaFragment;
 import it.uniba.dib.sms2324_4.genitore.menu.gioco.ui.gioco.GiocoFragment;
 import it.uniba.dib.sms2324_4.genitore.menu.gioco.ui.gioco.NoTherapyFragment;
+import it.uniba.dib.sms2324_4.genitore.menu.gioco.ui.gioco.TherapyFinishedFragment;
 import it.uniba.dib.sms2324_4.genitore.menu.gioco.ui.shop.ShopFragment;
 
 public class Gioco_Home_Page extends Fragment {
@@ -86,11 +89,8 @@ public class Gioco_Home_Page extends Fragment {
                     // Se non ci sono terapie, mostra un fragment con il messaggio appropriato
                     showNoTherapyFragment();
                 }else{
-                    GiocoFragment fragmentGioco = GiocoFragment.newInstance(id_bambino, sessionKey, id_logopedista);
-                    requireActivity().getSupportFragmentManager().beginTransaction()
-                            .replace(R.id.fragmentContainer, fragmentGioco)
-                            .addToBackStack(null)
-                            .commit();
+                    // Se ci sono terapie, mostra il gioco
+                    showGioco();
                 }
             }
 
@@ -133,11 +133,8 @@ public class Gioco_Home_Page extends Fragment {
                                 // Se non ci sono terapie, mostra un fragment con il messaggio appropriato
                                 showNoTherapyFragment();
                             }else{
-                                GiocoFragment fragmentGioco = GiocoFragment.newInstance(id_bambino, sessionKey, id_logopedista);
-                                requireActivity().getSupportFragmentManager().beginTransaction()
-                                        .replace(R.id.fragmentContainer, fragmentGioco)
-                                        .addToBackStack(null)
-                                        .commit();
+                                // Se ci sono terapie, mostra il gioco
+                                showGioco();
                             }
                         }
 
@@ -169,6 +166,39 @@ public class Gioco_Home_Page extends Fragment {
         // Inizia una transazione per sostituire il fragment corrente con NoTherapyFragment
         fragmentManager.beginTransaction()
                 .replace(R.id.fragmentContainer, noTherapyFragment)
+                .addToBackStack(null)
+                .commit();
+    }
+
+
+    private void showGioco() {
+        // Crea una nuova istanza del fragment GiocoFragment
+        GiocoFragment fragmentGioco = GiocoFragment.newInstance(id_bambino, sessionKey, id_logopedista);
+
+        // Ottieni il FragmentManager e avvia una transazione
+        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        // Sostituisci il fragment corrente con il fragment GiocoFragment
+        fragmentTransaction.replace(R.id.fragmentContainer, fragmentGioco);
+
+        // Aggiungi la transazione allo stack back per consentire il ritorno al fragment precedente
+        fragmentTransaction.addToBackStack(null);
+
+        // Esegui la transazione
+        fragmentTransaction.commit();
+    }
+
+
+    private void showTherapyFinishedFragment() {
+        TherapyFinishedFragment therapyFinishedFragment = new TherapyFinishedFragment();
+
+        // Ottieni il FragmentManager dalla tua attività o dal fragment padre
+        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+
+        // Inizia una transazione per sostituire il fragment corrente con NoTherapyFragment
+        fragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, therapyFinishedFragment)
                 .addToBackStack(null)
                 .commit();
     }
