@@ -26,7 +26,6 @@
             android:drawableStart="@drawable/ic_exercise"
             android:drawablePadding="10dp"
             android:text="@string/esercizio"
-            android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold"/>

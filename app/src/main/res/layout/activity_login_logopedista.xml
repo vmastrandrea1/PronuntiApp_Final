@@ -38,11 +38,12 @@
         android:text="@string/accesso_diretto"
         android:textAllCaps="true"
         android:textColorHint="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="35dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Accedi come logopedista -->
+
     <TextView
         android:id="@+id/login_logopedista"
         android:layout_width="match_parent"
@@ -55,8 +56,8 @@
         android:textColor="@color/white"
         android:textSize="40sp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="10dp"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="RtlSymmetry"
+        tools:layout_editor_absoluteX="10dp" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/myCardView"

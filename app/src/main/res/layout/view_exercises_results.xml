@@ -35,16 +35,16 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="90dp"
         android:padding="5dp"
         android:layout_gravity="center">
 
         <!-- Card 1 -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="55dp"
             android:layout_margin="20dp"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="20dp">
 
             <TextView
                 android:id="@+id/TVesercizio_1"
@@ -67,9 +67,9 @@
         <!-- Card 2 -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="55dp"
             android:layout_margin="20dp"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="20dp">
 
             <TextView
                 android:id="@+id/TVesercizio_2"
@@ -92,9 +92,9 @@
         <!-- Card 3 -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="55dp"
             android:layout_margin="20dp"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="20dp">
 
             <TextView
                 android:id="@+id/TVesercizio_3"
@@ -117,9 +117,9 @@
         <!-- Card 4 -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="55dp"
             android:layout_margin="20dp"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="20dp">
 
             <TextView
                 android:id="@+id/TVesercizio_4"
@@ -142,9 +142,9 @@
         <!-- Card 5 -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="55dp"
             android:layout_margin="20dp"
-            app:cardCornerRadius="15dp">
+            app:cardCornerRadius="20dp">
 
             <TextView
                 android:id="@+id/TVesercizio_5"
