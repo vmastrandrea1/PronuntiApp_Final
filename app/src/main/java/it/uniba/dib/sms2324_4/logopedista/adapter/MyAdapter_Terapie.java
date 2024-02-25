@@ -699,7 +699,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                             if(dataSnapshot.child("eseguito").exists() &&
                                                                     !TVesercizio_1.getText().toString().startsWith("3_")){
                                                                 Dialog info_dialog = new Dialog(dialog1.getContext());
-                                                                dialog1.dismiss();
+                                                                //dialog1.dismiss();
                                                                 info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
                                                                 TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
@@ -1108,7 +1108,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                             if(dataSnapshot.child("eseguito").exists() &&
                                                                     !TVesercizio_2.getText().toString().startsWith("3_")){
                                                                 Dialog info_dialog = new Dialog(dialog1.getContext());
-                                                                dialog1.dismiss();
+                                                                //dialog1.dismiss();
                                                                 info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
                                                                 TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
@@ -1516,7 +1516,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                             if(dataSnapshot.child("eseguito").exists() &&
                                                                     !TVesercizio_3.getText().toString().startsWith("3_")){
                                                                 Dialog info_dialog = new Dialog(dialog1.getContext());
-                                                                dialog1.dismiss();
+                                                                //dialog1.dismiss();
                                                                 info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
                                                                 TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
@@ -1924,7 +1924,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                             if(dataSnapshot.child("eseguito").exists() &&
                                                                     !TVesercizio_4.getText().toString().startsWith("3_")){
                                                                 Dialog info_dialog = new Dialog(dialog1.getContext());
-                                                                dialog1.dismiss();
+                                                                //dialog1.dismiss();
                                                                 info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
                                                                 TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
@@ -2332,7 +2332,7 @@ public class MyAdapter_Terapie extends RecyclerView.Adapter<MyAdapter_Terapie.My
                                                             if(dataSnapshot.child("eseguito").exists() &&
                                                                     !TVesercizio_5.getText().toString().startsWith("3_")){
                                                                 Dialog info_dialog = new Dialog(dialog1.getContext());
-                                                                dialog1.dismiss();
+                                                                //dialog1.dismiss();
                                                                 info_dialog.setContentView(R.layout.esercizio_svolto_popup);
 
                                                                 TextView id_esercizio1_popup = info_dialog.findViewById(R.id.id_esercizio1_correzione_popup);
