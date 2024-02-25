@@ -88,9 +88,30 @@ public class Gioco_Home_Page extends Fragment {
                 if (!terapiePresenti) {
                     // Se non ci sono terapie, mostra un fragment con il messaggio appropriato
                     showNoTherapyFragment();
-                }else{
-                    // Se ci sono terapie, mostra il gioco
-                    showGioco();
+                }else {
+                    Query terapiaEseguita = database.getReference("Utenti")
+                            .child("Logopedisti")
+                            .child(id_logopedista)
+                            .child("Pazienti")
+                            .child(id_bambino)
+                            .child("Terapie")
+                            .child(getData())
+                            .child("terpia_completata");
+                    terapiaEseguita.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            if(snapshot.exists()){
+                                showTherapyFinishedFragment();
+                            }else{
+                                showGioco();
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
                 }
             }
 
@@ -133,8 +154,29 @@ public class Gioco_Home_Page extends Fragment {
                                 // Se non ci sono terapie, mostra un fragment con il messaggio appropriato
                                 showNoTherapyFragment();
                             }else{
-                                // Se ci sono terapie, mostra il gioco
-                                showGioco();
+                                Query terapiaEseguita = database.getReference("Utenti")
+                                        .child("Logopedisti")
+                                        .child(id_logopedista)
+                                        .child("Pazienti")
+                                        .child(id_bambino)
+                                        .child("Terapie")
+                                        .child(getData())
+                                        .child("terpia_completata");
+                                terapiaEseguita.addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        if(snapshot.exists()){
+                                            showTherapyFinishedFragment();
+                                        }else{
+                                            showGioco();
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                    }
+                                });
                             }
                         }
 

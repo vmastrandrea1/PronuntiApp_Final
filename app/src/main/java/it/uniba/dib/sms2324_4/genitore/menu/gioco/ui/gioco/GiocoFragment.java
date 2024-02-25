@@ -453,6 +453,22 @@ public class GiocoFragment extends Fragment{
                             }
                         });
 
+                database.getReference("Utenti")
+                        .child("Logopedisti")
+                        .child(id_logopedista)
+                        .child("Pazienti")
+                        .child(id_bambino)
+                        .child("Terapie")
+                        .child(getData())
+                        .child("terpia_completata")
+                        .setValue(true)
+                        .addOnSuccessListener(new OnSuccessListener<Void>() {
+                            @Override
+                            public void onSuccess(Void unused) {
+
+                            }
+                        });
+
                 Query aggiorna_progressi_monete = database.getReference("Utenti")
                         .child("Genitori")
                         .child(sessionKey_genitore)
