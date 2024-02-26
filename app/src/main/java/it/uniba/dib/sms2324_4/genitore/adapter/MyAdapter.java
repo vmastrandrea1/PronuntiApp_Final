@@ -201,6 +201,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                                 mDialog.dismiss();
                                 Log.i("ID_BAMBINO" ,  list.get(pos).getCf());
                                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                 fragmentTransaction.replace(container.getId() , Gioco_Home_Page.newInstance(list.get(pos).getCf(),sessionKey,list.get(pos).getCfLogopedista()));
                                 fragmentTransaction.commit();
                             }

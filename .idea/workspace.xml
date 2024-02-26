@@ -203,6 +203,11 @@
           <theme>@style/Theme.Material3.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_no_therapy.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_prenotazioni_logopedista.xml">
         <config>
           <theme>@style/BlueTheme</theme>
@@ -334,7 +339,37 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a457bb-a7d3-4a2a-90ab-85549a33a37a" name="Changes" comment="" />
+    <list default="true" id="a7a457bb-a7d3-4a2a-90ab-85549a33a37a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/CreaEsercizi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/CreaEsercizi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/creazione/esercizi/creaEsercizio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/adapter/MyAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/Calendario_Genitore.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/Calendario_Genitore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/Gioco_Home_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/Gioco_Home_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/gioco/GiocoFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/gioco/GiocoFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/gioco/NoTherapyFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/gioco/NoTherapyFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/shop/ItemAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/shop/ItemAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/User_Logopedista.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/User_Logopedista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Esercizi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Esercizi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Orari.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Orari.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Terapie.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/adapter/MyAdapter_Terapie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/Appuntamenti_Logopedista.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/Appuntamenti_Logopedista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/ElencoEsercizi.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/ElencoEsercizi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/ElencoPazienti.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/ElencoPazienti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/RegistraAppuntamenti.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/RegistraAppuntamenti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/RegistrazioneBambini.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/menu/RegistrazioneBambini.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/paziente/adapter/MyAdapter_Pazienti.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/logopedista/paziente/adapter/MyAdapter_Pazienti.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v29/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-v29/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -343,7 +378,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[adb-c52196c3-VjFrAp._adb-tls-connect._tcp]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Stefano\.android\avd\Pixel_7_API_29.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -391,10 +426,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
-        <option value="valueResourceFile" />
         <option value="Interface" />
         <option value="Class" />
         <option value="resourceFile" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>

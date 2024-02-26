@@ -86,6 +86,7 @@ public class creaEsercizio2 extends Fragment {
             public void handleOnBackPressed() {
                 getParentFragmentManager()
                         .beginTransaction()
+                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                         .replace(container.getId() , CreaEsercizi.newInstance(userID))
                         .commit();
             }
@@ -140,6 +141,7 @@ public class creaEsercizio2 extends Fragment {
                                         .setValue(esercizio2);
                                 Toast.makeText(v.getContext(), R.string.esercizio_creato, Toast.LENGTH_SHORT).show();
                                 FragmentTransaction fragmentTransaction = getParentFragmentManager().beginTransaction();
+                                fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                 fragmentTransaction.replace(container.getId(), CreaEsercizi.newInstance(userID));
                                 fragmentTransaction.commit();
                             }
@@ -159,6 +161,7 @@ public class creaEsercizio2 extends Fragment {
             public void onClick(View v) {
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                 fragmentTransaction.replace(container.getId(), CreaEsercizi.newInstance(userID));
                 fragmentTransaction.commit();
             }

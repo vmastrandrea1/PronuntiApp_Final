@@ -198,6 +198,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                                                             Toast.makeText(v.getContext(), R.string.esercizio_eliminato, Toast.LENGTH_SHORT).show();
                                                             delete_item.dismiss();
                                                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                                            fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                                             fragmentTransaction.replace(container.getId() , ElencoEsercizi.newInstance(sessionKey));
                                                             fragmentTransaction.commit();
                                                         }
@@ -341,6 +342,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                                                         public void onSuccess(Void unused) {
                                                             Toast.makeText(v.getContext(), R.string.esercizio_eliminato, Toast.LENGTH_SHORT).show();
                                                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                                            fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                                             fragmentTransaction.replace(container.getId() , ElencoEsercizi.newInstance(sessionKey));
                                                             fragmentTransaction.commit();
                                                             delete_item.dismiss();
@@ -437,6 +439,7 @@ public class MyAdapter_Esercizi extends RecyclerView.Adapter<MyAdapter_Esercizi.
                                                         public void onSuccess(Void unused) {
                                                             Toast.makeText(v.getContext(), R.string.esercizio_eliminato, Toast.LENGTH_SHORT).show();
                                                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                                            fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                                             fragmentTransaction.replace(container.getId() , ElencoEsercizi.newInstance(sessionKey));
                                                             fragmentTransaction.commit();
                                                             delete_item.dismiss();

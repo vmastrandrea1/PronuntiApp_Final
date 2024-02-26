@@ -88,6 +88,7 @@ public class ElencoEsercizi extends Fragment {
             public void handleOnBackPressed() {
                 getParentFragmentManager()
                         .beginTransaction()
+                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                         .replace(container.getId() , ElencoPazienti.newInstance(userID))
                         .commit();
             }
@@ -101,9 +102,10 @@ public class ElencoEsercizi extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(container.getId() , CreaEsercizi.newInstance(userID));
-                fragmentTransaction.commit();
+                fragmentManager.beginTransaction()
+                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                .replace(container.getId() , CreaEsercizi.newInstance(userID))
+                .commit();
             }
         });
 

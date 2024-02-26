@@ -242,6 +242,7 @@ public class MyAdapter_Orari extends RecyclerView.Adapter<MyAdapter_Orari.MyView
 
                                                         Toast.makeText(v.getContext(), R.string.appuntamento_eliminato, Toast.LENGTH_SHORT).show();
                                                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                                        fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                                         fragmentTransaction.replace(container.getId() , Appuntamenti_Logopedista.newInstance(sessionKey));
                                                         fragmentTransaction.commit();
                                                         reservationDialog.dismiss();

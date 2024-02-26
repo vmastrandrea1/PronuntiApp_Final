@@ -73,6 +73,7 @@ public class CreaEsercizi extends Fragment {
             public void handleOnBackPressed() {
                 getParentFragmentManager()
                         .beginTransaction()
+                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                         .replace(container.getId() , ElencoEsercizi.newInstance(userID))
                         .commit();
             }
@@ -86,9 +87,10 @@ public class CreaEsercizi extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getParentFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(container.getId() , creaEsercizio1.newInstance(userID));
-                fragmentTransaction.commit();
+                fragmentManager.beginTransaction()
+                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                .replace(container.getId() , creaEsercizio1.newInstance(userID))
+                .commit();
             }
         });
 
@@ -96,9 +98,10 @@ public class CreaEsercizi extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(container.getId() , creaEsercizio2.newInstance(userID));
-                fragmentTransaction.commit();
+                fragmentManager.beginTransaction()
+                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                .replace(container.getId() , creaEsercizio2.newInstance(userID))
+                .commit();
             }
         });
 
@@ -106,9 +109,10 @@ public class CreaEsercizi extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(container.getId() , creaEsercizio3.newInstance(userID));
-                fragmentTransaction.commit();
+                fragmentManager.beginTransaction()
+                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                .replace(container.getId() , creaEsercizio3.newInstance(userID))
+                .commit();
             }
         });
     }

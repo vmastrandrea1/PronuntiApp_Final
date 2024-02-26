@@ -1,6 +1,7 @@
 package it.uniba.dib.sms2324_4.genitore.menu.gioco.ui.gioco;
 
 import android.animation.ValueAnimator;
+import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,15 +11,16 @@ import android.widget.ImageView;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -35,6 +37,7 @@ import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio1;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio2;
 import it.uniba.dib.sms2324_4.creazione.esercizi.Esercizio3;
+import it.uniba.dib.sms2324_4.genitore.menu.gioco.ui.Gioco_Home_Page;
 
 
 public class GiocoFragment extends Fragment{
@@ -568,8 +571,38 @@ public class GiocoFragment extends Fragment{
                         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext())
                                 .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
                                 .setView(dialogView)
-                                .setPositiveButton("OK",null);
-                        builder.show();
+                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        // Passa al fragment TherapyFinishedFragment
+                                        TherapyFinishedFragment therapyFinishedFragment = new TherapyFinishedFragment();
+                                        FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                                        fragmentManager.beginTransaction()
+                                                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                                                .replace(R.id.fragmentContainer, therapyFinishedFragment)
+                                                .commit();
+                                    }
+                                });
+
+                        // Imposta il dialog come cancellabile cliccando al di fuori di esso
+                        builder.setCancelable(true);
+
+                        // Aggiungi un listener per il dialog
+                        AlertDialog alertDialog = builder.create();
+                        alertDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                            @Override
+                            public void onDismiss(DialogInterface dialog) {
+                                // Passa al fragment TherapyFinishedFragment quando il dialog viene chiuso senza cliccare "OK"
+                                TherapyFinishedFragment therapyFinishedFragment = new TherapyFinishedFragment();
+                                FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
+                                fragmentManager.beginTransaction()
+                                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                                        .replace(R.id.fragmentContainer, therapyFinishedFragment)
+                                        .commit();
+                            }
+                        });
+
+                        alertDialog.show();
                     }
 
                     @Override

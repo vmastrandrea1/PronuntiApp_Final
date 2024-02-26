@@ -64,6 +64,7 @@ public class RegistrazioneBambini extends Fragment {
             public void handleOnBackPressed() {
                 getParentFragmentManager()
                         .beginTransaction()
+                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                         .replace(container.getId() , ElencoPazienti.newInstance(sessionKey))
                         .commit();
             }
@@ -174,6 +175,7 @@ public class RegistrazioneBambini extends Fragment {
 
                                             FragmentManager fragmentManager = getParentFragmentManager();
                                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                            fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                             fragmentTransaction.replace(container.getId(),ElencoPazienti.newInstance(sessionKey));
                                             fragmentTransaction.commit();
                                         }

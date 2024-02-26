@@ -98,6 +98,7 @@ public class User_Logopedista extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
         fragmentTransaction.replace(R.id.menu_logopedista_viewer , ElencoPazienti.newInstance(sessionManagement.getSession()));
         fragmentTransaction.commit();
 
@@ -118,18 +119,21 @@ public class User_Logopedista extends AppCompatActivity {
                     drawerLayout.closeDrawer(GravityCompat.START);
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                     fragmentTransaction.replace(R.id.menu_logopedista_viewer , Appuntamenti_Logopedista.newInstance(sessionManagement.getSession()));
                     fragmentTransaction.commit();
                 }else if(item.getItemId() == R.id.nav_elenco_pazienti){
                     drawerLayout.closeDrawer(GravityCompat.START);
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                     fragmentTransaction.replace(R.id.menu_logopedista_viewer , ElencoPazienti.newInstance(sessionManagement.getSession()));
                     fragmentTransaction.commit();
                 }else if(item.getItemId() == R.id.nav_elenco_esercizi){
                     drawerLayout.closeDrawer(GravityCompat.START);
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                     fragmentTransaction.replace(R.id.menu_logopedista_viewer , ElencoEsercizi.newInstance(sessionManagement.getSession()));
                     fragmentTransaction.commit();
                 }

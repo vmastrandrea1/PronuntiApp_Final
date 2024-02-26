@@ -265,6 +265,7 @@ public class ItemAdapter extends ArrayAdapter<Item> {
                 Toast.makeText(getContext(), R.string.oggetto_impostato_come_predefinito, Toast.LENGTH_SHORT).show();
 
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                 fragmentTransaction.replace(container.getId(), GiocoFragment.newInstance(id_bambino,sessionKey,id_logopedista));
                 fragmentTransaction.commit();
             });

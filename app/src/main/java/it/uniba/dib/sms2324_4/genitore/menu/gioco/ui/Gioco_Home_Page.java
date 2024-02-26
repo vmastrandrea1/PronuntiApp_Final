@@ -2,7 +2,9 @@ package it.uniba.dib.sms2324_4.genitore.menu.gioco.ui;
 
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -125,6 +127,9 @@ public class Gioco_Home_Page extends Fragment {
 
         // Imposta il gioco selezionato di default
         bottomNavigationView.setSelectedItemId(R.id.gioco);
+
+
+
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -132,6 +137,7 @@ public class Gioco_Home_Page extends Fragment {
                 if (itemId == R.id.shop) {
                     ShopFragment fragmentShop = ShopFragment.newInstance(id_bambino, sessionKey, id_logopedista);
                     requireActivity().getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                             .replace(R.id.fragmentContainer, fragmentShop)
                             .addToBackStack(null)
                             .commit();
@@ -188,6 +194,7 @@ public class Gioco_Home_Page extends Fragment {
                 } else if (itemId == R.id.classifica) {
                     ClassificaFragment fragmentClassifica = ClassificaFragment.newInstance(id_bambino , sessionKey , id_logopedista);
                     requireActivity().getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                             .replace(R.id.fragmentContainer, fragmentClassifica)
                             .addToBackStack(null)
                             .commit();
@@ -199,14 +206,32 @@ public class Gioco_Home_Page extends Fragment {
         return v;
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (getActivity() != null && getActivity().getSupportFragmentManager().getBackStackEntryCount() > 0) {
+                    BottomNavigationView bottomNavigationView = requireView().findViewById(R.id.bottomBar);
+                    bottomNavigationView.setSelectedItemId(R.id.gioco); // torna a "Gioco" quando si preme back
+                    getActivity().getSupportFragmentManager().beginTransaction()
+                            .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                            .commit();
+                } else {
+                    requireActivity().finish(); // Se non ci sono fragment nello stack, esci dall'attività
+                }
+            }
+        });
+    }
+
+
     private void showNoTherapyFragment() {
         NoTherapyFragment noTherapyFragment = new NoTherapyFragment();
-
-        // Ottieni il FragmentManager dalla tua attività o dal fragment padre
         FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-
-        // Inizia una transazione per sostituire il fragment corrente con NoTherapyFragment
         fragmentManager.beginTransaction()
+                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                 .replace(R.id.fragmentContainer, noTherapyFragment)
                 .addToBackStack(null)
                 .commit();
@@ -214,32 +239,21 @@ public class Gioco_Home_Page extends Fragment {
 
 
     private void showGioco() {
-        // Crea una nuova istanza del fragment GiocoFragment
         GiocoFragment fragmentGioco = GiocoFragment.newInstance(id_bambino, sessionKey, id_logopedista);
-
-        // Ottieni il FragmentManager e avvia una transazione
         FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        // Sostituisci il fragment corrente con il fragment GiocoFragment
-        fragmentTransaction.replace(R.id.fragmentContainer, fragmentGioco);
-
-        // Aggiungi la transazione allo stack back per consentire il ritorno al fragment precedente
-        fragmentTransaction.addToBackStack(null);
-
-        // Esegui la transazione
-        fragmentTransaction.commit();
+        fragmentManager.beginTransaction()
+                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+                .replace(R.id.fragmentContainer, fragmentGioco)
+                .addToBackStack(null)
+                .commit();
     }
 
 
     private void showTherapyFinishedFragment() {
         TherapyFinishedFragment therapyFinishedFragment = new TherapyFinishedFragment();
-
-        // Ottieni il FragmentManager dalla tua attività o dal fragment padre
         FragmentManager fragmentManager = requireActivity().getSupportFragmentManager();
-
-        // Inizia una transazione per sostituire il fragment corrente con NoTherapyFragment
         fragmentManager.beginTransaction()
+                .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                 .replace(R.id.fragmentContainer, therapyFinishedFragment)
                 .addToBackStack(null)
                 .commit();

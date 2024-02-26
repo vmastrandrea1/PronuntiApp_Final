@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import it.uniba.dib.sms2324_4.R;
-import it.uniba.dib.sms2324_4.genitore.menu.Home;
 
 
 public class NoTherapyFragment extends Fragment {

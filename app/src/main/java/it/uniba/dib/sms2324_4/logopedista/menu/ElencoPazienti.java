@@ -89,6 +89,7 @@ public class ElencoPazienti extends Fragment {
             public void onClick(View view) {
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                 fragmentTransaction.replace(container.getId() , RegistrazioneBambini.newInstance(userID));
                 fragmentTransaction.commit();
             }

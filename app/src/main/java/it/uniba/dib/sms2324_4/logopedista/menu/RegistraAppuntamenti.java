@@ -87,6 +87,7 @@ public class RegistraAppuntamenti extends Fragment {
             public void handleOnBackPressed() {
                 getParentFragmentManager()
                         .beginTransaction()
+                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                         .replace(container.getId() , Appuntamenti_Logopedista.newInstance(sessionKey))
                         .commit();
             }
@@ -330,6 +331,7 @@ public class RegistraAppuntamenti extends Fragment {
 
                                                             FragmentManager fragmentManager = getParentFragmentManager();
                                                             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                                            fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                                             fragmentTransaction.replace(container.getId() , Appuntamenti_Logopedista.newInstance(sessionKey));
                                                             fragmentTransaction.commit();
                                                         }

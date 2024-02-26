@@ -315,6 +315,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
 
                                         Toast.makeText(v.getContext(), R.string.paziente_eliminato, Toast.LENGTH_SHORT).show();
                                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                        fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                         fragmentTransaction.replace(container.getId() , ElencoPazienti.newInstance(sessionKey));
                                         fragmentTransaction.commit();
 
@@ -689,6 +690,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                                         mDialog.dismiss();
 
                                                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                                                        fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                                                         fragmentTransaction.replace(container.getId() , ElencoPazienti.newInstance(sessionKey));
                                                         fragmentTransaction.commit();
                                                     }

@@ -76,6 +76,7 @@ public class Appuntamenti_Logopedista extends Fragment {
             public void handleOnBackPressed() {
                 getParentFragmentManager()
                         .beginTransaction()
+                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                         .replace(container.getId() , ElencoPazienti.newInstance(sessionKey))
                         .commit();
             }
@@ -125,6 +126,7 @@ public class Appuntamenti_Logopedista extends Fragment {
             public void onClick(View view) {
                 getParentFragmentManager()
                         .beginTransaction()
+                        .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                         .replace(container.getId() , RegistraAppuntamenti.newInstance(sessionKey))
                         .commit();
             }

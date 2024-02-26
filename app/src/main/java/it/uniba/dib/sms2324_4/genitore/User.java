@@ -102,6 +102,7 @@ public class User extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
         fragmentTransaction.replace(R.id.menu_viewer , Home.newInstance(sessionManagement.getSession()));
         fragmentTransaction.commit();
 
@@ -121,12 +122,14 @@ public class User extends AppCompatActivity {
                     drawerLayout.closeDrawer(GravityCompat.START);
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                     fragmentTransaction.replace(R.id.menu_viewer , Calendario_Genitore.newInstance(sessionManagement.getSession()));
                     fragmentTransaction.commit();
                 }else if(item.getItemId() == R.id.nav_home){
                     drawerLayout.closeDrawer(GravityCompat.START);
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
                     fragmentTransaction.replace(R.id.menu_viewer , Home.newInstance(sessionManagement.getSession()));
                     fragmentTransaction.commit();
                 }
