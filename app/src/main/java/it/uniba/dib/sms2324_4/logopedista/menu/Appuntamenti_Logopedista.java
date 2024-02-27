@@ -64,11 +64,12 @@ public class Appuntamenti_Logopedista extends Fragment {
         }
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance(getString(R.string.db_url));
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_prenotazioni_logopedista, container, false);
 
         // GESTIONE PULSANTE BACK
         OnBackPressedCallback onBackPressedCallback = new OnBackPressedCallback(true) {
@@ -84,6 +85,20 @@ public class Appuntamenti_Logopedista extends Fragment {
 
         // Aggiungi il callback al gestore dei pressioni del pulsante "back"
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
+
+        FirebaseDatabase database = FirebaseDatabase.getInstance(getString(R.string.db_url));
+
+        recyclerView = view.findViewById(R.id.reservationList);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
+
+        list = new ArrayList<>();
+        myAdapter = new MyAdapter_Appuntamenti(view.getContext(),list,sessionKey,getParentFragmentManager(),container);
+        recyclerView.setAdapter(myAdapter);
+        add_reservation = view.findViewById(R.id.add_reservation);
+
+        this.container = container;
+
 
         Query reservationExistant = database.getReference("Utenti")
                 .child("Logopedisti")
@@ -131,24 +146,6 @@ public class Appuntamenti_Logopedista extends Fragment {
                         .commit();
             }
         });
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_prenotazioni_logopedista, container, false);
-
-        recyclerView = view.findViewById(R.id.reservationList);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
-
-        list = new ArrayList<>();
-        myAdapter = new MyAdapter_Appuntamenti(view.getContext(),list,sessionKey,getParentFragmentManager(),container);
-        recyclerView.setAdapter(myAdapter);
-        add_reservation = view.findViewById(R.id.add_reservation);
-
-        this.container = container;
 
         return view;
     }

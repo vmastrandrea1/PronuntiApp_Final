@@ -75,7 +75,6 @@ public class Calendario_Genitore extends Fragment {
         // Aggiungi il callback al gestore dei pressioni del pulsante "back"
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(), onBackPressedCallback);
 
-
         FirebaseDatabase database = FirebaseDatabase.getInstance(view.getContext().getString(R.string.db_url));
 
         RecyclerView recyclerView;
