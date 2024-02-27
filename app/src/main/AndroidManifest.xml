@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
@@ -18,35 +18,9 @@
         tools:targetApi="26">
 
         <activity
-            android:name=".accesso.Register_Logopedista"
-            android:exported="false"
-            android:theme="@style/PurpleTheme"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".accesso.Login_Logopedista"
+            android:name=".accesso.SplashActivity"
             android:exported="true"
-            android:theme="@style/PurpleTheme"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".genitore.User"
-            android:exported="false"
-            android:theme="@style/BlueTheme"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".logopedista.User_Logopedista"
-            android:exported="false"
-            android:theme="@style/PurpleTheme"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".accesso.Register"
-            android:exported="false"
-            android:theme="@style/BlueTheme"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".accesso.Login"
-            android:exported="true"
-            android:theme="@style/BlueTheme"
-            android:screenOrientation="portrait">
+            android:theme="@style/BlueTheme_Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -54,6 +28,36 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".accesso.Register_Logopedista"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/PurpleTheme" />
+        <activity
+            android:name=".accesso.Login_Logopedista"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/PurpleTheme" />
+        <activity
+            android:name=".genitore.User"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".logopedista.User_Logopedista"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/PurpleTheme" />
+        <activity
+            android:name=".accesso.Register"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".accesso.Login"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
     </application>
 
 </manifest>

@@ -34,6 +34,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.Locale;
 
 import it.uniba.dib.sms2324_4.R;
 import it.uniba.dib.sms2324_4.logopedista.menu.ElencoPazienti;
@@ -78,15 +79,15 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
         return list.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView firstName, lastName, dataDiNascita , cfGenitore;
+        TextView firstName, lastName, dataDiNascita, cfGenitore;
         String therapy_day_select;
         int count_assegnazioni;
 
         private final static FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
 
-        public MyViewHolder(@NonNull View itemView , ArrayList<Paziente> list,String sessionKey,ViewGroup container,
+        public MyViewHolder(@NonNull View itemView, ArrayList<Paziente> list, String sessionKey, ViewGroup container,
                             FragmentManager fragmentManager) {
             super(itemView);
             firstName = itemView.findViewById(R.id.tvpatientName);
@@ -95,9 +96,9 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                 @Override
                 public void onClick(View v) {
                     int pos = getAdapterPosition();
-                    if(pos != RecyclerView.NO_POSITION){
+                    if (pos != RecyclerView.NO_POSITION) {
                         Dialog mDialog;
-                        TextView txtClose , child_name_tv , child_birthdate_tv , child_owner;
+                        TextView txtClose, child_name_tv, child_birthdate_tv, child_owner;
 
                         mDialog = new Dialog(v.getContext());
                         mDialog.setContentView(R.layout.patient_info_popup);
@@ -106,14 +107,25 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                         child_birthdate_tv = (TextView) mDialog.findViewById(R.id.patient_birthdate_tv);
                         child_owner = (TextView) mDialog.findViewById(R.id.child_owner);
 
-                        String nomeCognome = list.get(pos).getNome() + " "  + list.get(pos).getCognome();
+                        String nomeCognome = list.get(pos).getNome() + " " + list.get(pos).getCognome();
                         String dataDiNascita = list.get(pos).getDataDiNascita();
                         String cfGenitore = list.get(pos).getCfGenitore();
 
-                        child_name_tv.setText(nomeCognome);
-                        child_birthdate_tv.setText(dataDiNascita);
-                        child_owner.setText(v.getResources().getText(R.string.cf_genitore) + cfGenitore);
+                        SimpleDateFormat inputDateFormat = new SimpleDateFormat("MMM dd yyyy", Locale.ENGLISH);
 
+                        try {
+                            Date date = inputDateFormat.parse(dataDiNascita);
+                            SimpleDateFormat outputDateFormat = new SimpleDateFormat("dd MMMM yyyy", Locale.ITALIAN);
+                            dataDiNascita = outputDateFormat.format(date);
+                            System.out.println(dataDiNascita);
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        child_birthdate_tv.setText(R.string.data_di_nascita + " : " + dataDiNascita);
+
+                        child_name_tv.setText(nomeCognome);
+                        child_birthdate_tv.setText(v.getContext().getString(R.string.data_di_nascita) + " : " + dataDiNascita);
+                        child_owner.setText(v.getResources().getText(R.string.cf_genitore) + cfGenitore);
 
 
                         txtClose.setOnClickListener(new View.OnClickListener() {
@@ -135,21 +147,21 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 int count = 0;
-                                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                                     count++;
                                 }
-                                if(count<5){
+                                if (count < 5) {
 
                                     int eserciziMancanti = 5 - count;
                                     assegna_terapia_btn.setVisibility(View.GONE);
                                     therapy_not_ready.setVisibility(View.VISIBLE);
                                     therapy_not_ready.setText(v.getResources().getText(R.string.aggiungi) + " " + eserciziMancanti + v.getResources().getText(R.string.esercizi_per_creare_una_nuova_terapia));
-                                    if(count==4){
+                                    if (count == 4) {
                                         therapy_not_ready.setText(v.getResources().getText(R.string.aggiungi_un_altro_esercizio_per_creare_una_nuova_terapia));
 
                                     }
 
-                                }else{
+                                } else {
                                     assegna_terapia_btn.setVisibility(View.VISIBLE);
                                     therapy_not_ready.setVisibility(View.GONE);
                                 }
@@ -173,9 +185,9 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                         therapy_exists.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                if(snapshot.exists()){
+                                if (snapshot.exists()) {
                                     view_therapy_patient.setVisibility(View.VISIBLE);
-                                }else{
+                                } else {
                                     view_therapy_patient.setVisibility(View.GONE);
                                 }
                             }
@@ -198,9 +210,9 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                         conta_terapie.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                if(snapshot.exists()){
+                                if (snapshot.exists()) {
                                     elimina_paziente.setVisibility(View.GONE);
-                                }else{
+                                } else {
                                     Query conta_appuntamenti = database.getReference("Utenti")
                                             .child("Logopedisti")
                                             .child(sessionKey)
@@ -208,12 +220,12 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                     conta_appuntamenti.addListenerForSingleValueEvent(new ValueEventListener() {
                                         @Override
                                         public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                            for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                                                for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
-                                                    if(dataSnapshot1.child("cfPaziente").getValue(String.class)
-                                                            .compareTo(list.get(pos).getCf()) == 0){
+                                            for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                                                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
+                                                    if (dataSnapshot1.child("cfPaziente").getValue(String.class)
+                                                            .compareTo(list.get(pos).getCf()) == 0) {
                                                         elimina_paziente.setVisibility(View.GONE);
-                                                    }else{
+                                                    } else {
                                                         elimina_paziente.setVisibility(View.VISIBLE);
                                                     }
                                                 }
@@ -241,7 +253,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                 mDialog.dismiss();
                                 delete_patient.setContentView(R.layout.confirm_delete_patient);
 
-                                Button confirm , discard;
+                                Button confirm, discard;
 
                                 confirm = delete_patient.findViewById(R.id.confirm_delete);
                                 discard = delete_patient.findViewById(R.id.discard_delete);
@@ -259,8 +271,8 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                         recupero_esercizi.addListenerForSingleValueEvent(new ValueEventListener() {
                                             @Override
                                             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
-                                                    for(DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
+                                                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                                                    for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
                                                         dataSnapshot1.child("cfPaziente").getRef().setValue("null").addOnSuccessListener(new OnSuccessListener<Void>() {
                                                             @Override
                                                             public void onSuccess(Void unused) {
@@ -316,7 +328,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                         Toast.makeText(v.getContext(), R.string.paziente_eliminato, Toast.LENGTH_SHORT).show();
                                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                         fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
-                                        fragmentTransaction.replace(container.getId() , ElencoPazienti.newInstance(sessionKey));
+                                        fragmentTransaction.replace(container.getId(), ElencoPazienti.newInstance(sessionKey));
                                         fragmentTransaction.commit();
 
                                     }
@@ -353,11 +365,11 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                 Spinner select_exercise4_spinner = assegna_terapia_dialog.findViewById(R.id.select_exercise4_spinner);
                                 Spinner select_exercise5_spinner = assegna_terapia_dialog.findViewById(R.id.select_exercise5_spinner);
 
-                                ArrayAdapter<String> id_esercizi_1 = new ArrayAdapter<>(v.getContext() , android.R.layout.simple_list_item_1);
-                                ArrayAdapter<String> id_esercizi_2 = new ArrayAdapter<>(v.getContext() , android.R.layout.simple_list_item_1);
-                                ArrayAdapter<String> id_esercizi_3 = new ArrayAdapter<>(v.getContext() , android.R.layout.simple_list_item_1);
-                                ArrayAdapter<String> id_esercizi_4 = new ArrayAdapter<>(v.getContext() , android.R.layout.simple_list_item_1);
-                                ArrayAdapter<String> id_esercizi_5 = new ArrayAdapter<>(v.getContext() , android.R.layout.simple_list_item_1);
+                                ArrayAdapter<String> id_esercizi_1 = new ArrayAdapter<>(v.getContext(), android.R.layout.simple_list_item_1);
+                                ArrayAdapter<String> id_esercizi_2 = new ArrayAdapter<>(v.getContext(), android.R.layout.simple_list_item_1);
+                                ArrayAdapter<String> id_esercizi_3 = new ArrayAdapter<>(v.getContext(), android.R.layout.simple_list_item_1);
+                                ArrayAdapter<String> id_esercizi_4 = new ArrayAdapter<>(v.getContext(), android.R.layout.simple_list_item_1);
+                                ArrayAdapter<String> id_esercizi_5 = new ArrayAdapter<>(v.getContext(), android.R.layout.simple_list_item_1);
 
                                 //SETTING SPINNER
                                 FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
@@ -368,12 +380,12 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                 fetch_exercises.addValueEventListener(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                        if(!snapshot.exists()){
+                                        if (!snapshot.exists()) {
                                             Toast.makeText(v.getContext(), R.string.nessun_esercizio, Toast.LENGTH_SHORT).show();
                                             assegna_terapia_dialog.dismiss();
                                             mDialog.dismiss();
-                                        }else{
-                                            for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                        } else {
+                                            for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                                                 String id_esercizio = dataSnapshot.child("id_esercizio").getValue().toString();
                                                 id_esercizi_1.add(id_esercizio);
                                                 id_esercizi_2.add(id_esercizio);
@@ -387,6 +399,13 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                             select_exercise3_spinner.setAdapter(id_esercizi_3);
                                             select_exercise4_spinner.setAdapter(id_esercizi_4);
                                             select_exercise5_spinner.setAdapter(id_esercizi_5);
+
+                                            //Setting Default Values
+                                            select_exercise1_spinner.setSelection(0);
+                                            select_exercise2_spinner.setSelection(1);
+                                            select_exercise3_spinner.setSelection(2);
+                                            select_exercise4_spinner.setSelection(3);
+                                            select_exercise5_spinner.setSelection(4);
                                         }
                                     }
 
@@ -412,19 +431,19 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                     public void onClick(View v) {
 
                                         HashSet<String> set = new HashSet<>();
-                                        if(set.add(select_exercise1_spinner.getSelectedItem().toString())){
+                                        if (set.add(select_exercise1_spinner.getSelectedItem().toString())) {
                                             set.add(select_exercise1_spinner.getSelectedItem().toString());
                                         }
-                                        if(set.add(select_exercise2_spinner.getSelectedItem().toString())){
+                                        if (set.add(select_exercise2_spinner.getSelectedItem().toString())) {
                                             set.add(select_exercise2_spinner.getSelectedItem().toString());
                                         }
-                                        if(set.add(select_exercise3_spinner.getSelectedItem().toString())){
+                                        if (set.add(select_exercise3_spinner.getSelectedItem().toString())) {
                                             set.add(select_exercise3_spinner.getSelectedItem().toString());
                                         }
-                                        if(set.add(select_exercise4_spinner.getSelectedItem().toString())){
+                                        if (set.add(select_exercise4_spinner.getSelectedItem().toString())) {
                                             set.add(select_exercise4_spinner.getSelectedItem().toString());
                                         }
-                                        if(set.add(select_exercise5_spinner.getSelectedItem().toString())){
+                                        if (set.add(select_exercise5_spinner.getSelectedItem().toString())) {
                                             set.add(select_exercise5_spinner.getSelectedItem().toString());
                                         }
 
@@ -441,20 +460,20 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                         Date therapy_date = null;
                                         SimpleDateFormat formatoData = new SimpleDateFormat("yyyy-MM-dd");
                                         try {
-                                            if(therapy_day_select != null){
+                                            if (therapy_day_select != null) {
                                                 therapy_date = formatoData.parse(therapy_day_select);
                                                 therapy_day_select = formatoData.format(therapy_date);
-                                            }else{
+                                            } else {
                                                 therapy_date = dataOdierna;
                                                 therapy_day_select = formatoData.format(dataOdierna);
                                             }
                                         } catch (ParseException e) {
                                             e.printStackTrace();
                                         }
-                                        if(set.size()!=5){
+                                        if (set.size() != 5) {
                                             Toast.makeText(v.getContext(), R.string.gli_esercizi_devono_essere_diversi_fra_loro, Toast.LENGTH_SHORT).show();
-                                        }else if( therapy_day_select != null &&
-                                                (therapy_date.after(dataOdierna) || therapy_date.equals(dataOdierna)) ){
+                                        } else if (therapy_day_select != null &&
+                                                (therapy_date.after(dataOdierna) || therapy_date.equals(dataOdierna))) {
                                             Query day_selected_false = database.getReference("Utenti")
                                                     .child("Logopedisti")
                                                     .child(sessionKey)
@@ -465,9 +484,9 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                             day_selected_false.addListenerForSingleValueEvent(new ValueEventListener() {
                                                 @Override
                                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                                    if(snapshot.exists()){
+                                                    if (snapshot.exists()) {
                                                         Toast.makeText(v.getContext(), R.string.giorno_non_disponibile, Toast.LENGTH_SHORT).show();
-                                                    }else{
+                                                    } else {
                                                         //ASSEGNA ESERCIZIO 1
                                                         database.getReference("Utenti")
                                                                 .child("Logopedisti")
@@ -691,7 +710,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
 
                                                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                                                         fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
-                                                        fragmentTransaction.replace(container.getId() , ElencoPazienti.newInstance(sessionKey));
+                                                        fragmentTransaction.replace(container.getId(), ElencoPazienti.newInstance(sessionKey));
                                                         fragmentTransaction.commit();
                                                     }
                                                 }
@@ -701,7 +720,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
 
                                                 }
                                             });
-                                        }else{
+                                        } else {
                                             Toast.makeText(v.getContext(), R.string.giorno_non_consentito, Toast.LENGTH_SHORT).show();
                                         }
                                     }
@@ -729,7 +748,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                 mDialog.dismiss();
                                 view_therapy_dialog.setContentView(R.layout.view_therapy_patient);
 
-                                RecyclerView  therapy_recycler_view = view_therapy_dialog.findViewById(R.id.therapy_recycler_view);
+                                RecyclerView therapy_recycler_view = view_therapy_dialog.findViewById(R.id.therapy_recycler_view);
                                 MyAdapter_Terapie myAdapter;
                                 ArrayList<String> list_therapy;
 
@@ -737,8 +756,8 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                 therapy_recycler_view.setLayoutManager(new LinearLayoutManager(v.getContext()));
 
                                 list_therapy = new ArrayList<>();
-                                myAdapter = new MyAdapter_Terapie(view_therapy_dialog.getContext(),list_therapy,sessionKey,container
-                                        , fragmentManager , view_therapy_dialog , list.get(pos).getCf(), list.get(pos).getCfGenitore());
+                                myAdapter = new MyAdapter_Terapie(view_therapy_dialog.getContext(), list_therapy, sessionKey, container
+                                        , fragmentManager, view_therapy_dialog, list.get(pos).getCf(), list.get(pos).getCfGenitore());
                                 therapy_recycler_view.setAdapter(myAdapter);
 
                                 Query therapy_exist = database.getReference("Utenti")
@@ -750,7 +769,7 @@ public class MyAdapter_Pazienti extends RecyclerView.Adapter<MyAdapter_Pazienti.
                                 therapy_exist.addValueEventListener(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                        for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                                        for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                                             String therapy_id = dataSnapshot.getRef().getKey();
                                             list_therapy.add(therapy_id);
                                         }

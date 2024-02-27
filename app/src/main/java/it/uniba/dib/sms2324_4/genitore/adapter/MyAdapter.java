@@ -23,7 +23,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 
 import it.uniba.dib.sms2324_4.classParent.Figli;
 import it.uniba.dib.sms2324_4.R;
@@ -132,7 +136,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                         String cfLogopedista = list.get(pos).getCfLogopedista();
 
                         child_name_tv.setText(nomeCognome);
-                        child_birthdate_tv.setText(dataDiNascita);
+
+                        SimpleDateFormat inputDateFormat = new SimpleDateFormat("MMM dd yyyy", Locale.ENGLISH);
+
+                        try {
+                            Date date = inputDateFormat.parse(dataDiNascita);
+                            SimpleDateFormat outputDateFormat = new SimpleDateFormat("dd MMMM yyyy", Locale.ITALIAN);
+                            dataDiNascita = outputDateFormat.format(date);
+                            System.out.println(dataDiNascita);
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        child_birthdate_tv.setText(v.getContext().getString(R.string.data_di_nascita) + " : " + dataDiNascita);
 
                         FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
                         Query info_logo = database.getReference("Utenti")
@@ -261,6 +276,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 }
             });
 
+        }
+    }
+
+    private static String formatDate(String inputDate) {
+        SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        SimpleDateFormat outputFormat = new SimpleDateFormat("dd MMMM yyyy", Locale.getDefault());
+
+        try {
+            Date date = inputFormat.parse(inputDate);
+            return outputFormat.format(date);
+        } catch (android.net.ParseException e) {
+            e.printStackTrace();
+            // Gestione dell'eccezione in caso di errore nella formattazione della data
+            return null;
+        } catch (java.text.ParseException e) {
+            throw new RuntimeException(e);
         }
     }
 

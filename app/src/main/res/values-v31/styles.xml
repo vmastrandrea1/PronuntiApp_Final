@@ -33,4 +33,5 @@
         <item name="android:windowSplashScreenAnimationDuration">1000</item>
         <item name="android:windowSplashScreenIconBackgroundColor">@color/purple</item>
     </style>
+
 </resources>

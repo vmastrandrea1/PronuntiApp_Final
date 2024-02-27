@@ -28,6 +28,11 @@
           <theme>@style/Theme.Material3.Light.NoActionBar</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_user.xml">
         <config>
           <theme>@style/Theme.Material3.Light.NoActionBar</theme>
@@ -339,16 +344,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7a457bb-a7d3-4a2a-90ab-85549a33a37a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/Gioco_Home_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/Gioco_Home_Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/shop/ShopFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/uniba/dib/sms2324_4/genitore/menu/gioco/ui/shop/ShopFragment.java" afterDir="false" />
-    </list>
+    <list default="true" id="a7a457bb-a7d3-4a2a-90ab-85549a33a37a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -357,7 +353,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Stefano\.android\avd\Pixel_7_API_29.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[c52196c3]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -457,7 +453,7 @@
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Stefano/AndroidStudioProjects/PronuntiApp_Final/app/src/main/res/drawable&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Stefano/AndroidStudioProjects/PronuntiApp_Final/app/src/main/res/drawable&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/masvi/AndroidStudioProjects/PronuntiApp_Test/app/src/main/res/layout&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Dependencies&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -478,8 +474,8 @@
       <recent name="it.uniba.dib.sms2324_4" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\src\main\res\drawable" />
       <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\layout" />
+      <recent name="C:\Users\Stefano\AndroidStudioProjects\PronuntiApp_Final\app\src\main\res\drawable" />
       <recent name="C:\Users\LaFFurb\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\layout" />
       <recent name="C:\Users\Scalera\AndroidStudioProjects\PronuntiApp_Final\app\src\main\res\drawable" />
       <recent name="C:\Users\masvi\AndroidStudioProjects\PronuntiApp_Test\app\src\main\res\drawable" />
@@ -502,6 +498,9 @@
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="it.uniba.dib.sms2324_4" />
+    </key>
+    <key name="android.template.-1978242946">
+      <recent name="it.uniba.dib.sms2324_4.accesso" />
     </key>
     <key name="android.template.1552900485">
       <recent name="it.uniba.dib.sms2324_4" />

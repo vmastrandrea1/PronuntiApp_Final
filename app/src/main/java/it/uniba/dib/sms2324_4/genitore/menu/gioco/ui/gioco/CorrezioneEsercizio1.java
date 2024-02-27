@@ -1,7 +1,10 @@
 package it.uniba.dib.sms2324_4.genitore.menu.gioco.ui.gioco;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -18,6 +21,7 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 import android.os.Environment;
+import android.provider.Settings;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -79,6 +83,16 @@ public class CorrezioneEsercizio1 extends DialogFragment {
     TextToSpeech textToSpeech = null;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance("https://pronuntiapp-register-default-rtdb.europe-west1.firebasedatabase.app/");
+
+    private int PERMISSION_REQUEST_RECORD_AUDIO = 1;
+
+    Button record_solution_1;
+    Button stop_record_solution_1;
+    Button aiuto1_btn;
+    Button aiuto2_btn;
+    Button aiuto3_btn;
+    Button riproduci_audio_1;
+    Button stop_riproduci_audio_1;
 
     public CorrezioneEsercizio1() throws IOException {
     }
@@ -319,13 +333,13 @@ public class CorrezioneEsercizio1 extends DialogFragment {
     private void esecuzioneEsercizio(Esercizio1 esercizio1, View view) throws IOException {
         ImageView image_select_viewer = view.findViewById(R.id.image_select_viewer);
 
-        Button record_solution_1 = view.findViewById(R.id.record_solution_1);
-        Button stop_record_solution_1 = view.findViewById(R.id.stop_record_solution_1);
-        Button aiuto1_btn = view.findViewById(R.id.aiuto1_btn);
-        Button aiuto2_btn = view.findViewById(R.id.aiuto2_btn);
-        Button aiuto3_btn = view.findViewById(R.id.aiuto3_btn);
-        Button riproduci_audio_1 = view.findViewById(R.id.riproduci_audio_1);
-        Button stop_riproduci_audio_1 = view.findViewById(R.id.stop_riproduci_audio_1);
+        record_solution_1 = view.findViewById(R.id.record_solution_1);
+        stop_record_solution_1 = view.findViewById(R.id.stop_record_solution_1);
+        aiuto1_btn = view.findViewById(R.id.aiuto1_btn);
+        aiuto2_btn = view.findViewById(R.id.aiuto2_btn);
+        aiuto3_btn = view.findViewById(R.id.aiuto3_btn);
+        riproduci_audio_1 = view.findViewById(R.id.riproduci_audio_1);
+        stop_riproduci_audio_1 = view.findViewById(R.id.stop_riproduci_audio_1);
 
         FirebaseStorage storage = FirebaseStorage.getInstance("gs://pronuntiapp-register.appspot.com");
         StorageReference storageReference = storage.getReference(esercizio1.getUriImage().substring(1));
@@ -416,35 +430,14 @@ public class CorrezioneEsercizio1 extends DialogFragment {
         record_solution_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!isRecording) {
-                    try {
-                        if (audio_registrato != null) {
-                            audio_registrato.delete();
-                        } else {
-                            audio_registrato = File.createTempFile("audio_registrato",".3gp",directory);
-                        }
-                        directory = v.getContext().getExternalFilesDir(Environment.DIRECTORY_MUSIC);
-
-                        mediaRecorder = new MediaRecorder();
-
-                        mediaRecorder.setAudioSource(MediaRecorder.AudioSource.DEFAULT);
-                        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
-                        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
-                        mediaRecorder.setAudioSamplingRate(44100);
-                        mediaRecorder.setAudioEncodingBitRate(192000);
-
-                        mediaRecorder.setOutputFile(audio_registrato.getAbsolutePath());
-
-                        mediaRecorder.prepare();
-                        mediaRecorder.start();
-
-                        isRecording = true;
-
-                        record_solution_1.setVisibility(View.GONE);
-                        stop_record_solution_1.setVisibility(View.VISIBLE);
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
+                if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO) ==
+                        PackageManager.PERMISSION_GRANTED) {
+                    registraAudio(v);
+                } else if(ActivityCompat.shouldShowRequestPermissionRationale(getActivity() ,
+                        Manifest.permission.RECORD_AUDIO)){
+                    showPermissionChangeDialog();
+                }else{
+                    showPermissionChangeDialog();
                 }
             }
         });
@@ -475,6 +468,19 @@ public class CorrezioneEsercizio1 extends DialogFragment {
                     mediaPlayer.prepare();
                     mediaPlayer.start();
 
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            // Ferma il MediaPlayer quando la riproduzione è completata
+                            mediaPlayer.stop();
+                            mediaPlayer.release();
+                            mediaPlayer = null;
+
+                            riproduci_audio_1.setVisibility(View.VISIBLE);
+                            stop_riproduci_audio_1.setVisibility(View.GONE);
+                        }
+                    });
+
                     riproduci_audio_1.setVisibility(View.GONE);
                     stop_riproduci_audio_1.setVisibility(View.VISIBLE);
 
@@ -495,5 +501,87 @@ public class CorrezioneEsercizio1 extends DialogFragment {
             }
         });
 
+    }
+
+    private void registraAudio(View v){
+        if (!isRecording) {
+            try {
+                if (audio_registrato != null) {
+                    audio_registrato.delete();
+                } else {
+                    audio_registrato = File.createTempFile("audio_registrato",".3gp",directory);
+                }
+                directory = v.getContext().getExternalFilesDir(Environment.DIRECTORY_MUSIC);
+
+                mediaRecorder = new MediaRecorder();
+
+                mediaRecorder.setAudioSource(MediaRecorder.AudioSource.DEFAULT);
+                mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+                mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+                mediaRecorder.setAudioSamplingRate(44100);
+                mediaRecorder.setAudioEncodingBitRate(192000);
+
+                mediaRecorder.setOutputFile(audio_registrato.getAbsolutePath());
+
+                mediaRecorder.prepare();
+                mediaRecorder.start();
+
+                isRecording = true;
+
+                record_solution_1.setVisibility(View.GONE);
+                stop_record_solution_1.setVisibility(View.VISIBLE);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == PERMISSION_REQUEST_RECORD_AUDIO) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permesso RECORD_AUDIO ottenuto, avvia la registrazione audio
+                registraAudio(record_solution_1);
+            } else if(!ActivityCompat.shouldShowRequestPermissionRationale(getActivity() ,
+                    Manifest.permission.RECORD_AUDIO)){
+                MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(getContext() , R.style.AlertDialogButtonStyle);
+                builder.setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background));
+                builder.setTitle("Permesso richiesto");
+                builder.setMessage("Per registrare audio, è necessario concedere il permesso di accesso al microfono.");
+                builder.setPositiveButton("Concedi permesso", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Avvia la richiesta del permesso
+                        ActivityCompat.requestPermissions(getActivity(),
+                                new String[]{Manifest.permission.RECORD_AUDIO}, PERMISSION_REQUEST_RECORD_AUDIO);
+                    }
+                });
+                builder.setNegativeButton("Annulla", null);
+                builder.show();
+            }else{
+                showPermissionChangeDialog();
+            }
+        }
+    }
+
+    private void showPermissionChangeDialog() {
+        new MaterialAlertDialogBuilder(requireContext() , R.style.AlertDialogButtonStyle)
+                .setBackground(ContextCompat.getDrawable(getContext(), R.drawable.rounded_dialog_background))
+                .setTitle("Modifica permesso")
+                .setMessage("È necessario concedere manualmente il permesso di accesso al microfono. Vuoi aprire le impostazioni per modificare il permesso?")
+                .setPositiveButton("Sì", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Apri le impostazioni dell'applicazione per modificare manualmente il permesso
+                        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                        Uri uri = Uri.fromParts("package", requireActivity().getPackageName(), null);
+                        intent.setData(uri);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", null)
+                .show();
     }
 }
