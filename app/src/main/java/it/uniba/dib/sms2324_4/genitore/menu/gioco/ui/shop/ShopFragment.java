@@ -129,9 +129,9 @@ public class ShopFragment extends Fragment {
         //SFONDI
         item.add(new Item(11, getString(R.string.cielo), R.drawable.sfondo_cielo, 0, getString(R.string.descrizione_item_11),Item.ItemType.SFONDO));
         item.get(11).setAcquistato(true);
-        item.add(new Item(12, getString(R.string.spazio_viola), R.drawable.sfondo_spazioviola, 600, getString(R.string.descrizione_item_12),Item.ItemType.SFONDO));
-        item.add(new Item(13, getString(R.string.onde_di_colore), R.drawable.sfondo_onde_di_colore, 500, getString(R.string.descrizione_item_13),Item.ItemType.SFONDO));
-        item.add(new Item(14, getString(R.string.natura), R.drawable.sfondo_natura, 800, getString(R.string.descrizione_item_14),Item.ItemType.SFONDO));
+        item.add(new Item(12, getString(R.string.spazio_viola), R.drawable.sfondo_spazioviola, 500, getString(R.string.descrizione_item_12),Item.ItemType.SFONDO));
+        item.add(new Item(13, getString(R.string.onde_di_colore), R.drawable.sfondo_onde_di_colore, 600, getString(R.string.descrizione_item_13),Item.ItemType.SFONDO));
+        item.add(new Item(14, getString(R.string.natura), R.drawable.sfondo_natura, 700, getString(R.string.descrizione_item_14),Item.ItemType.SFONDO));
 
         return item;
     }

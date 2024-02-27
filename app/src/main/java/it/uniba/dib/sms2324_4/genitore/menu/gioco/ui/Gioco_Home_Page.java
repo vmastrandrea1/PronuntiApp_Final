@@ -134,7 +134,33 @@ public class Gioco_Home_Page extends Fragment {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int itemId = item.getItemId();
+
+
+
+
+                // Controllo se il fragment corrente è già il NoTherapyFragment o il TherapyFinishedFragment
+                Fragment currentFragment = requireActivity().getSupportFragmentManager().findFragmentById(R.id.fragmentContainer);
+
+                if (currentFragment instanceof NoTherapyFragment && itemId == R.id.gioco) {
+                    // Non fare nulla se l'opzione è già selezionata e il fragment corrente è il NoTherapyFragment
+                    return true;
+                } else if (currentFragment instanceof TherapyFinishedFragment && itemId == R.id.gioco) {
+                    // Non fare nulla se l'opzione è già selezionata e il fragment corrente è il TherapyFinishedFragment
+                    return true;
+                } else if (currentFragment instanceof GiocoFragment && itemId == R.id.gioco) {
+                    // Non fare nulla se l'opzione è già selezionata e il fragment corrente è il GiocoFragment
+                    return true;
+                } else if (currentFragment instanceof ShopFragment && itemId == R.id.shop) {
+                    // Non fare nulla se l'opzione è già selezionata e il fragment corrente è il ShopFragment
+                    return true;
+                } else if (currentFragment instanceof ClassificaFragment && itemId == R.id.classifica) {
+                    // Non fare nulla se l'opzione è già selezionata e il fragment corrente è il ClassificaFragment
+                    return true;
+                }
+
+                // Gestisci la selezione delle opzioni di navigazione
                 if (itemId == R.id.shop) {
+                    // Gestisci l'opzione "shop"
                     ShopFragment fragmentShop = ShopFragment.newInstance(id_bambino, sessionKey, id_logopedista);
                     requireActivity().getSupportFragmentManager().beginTransaction()
                             .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
@@ -142,7 +168,7 @@ public class Gioco_Home_Page extends Fragment {
                             .addToBackStack(null)
                             .commit();
                 } else if (itemId == R.id.gioco) {
-                    // Verifica se ci sono terapie da effettuare
+                    // Gestisci l'opzione "gioco"
                     Query childExistant = database.getReference("Utenti")
                             .child("Logopedisti")
                             .child(id_logopedista)
@@ -157,9 +183,9 @@ public class Gioco_Home_Page extends Fragment {
                             boolean terapiePresenti = snapshot.exists();
 
                             if (!terapiePresenti) {
-                                // Se non ci sono terapie, mostra un fragment con il messaggio appropriato
+                                // Se non ci sono terapie, mostra il NoTherapyFragment
                                 showNoTherapyFragment();
-                            }else{
+                            } else {
                                 Query terapiaEseguita = database.getReference("Utenti")
                                         .child("Logopedisti")
                                         .child(id_logopedista)
@@ -171,16 +197,18 @@ public class Gioco_Home_Page extends Fragment {
                                 terapiaEseguita.addListenerForSingleValueEvent(new ValueEventListener() {
                                     @Override
                                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                                        if(snapshot.exists()){
+                                        if (snapshot.exists()) {
+                                            // Se la terapia è già stata completata, mostra il TherapyFinishedFragment
                                             showTherapyFinishedFragment();
-                                        }else{
+                                        } else {
+                                            // Altrimenti, mostra il GiocoFragment
                                             showGioco();
                                         }
                                     }
 
                                     @Override
                                     public void onCancelled(@NonNull DatabaseError error) {
-
+                                        // Gestisci eventuali errori di lettura dal database
                                     }
                                 });
                             }
@@ -192,7 +220,8 @@ public class Gioco_Home_Page extends Fragment {
                         }
                     });
                 } else if (itemId == R.id.classifica) {
-                    ClassificaFragment fragmentClassifica = ClassificaFragment.newInstance(id_bambino , sessionKey , id_logopedista);
+                    // Gestisci l'opzione "classifica"
+                    ClassificaFragment fragmentClassifica = ClassificaFragment.newInstance(id_bambino, sessionKey, id_logopedista);
                     requireActivity().getSupportFragmentManager().beginTransaction()
                             .setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
                             .replace(R.id.fragmentContainer, fragmentClassifica)
@@ -201,6 +230,7 @@ public class Gioco_Home_Page extends Fragment {
                 }
                 return true;
             }
+
         });
 
         return v;
